@@ -92,72 +92,50 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 .pdf-page-cards .pdf-question{margin-bottom:7px}
 .pdf-page-footer{margin-top:auto;text-align:center;color:#667085;font-size:7.5pt;padding-top:3px}
 @media print{
- body{background:#fff!important}
- .container{display:none!important}
- .pdf-report{display:block!important}
- @page{size:A4 portrait;margin:7mm}
- .pdf-question{page-break-inside:avoid;break-inside:avoid}
-}
-button:disabled{opacity:.55;cursor:default}
-@media print{.pdf-report{font-size:9pt}}\n@media print{
   @page{size:A4 portrait;margin:9mm 10mm}
   html,body{background:#fff!important}
   body.printing > *:not(#pdfReport){display:none!important}
   body.printing #pdfReport{display:block!important}
-  .pdf-wrap{
+  .pdf-wrap{width:100%;max-width:none}
+  .pdf-page{
+    position:relative;
     width:100%;
-    max-width:none;
-    display:block;
+    min-height:279mm;
+    box-sizing:border-box;
+    page-break-after:always;
+    break-after:page;
+    overflow:hidden;
   }
-
-  /* Keep every question intact. The browser is free to place as many
-     complete cards as fit on a page. */
+  .pdf-page:last-child{page-break-after:auto;break-after:auto}
+  .pdf-page-content{
+    width:100%;
+    box-sizing:border-box;
+    padding-bottom:8mm;
+  }
+  .pdf-page-content.pdf-only-cards{
+    padding-top:0;
+  }
+  .pdf-page-footer{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:7mm;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:7.5pt;
+    color:#64748b;
+    border-top:1px solid #e2e8f0;
+  }
   .pdf-question{
-    break-inside:avoid;
     page-break-inside:avoid;
-    margin-bottom:7mm;
-  }
-
-  /* A page should look deliberately filled rather than top-heavy.
-     Extra white space is converted into comfortable separation between
-     complete cards; it is never used to split a card. */
-  .pdf-question + .pdf-question{
-    margin-top:2mm;
-  }
-
-  .pdf-head{
-    margin-bottom:5mm;
-  }
-
-  .pdf-scorebar{
-    margin-bottom:6mm;
-  }
-
-  .pdf-qtitle{
-    line-height:1.25;
-  }
-
-  .pdf-hi{
-    line-height:1.2;
-  }
-
-  .pdf-options{
-    margin-top:3mm;
-  }
-
-  .pdf-status{
-    margin-top:3mm;
-  }
-
-  .pdf-expl{
-    margin-top:3mm;
-  }
-
-  .pdf-footer{
-    margin-top:4mm;
+    break-inside:avoid;
+    margin-bottom:7px;
   }
 }
-</style>
+button:disabled{opacity:.55;cursor:default}
+@media print{.pdf-report{font-size:9pt}}\n</style>
 </head>
 <body>
 <div class="container">
@@ -502,7 +480,7 @@ function buildPDFReport(){
     ["#e5f1ff","#173f73","#b8d2ee"]
   ];
 
-  let head = `<div class="pdf-head">
+  const head = `<div class="pdf-head">
     <div>
       <div class="pdf-brand">📚 SSC Pioneer — <span>${esc(quizTitle)}</span></div>
       <div class="pdf-meta">${esc(quizDate)} &nbsp; | &nbsp; ${questions.length} Questions &nbsp; | &nbsp; ${esc(quizLanguages.length ? quizLanguages.join(" + ") : (questions.some(q=>q.hi) ? "English + Hindi" : "English"))}</div>
@@ -510,29 +488,31 @@ function buildPDFReport(){
     <div class="pdf-report-title">Solutions &amp;<br>Performance Report</div>
   </div>`;
 
-  let scorebar = `<div class="pdf-scorebar">
+  const scorebar = `<div class="pdf-scorebar">
     <div class="pdf-legendbox">🟢 Correct answer &nbsp; | &nbsp; 🔴 Your wrong answer &nbsp; | &nbsp; ⚪ Not answered</div>
     <div class="pdf-summarybox"><b>Score: ${score} / ${questions.length}</b><br>Correct: ${score} &nbsp; | &nbsp; Wrong: ${wrong} &nbsp; | &nbsp; Unanswered: ${unanswered}</div>
   </div>`;
 
-  let cards = [];
-  questions.forEach((x,i)=>{
+  const cards = questions.map((x,i)=>{
     const ua = answers[i];
     const status = ua === null ? "⚪ Not Answered" : (ua === x.a ? "🟢 Correct" : "🔴 Wrong");
     const statusClass = ua === null ? "unanswered" : (ua === x.a ? "correct" : "wrong");
     const pal = topicColors[i % topicColors.length];
+
     const opts = (Array.isArray(x.o) ? x.o : []).map((text,j)=>{
       const isCorrect = j === x.a;
       const isWrong = ua !== null && ua !== x.a && j === ua;
-      let cls = "pdf-option" + (isCorrect ? " pdf-correct" : "") + (isWrong ? " pdf-user-wrong" : "");
-      let mark = isCorrect ? `<span class="mark green">✓</span>` : (isWrong ? `<span class="mark red">×</span>` : "");
+      const cls = "pdf-option" + (isCorrect ? " pdf-correct" : "") + (isWrong ? " pdf-user-wrong" : "");
+      const mark = isCorrect ? `<span class="mark green">✓</span>` : (isWrong ? `<span class="mark red">×</span>` : "");
       return `<div class="${cls}">${mark}<b>${esc(labelForIndex(j))}.</b> ${esc(text)}</div>`;
     }).join("");
+
     const your = ua === null ? "Not answered" : `${labelForIndex(ua)}. ${getOptionText(x,ua)}`;
     const correct = `${labelForIndex(x.a)}. ${getOptionText(x,x.a)}`;
     const cardBg = statusClass === "correct" ? "#effaf2" : (statusClass === "wrong" ? "#fff1f1" : "#f7faff");
     const cardBorder = statusClass === "correct" ? "#72bf91" : (statusClass === "wrong" ? "#e58b8b" : pal[2]);
-    cards.push(`<section class="pdf-question" style="border-color:${cardBorder};background:${cardBg}">
+
+    return `<section class="pdf-question" style="border-color:${cardBorder};background:${cardBg}">
       <div class="pdf-qhead" style="background:${pal[0]};border-bottom-color:${pal[2]}">
         <span class="pdf-qnum" style="background:${pal[1]}">Q${i+1}</span>
         <span class="pdf-topic" style="background:${pal[0]};color:${pal[1]};border-color:${pal[2]}">Topic: ${esc(x.topic || quizSubject || "General")}</span>
@@ -542,93 +522,102 @@ function buildPDFReport(){
       <div class="pdf-options">${opts}</div>
       <div class="pdf-status ${statusClass}">${status} &nbsp; | &nbsp; <b>Your Answer:</b> ${esc(your)} &nbsp; | &nbsp; <b>Correct Answer:</b> ${esc(correct)}</div>
       ${(x.e || x.eh) ? `<div class="pdf-expl">${x.e ? `<div class="en">📘 <b>Explanation:</b> ${esc(x.e)}</div>` : ""}${x.eh ? `<div class="hi" lang="hi">🔍 <b>व्याख्या:</b> ${esc(x.eh)}</div>` : ""}</div>` : ""}
-    </section>`);
+    </section>`;
   });
 
-  // Create real A4-sized print pages and pack complete cards into each page.
-  // If the next card does not fit, the current page keeps its cards and the
-  // remaining vertical space is distributed between those cards, so pages
-  // no longer look top-heavy or needlessly empty.
   const root = document.getElementById("pdfReport");
   root.innerHTML = `<div class="pdf-wrap"></div>`;
   const wrap = root.firstElementChild;
-  const PAGE_H = 283 * 3.779527559; // A4 297mm minus 7mm top/bottom print margins
-  const pages = [];
-  let page = document.createElement("div");
-  page.className = "pdf-page";
-  page.innerHTML = `<div class="pdf-page-content"></div>`;
-  let content = page.querySelector(".pdf-page-content");
-  content.innerHTML = head + scorebar;
-  wrap.appendChild(page);
-  pages.push(page);
 
-  // Header/score occupy the first page; reserve a little room for footer.
-  const firstAvailable = PAGE_H - content.scrollHeight - 18;
-  let available = firstAvailable;
-  let cardsOnPage = [];
+  // Build actual page containers. Each page is the printable A4 content area.
+  // Cards are measured and packed without ever splitting a question.
+  const PAGE_H = 279 * 3.779527559; // A4 297mm - 9mm top - 9mm bottom
+  const FOOTER_H = 22;
+  const GAP_MIN = 7;
 
-  function startNewPage(){
+  let pageNo = 0;
+  let page = null;
+  let cardArea = null;
+  let pageCards = [];
+
+  function makePage(first){
+    pageNo++;
     page = document.createElement("div");
     page.className = "pdf-page";
-    page.innerHTML = `<div class="pdf-page-cards"></div><div class="pdf-page-footer">SSC Pioneer • ${esc(quizTitle)} • Solutions &amp; Performance Report</div>`;
+    page.innerHTML = `<div class="pdf-page-content"></div>
+      <div class="pdf-page-footer">SSC Pioneer • ${esc(quizTitle)} • Solutions &amp; Performance Report</div>`;
     wrap.appendChild(page);
-    pages.push(page);
-    content = page.querySelector(".pdf-page-cards");
-    available = PAGE_H - 18;
-    cardsOnPage = [];
+
+    cardArea = page.querySelector(".pdf-page-content");
+    cardArea.innerHTML = first ? head + scorebar : "";
+    if(!first) cardArea.classList.add("pdf-only-cards");
+    pageCards = [];
   }
+
+  makePage(true);
 
   cards.forEach(cardHTML=>{
     const holder = document.createElement("div");
     holder.innerHTML = cardHTML;
     const card = holder.firstElementChild;
-    content.appendChild(card);
-    const used = content.scrollHeight;
-    if(used > available && cardsOnPage.length){
-      content.removeChild(card);
-      // Distribute leftover space as larger gaps, without stretching cards.
-      distributePageSpace(content, available);
-      startNewPage();
-      content.appendChild(card);
-      cardsOnPage.push(card);
+
+    // Temporarily use the actual card dimensions at the final print width.
+    cardArea.appendChild(card);
+    const used = cardArea.scrollHeight;
+    const allowed = PAGE_H - FOOTER_H;
+
+    if(pageCards.length && used > allowed){
+      cardArea.removeChild(card);
+      balancePDFPage(cardArea, PAGE_H - FOOTER_H);
+      makePage(false);
+      cardArea.appendChild(card);
+      pageCards.push(card);
     }else{
-      cardsOnPage.push(card);
-      if(used > available){
-        // A single unusually tall card gets the page by itself; don't split it.
-        distributePageSpace(content, Math.max(used, available));
-      }
+      pageCards.push(card);
+      // If one unusually tall card is taller than the available area,
+      // keep it intact rather than splitting it.
     }
   });
 
-  distributePageSpace(content, available);
-
-  // Add footer to the first page if it is the only/last page without one.
-  pages.forEach((pg,idx)=>{
-    if(!pg.querySelector(".pdf-page-footer")){
-      const f=document.createElement("div");
-      f.className="pdf-page-footer";
-      f.innerHTML=`SSC Pioneer • ${esc(quizTitle)} • Solutions &amp; Performance Report`;
-      pg.appendChild(f);
-    }
+  balancePDFPage(cardArea, PAGE_H - FOOTER_H);
+  // Balance every completed page after packing.
+  Array.from(wrap.querySelectorAll(".pdf-page")).forEach(pg=>{
+    const area = pg.querySelector(".pdf-page-content");
+    if(area !== cardArea) balancePDFPage(area, PAGE_H - FOOTER_H);
   });
 }
 
-function distributePageSpace(container, targetHeight){
-  const cards = Array.from(container.querySelectorAll(".pdf-question"));
-  if(cards.length < 1) return;
-  cards.forEach(c=>c.style.marginBottom="7px");
-  const used = container.scrollHeight;
-  const leftover = Math.max(0, targetHeight - used);
-  if(leftover <= 4) return;
-  // Prefer spacing between cards; if there is only one card, add balanced
-  // vertical padding inside it so the page doesn't look abandoned.
+function balancePDFPage(area, targetHeight){
+  const cards = Array.from(area.querySelectorAll(".pdf-question"));
+  if(!cards.length) return;
+
+  // Reset first so this function can be safely called more than once.
+  cards.forEach(c=>{
+    c.style.marginTop = "0px";
+    c.style.marginBottom = GAP_MIN + "px";
+    c.style.paddingTop = "";
+    c.style.paddingBottom = "";
+  });
+
+  // Measure the actual rendered content, including header/summary on page 1.
+  let used = area.scrollHeight;
+  let leftover = Math.max(0, targetHeight - used);
+
+  if(leftover <= 2) return;
+
   if(cards.length > 1){
-    const extra = Math.min(42, leftover / (cards.length - 1));
-    cards.forEach((c,i)=>{ if(i < cards.length-1) c.style.marginBottom=(7+extra)+"px"; });
+    // Use ALL meaningful remaining space as intentional separation between
+    // complete cards. This is the key visual-balance rule.
+    const extra = leftover / (cards.length - 1);
+    cards.forEach((c,i)=>{
+      if(i < cards.length - 1) c.style.marginBottom = (GAP_MIN + extra) + "px";
+    });
   }else{
-    const extra = Math.min(70, leftover / 2);
-    cards[0].style.paddingTop=(6+extra/2)+"px";
-    cards[0].style.paddingBottom=(6+extra/2)+"px";
+    // If a page has only one card, don't leave a giant empty lower half.
+    // Give the card balanced internal breathing room instead.
+    const extra = leftover / 2;
+    cards[0].style.paddingTop = (6 + extra) + "px";
+    cards[0].style.paddingBottom = (6 + extra) + "px";
   }
 }
 
