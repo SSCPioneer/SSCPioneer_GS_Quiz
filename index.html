@@ -33,14 +33,12 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 .palette{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
 .pbtn{border:2px solid #d5d9df;background:#fff;border-radius:10px;padding:11px 5px;font-weight:700;font-size:16px;cursor:pointer}
 .pbtn.current{border-color:#111}
-.pbtn.answered{background:#dcecff;border-color:#6b9de8}
 .pbtn.correct{background:#dff4e6;border-color:#2e9d57}
 .pbtn.wrong{background:#fde1e1;border-color:#d64545}
 .legend{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;font-size:13px;color:#555}
 .legend span{display:flex;align-items:center;gap:4px}
 .dot{width:11px;height:11px;border-radius:3px;border:1px solid #bbb;display:inline-block}
 .dot.current{background:#fff;border:2px solid #111}
-.dot.answered{background:#dcecff}
 .dot.correct{background:#dff4e6}
 .dot.wrong{background:#fde1e1}
 .result{text-align:center}
@@ -55,6 +53,46 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
  .hindi{font-size:17px}
  .option{font-size:16px}
 }
+
+/* PDF / print report — colorful SSC Pioneer solution booklet */
+.pdf-report{display:none;background:#fff;color:#10213b;font-family:Arial,Helvetica,sans-serif;padding:0;line-height:1.25;font-size:9.2pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.pdf-wrap{width:100%}
+.pdf-head{display:grid;grid-template-columns:1fr 150px;gap:10px;align-items:center;margin-bottom:7px}
+.pdf-brand{font-size:20pt;font-weight:900;letter-spacing:-.4px;color:#173f73}
+.pdf-brand span{color:#c62828}
+.pdf-meta{display:inline-block;margin-top:2px;background:#e9f3ff;border-radius:5px;padding:4px 8px;font-size:8.7pt;font-weight:700;color:#193b63}
+.pdf-report .pdf-report-title{background:#cfe6ff;border-radius:7px;padding:9px 10px;text-align:center;font-size:12pt;font-weight:900;color:#123b6b}
+.pdf-pagebox{background:#123b6b;color:#fff;border-radius:9px;padding:8px;text-align:center;font-size:9pt;font-weight:800}
+.pdf-pagebox b{display:block;font-size:14pt}
+.pdf-scorebar{display:grid;grid-template-columns:1.15fr 1fr;gap:7px;margin-bottom:7px}
+.pdf-legendbox,.pdf-summarybox{border-radius:7px;padding:6px 8px;font-weight:700}
+.pdf-legendbox{background:#f1f5f9;border:1px solid #dbe3ec;color:#23344b}
+.pdf-summarybox{background:#fff0df;border:1px solid #ffd4a6;text-align:center}
+.pdf-question{page-break-inside:avoid;break-inside:avoid;border:1.4px solid #b8d2ee;border-radius:10px;padding:6px 7px;margin:0 0 7px;background:#f8fbff;overflow:hidden;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.pdf-qhead{display:flex;justify-content:space-between;align-items:center;gap:7px;margin:-6px -7px 5px;padding:5px 7px;background:#e5f1ff;border-bottom:1px solid #c2ddf7;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.pdf-qnum{background:#173f73;color:#fff;border-radius:7px;padding:3px 8px;font-size:11pt;font-weight:900;white-space:nowrap}
+.pdf-topic{background:#d9ecff;color:#173f73;border:1px solid #a9cdef;border-radius:10px;padding:3px 7px;font-size:7.7pt;font-weight:800;white-space:nowrap}
+.pdf-qtitle{font-weight:800;font-size:10.2pt;line-height:1.22;margin-bottom:3px;color:#10213b}
+.pdf-question .pdf-hi{font-size:9.1pt;line-height:1.25;margin-bottom:4px;color:#17283c}
+.pdf-options{display:grid;grid-template-columns:1fr 1fr;gap:3px 5px;margin-top:4px}
+.pdf-option{padding:4px 5px;border:1px solid #d5dce5;border-radius:5px;background:#fff;font-size:8.4pt;line-height:1.18;min-height:29px}
+.pdf-option.pdf-correct{background:#e5f7eb;border:1.4px solid #2e9d57}
+.pdf-option.pdf-user-wrong{background:#fde8e8;border:1.4px solid #d64545}
+.pdf-option .mark{display:inline-block;width:15px;height:15px;border-radius:50%;text-align:center;line-height:15px;font-weight:900;margin-right:3px;font-size:8pt}
+.pdf-option .mark.green{background:#16824f;color:#fff}.pdf-option .mark.red{background:#d62f2f;color:#fff}
+.pdf-status{font-weight:800;margin-top:4px;padding:4px 6px;border-radius:5px;font-size:8.3pt}
+.pdf-status.correct{background:#dcf4e4;color:#087441}.pdf-status.wrong{background:#fde1e1;color:#b51f1f}.pdf-status.unanswered{background:#f1f3f5;color:#4b5563}
+.pdf-expl{margin-top:4px;background:#eef6ff;border-left:3px solid #2386d7;border-radius:4px;padding:4px 6px;font-size:8.1pt;line-height:1.2;color:#17283c}
+.pdf-expl .en{margin-bottom:3px}.pdf-expl .hi{font-size:8.15pt}
+.pdf-footer{text-align:center;color:#667085;font-size:7.5pt;margin-top:4px}
+@media print{
+ body{background:#fff!important}
+ .container{display:none!important}
+ .pdf-report{display:block!important}
+ @page{size:A4 portrait;margin:7mm}
+ .pdf-question{page-break-inside:avoid;break-inside:avoid}
+}
+button:disabled{opacity:.55;cursor:default}
 </style>
 </head>
 <body>
@@ -82,7 +120,6 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 <div id="palette" class="palette"></div>
 <div class="legend">
 <span><i class="dot current"></i> Current</span>
-<span><i class="dot answered"></i> Answered</span>
 <span><i class="dot correct"></i> Correct</span>
 <span><i class="dot wrong"></i> Wrong</span>
 </div>
@@ -101,41 +138,48 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 <div class="score" id="score"></div>
 <p id="resultText"></p>
 <button class="review-btn" onclick="openReview()">VIEW SOLUTIONS</button>
+<button class="review-btn pdf-btn" onclick="downloadPDF()">DOWNLOAD PDF</button>
+<p class="small">The PDF contains all 25 questions, your answers, correct answers and explanations.</p>
 </div>
 </div>
 </div>
+
+<div id="pdfReport" class="pdf-report"></div>
 
 <script>
-const quizId = "gs_daily_quiz_2026_09_11";
-const questions = [
-{q:"Under Koppen’s systemic weather and climate classification framework for India, what does the specific shorthand alphabet designation 'As' represent?",hi:"भारत के लिए कोपेन के प्रणालीगत मौसम और जलवायु वर्गीकरण ढांचे के तहत, विशिष्ट शार्टहैंड वर्णमाला पदनाम 'As' क्या दर्शाता है?",o:["Tropical monsoon climate with short dry winter / छोटी शुष्क सर्दियों के साथ उष्णकटिबंधीय मानसून जलवायु","Tropical savanna climate with dry winter / शुष्क सर्दियों के साथ उष्णकटिबंधीय सवाना जलवायु","Monsoon type with dry summer / शुष्क गर्मियों के साथ मानसून का प्रकार","Polar type mountain climate / ध्रुवीय प्रकार की पर्वतीय जलवायु"],a:2,e:"The 'As' climate code signals a tropical dry-summer zone. In India, this is exclusively observed along the Coromandel Coast of Tamil Nadu, which stays dry during the southwest summer monsoon but receives winter precipitation from the retreating northeast monsoon.",eh:"'As' जलवायु कोड एक उष्णकटिबंधीय शुष्क-ग्रीष्मकालीन क्षेत्र का संकेत देता है। भारत में, यह विशेष रूप से तमिलनाडु के कोरोमंडल तट पर देखा जाता है, जो दक्षिण-पश्चिम ग्रीष्मकालीन मानसून के दौरान शुष्क रहता है लेकिन पीछे हटते उत्तर-पूर्वी मानसून से सर्दियों में वर्षा प्राप्त करता है।"},
-{q:"Which ruler of the Delhi Sultanate shifted the capital from Delhi to Devagiri (renamed Daulatabad) and introduced a token currency system made of brass and copper coins?",hi:"दिल्ली सल्तनत के किस शासक ने राजधानी को दिल्ली से देवगिरी (दौलताबाद नाम बदला गया) स्थानांतरित किया और पीतल तथा तांबे के सिक्कों से बनी सांकेतिक मुद्रा प्रणाली शुरू की थी?",o:["Alauddin Khalji / अलाउद्दीन खिलजी","Ghiyasuddin Tughlaq / गयासुद्दीन तुगलक","Muhammad bin Tughlaq / मुहम्मद बिन तुगलक","Firoz Shah Tughlaq / फिरोज शाह तुगलक"],a:2,e:"Muhammad bin Tughlaq implemented two highly controversial experiments: shifting the strategic capital to Devagiri in 1327 to control the Deccan better, and introducing token currency in 1329–30. Both experiments failed due to administrative mismanagement.",eh:"मुहम्मद बिन तुगलक ने दो अत्यधिक विवादास्पद प्रयोग किए: दक्कन को बेहतर ढंग से नियंत्रित करने के लिए 1327 में रणनीतिक राजधानी को देवगिरी स्थानांतरित करना, और 1329-30 में सांकेतिक मुद्रा की शुरुआत करना। प्रशासनिक कुप्रबंधन के कारण दोनों प्रयोग विफल रहे।"},
-{q:"In the functional anatomy of the human kidney nephron, which specific structural segment is primarily responsible for the mandatory reabsorption of the maximum volume of filtrate water, electrolytes, and all vital nutrients like glucose and amino acids?",hi:"मानव गुर्दे के नेफ्रॉन के कार्यात्मक शरीर रचना विज्ञान में, कौन सा विशिष्ट संरचनात्मक खंड मुख्य रूप से छानने वाले पानी की अधिकतम मात्रा, इलेक्ट्रोलाइट्स और ग्लूकोज तथा अमीनो एसिड जैसे सभी महत्वपूर्ण पोषक तत्वों के अनिवार्य पुनरावशोषण के लिए जिम्मेदार है?",o:["Bowman's Capsule / बोमन कैप्सूल","Proximal Convoluted Tubule (PCT) / समीपस्थ संवलित नलिका","Distal Convoluted Tubule (DCT) / दूरस्थ संवलित नलिका","Collecting Duct / संग्रह नलिका"],a:1,e:"The PCT is lined with simple cuboidal brush border epithelium which vastly expands the surface operational area. It reabsorbs nearly 70–80% of electrolytes and water along with 100% of essential glucose and amino acids from the initial filtrate.",eh:"PCT सरल घनाकार ब्रश बॉर्डर उपकला से सुसज्जित होता है जो सतह के परिचालन क्षेत्र का बड़े पैमाने पर विस्तार करता है। यह प्रारंभिक छानने वाले तरल से लगभग 70-80% इलेक्ट्रोलाइट्स और पानी के साथ 100% आवश्यक ग्लूकोज और अमीनो एसिड को पुनरावशोषित करता है।"},
-{q:"Which of the following amendments to the Indian Constitution replaced the term \"internal disturbance\" with \"armed rebellion\" for invoking a National Emergency under Article 352?",hi:"भारतीय संविधान के निम्नलिखित में से किस संशोधन ने अनुच्छेद 352 के तहत राष्ट्रीय आपातकाल लगाने के लिए \"आंतरिक अशांति\" शब्द को \"सशस्त्र विद्रोह\" से बदल दिया था?",o:["42nd Amendment Act, 1976 / 42वां संशोधन अधिनियम, 1976","44th Amendment Act, 1978 / 44वां संशोधन अधिनियम, 1978","52nd Amendment Act, 1985 / 52वां संशोधन अधिनियम, 1985","86th Amendment Act, 2002 / 86वां संशोधन अधिनियम, 2002"],a:1,e:"The 44th Amendment was passed by the Janata Government to prevent future abuses of emergency provisions. It ensured that a political protest or 'internal disturbance' could no longer justify a National Emergency.",eh:"आपातकालीन प्रावधानों के भविष्य में होने वाले दुरुपयोग को रोकने के लिए जनता सरकार द्वारा 44वां संशोधन पारित किया गया था। इसने यह सुनिश्चित किया कि एक राजनीतिक विरोध या 'आंतरिक अशांति' अब राष्ट्रीय आपातकाल को उचित नहीं ठहरा सकती।"},
-{q:"According to the official report of the Basic Animal Husbandry Statistics released in early 2026, which Indian state ranked as the top producer of milk in the country?",hi:"2026 की शुरुआत में जारी बुनियादी पशुपालन सांख्यिकी की आधिकारिक रिपोर्ट के अनुसार, कौन सा भारतीय राज्य देश में दूध का शीर्ष उत्पादक स्थान पर रहा?",o:["Rajasthan / राजस्थान","Uttar Pradesh / उत्तर प्रदेश","Madhya Pradesh / मध्य प्रदेश","Gujarat / गुजरात"],a:1,e:"Uttar Pradesh maintained its primary position as the leading milk producer in India, closely followed by Rajasthan. These two states contribute a significant percentage to India's total milk production volume.",eh:"उत्तर प्रदेश ने भारत में अग्रणी दूध उत्पादक के रूप में अपना प्राथमिक स्थान बनाए रखा, जिसके बाद राजस्थान का स्थान रहा। ये दो राज्य भारत के कुल दूध उत्पादन मात्रा में एक महत्वपूर्ण प्रतिशत का योगदान देते हैं।"},
-{q:"Match the following holy confluences (Prayags) of the Alaknanda river system with the respective tributary rivers that merge at those locations: A. Rudraprayag B. Karnaprayag C. Devprayag D. Nandaprayag. 1. Pindar River 2. Mandakini River 3. Nandakini River 4. Bhagirathi River. Select the correct matching code.",hi:"अलकनंदा नदी तंत्र के निम्नलिखित पवित्र संगमों (प्रयागों) का उन सहायक नदियों से मिलान कीजिए जो उन स्थानों पर मिलती हैं: A. रुद्रप्रयाग B. कर्णप्रयाग C. देवप्रयाग D. नंदप्रयाग। 1. पिंडार नदी 2. मंदाकिनी नदी 3. नंदाकिनी नदी 4. भागीरथी नदी। सही मिलान कोड चुनिए।",o:["A-2, B-1, C-4, D-3","A-1, B-2, C-4, D-3","A-2, B-3, C-1, D-4","A-4, B-1, C-2, D-3"],a:0,e:"Rudraprayag is where Alaknanda meets Mandakini; Karnaprayag is the confluence with Pindar; Devprayag is where Alaknanda meets Bhagirathi to form the Ganga; Nandaprayag is the meeting point with Nandakini.",eh:"रुद्रप्रयाग में अलकनंदा मंदाकिनी से मिलती है; कर्णप्रयाग में पिंडार से; देवप्रयाग में अलकनंदा भागीरथी से मिलकर गंगा बनाती है; नंदप्रयाग में नंदाकिनी मिलती है।"},
-{q:"Under the Chola administrative system, what was the term used for the general assembly of a village consisting of all local tax-paying residents, distinct from the assembly of Brahmins?",hi:"चोल प्रशासनिक प्रणाली के तहत, ब्राह्मणों की सभा से अलग, सभी स्थानीय करदाता निवासियों वाली गाँव की सामान्य सभा के लिए किस शब्द का उपयोग किया जाता था?",o:["Sabha / सभा","Ur / उर","Nagaram / नगरम","Mahasabha / महासभा"],a:1,e:"The Ur was the general assembly of common tax-paying villagers. The Sabha or Mahasabha was the exclusive assembly of Brahmin adult males in brahmadeya villages. Nagaram was associated primarily with merchants.",eh:"उर आम करदाता ग्रामीणों की सामान्य सभा थी। सभा या महासभा ब्रह्मदेय गाँवों में ब्राह्मण वयस्क पुरुषों की विशेष सभा थी। नगरम मुख्य रूप से व्यापारियों से संबंधित था।"},
-{q:"When a monochromatic ray of light travels across boundaries from an optically rarer medium (like air) into an optically denser medium (like glass), what happens to its wave properties?",hi:"जब प्रकाश की एक एकवर्णी किरण एक प्रकाशीय रूप से विरल माध्यम (जैसे हवा) से सघन माध्यम (जैसे कांच) में प्रवेश करती है, तो उसके तरंग गुणों का क्या होता है?",o:["Both velocity and frequency decrease / वेग और आवृत्ति दोनों घटते हैं","Velocity decreases, wavelength decreases, but frequency remains constant / वेग घटता है, तरंगदैर्ध्य घटती है, लेकिन आवृत्ति स्थिर रहती है","Velocity increases, wavelength increases, but frequency decreases / वेग बढ़ता है, तरंगदैर्ध्य बढ़ती है, लेकिन आवृत्ति घटती है","Both velocity and frequency remain completely unchanged / वेग और आवृत्ति दोनों पूरी तरह से अपरिवर्तित रहते हैं"],a:1,e:"Frequency remains constant across a medium transition. In a denser medium, light slows down and, because v = fλ, its wavelength decreases.",eh:"माध्यम बदलने पर आवृत्ति स्थिर रहती है। सघन माध्यम में प्रकाश की गति कम होती है और v = fλ के कारण उसकी तरंगदैर्ध्य भी घटती है।"},
-{q:"Which of the following equations accurately defines the 'Fiscal Deficit' of the Union Government?",hi:"निम्नलिखित में से कौन सा समीकरण केंद्र सरकार के 'राजकोषीय घाटे' को सटीक रूप से परिभाषित करता है?",o:["Budget Deficit - Interest Payments / बजट घाटा - ब्याज भुगतान","Total Expenditure - (Revenue Receipts + Non-debt Capital Receipts) / कुल व्यय - (राजस्व प्राप्तियां + गैर-ऋण पूंजीगत प्राप्तियां)","Revenue Expenditure - Revenue Receipts / राजस्व व्यय - राजस्व प्राप्तियां","Capital Expenditure - Capital Receipts / पूंजीगत व्यय - पूंजीगत प्राप्तियां"],a:1,e:"Fiscal Deficit is the excess of total expenditure over total non-borrowed receipts: Revenue Receipts plus Non-debt Capital Receipts.",eh:"राजकोषीय घाटा कुल गैर-उधार प्राप्तियों की तुलना में कुल व्यय की अधिकता है: राजस्व प्राप्तियां तथा गैर-ऋण पूंजीगत प्राप्तियां।"},
-{q:"At the 51st G7 Summit held in June 2025, which nation hosted the elite grouping to finalize strategic framework pathways on global AI regulation and climate financing targets?",hi:"जून 2025 में आयोजित 51वें G7 शिखर सम्मेलन में, वैश्विक एआई विनियमन और जलवायु वित्तपोषण लक्ष्यों पर रणनीतिक रूपरेखा मार्गों को अंतिम रूप देने के लिए किस देश ने इस विशिष्ट समूह की मेजबानी की थी?",o:["Italy / इटली","Germany / जर्मनी","Canada / कनाडा","Japan / जापान"],a:2,e:"Canada held the G7 Presidency in 2025 and hosted the 51st G7 Summit in Kananaskis, Alberta.",eh:"कनाडा ने 2025 में G7 की अध्यक्षता की और अल्बर्टा के कनानैस्किस में 51वें G7 शिखर सम्मेलन की मेजबानी की।"},
-{q:"Which of the following constitutional provisions under the Fundamental Rights explicitly prohibits traffic in human beings, 'begar', and other similar forms of forced labor?",hi:"मौलिक अधिकारों के तहत निम्नलिखित में से कौन सा संवैधानिक प्रावधान मानव तस्करी, 'बेगार' और इसी तरह के अन्य जबरन श्रम को स्पष्ट रूप से प्रतिबंधित करता है?",o:["Article 21 / अनुच्छेद 21","Article 23 / अनुच्छेद 23","Article 24 / अनुच्छेद 24","Article 25 / अनुच्छेद 25"],a:1,e:"Article 23 explicitly prohibits trafficking in human beings and forced labour, including begar. It protects citizens and non-citizens against State and private actors.",eh:"अनुच्छेद 23 मानव तस्करी और बेगार सहित जबरन श्रम को स्पष्ट रूप से प्रतिबंधित करता है। यह नागरिकों और गैर-नागरिकों को राज्य तथा निजी दोनों पक्षों से सुरक्षा देता है।"},
-{q:"Consider the following statements regarding the 'PM-PRANAM' scheme: 1. It aims to incentivize Indian states to promote alternative fertilizers and balanced use of chemical fertilizers. 2. It has an independent corpus budget of Rs. 10,000 crores allocated separately outside the agricultural subsidy parameters. Which of the statements given above is/are correct?",hi:"'PM-PRANAM' योजना के संबंध में निम्नलिखित कथनों पर विचार कीजिए: 1. इसका उद्देश्य भारतीय राज्यों को वैकल्पिक उर्वरकों और रासायनिक उर्वरकों के संतुलित उपयोग को बढ़ावा देने के लिए प्रोत्साहित करना है। 2. कृषि सब्सिडी मापदंडों के बाहर अलग से आवंटित इसका 10,000 करोड़ रुपये का एक स्वतंत्र कॉर्पस बजट है। उपर्युक्त में से कौन सा/से कथन सही है/हैं?",o:["1 only / केवल 1","2 only / केवल 2","Both 1 and 2 / 1 और 2 दोनों","Neither 1 nor 2 / न तो 1 और न ही 2"],a:0,e:"Statement 1 is correct. Statement 2 is incorrect because PM-PRANAM has no separate budget allocation; it is financed through savings generated by reducing chemical fertilizer subsidies, with 50% passed back to states as a development grant.",eh:"कथन 1 सही है। कथन 2 गलत है क्योंकि PM-PRANAM का कोई अलग बजट आवंटन नहीं है; यह रासायनिक उर्वरक सब्सिडी को कम करके उत्पन्न बचत से वित्तपोषित होता है, जिसका 50% राज्यों को विकास अनुदान के रूप में दिया जाता है।"},
-{q:"Which of the following human health diseases is incorrectly matched with the biological class of its causative pathogen agent?",hi:"निम्नलिखित में से कौन सा मानव स्वास्थ्य रोग उसके कारक रोगजनक एजेंट के जैविक वर्ग के साथ गलत ढंग से मेल खाता है?",o:["Typhoid – Bacteria / टाइफाइड – बैक्टीरिया","Kala-azar (Leishmaniasis) – Protozoa / काला-अज़ार – प्रोटोजोआ","Dengue – Virus / डेंगू – वायरस","Ringworm – Virus / दाद (Ringworm) – वायरस"],a:3,e:"Ringworm is a fungal infection of the skin caused by dermatophytes, not a virus.",eh:"दाद त्वचा का एक कवक संक्रमण है जो डर्मेटोफाइट्स के कारण होता है, न कि वायरस के कारण।"},
-{q:"Which British Viceroy was responsible for implementing the controversial Partition of Bengal in 1905, which ignited the Swadeshi Movement?",hi:"1905 में विवादास्पद बंगाल विभाजन को लागू करने के लिए कौन सा ब्रिटिश वायसराय जिम्मेदार था, जिसने स्वदेशी आंदोलन को जन्म दिया था?",o:["Lord Wellesley / लॉर्ड वेलेज़ली","Lord Curzon / लॉर्ड कर्ज़न","Lord Minto / लॉर्ड मिंटो","Lord Chelmsford / लॉर्ड चेम्सफोर्ड"],a:1,e:"Lord Curzon partitioned Bengal in 1905 under the stated pretext of administrative convenience. The decision triggered major protests and the Swadeshi/Boycott movement.",eh:"लॉर्ड कर्ज़न ने 1905 में प्रशासनिक सुविधा के बताए गए आधार पर बंगाल का विभाजन किया। इस निर्णय से बड़े विरोध और स्वदेशी/बहिष्कार आंदोलन को बल मिला।"},
-{q:"In early 2026, the Indian Space Research Organisation (ISRO) successfully conducted the landing mission flight for its autonomous reusable launch vehicle demonstrator. What is the name designated for this space vehicle project?",hi:"2026 की शुरुआत में, भारतीय अंतरिक्ष अनुसंधान संगठन (ISRO) ने अपने स्वायत्त पुन: प्रयोज्य प्रक्षेपण यान प्रदर्शक के लिए लैंडिंग मिशन उड़ान सफलतापूर्वक संचालित की। इस अंतरिक्ष यान परियोजना के लिए क्या नाम नामित किया गया है?",o:["GAGANYAAN-RLV / गगनयान-RLV","PUSHPAK (RLV-LEX) / पुष्पक (RLV-LEX)","VIKRAM-S / विक्रम-S","ADITYA-L2 / आदित्य-L2"],a:1,e:"ISRO’s Reusable Launch Vehicle project is codenamed Pushpak. The RLV-LEX series tests autonomous landing capabilities.",eh:"ISRO के Reusable Launch Vehicle प्रोजेक्ट का कोडनेम पुष्पक है। RLV-LEX श्रृंखला स्वायत्त लैंडिंग क्षमताओं का परीक्षण करती है।"},
-{q:"If the Reserve Bank of India (RBI) decides to follow a contractionary/tight monetary policy stance to curb rising market inflation, which combination of actions will it execute?",hi:"यदि भारतीय रिजर्व बैंक (RBI) बढ़ती बाजार मुद्रास्फीति को रोकने के लिए एक संकुचनकारी/सख्त मौद्रिक नीति रुख का पालन करने का निर्णय लेता है, तो वह किस कार्रवाई के संयोजन को निष्पादित करेगा?",o:["Decrease Repo Rate and Decrease CRR / रेपो रेट में कमी और CRR में कमी","Increase Repo Rate and Increase CRR / रेपो रेट में वृद्धि और CRR में वृद्धि","Decrease Repo Rate and Increase SLR / रेपो रेट में कमी और SLR में वृद्धि","Purchase Government Securities via OMO / OMO के माध्यम से सरकारी प्रतिभूतियों की खरीद"],a:1,e:"To check inflation, the RBI can reduce money supply. Increasing the Repo Rate makes borrowing costlier, while raising CRR reduces loanable funds.",eh:"मुद्रास्फीति को रोकने के लिए RBI मुद्रा आपूर्ति को कम कर सकता है। रेपो दर बढ़ाने से उधार महंगा होता है, जबकि CRR बढ़ाने से ऋण देने योग्य धन कम होता है।"},
-{q:"Which of the following Biosphere Reserves is correctly paired with the specific geographical state where it is located?",hi:"निम्नलिखित में से कौन सा बायोस्फीयर रिजर्व उस विशिष्ट भौगोलिक राज्य के साथ सही ढंग से मेल खाता है जहाँ वह स्थित है?",o:["Nokrek Biosphere Reserve – Arunachal Pradesh / नोकरेक बायोस्फीयर रिजर्व – अरुणाचल प्रदेश","Similipal Biosphere Reserve – Odisha / सिमिलिपाल बायोस्फीयर रिजर्व – ओडिशा","Dehang-Debang Biosphere Reserve – Meghalaya / दिहांग-दिबांग बायोस्फीयर रिजर्व – मेघालय","Agasthyamalai Biosphere Reserve – Karnataka / अगस्त्यमलाई बायोस्फीयर रिजर्व – कर्नाटक"],a:1,e:"Similipal Biosphere Reserve is situated in Mayurbhanj district of Odisha. Nokrek is in Meghalaya; Dehang-Debang is in Arunachal Pradesh; Agasthyamalai spans Kerala and Tamil Nadu.",eh:"सिमिलिपाल बायोस्फीयर रिजर्व ओडिशा के मयूरभंज जिले में स्थित है। नोकरेक मेघालय में, दिहांग-दिबांग अरुणाचल प्रदेश में और अगस्त्यमलाई केरल तथा तमिलनाडु में फैला है।"},
-{q:"Consider the following statements regarding the Vesara style of temple architecture: 1. It is a hybrid style that combines elements of both the Nagara and Dravida styles. 2. It was heavily patronized by the Chalukyas of Badami and the Rashtrakutas. 3. The temples of Pattadakal and Aihole exhibit prominent Vesara architectural traits. Which of the statements given above are correct?",hi:"वेसर शैली के मंदिर स्थापत्य के संबंध में निम्नलिखित कथनों पर विचार कीजिए: 1. यह एक मिश्रित शैली है जो नागर और द्रविड़ दोनों शैलियों के तत्वों को जोड़ती है। 2. इसे बादामी के चालुक्यों और राष्ट्रकूटों द्वारा भारी संरक्षण दिया गया था। 3. पट्टदकल और ऐहोल के मंदिर प्रमुख वेसर स्थापत्य लक्षणों को प्रदर्शित करते हैं। उपर्युक्त में से कौन से कथन सही हैं?",o:["1 and 2 only / केवल 1 और 2","2 and 3 only / केवल 2 और 3","1 and 3 only / केवल 1 और 3","1, 2 and 3 / 1, 2 और 3"],a:3,e:"All three statements are correct according to the classification used in this quiz. Vesara is described as a Deccan fusion style, and Pattadakal and Aihole show prominent mixed architectural traits.",eh:"इस क्विज में प्रयुक्त वर्गीकरण के अनुसार तीनों कथन सही हैं। वेसर को दक्कन की मिश्रित शैली के रूप में वर्णित किया जाता है और पट्टदकल तथा ऐहोल में प्रमुख मिश्रित स्थापत्य लक्षण दिखाई देते हैं।"},
-{q:"In India's Balance of Payments accounting ledger, which of the following accounts or categories holds transactions related to external commercial borrowings (ECB), foreign direct investment (FDI), and short-term banking capital?",hi:"भारत के भुगतान संतुलन लेखा बही में, निम्नलिखित में से कौन सा खाता या श्रेणी बाहरी वाणिज्यिक उधारी (ECB), विदेशी प्रत्यक्ष निवेश (FDI) और अल्पकालिक बैंकिंग पूंजी से संबंधित लेनदेन रखता है?",o:["Current Account / चालू खाता","Capital Account / पूंजीगत खाता","Trade Account / व्यापार खाता","Invisible Balance Account / अदृश्य संतुलन खाता"],a:1,e:"The Capital Account category records international transactions involving investments and loans such as FDI and ECBs.",eh:"पूंजीगत खाता निवेश और ऋण जैसे FDI तथा ECB से संबंधित अंतरराष्ट्रीय लेनदेन को रिकॉर्ड करता है।"},
-{q:"What is the correct chemical name and formula for Plaster of Paris, a compound produced by heating gypsum to a high temperature?",hi:"जिप्सम को उच्च तापमान पर गर्म करके बनाए जाने वाले यौगिक, प्लास्टर ऑफ पेरिस का सही रासायनिक नाम और सूत्र क्या है?",o:["Calcium sulfate dihydrate; CaSO₄·2H₂O / कैल्शियम सल्फेट डाइहाइड्रेट; CaSO₄·2H₂O","Calcium sulfate hemihydrate; CaSO₄·½H₂O / कैल्शियम सल्फेट हेमीहाइड्रेट; CaSO₄·½H₂O","Sodium carbonate decahydrate; Na₂CO₃·10H₂O / सोडियम कार्बोनेट डेकाहाइड्रेट; Na₂CO₃·10H₂O","Calcium chloride; CaCl₂ / कैल्शियम क्लोराइड; CaCl₂"],a:1,e:"Plaster of Paris is calcium sulfate hemihydrate, CaSO₄·½H₂O. It is prepared by partial dehydration of gypsum.",eh:"प्लास्टर ऑफ पेरिस कैल्शियम सल्फेट हेमीहाइड्रेट, CaSO₄·½H₂O है। इसे जिप्सम के आंशिक निर्जलीकरण से तैयार किया जाता है।"},
-{q:"The writ of 'Quo-Warranto' can be issued by the High Courts or Supreme Court to accomplish which of the following objectives?",hi:"High Court या Supreme Court द्वारा निम्नलिखित में से किस उद्देश्य को पूरा करने के लिए 'क्वो-वारंटो' (अधिकार-पृच्छा) रिट जारी की जा सकती है?",o:["To order the release of a person unlawfully detained / अवैध रूप से हिरासत में लिए गए व्यक्ति की रिहाई का आदेश देना","To prevent an inferior court from exceeding its legal jurisdiction / एक अधीनस्थ अदालत को अपने कानूनी अधिकार क्षेत्र से बाहर जाने से रोकना","To prevent illegal usurpation of a public office by a person / किसी व्यक्ति द्वारा सार्वजनिक कार्यालय के अवैध हड़पने को रोकना","To quash the order of a lower tribunal / किसी निचली न्यायाधिकरण के आदेश को रद्द करना"],a:2,e:"Quo-Warranto checks the legality of a person's claim to a public office and prevents unlawful usurpation of that office.",eh:"क्वो-वारंटो किसी सार्वजनिक पद पर व्यक्ति के दावे की वैधता की जांच करता है और उस पद के अवैध हड़पने को रोकता है।"},
-{q:"Consider the following statements regarding the Ordinance-making power of the President under Article 123: 1. The President can promulgate an ordinance when Parliament is not fully in session, meaning both Houses are not in session or either House is not in session. 2. An ordinance has the same force and effect as an Act of Parliament. 3. Every ordinance must be laid before both Houses and ceases to operate six weeks after Parliament reassembles. Which of the statements given above are correct?",hi:"अनुच्छेद 123 के तहत राष्ट्रपति की अध्यादेश बनाने की शक्ति के संबंध में निम्नलिखित कथनों पर विचार कीजिए: 1. राष्ट्रपति तब अध्यादेश प्रख्यापित कर सकता है जब संसद पूरी तरह सत्र में न हो, अर्थात दोनों सदन या दोनों में से कोई एक सदन सत्र में न हो। 2. अध्यादेश का वही बल और प्रभाव होता है जो संसद के अधिनियम का होता है। 3. प्रत्येक अध्यादेश दोनों सदनों के समक्ष रखा जाना चाहिए और संसद के पुनः समवेत होने के छह सप्ताह बाद समाप्त हो जाता है। उपर्युक्त में से कौन से कथन सही हैं?",o:["1 and 2 only / केवल 1 और 2","2 and 3 only / केवल 2 और 3","1 and 3 only / केवल 1 और 3","1, 2 and 3 / 1, 2 और 3"],a:3,e:"All three statements are correct structural features of Article 123. An ordinance ceases to operate six weeks after Parliament reassembles unless disapproved earlier or withdrawn.",eh:"तीनों कथन अनुच्छेद 123 की सही संरचनात्मक विशेषताएं हैं। संसद के पुनः समवेत होने के छह सप्ताह बाद अध्यादेश समाप्त हो जाता है, जब तक कि उससे पहले उसे अस्वीकार या वापस न लिया जाए।"},
-{q:"Which of the following cellular organelles is enclosed by a single membrane envelope and contains powerful hydrolytic enzymes capable of digesting worn-out organelles and cellular debris?",hi:"निम्नलिखित में से कौन सा कोशिकीय अंगक एकल झिल्ली आवरण से घिरा होता है और इसमें शक्तिशाली हाइड्रोलाइटिक एंजाइम होते हैं जो पुराने अंगकों और कोशिकीय मलबे को पचाने में सक्षम होते हैं?",o:["Mitochondria / माइटोकॉन्ड्रिया","Lysosome / लाइसोसोम","Ribosome / राइबोसोम","Chloroplast / क्लोरोप्लास्ट"],a:1,e:"Lysosomes contain hydrolytic enzymes and digest worn-out cellular components and debris. They are single-membrane organelles.",eh:"लाइसोसोम में हाइड्रोलाइटिक एंजाइम होते हैं और वे पुराने कोशिकीय घटकों तथा मलबे को पचाते हैं। ये एकल-झिल्ली वाले अंगक हैं।"},
-{q:"Arrange the following structural mountain ranges of the northern Trans-Himalayas and Himalayas in their precise sequence from North to South: 1. Zanskar Range 2. Ladakh Range 3. Pir Panjal Range 4. Karakoram Range. Select the correct sequence.",hi:"उत्तरी ट्रांस-हिमालय और हिमालय की निम्नलिखित संरचनात्मक पर्वत श्रेणियों को उत्तर से दक्षिण की ओर उनके सटीक अनुक्रम में व्यवस्थित कीजिए: 1. जास्कर श्रेणी 2. लद्दाख श्रेणी 3. पीर पंजाल श्रेणी 4. काराकोरम श्रेणी। सही अनुक्रम चुनिए।",o:["4 - 2 - 1 - 3","4 - 1 - 2 - 3","2 - 4 - 1 - 3","1 - 2 - 4 - 3"],a:0,e:"From North to South, the sequence used here is Karakoram, Ladakh Range, Zanskar Range, and Pir Panjal Range.",eh:"उत्तर से दक्षिण की ओर इस क्विज में प्रयुक्त क्रम काराकोरम, लद्दाख श्रेणी, जास्कर श्रेणी और पीर पंजाल श्रेणी है।"},
-{q:"The difference between Gross Domestic Product (GDP) at Market Price and Gross Domestic Product (GDP) at Factor Cost is equivalent to:",hi:"बाजार मूल्य पर सकल घरेलू उत्पाद (GDP) और कारक लागत पर सकल घरेलू उत्पाद (GDP) के बीच का अंतर किसके बराबर होता है?",o:["Depreciation / मूल्यह्रास","Net Factor Income from Abroad (NFIA) / विदेशों से प्राप्त शुद्ध कारक आय","Net Indirect Taxes (Indirect Taxes - Subsidies) / शुद्ध अप्रत्यक्ष कर (अप्रत्यक्ष कर - सब्सिडी)","Personal Disposable Income / व्यक्तिगत प्रयोज्य आय"],a:2,e:"GDP at Market Price = GDP at Factor Cost + Indirect Taxes − Subsidies. Therefore, the difference is Net Indirect Taxes.",eh:"बाजार मूल्य पर GDP = कारक लागत पर GDP + अप्रत्यक्ष कर − सब्सिडी। इसलिए अंतर शुद्ध अप्रत्यक्ष कर के बराबर होता है।"}
-];
+let quizId = "";
+let quizDate = "";
+let quizTitle = "";
+let questions = [];
+;
 
 let current=0;
+
+async function loadQuiz(){
+ try{
+  const params=new URLSearchParams(location.search);
+  const requested=params.get('date');
+  const today=new Date();
+  const localDate=today.getFullYear()+"-"+String(today.getMonth()+1).padStart(2,'0')+"-"+String(today.getDate()).padStart(2,'0');
+  const date=(requested && /^\d{4}-\d{2}-\d{2}$/.test(requested)) ? requested : localDate;
+  const res=await fetch('quizzes/'+date+'.json?v='+Date.now(),{cache:'no-store'});
+  if(!res.ok) throw new Error('Quiz not found');
+  const data=await res.json();
+  quizId=data.id || ('gs_daily_quiz_'+date.replaceAll('-','_'));
+  quizDate=data.date || date;
+  quizTitle=data.title || 'Daily GS Quiz';
+  questions=Array.isArray(data.questions)?data.questions:[];
+  if(!questions.length) throw new Error('No questions');
+  document.title='GS Quiz — '+quizDate;
+  document.querySelector('.subtitle').textContent=quizDate+' • '+questions.length+' Questions';
+  document.getElementById('startBtn').disabled=false;
+  init();
+ }catch(err){
+  document.getElementById('homeText').textContent='This quiz is temporarily unavailable. Please try again later.';
+  document.getElementById('startBtn').disabled=true;
+ }
+}
+
 let answers=Array(questions.length).fill(null);
 let completed=false;
 let reviewMode=false;
@@ -254,11 +298,9 @@ function buildPalette(){
   b.textContent=i+1;
   if(i===current)b.classList.add("current");
 
-  if(completed && answers[i]!==null){
+  if(answers[i]!==null){
    if(answers[i]===q.a)b.classList.add("correct");
    else b.classList.add("wrong");
-  }else if(answers[i]!==null){
-   b.classList.add("answered");
   }
 
   b.onclick=()=>jump(i);
@@ -290,6 +332,56 @@ function openReview(){
  document.getElementById("quiz").classList.remove("hidden");
  render();
 }
+
+function buildPDFReport(){
+ const score=calculateScore();
+ const wrong=answers.reduce((n,a,i)=>n+(a!==null && a!==questions[i].a?1:0),0);
+ const unanswered=answers.filter(a=>a===null).length;
+ const topics=questions.map(q=>q.topic || 'General Awareness');
+ const topicColors=[
+  ['#e5f1ff','#173f73','#b8d2ee'],['#e7f7ed','#087441','#a8d9bb'],['#f0eaff','#4d2a91','#cdb9ff'],
+  ['#fff0df','#9a4d00','#ffd19a'],['#eaf7f5','#08756d','#a9ddd7'],['#e5f1ff','#173f73','#b8d2ee']
+ ];
+ let html=`<div class="pdf-wrap">`;
+ html+=`<div class="pdf-head"><div><div class="pdf-brand">📚 SSC Pioneer — <span>GS Quiz</span></div><div class="pdf-meta">${quizDate} &nbsp; | &nbsp; ${questions.length} Questions &nbsp; | &nbsp; English + Hindi</div></div><div class="pdf-report-title">Solutions &amp;<br>Performance Report</div></div>`;
+ html+=`<div class="pdf-scorebar"><div class="pdf-legendbox">🟢 Correct answer &nbsp; | &nbsp; 🔴 Your wrong answer &nbsp; | &nbsp; ⚪ Not answered</div><div class="pdf-summarybox"><b>Score: ${score} / ${questions.length}</b><br>Correct: ${score} &nbsp; | &nbsp; Wrong: ${wrong} &nbsp; | &nbsp; Unanswered: ${unanswered}</div></div>`;
+ questions.forEach((x,i)=>{
+   const ua=answers[i];
+   const status=ua===null ? '⚪ Not Answered' : (ua===x.a ? '🟢 Correct' : '🔴 Wrong');
+   const statusClass=ua===null?'unanswered':(ua===x.a?'correct':'wrong');
+   const pal=topicColors[i%topicColors.length];
+   const opts=x.o.map((text,j)=>{
+     const isCorrect=j===x.a;
+     const isWrong=ua!==null && ua!==x.a && j===ua;
+     let cls='pdf-option'+(isCorrect?' pdf-correct':'')+(isWrong?' pdf-user-wrong':'');
+     let mark=isCorrect?`<span class="mark green">✓</span>`:(isWrong?`<span class="mark red">×</span>`:'');
+     return `<div class="${cls}">${mark}<b>${String.fromCharCode(65+j)}.</b> ${text}</div>`;
+   }).join('');
+   const your=ua===null ? 'Not answered' : `${String.fromCharCode(65+ua)}. ${x.o[ua]}`;
+   const correct=`${String.fromCharCode(65+x.a)}. ${x.o[x.a]}`;
+   let cardBg = statusClass==='correct' ? '#effaf2' : (statusClass==='wrong' ? '#fff1f1' : '#f7faff');
+   let cardBorder = statusClass==='correct' ? '#72bf91' : (statusClass==='wrong' ? '#e58b8b' : pal[2]);
+   html+=`<section class="pdf-question" style="border-color:${cardBorder};background:${cardBg}">`;
+   html+=`<div class="pdf-qhead" style="background:${pal[0]};border-bottom-color:${pal[2]}"><span class="pdf-qnum" style="background:${pal[1]}">Q${i+1}</span><span class="pdf-topic" style="background:${pal[0]};color:${pal[1]};border-color:${pal[2]}">Topic: ${topics[i]}</span></div>`;
+   html+=`<div class="pdf-qtitle">${x.q}</div><div class="pdf-hi" lang="hi">${x.hi}</div>`;
+   html+=`<div class="pdf-options">${opts}</div>`;
+   html+=`<div class="pdf-status ${statusClass}">${status} &nbsp; | &nbsp; <b>Your Answer:</b> ${your} &nbsp; | &nbsp; <b>Correct Answer:</b> ${correct}</div>`;
+   html+=`<div class="pdf-expl"><div class="en">📘 <b>Explanation:</b> ${x.e}</div><div class="hi" lang="hi">🔍 <b>व्याख्या:</b> ${x.eh}</div></div>`;
+   html+=`</section>`;
+ });
+ html+=`<div class="pdf-footer">SSC Pioneer • GS Quiz • Solutions &amp; Performance Report</div></div>`;
+ document.getElementById('pdfReport').innerHTML=html;
+}
+function downloadPDF(){
+ if(!completed){return}
+ buildPDFReport();
+ document.body.classList.add('printing');
+ setTimeout(()=>{
+  window.print();
+  setTimeout(()=>document.body.classList.remove('printing'),500);
+ },50);
+}
+
 function init(){
  const saved=getSaved();
 
@@ -306,7 +398,7 @@ function init(){
    "You have an unfinished attempt on this browser. Your progress is saved automatically.";
  }
 }
-init();
+loadQuiz();
 </script>
 </body>
 </html>
