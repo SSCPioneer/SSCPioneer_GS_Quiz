@@ -191,7 +191,13 @@ async function loadQuiz(){
     const date = requested && /^\d{4}-\d{2}-\d{2}$/.test(requested)
       ? requested : localDate;
 
-    const res = await fetch("quizzes/"+date+".json?v="+Date.now(), {cache:"no-store"});
+    // Daily quiz data can be kept in the optional /quizzes/ folder.
+    // For convenience, also accept a JSON file in the repository root.
+    // This makes mobile GitHub uploads easier and keeps the engine flexible.
+    let res = await fetch("quizzes/"+date+".json?v="+Date.now(), {cache:"no-store"});
+    if(!res.ok){
+      res = await fetch(date+".json?v="+Date.now(), {cache:"no-store"});
+    }
     if(!res.ok) throw new Error("Quiz not found");
 
     const data = await res.json();
