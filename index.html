@@ -29,7 +29,6 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 .prev{background:#e7ebf0;flex:1}
 .next{background:#111;color:#fff;flex:1}
 .hidden{display:none}
-.result .pdf-btn{display:block}
 .palette-title{font-weight:700;font-size:18px;margin:20px 0 10px}
 .palette{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
 .pbtn{border:2px solid #d5d9df;background:#fff;border-radius:10px;padding:11px 5px;font-weight:700;font-size:16px;cursor:pointer}
@@ -58,7 +57,7 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 /* PDF / print report — compact, content-driven, page-filling SSC Pioneer solution booklet */
 .pdf-report{display:none;background:#fff;color:#10213b;font-family:Arial,Helvetica,sans-serif;padding:0;line-height:1.22;font-size:9.2pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .pdf-wrap{width:100%}
-.pdf-page{height:283mm;display:flex;flex-direction:column;overflow:hidden;page-break-after:always;break-after:page}
+.pdf-page{height:283mm;display:flex;flex-direction:column;overflow:hidden;page-break-after:always;break-after:page;box-sizing:border-box}
 .pdf-page:last-child{page-break-after:auto;break-after:auto}
 .pdf-head{display:grid;grid-template-columns:1fr 150px;gap:10px;align-items:center;margin-bottom:7px;flex:0 0 auto}
 .pdf-brand{font-size:20pt;font-weight:900;letter-spacing:-.4px;color:#173f73}
@@ -69,7 +68,7 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 .pdf-legendbox,.pdf-summarybox{border-radius:7px;padding:6px 8px;font-weight:700}
 .pdf-legendbox{background:#f1f5f9;border:1px solid #dbe3ec;color:#23344b}
 .pdf-summarybox{background:#fff0df;border:1px solid #ffd4a6;text-align:center}
-.pdf-page-questions{display:grid;gap:7px;flex:1 1 auto;min-height:0;align-content:stretch;grid-auto-rows:minmax(0,1fr)}
+.pdf-page-questions{display:flex;flex-direction:column;gap:7px;flex:1 1 auto;min-height:0;align-content:stretch}
 .pdf-question{page-break-inside:avoid;break-inside:avoid;border:1.4px solid #b8d2ee;border-radius:10px;padding:6px 7px;margin:0;overflow:visible;min-height:0;box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .pdf-qhead{display:flex;justify-content:space-between;align-items:center;gap:7px;margin:-6px -7px 5px;padding:5px 7px;background:#e5f1ff;border-bottom:1px solid #c2ddf7;flex:0 0 auto;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .pdf-qnum{background:#173f73;color:#fff;border-radius:7px;padding:3px 8px;font-size:11pt;font-weight:900;white-space:nowrap}
@@ -293,7 +292,7 @@ function nextQuestion(){
   saveProgress();
   render();
  }else{
-  // Finish works even if the final question was left unanswered.
+  // Finish must work even when some questions are unanswered.
   completed=true;
   saveProgress();
   showResult();
@@ -428,11 +427,38 @@ function buildPDFReport(){
  // of flex/explicit pixel heights because browser print engines handle grid
  // row distribution much more reliably when producing A4 PDFs.
  document.querySelector('#pdfReport .pdf-wrap').innerHTML=host.outerHTML;
+
+ // Use the leftover vertical space on EACH page by expanding the question
+ // cards themselves. The natural content height is preserved, and the
+ // spare space is shared between the cards. This fixes the visual problem
+ // without changing the quiz/result/download workflow.
  document.querySelectorAll('#pdfReport .pdf-page').forEach(pg=>{
    const qw=pg.querySelector('.pdf-page-questions');
    if(!qw) return;
-   const count=qw.children.length;
-   if(count) qw.style.gridTemplateRows=`repeat(${count}, minmax(0, 1fr))`;
+   const items=Array.from(qw.children);
+   if(!items.length) return;
+
+   // Remove the old bottom margins; the flex gap is the only inter-card gap.
+   items.forEach(el=>{
+     el.style.marginBottom='0px';
+     el.style.boxSizing='border-box';
+   });
+
+   const available=qw.clientHeight;
+   const gapTotal=7*(items.length-1);
+   const natural=items.reduce((sum,el)=>sum+el.getBoundingClientRect().height,0);
+   const spare=Math.max(0, available-gapTotal-natural);
+
+   if(spare>1){
+     // Give every card the same amount of additional vertical breathing
+     // room. Content proportions remain intact while the page is filled.
+     const extra=spare/items.length;
+     items.forEach(el=>{
+       const base=el.getBoundingClientRect().height;
+       el.style.height=(base+extra)+'px';
+       el.style.minHeight=(base+extra)+'px';
+     });
+   }
  });
 
 }
