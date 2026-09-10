@@ -384,44 +384,65 @@ function buildPDFReport(){
  temp.style.position='absolute'; temp.style.left='-100000px'; temp.style.top='0'; temp.style.width='100%';
  temp.innerHTML=cards;
  document.body.appendChild(temp);
- const pageHeight=283*3.7795275591; // CSS px per mm at 96dpi
+ const pageHeight=283*3.7795275591; // printable A4 height in CSS px at 96dpi
  const headerHeight=document.querySelector('#pdfReport .pdf-head').getBoundingClientRect().height;
  const scoreHeight=document.querySelector('#pdfReport .pdf-scorebar').getBoundingClientRect().height;
  const footerAllowance=18;
- const available=Math.max(100,pageHeight-headerHeight-scoreHeight-footerAllowance-10);
+ const firstAvailable=Math.max(100,pageHeight-headerHeight-scoreHeight-footerAllowance);
+ const laterAvailable=Math.max(100,pageHeight-footerAllowance);
  const cardEls=Array.from(temp.children);
- // Build pages from measured natural heights. Header/scorebar appear only on page 1.
+
+ // First pack cards using their REAL natural heights. A card is never split.
  host.innerHTML='';
- let used=0, pageQuestions=[];
  function startPage(){
    const pg=document.createElement('div'); pg.className='pdf-page';
-   if(host.children.length===0){ pg.insertAdjacentHTML('beforeend',header+scorebar); }
-   const qw=document.createElement('div'); qw.className='pdf-page-questions'; pg.appendChild(qw); host.appendChild(pg); return {pg,qw,used:0};
+   if(host.children.length===0) pg.insertAdjacentHTML('beforeend',header+scorebar);
+   const qw=document.createElement('div'); qw.className='pdf-page-questions';
+   pg.appendChild(qw); host.appendChild(pg);
+   return {pg,qw,used:0,items:[]};
  }
  let state=startPage();
  cardEls.forEach(card=>{
    const h=card.getBoundingClientRect().height;
-   const gap=state.used>0?7:0;
-   const limit=(host.children.length===1)?firstAvailable:laterAvailable;
-   if(state.used>0 && state.used+gap+h>limit){ state=startPage(); }
-   state.qw.appendChild(card.cloneNode(true));
-   state.used+= (state.used>0?7:0)+h;
+   const gap=state.items.length ? 7 : 0;
+   const limit=host.children.length===1 ? firstAvailable : laterAvailable;
+   // If this card does not fit, start a new page.
+   if(state.items.length && state.used+gap+h>limit) state=startPage();
+   const clone=card.cloneNode(true);
+   state.qw.appendChild(clone);
+   state.items.push(clone);
+   state.used += (state.items.length>1 ? 7 : 0) + h;
  });
  temp.remove();
- // Remove the duplicated header/scorebar from the outer wrapper; pages now own them.
+
+ // Replace the temporary outer wrapper with the real paginated report.
  document.querySelector('#pdfReport .pdf-wrap').innerHTML=host.outerHTML;
- // Slightly expand cards on each page to consume useful remaining vertical space.
+
+ // IMPORTANT: use ALL remaining vertical space on every page.
+ // If another whole card could not fit, the leftover space belongs to the
+ // cards already on that page: enlarge those cards evenly rather than leaving
+ // a large empty area at the bottom.
  document.querySelectorAll('#pdfReport .pdf-page').forEach((pg,idx)=>{
    const qw=pg.querySelector('.pdf-page-questions');
    if(!qw) return;
    const qs=Array.from(qw.children);
    if(!qs.length) return;
-   const fixed=qs.reduce((s,q)=>s+q.getBoundingClientRect().height,0)+Math.max(0,qs.length-1)*7;
-   const pageAvail=pageHeight-(idx===0?(headerHeight+scoreHeight+footerAllowance):footerAllowance);
-   const extra=Math.max(0,pageAvail-fixed);
-   // Spread only a moderate amount of free space. The remaining few pixels are intentionally left as breathing room.
-   const grow=Math.min(24,extra/qs.length);
-   qs.forEach(q=>q.style.paddingTop=`${6+grow/4}px`);
+
+   const pageAvail=idx===0 ? firstAvailable : laterAvailable;
+   const naturalHeights=qs.map(q=>q.getBoundingClientRect().height);
+   const gaps=Math.max(0,qs.length-1)*7;
+   const naturalTotal=naturalHeights.reduce((a,b)=>a+b,0)+gaps;
+   const extra=Math.max(0,pageAvail-naturalTotal);
+
+   // Give the whole leftover area to the existing cards. This is deliberately
+   // not capped: a one-card page should also expand instead of looking empty.
+   if(extra>0){
+     const add=extra/qs.length;
+     qs.forEach((q,i)=>{
+       q.style.boxSizing='border-box';
+       q.style.height=`${naturalHeights[i]+add}px`;
+     });
+   }
  });
 }
 function escapeHtml(v){
