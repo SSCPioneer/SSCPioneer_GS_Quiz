@@ -68,8 +68,8 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 .pdf-legendbox,.pdf-summarybox{border-radius:7px;padding:6px 8px;font-weight:700}
 .pdf-legendbox{background:#f1f5f9;border:1px solid #dbe3ec;color:#23344b}
 .pdf-summarybox{background:#fff0df;border:1px solid #ffd4a6;text-align:center}
-.pdf-page-questions{display:flex;flex-direction:column;gap:7px;flex:1 1 auto;min-height:0;align-content:stretch}
-.pdf-question{page-break-inside:avoid;break-inside:avoid;border:1.4px solid #b8d2ee;border-radius:10px;padding:6px 7px;margin:0;overflow:visible;min-height:0;box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.pdf-page-questions{display:flex;flex-direction:column;gap:7px;flex:0 0 auto;min-height:0;align-content:flex-start}
+.pdf-question{page-break-inside:avoid;break-inside:avoid;border:1.4px solid #b8d2ee;border-radius:10px;padding:6px 7px;margin:0;overflow:hidden;min-height:0;box-sizing:border-box;flex:0 0 auto;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .pdf-qhead{display:flex;justify-content:space-between;align-items:center;gap:7px;margin:-6px -7px 5px;padding:5px 7px;background:#e5f1ff;border-bottom:1px solid #c2ddf7;flex:0 0 auto;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .pdf-qnum{background:#173f73;color:#fff;border-radius:7px;padding:3px 8px;font-size:11pt;font-weight:900;white-space:nowrap}
 .pdf-topic{background:#d9ecff;color:#173f73;border:1px solid #a9cdef;border-radius:10px;padding:3px 7px;font-size:7.7pt;font-weight:800;white-space:nowrap}
@@ -85,7 +85,7 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 .pdf-status.correct{background:#dcf4e4;color:#087441}.pdf-status.wrong{background:#fde1e1;color:#b51f1f}.pdf-status.unanswered{background:#f1f3f5;color:#4b5563}
 .pdf-expl{margin-top:4px;background:#eef6ff;border-left:3px solid #2386d7;border-radius:4px;padding:4px 6px;font-size:8.1pt;line-height:1.2;color:#17283c}
 .pdf-expl .en{margin-bottom:3px}.pdf-expl .hi{font-size:8.15pt}
-.pdf-footer{text-align:center;color:#667085;font-size:7.5pt;margin-top:4px;flex:0 0 auto}
+.pdf-footer{text-align:center;color:#667085;font-size:7.5pt;margin-top:auto;padding-top:7px;flex:0 0 auto}.pdf-footer strong{color:#173f73}.pdf-footer .dot{padding:0 6px;color:#a0aec0}
 @media print{
  body{background:#fff!important}
  .container{display:none!important}
@@ -358,6 +358,7 @@ function buildPDFReport(){
  const meta=[quizDate, questions.length+' Questions', langText || quizSubject].filter(Boolean).join(' &nbsp; | &nbsp; ');
  const header=`<div class="pdf-head"><div><div class="pdf-brand">📚 SSC Pioneer — <span>${escapeHtml(quizTitle)}</span></div><div class="pdf-meta">${meta}</div></div><div class="pdf-report-title">Solutions &amp;<br>Performance Report</div></div>`;
  const scorebar=`<div class="pdf-scorebar"><div class="pdf-legendbox">🟢 Correct answer &nbsp; | &nbsp; 🔴 Your wrong answer &nbsp; | &nbsp; ⚪ Not answered</div><div class="pdf-summarybox"><b>Score: ${score} / ${questions.length}</b><br>Correct: ${score} &nbsp; | &nbsp; Wrong: ${wrong} &nbsp; | &nbsp; Unanswered: ${unanswered}</div></div>`;
+
  const cards=questions.map((x,i)=>{
    const ua=answers[i];
    const status=ua===null ? '⚪ Not Answered' : (ua===x.a?'🟢 Correct':'🔴 Wrong');
@@ -382,85 +383,89 @@ function buildPDFReport(){
     `<div class="pdf-expl"><div class="en">📘 <b>Explanation:</b> ${escapeHtml(x.e||'')}</div><div class="hi" lang="hi">🔍 <b>व्याख्या:</b> ${escapeHtml(x.eh||'')}</div></div>`+
    `</section>`;
  }).join('');
- document.getElementById('pdfReport').innerHTML=`<div class="pdf-wrap">${header}${scorebar}<div id="pdfPagesHost"></div></div>`;
+
+ const report=document.getElementById('pdfReport');
+ report.innerHTML=`<div class="pdf-wrap">${header}${scorebar}<div id="pdfPagesHost"></div></div>`;
+
+ // The report is normally display:none until print. It MUST be laid out while
+ // visible for accurate measurements; visibility:hidden preserves layout.
+ const oldDisplay=report.style.display;
+ const oldVisibility=report.style.visibility;
+ report.style.display='block';
+ report.style.visibility='hidden';
+
  const host=document.getElementById('pdfPagesHost');
  const temp=document.createElement('div');
  temp.className='pdf-page-questions';
- temp.style.position='absolute'; temp.style.left='-100000px'; temp.style.top='0'; temp.style.width='100%';
+ temp.style.position='absolute';
+ temp.style.left='-100000px';
+ temp.style.top='0';
+ temp.style.width='210mm';
+ temp.style.boxSizing='border-box';
  temp.innerHTML=cards;
  document.body.appendChild(temp);
- const pageHeight=283*3.7795275591; // printable A4 height in CSS px at 96dpi
- const headerHeight=document.querySelector('#pdfReport .pdf-head').getBoundingClientRect().height;
- const scoreHeight=document.querySelector('#pdfReport .pdf-scorebar').getBoundingClientRect().height;
- const footerAllowance=18;
- const firstAvailable=Math.max(100,pageHeight-headerHeight-scoreHeight-footerAllowance);
- const laterAvailable=Math.max(100,pageHeight-footerAllowance);
- const cardEls=Array.from(temp.children);
 
- // Pack cards by their natural printed height, never splitting a question.
- // After packing, each page uses CSS Grid with equal flexible rows. This is
- // intentional: the leftover vertical space is absorbed by the cards on that
- // page instead of being left as a large white block at the bottom.
+ const mm=3.7795275591;
+ const pageHeight=283*mm;
+ const footerReserve=38; // reserved only for the small branding/footer area
+ const head=document.querySelector('#pdfReport .pdf-head');
+ const scoreEl=document.querySelector('#pdfReport .pdf-scorebar');
+ const headerHeight=head.getBoundingClientRect().height;
+ const scoreHeight=scoreEl.getBoundingClientRect().height;
+ const firstAvailable=Math.max(120,pageHeight-headerHeight-scoreHeight-footerReserve);
+ const laterAvailable=Math.max(120,pageHeight-footerReserve);
+ const gap=7;
+
+ const cardEls=Array.from(temp.children);
+ const measured=cardEls.map(card=>({
+   card,
+   h:Math.ceil(card.getBoundingClientRect().height)
+ }));
+
  host.innerHTML='';
- function startPage(){
-   const pg=document.createElement('div'); pg.className='pdf-page';
-   if(host.children.length===0) pg.insertAdjacentHTML('beforeend',header+scorebar);
-   const qw=document.createElement('div'); qw.className='pdf-page-questions';
-   pg.appendChild(qw); host.appendChild(pg);
-   return {pg,qw,items:[],natural:0};
+ function footerMarkup(){
+   return `<div class="pdf-footer"><strong>SSC Pioneer</strong><span class="dot">•</span>Daily GS Quiz<span class="dot">•</span>Keep Learning • Keep Improving</div>`;
  }
- // Measure cards outside the paginated layout so their content size is known.
- const measured=cardEls.map(card=>({card,h:card.getBoundingClientRect().height}));
+ function startPage(){
+   const pg=document.createElement('div');
+   pg.className='pdf-page';
+   if(host.children.length===0) pg.insertAdjacentHTML('beforeend',header+scorebar);
+   const qw=document.createElement('div');
+   qw.className='pdf-page-questions';
+   pg.appendChild(qw);
+   const foot=document.createElement('div');
+   foot.className='pdf-footer';
+   foot.innerHTML='<strong>SSC Pioneer</strong><span class="dot">•</span>Daily GS Quiz<span class="dot">•</span>Keep Learning • Keep Improving';
+   pg.appendChild(foot);
+   host.appendChild(pg);
+   return {pg,qw,foot,items:[],natural:0};
+ }
+
+ // Content-driven packing: a question is added only when its natural height
+ // fits on the current page. No fixed question count and NO stretching.
  let state=startPage();
  measured.forEach(({card,h})=>{
-   const gap=state.items.length ? 7 : 0;
    const limit=host.children.length===1 ? firstAvailable : laterAvailable;
-   if(state.items.length && state.natural+gap+h>limit) state=startPage();
+   const needed=state.items.length ? gap+h : h;
+   if(state.items.length && state.natural+needed>limit){
+     state=startPage();
+   }
    const clone=card.cloneNode(true);
    state.qw.appendChild(clone);
    state.items.push(clone);
-   state.natural += (state.items.length>1 ? 7 : 0) + h;
+   state.natural += state.items.length>1 ? gap+h : h;
  });
  temp.remove();
 
- // Give every page's cards flexible equal-height rows. Grid is used instead
- // of flex/explicit pixel heights because browser print engines handle grid
- // row distribution much more reliably when producing A4 PDFs.
- document.querySelector('#pdfReport .pdf-wrap').innerHTML=host.outerHTML;
-
- // Use the leftover vertical space on EACH page by expanding the question
- // cards themselves. The natural content height is preserved, and the
- // spare space is shared between the cards. This fixes the visual problem
- // without changing the quiz/result/download workflow.
- document.querySelectorAll('#pdfReport .pdf-page').forEach(pg=>{
-   const qw=pg.querySelector('.pdf-page-questions');
-   if(!qw) return;
-   const items=Array.from(qw.children);
-   if(!items.length) return;
-
-   // Remove the old bottom margins; the flex gap is the only inter-card gap.
-   items.forEach(el=>{
-     el.style.marginBottom='0px';
-     el.style.boxSizing='border-box';
-   });
-
-   const available=qw.clientHeight;
-   const gapTotal=7*(items.length-1);
-   const natural=items.reduce((sum,el)=>sum+el.getBoundingClientRect().height,0);
-   const spare=Math.max(0, available-gapTotal-natural);
-
-   if(spare>1){
-     // Give every card the same amount of additional vertical breathing
-     // room. Content proportions remain intact while the page is filled.
-     const extra=spare/items.length;
-     items.forEach(el=>{
-       const base=el.getBoundingClientRect().height;
-       el.style.height=(base+extra)+'px';
-       el.style.minHeight=(base+extra)+'px';
-     });
-   }
+ // IMPORTANT: cards remain at natural content height. Any unused space is left
+ // for the footer/branding rather than being injected into the question cards.
+ document.querySelectorAll('#pdfReport .pdf-question').forEach(el=>{
+   el.style.flex='0 0 auto';
+   el.style.minHeight='0';
+   el.style.boxSizing='border-box';
  });
-
+ report.style.display='block';
+ report.style.visibility='visible';
 }
 function escapeHtml(v){
  return String(v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
@@ -468,6 +473,9 @@ function escapeHtml(v){
 function downloadPDF(){
  if(!completed){return}
  buildPDFReport();
+ const report=document.getElementById('pdfReport');
+ report.style.display='block';
+ report.style.visibility='visible';
  document.body.classList.add('printing');
  setTimeout(()=>{
   window.print();
