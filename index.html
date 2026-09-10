@@ -85,6 +85,12 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 .pdf-expl{margin-top:4px;background:#eef6ff;border-left:3px solid #2386d7;border-radius:4px;padding:4px 6px;font-size:8.1pt;line-height:1.2;color:#17283c}
 .pdf-expl .en{margin-bottom:3px}.pdf-expl .hi{font-size:8.15pt}
 .pdf-footer{text-align:center;color:#667085;font-size:7.5pt;margin-top:4px}
+.pdf-page{box-sizing:border-box;width:196mm;min-height:283mm;display:flex;flex-direction:column}
+.pdf-page-content{width:100%}
+.pdf-page-spacer{flex:1 1 auto;min-height:0}
+.pdf-page-cards{width:100%}
+.pdf-page-cards .pdf-question{margin-bottom:7px}
+.pdf-page-footer{margin-top:auto;text-align:center;color:#667085;font-size:7.5pt;padding-top:3px}
 @media print{
  body{background:#fff!important}
  .container{display:none!important}
@@ -93,7 +99,65 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
  .pdf-question{page-break-inside:avoid;break-inside:avoid}
 }
 button:disabled{opacity:.55;cursor:default}
-@media print{.pdf-report{font-size:9pt}}\n</style>
+@media print{.pdf-report{font-size:9pt}}\n@media print{
+  @page{size:A4 portrait;margin:9mm 10mm}
+  html,body{background:#fff!important}
+  body.printing > *:not(#pdfReport){display:none!important}
+  body.printing #pdfReport{display:block!important}
+  .pdf-wrap{
+    width:100%;
+    max-width:none;
+    display:block;
+  }
+
+  /* Keep every question intact. The browser is free to place as many
+     complete cards as fit on a page. */
+  .pdf-question{
+    break-inside:avoid;
+    page-break-inside:avoid;
+    margin-bottom:7mm;
+  }
+
+  /* A page should look deliberately filled rather than top-heavy.
+     Extra white space is converted into comfortable separation between
+     complete cards; it is never used to split a card. */
+  .pdf-question + .pdf-question{
+    margin-top:2mm;
+  }
+
+  .pdf-head{
+    margin-bottom:5mm;
+  }
+
+  .pdf-scorebar{
+    margin-bottom:6mm;
+  }
+
+  .pdf-qtitle{
+    line-height:1.25;
+  }
+
+  .pdf-hi{
+    line-height:1.2;
+  }
+
+  .pdf-options{
+    margin-top:3mm;
+  }
+
+  .pdf-status{
+    margin-top:3mm;
+  }
+
+  .pdf-expl{
+    margin-top:3mm;
+  }
+
+  .pdf-footer{
+    margin-top:4mm;
+  }
+}
+</style>
 </head>
 <body>
 <div class="container">
@@ -438,8 +502,7 @@ function buildPDFReport(){
     ["#e5f1ff","#173f73","#b8d2ee"]
   ];
 
-  let html = `<div class="pdf-wrap">`;
-  html += `<div class="pdf-head">
+  let head = `<div class="pdf-head">
     <div>
       <div class="pdf-brand">📚 SSC Pioneer — <span>${esc(quizTitle)}</span></div>
       <div class="pdf-meta">${esc(quizDate)} &nbsp; | &nbsp; ${questions.length} Questions &nbsp; | &nbsp; ${esc(quizLanguages.length ? quizLanguages.join(" + ") : (questions.some(q=>q.hi) ? "English + Hindi" : "English"))}</div>
@@ -447,59 +510,126 @@ function buildPDFReport(){
     <div class="pdf-report-title">Solutions &amp;<br>Performance Report</div>
   </div>`;
 
-  html += `<div class="pdf-scorebar">
+  let scorebar = `<div class="pdf-scorebar">
     <div class="pdf-legendbox">🟢 Correct answer &nbsp; | &nbsp; 🔴 Your wrong answer &nbsp; | &nbsp; ⚪ Not answered</div>
     <div class="pdf-summarybox"><b>Score: ${score} / ${questions.length}</b><br>Correct: ${score} &nbsp; | &nbsp; Wrong: ${wrong} &nbsp; | &nbsp; Unanswered: ${unanswered}</div>
   </div>`;
 
+  let cards = [];
   questions.forEach((x,i)=>{
     const ua = answers[i];
-    const status = ua === null ? "⚪ Not Answered" :
-                   (ua === x.a ? "🟢 Correct" : "🔴 Wrong");
-    const statusClass = ua === null ? "unanswered" :
-                        (ua === x.a ? "correct" : "wrong");
+    const status = ua === null ? "⚪ Not Answered" : (ua === x.a ? "🟢 Correct" : "🔴 Wrong");
+    const statusClass = ua === null ? "unanswered" : (ua === x.a ? "correct" : "wrong");
     const pal = topicColors[i % topicColors.length];
     const opts = (Array.isArray(x.o) ? x.o : []).map((text,j)=>{
       const isCorrect = j === x.a;
       const isWrong = ua !== null && ua !== x.a && j === ua;
-      let cls = "pdf-option" +
-        (isCorrect ? " pdf-correct" : "") +
-        (isWrong ? " pdf-user-wrong" : "");
-      let mark = isCorrect
-        ? `<span class="mark green">✓</span>`
-        : (isWrong ? `<span class="mark red">×</span>` : "");
+      let cls = "pdf-option" + (isCorrect ? " pdf-correct" : "") + (isWrong ? " pdf-user-wrong" : "");
+      let mark = isCorrect ? `<span class="mark green">✓</span>` : (isWrong ? `<span class="mark red">×</span>` : "");
       return `<div class="${cls}">${mark}<b>${esc(labelForIndex(j))}.</b> ${esc(text)}</div>`;
     }).join("");
-
-    const your = ua === null ? "Not answered" :
-      `${labelForIndex(ua)}. ${getOptionText(x,ua)}`;
+    const your = ua === null ? "Not answered" : `${labelForIndex(ua)}. ${getOptionText(x,ua)}`;
     const correct = `${labelForIndex(x.a)}. ${getOptionText(x,x.a)}`;
-    const cardBg = statusClass === "correct" ? "#effaf2" :
-                   (statusClass === "wrong" ? "#fff1f1" : "#f7faff");
-    const cardBorder = statusClass === "correct" ? "#72bf91" :
-                       (statusClass === "wrong" ? "#e58b8b" : pal[2]);
-
-    html += `<section class="pdf-question" style="border-color:${cardBorder};background:${cardBg}">`;
-    html += `<div class="pdf-qhead" style="background:${pal[0]};border-bottom-color:${pal[2]}">
-      <span class="pdf-qnum" style="background:${pal[1]}">Q${i+1}</span>
-      <span class="pdf-topic" style="background:${pal[0]};color:${pal[1]};border-color:${pal[2]}">Topic: ${esc(x.topic || quizSubject || "General")}</span>
-    </div>`;
-    html += `<div class="pdf-qtitle">${esc(x.q || "")}</div>`;
-    if(x.hi) html += `<div class="pdf-hi" lang="hi">${esc(x.hi)}</div>`;
-    html += `<div class="pdf-options">${opts}</div>`;
-    html += `<div class="pdf-status ${statusClass}">${status} &nbsp; | &nbsp; <b>Your Answer:</b> ${esc(your)} &nbsp; | &nbsp; <b>Correct Answer:</b> ${esc(correct)}</div>`;
-
-    if(x.e || x.eh){
-      html += `<div class="pdf-expl">`;
-      if(x.e) html += `<div class="en">📘 <b>Explanation:</b> ${esc(x.e)}</div>`;
-      if(x.eh) html += `<div class="hi" lang="hi">🔍 <b>व्याख्या:</b> ${esc(x.eh)}</div>`;
-      html += `</div>`;
-    }
-    html += `</section>`;
+    const cardBg = statusClass === "correct" ? "#effaf2" : (statusClass === "wrong" ? "#fff1f1" : "#f7faff");
+    const cardBorder = statusClass === "correct" ? "#72bf91" : (statusClass === "wrong" ? "#e58b8b" : pal[2]);
+    cards.push(`<section class="pdf-question" style="border-color:${cardBorder};background:${cardBg}">
+      <div class="pdf-qhead" style="background:${pal[0]};border-bottom-color:${pal[2]}">
+        <span class="pdf-qnum" style="background:${pal[1]}">Q${i+1}</span>
+        <span class="pdf-topic" style="background:${pal[0]};color:${pal[1]};border-color:${pal[2]}">Topic: ${esc(x.topic || quizSubject || "General")}</span>
+      </div>
+      <div class="pdf-qtitle">${esc(x.q || "")}</div>
+      ${x.hi ? `<div class="pdf-hi" lang="hi">${esc(x.hi)}</div>` : ""}
+      <div class="pdf-options">${opts}</div>
+      <div class="pdf-status ${statusClass}">${status} &nbsp; | &nbsp; <b>Your Answer:</b> ${esc(your)} &nbsp; | &nbsp; <b>Correct Answer:</b> ${esc(correct)}</div>
+      ${(x.e || x.eh) ? `<div class="pdf-expl">${x.e ? `<div class="en">📘 <b>Explanation:</b> ${esc(x.e)}</div>` : ""}${x.eh ? `<div class="hi" lang="hi">🔍 <b>व्याख्या:</b> ${esc(x.eh)}</div>` : ""}</div>` : ""}
+    </section>`);
   });
 
-  html += `<div class="pdf-footer">SSC Pioneer • ${esc(quizTitle)} • Solutions &amp; Performance Report</div></div>`;
-  document.getElementById("pdfReport").innerHTML = html;
+  // Create real A4-sized print pages and pack complete cards into each page.
+  // If the next card does not fit, the current page keeps its cards and the
+  // remaining vertical space is distributed between those cards, so pages
+  // no longer look top-heavy or needlessly empty.
+  const root = document.getElementById("pdfReport");
+  root.innerHTML = `<div class="pdf-wrap"></div>`;
+  const wrap = root.firstElementChild;
+  const PAGE_H = 283 * 3.779527559; // A4 297mm minus 7mm top/bottom print margins
+  const pages = [];
+  let page = document.createElement("div");
+  page.className = "pdf-page";
+  page.innerHTML = `<div class="pdf-page-content"></div>`;
+  let content = page.querySelector(".pdf-page-content");
+  content.innerHTML = head + scorebar;
+  wrap.appendChild(page);
+  pages.push(page);
+
+  // Header/score occupy the first page; reserve a little room for footer.
+  const firstAvailable = PAGE_H - content.scrollHeight - 18;
+  let available = firstAvailable;
+  let cardsOnPage = [];
+
+  function startNewPage(){
+    page = document.createElement("div");
+    page.className = "pdf-page";
+    page.innerHTML = `<div class="pdf-page-cards"></div><div class="pdf-page-footer">SSC Pioneer • ${esc(quizTitle)} • Solutions &amp; Performance Report</div>`;
+    wrap.appendChild(page);
+    pages.push(page);
+    content = page.querySelector(".pdf-page-cards");
+    available = PAGE_H - 18;
+    cardsOnPage = [];
+  }
+
+  cards.forEach(cardHTML=>{
+    const holder = document.createElement("div");
+    holder.innerHTML = cardHTML;
+    const card = holder.firstElementChild;
+    content.appendChild(card);
+    const used = content.scrollHeight;
+    if(used > available && cardsOnPage.length){
+      content.removeChild(card);
+      // Distribute leftover space as larger gaps, without stretching cards.
+      distributePageSpace(content, available);
+      startNewPage();
+      content.appendChild(card);
+      cardsOnPage.push(card);
+    }else{
+      cardsOnPage.push(card);
+      if(used > available){
+        // A single unusually tall card gets the page by itself; don't split it.
+        distributePageSpace(content, Math.max(used, available));
+      }
+    }
+  });
+
+  distributePageSpace(content, available);
+
+  // Add footer to the first page if it is the only/last page without one.
+  pages.forEach((pg,idx)=>{
+    if(!pg.querySelector(".pdf-page-footer")){
+      const f=document.createElement("div");
+      f.className="pdf-page-footer";
+      f.innerHTML=`SSC Pioneer • ${esc(quizTitle)} • Solutions &amp; Performance Report`;
+      pg.appendChild(f);
+    }
+  });
+}
+
+function distributePageSpace(container, targetHeight){
+  const cards = Array.from(container.querySelectorAll(".pdf-question"));
+  if(cards.length < 1) return;
+  cards.forEach(c=>c.style.marginBottom="7px");
+  const used = container.scrollHeight;
+  const leftover = Math.max(0, targetHeight - used);
+  if(leftover <= 4) return;
+  // Prefer spacing between cards; if there is only one card, add balanced
+  // vertical padding inside it so the page doesn't look abandoned.
+  if(cards.length > 1){
+    const extra = Math.min(42, leftover / (cards.length - 1));
+    cards.forEach((c,i)=>{ if(i < cards.length-1) c.style.marginBottom=(7+extra)+"px"; });
+  }else{
+    const extra = Math.min(70, leftover / 2);
+    cards[0].style.paddingTop=(6+extra/2)+"px";
+    cards[0].style.paddingBottom=(6+extra/2)+"px";
+  }
 }
 
 function downloadPDF(){
