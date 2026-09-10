@@ -68,8 +68,8 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 .pdf-legendbox,.pdf-summarybox{border-radius:7px;padding:6px 8px;font-weight:700}
 .pdf-legendbox{background:#f1f5f9;border:1px solid #dbe3ec;color:#23344b}
 .pdf-summarybox{background:#fff0df;border:1px solid #ffd4a6;text-align:center}
-.pdf-page-questions{display:flex;flex-direction:column;gap:7px;flex:1 1 auto;min-height:0}
-.pdf-question{page-break-inside:avoid;break-inside:avoid;border:1.4px solid #b8d2ee;border-radius:10px;padding:6px 7px;margin:0;overflow:hidden;flex:1 1 0;min-height:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.pdf-page-questions{display:grid;gap:7px;flex:1 1 auto;min-height:0;align-content:stretch;grid-auto-rows:minmax(0,1fr)}
+.pdf-question{page-break-inside:avoid;break-inside:avoid;border:1.4px solid #b8d2ee;border-radius:10px;padding:6px 7px;margin:0;overflow:visible;min-height:0;box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .pdf-qhead{display:flex;justify-content:space-between;align-items:center;gap:7px;margin:-6px -7px 5px;padding:5px 7px;background:#e5f1ff;border-bottom:1px solid #c2ddf7;flex:0 0 auto;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .pdf-qnum{background:#173f73;color:#fff;border-radius:7px;padding:3px 8px;font-size:11pt;font-weight:900;white-space:nowrap}
 .pdf-topic{background:#d9ecff;color:#173f73;border:1px solid #a9cdef;border-radius:10px;padding:3px 7px;font-size:7.7pt;font-weight:800;white-space:nowrap}
@@ -392,58 +392,43 @@ function buildPDFReport(){
  const laterAvailable=Math.max(100,pageHeight-footerAllowance);
  const cardEls=Array.from(temp.children);
 
- // First pack cards using their REAL natural heights. A card is never split.
+ // Pack cards by their natural printed height, never splitting a question.
+ // After packing, each page uses CSS Grid with equal flexible rows. This is
+ // intentional: the leftover vertical space is absorbed by the cards on that
+ // page instead of being left as a large white block at the bottom.
  host.innerHTML='';
  function startPage(){
    const pg=document.createElement('div'); pg.className='pdf-page';
    if(host.children.length===0) pg.insertAdjacentHTML('beforeend',header+scorebar);
    const qw=document.createElement('div'); qw.className='pdf-page-questions';
    pg.appendChild(qw); host.appendChild(pg);
-   return {pg,qw,used:0,items:[]};
+   return {pg,qw,items:[],natural:0};
  }
+ // Measure cards outside the paginated layout so their content size is known.
+ const measured=cardEls.map(card=>({card,h:card.getBoundingClientRect().height}));
  let state=startPage();
- cardEls.forEach(card=>{
-   const h=card.getBoundingClientRect().height;
+ measured.forEach(({card,h})=>{
    const gap=state.items.length ? 7 : 0;
    const limit=host.children.length===1 ? firstAvailable : laterAvailable;
-   // If this card does not fit, start a new page.
-   if(state.items.length && state.used+gap+h>limit) state=startPage();
+   if(state.items.length && state.natural+gap+h>limit) state=startPage();
    const clone=card.cloneNode(true);
    state.qw.appendChild(clone);
    state.items.push(clone);
-   state.used += (state.items.length>1 ? 7 : 0) + h;
+   state.natural += (state.items.length>1 ? 7 : 0) + h;
  });
  temp.remove();
 
- // Replace the temporary outer wrapper with the real paginated report.
+ // Give every page's cards flexible equal-height rows. Grid is used instead
+ // of flex/explicit pixel heights because browser print engines handle grid
+ // row distribution much more reliably when producing A4 PDFs.
  document.querySelector('#pdfReport .pdf-wrap').innerHTML=host.outerHTML;
-
- // IMPORTANT: use ALL remaining vertical space on every page.
- // If another whole card could not fit, the leftover space belongs to the
- // cards already on that page: enlarge those cards evenly rather than leaving
- // a large empty area at the bottom.
- document.querySelectorAll('#pdfReport .pdf-page').forEach((pg,idx)=>{
+ document.querySelectorAll('#pdfReport .pdf-page').forEach(pg=>{
    const qw=pg.querySelector('.pdf-page-questions');
    if(!qw) return;
-   const qs=Array.from(qw.children);
-   if(!qs.length) return;
-
-   const pageAvail=idx===0 ? firstAvailable : laterAvailable;
-   const naturalHeights=qs.map(q=>q.getBoundingClientRect().height);
-   const gaps=Math.max(0,qs.length-1)*7;
-   const naturalTotal=naturalHeights.reduce((a,b)=>a+b,0)+gaps;
-   const extra=Math.max(0,pageAvail-naturalTotal);
-
-   // Give the whole leftover area to the existing cards. This is deliberately
-   // not capped: a one-card page should also expand instead of looking empty.
-   if(extra>0){
-     const add=extra/qs.length;
-     qs.forEach((q,i)=>{
-       q.style.boxSizing='border-box';
-       q.style.height=`${naturalHeights[i]+add}px`;
-     });
-   }
+   const count=qw.children.length;
+   if(count) qw.style.gridTemplateRows=`repeat(${count}, minmax(0, 1fr))`;
  });
+
 }
 function escapeHtml(v){
  return String(v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
