@@ -54,22 +54,23 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
  .option{font-size:16px}
 }
 
-/* PDF / print report — colorful SSC Pioneer solution booklet */
-.pdf-report{display:none;background:#fff;color:#10213b;font-family:Arial,Helvetica,sans-serif;padding:0;line-height:1.25;font-size:9.2pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+/* PDF / print report — compact, content-driven, page-filling SSC Pioneer solution booklet */
+.pdf-report{display:none;background:#fff;color:#10213b;font-family:Arial,Helvetica,sans-serif;padding:0;line-height:1.22;font-size:9.2pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .pdf-wrap{width:100%}
-.pdf-head{display:grid;grid-template-columns:1fr 150px;gap:10px;align-items:center;margin-bottom:7px}
+.pdf-page{height:283mm;display:flex;flex-direction:column;overflow:hidden;page-break-after:always;break-after:page}
+.pdf-page:last-child{page-break-after:auto;break-after:auto}
+.pdf-head{display:grid;grid-template-columns:1fr 150px;gap:10px;align-items:center;margin-bottom:7px;flex:0 0 auto}
 .pdf-brand{font-size:20pt;font-weight:900;letter-spacing:-.4px;color:#173f73}
 .pdf-brand span{color:#c62828}
 .pdf-meta{display:inline-block;margin-top:2px;background:#e9f3ff;border-radius:5px;padding:4px 8px;font-size:8.7pt;font-weight:700;color:#193b63}
 .pdf-report .pdf-report-title{background:#cfe6ff;border-radius:7px;padding:9px 10px;text-align:center;font-size:12pt;font-weight:900;color:#123b6b}
-.pdf-pagebox{background:#123b6b;color:#fff;border-radius:9px;padding:8px;text-align:center;font-size:9pt;font-weight:800}
-.pdf-pagebox b{display:block;font-size:14pt}
-.pdf-scorebar{display:grid;grid-template-columns:1.15fr 1fr;gap:7px;margin-bottom:7px}
+.pdf-scorebar{display:grid;grid-template-columns:1.15fr 1fr;gap:7px;margin-bottom:7px;flex:0 0 auto}
 .pdf-legendbox,.pdf-summarybox{border-radius:7px;padding:6px 8px;font-weight:700}
 .pdf-legendbox{background:#f1f5f9;border:1px solid #dbe3ec;color:#23344b}
 .pdf-summarybox{background:#fff0df;border:1px solid #ffd4a6;text-align:center}
-.pdf-question{page-break-inside:avoid;break-inside:avoid;border:1.4px solid #b8d2ee;border-radius:10px;padding:6px 7px;margin:0 0 7px;background:#f8fbff;overflow:hidden;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.pdf-qhead{display:flex;justify-content:space-between;align-items:center;gap:7px;margin:-6px -7px 5px;padding:5px 7px;background:#e5f1ff;border-bottom:1px solid #c2ddf7;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.pdf-page-questions{display:flex;flex-direction:column;gap:7px;flex:1 1 auto;min-height:0}
+.pdf-question{page-break-inside:avoid;break-inside:avoid;border:1.4px solid #b8d2ee;border-radius:10px;padding:6px 7px;margin:0;overflow:hidden;flex:1 1 0;min-height:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.pdf-qhead{display:flex;justify-content:space-between;align-items:center;gap:7px;margin:-6px -7px 5px;padding:5px 7px;background:#e5f1ff;border-bottom:1px solid #c2ddf7;flex:0 0 auto;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .pdf-qnum{background:#173f73;color:#fff;border-radius:7px;padding:3px 8px;font-size:11pt;font-weight:900;white-space:nowrap}
 .pdf-topic{background:#d9ecff;color:#173f73;border:1px solid #a9cdef;border-radius:10px;padding:3px 7px;font-size:7.7pt;font-weight:800;white-space:nowrap}
 .pdf-qtitle{font-weight:800;font-size:10.2pt;line-height:1.22;margin-bottom:3px;color:#10213b}
@@ -84,47 +85,25 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 .pdf-status.correct{background:#dcf4e4;color:#087441}.pdf-status.wrong{background:#fde1e1;color:#b51f1f}.pdf-status.unanswered{background:#f1f3f5;color:#4b5563}
 .pdf-expl{margin-top:4px;background:#eef6ff;border-left:3px solid #2386d7;border-radius:4px;padding:4px 6px;font-size:8.1pt;line-height:1.2;color:#17283c}
 .pdf-expl .en{margin-bottom:3px}.pdf-expl .hi{font-size:8.15pt}
-.pdf-footer{text-align:center;color:#667085;font-size:7.5pt;margin-top:4px}
-.pdf-page{box-sizing:border-box;width:196mm;min-height:283mm;display:flex;flex-direction:column}
-.pdf-page-content{width:100%}
-.pdf-page-spacer{flex:1 1 auto;min-height:0}
-.pdf-page-cards{width:100%}
-.pdf-page-cards .pdf-question{margin-bottom:7px}
-.pdf-page-footer{margin-top:auto;text-align:center;color:#667085;font-size:7.5pt;padding-top:3px}
+.pdf-footer{text-align:center;color:#667085;font-size:7.5pt;margin-top:4px;flex:0 0 auto}
 @media print{
-  @page{size:A4 portrait;margin:8mm 9mm}
-  html,body{background:#fff!important}
-  body.printing > *:not(#pdfReport){display:none!important}
-  body.printing #pdfReport{display:block!important}
-  .pdf-flow{width:100%;box-sizing:border-box}
-  .pdf-question{
-    page-break-inside:avoid!important;
-    break-inside:avoid!important;
-    margin:0 0 6mm 0!important;
-    box-sizing:border-box;
-  }
-  .pdf-head{page-break-after:avoid;break-after:avoid}
-  .pdf-scorebar{page-break-after:avoid;break-after:avoid}
-  .pdf-footer{
-    text-align:center;
-    color:#667085;
-    font-size:7.5pt;
-    margin-top:2mm;
-    padding-top:2mm;
-    border-top:1px solid #e2e8f0;
-    page-break-inside:avoid;
-  }
+ body{background:#fff!important}
+ .container{display:none!important}
+ .pdf-report{display:block!important}
+ @page{size:A4 portrait;margin:7mm}
+ .pdf-page{height:283mm}
+ .pdf-question{page-break-inside:avoid;break-inside:avoid}
 }
 button:disabled{opacity:.55;cursor:default}
-@media print{.pdf-report{font-size:9pt}}\n</style>
+</style>
 </head>
 <body>
 <div class="container">
 <div class="card">
 <div id="home">
 <div class="header">
-<h1 id="quizTitle">📚 Quiz</h1>
-<div class="subtitle" id="quizSubtitle">Loading quiz…</div>
+<h1 id="homeTitle">📚 Quiz</h1>
+<div class="subtitle" id="homeSubtitle">Loading quiz…</div>
 </div>
 <p id="homeText">Answer the questions at your own pace. Your progress is saved automatically on this browser.</p>
 <button id="startBtn" class="start-btn" onclick="startQuiz()">START QUIZ</button>
@@ -174,374 +153,306 @@ let quizId = "";
 let quizDate = "";
 let quizTitle = "";
 let quizSubject = "";
-let quizLanguages = [];
+let quizLanguages = "";
 let questions = [];
-let current = 0;
-let answers = [];
-let completed = false;
-let reviewMode = false;
+;
 
-function esc(value){
-  return String(value ?? "").replace(/[&<>"']/g, c => ({
-    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
-  }[c]));
-}
-
-function getOptionText(q, i){
-  return Array.isArray(q.o) && q.o[i] !== undefined ? q.o[i] : "";
-}
-
-function labelForIndex(i){
-  return i < 26 ? String.fromCharCode(65+i) : String(i+1);
-}
-
-function languageLine(data){
-  if (Array.isArray(data.languages) && data.languages.length) return data.languages.join(" + ");
-  const hasHindi = questions.some(q => q.hi);
-  return hasHindi ? "English + Hindi" : "English";
-}
+let current=0;
 
 async function loadQuiz(){
-  try{
-    const params = new URLSearchParams(location.search);
-    const requested = params.get("date");
-    const today = new Date();
-    const localDate =
-      today.getFullYear()+"-"+
-      String(today.getMonth()+1).padStart(2,"0")+"-"+
-      String(today.getDate()).padStart(2,"0");
-
-    const date = requested && /^\d{4}-\d{2}-\d{2}$/.test(requested)
-      ? requested : localDate;
-
-    // Daily quiz data can be kept in the optional /quizzes/ folder.
-    // For convenience, also accept a JSON file in the repository root.
-    // This makes mobile GitHub uploads easier and keeps the engine flexible.
-    let res = await fetch("quizzes/"+date+".json?v="+Date.now(), {cache:"no-store"});
-    if(!res.ok){
-      res = await fetch(date+".json?v="+Date.now(), {cache:"no-store"});
-    }
-    if(!res.ok) throw new Error("Quiz not found");
-
-    const data = await res.json();
-    questions = Array.isArray(data.questions) ? data.questions : [];
-    if(!questions.length) throw new Error("No questions");
-
-    quizId = data.id || ("quiz_"+date.replaceAll("-","_"));
-    quizDate = data.date || date;
-    quizTitle = data.title || data.subject || "Quiz";
-    quizSubject = data.subject || "";
-    quizLanguages = Array.isArray(data.languages) ? data.languages : [];
-
-    answers = Array(questions.length).fill(null);
-
-    document.title = quizTitle + " — " + quizDate;
-    document.getElementById("quizTitle").textContent = "📚 " + quizTitle;
-    document.getElementById("quizSubtitle").textContent =
-      quizDate + " • " + questions.length + " Questions" +
-      (languageLine(data) ? " • " + languageLine(data) : "");
-    const pdfBrandTitle = document.getElementById("pdfBrandTitle");
-    if(pdfBrandTitle) pdfBrandTitle.textContent = quizTitle;
-
-    const desc = data.description || "Answer the questions at your own pace. Your progress is saved automatically on this browser.";
-    document.getElementById("homeText").textContent = desc;
-
-    document.getElementById("startBtn").disabled = false;
-    init();
-  }catch(err){
-    document.getElementById("homeText").textContent =
-      "This quiz is temporarily unavailable. Please check the quiz link or try again later.";
-    document.getElementById("startBtn").disabled = true;
-  }
+ try{
+  const params=new URLSearchParams(location.search);
+  const requested=params.get('date');
+  const today=new Date();
+  const localDate=today.getFullYear()+"-"+String(today.getMonth()+1).padStart(2,'0')+"-"+String(today.getDate()).padStart(2,'0');
+  const date=(requested && /^\d{4}-\d{2}-\d{2}$/.test(requested)) ? requested : localDate;
+  const res=await fetch(date+'.json?v='+Date.now(),{cache:'no-store'});
+  if(!res.ok) throw new Error('Quiz not found');
+  const data=await res.json();
+  quizId=data.id || ('gs_daily_quiz_'+date.replaceAll('-','_'));
+  quizDate=data.date || date;
+  quizTitle=data.title || 'Quiz';
+  quizSubject=data.subject || '';
+  quizLanguages=Array.isArray(data.languages) ? data.languages.join(' + ') : (data.languages || '');
+  questions=Array.isArray(data.questions)?data.questions:[];
+  if(!questions.length) throw new Error('No questions');
+  document.title=quizTitle+' — '+quizDate;
+  document.getElementById('homeTitle').textContent=(data.icon ? data.icon+' ' : '📚 ')+quizTitle;
+  const meta=[quizDate, questions.length+' Questions', quizLanguages || quizSubject].filter(Boolean);
+  document.getElementById('homeSubtitle').textContent=meta.join(' • ');
+  document.getElementById('startBtn').disabled=false;
+  init();
+ }catch(err){
+  document.getElementById('homeText').textContent='This quiz is temporarily unavailable. Please try again later.';
+  document.getElementById('startBtn').disabled=true;
+ }
 }
+
+let answers=Array(questions.length).fill(null);
+let completed=false;
+let reviewMode=false;
 
 function getSaved(){
-  try { return JSON.parse(localStorage.getItem(quizId)); }
-  catch(e) { return null; }
+ try{return JSON.parse(localStorage.getItem(quizId))}
+ catch(e){return null}
 }
-
 function saveProgress(){
-  try{
-    localStorage.setItem(quizId, JSON.stringify({
-      answers, current, completed,
-      score: completed ? calculateScore() : null,
-      updatedAt: new Date().toISOString()
-    }));
-  }catch(e){}
+ localStorage.setItem(quizId,JSON.stringify({
+  answers:answers,
+  current:current,
+  completed:completed,
+  score:completed ? calculateScore() : null,
+  updatedAt:new Date().toISOString()
+ }));
 }
-
 function calculateScore(){
-  return answers.reduce((n,a,i) =>
-    n + (a !== null && a === questions[i].a ? 1 : 0), 0);
+ return answers.reduce((n,a,i)=>n+(a!==null && a===questions[i].a?1:0),0);
 }
-
 function startQuiz(){
-  const saved = getSaved();
-  if(saved && saved.completed){ openReview(); return; }
-
-  answers = saved && Array.isArray(saved.answers) &&
-            saved.answers.length === questions.length
-    ? saved.answers : Array(questions.length).fill(null);
-
-  current = saved && Number.isInteger(saved.current)
-    ? Math.min(Math.max(saved.current,0), questions.length-1) : 0;
-
-  completed = false;
-  reviewMode = false;
-  document.getElementById("home").classList.add("hidden");
-  document.getElementById("result").classList.add("hidden");
-  document.getElementById("quiz").classList.remove("hidden");
-  render();
+ const saved=getSaved();
+ if(saved && saved.completed){openReview();return}
+ answers=saved && Array.isArray(saved.answers) ? saved.answers : Array(questions.length).fill(null);
+ current=saved && Number.isInteger(saved.current) ? saved.current : 0;
+ completed=false;
+ reviewMode=false;
+ document.getElementById("home").classList.add("hidden");
+ document.getElementById("result").classList.add("hidden");
+ document.getElementById("quiz").classList.remove("hidden");
+ render();
 }
-
-function resumeQuiz(){ startQuiz(); }
+function resumeQuiz(){startQuiz();}
 
 function render(){
-  const x = questions[current];
-  document.getElementById("progress").textContent =
-    `Question ${current+1} / ${questions.length}`;
+ const x=questions[current];
+ document.getElementById("progress").textContent=`Question ${current+1} / ${questions.length}`;
+ document.getElementById("question").textContent=x.q;
+ document.getElementById("questionHi").textContent=x.hi;
 
-  document.getElementById("question").textContent = x.q || "";
-  const hi = document.getElementById("questionHi");
-  hi.textContent = x.hi || "";
-  hi.classList.toggle("hidden", !x.hi);
-
-  const box = document.getElementById("options");
-  box.innerHTML = "";
-
-  (Array.isArray(x.o) ? x.o : []).forEach((text,i) => {
-    const b = document.createElement("button");
-    b.className = "option";
-    b.textContent = labelForIndex(i) + ". " + text;
-
-    if(answers[current] !== null){
-      b.classList.add("disabled");
-      if(i === x.a) b.classList.add("correct");
-      if(i === answers[current] && i !== x.a) b.classList.add("wrong");
-    }
-    b.onclick = () => choose(i);
-    box.appendChild(b);
-  });
-
-  const f = document.getElementById("feedback");
-  if(answers[current] !== null){
-    f.classList.remove("hidden","correct","wrong");
-    const exp = x.e || "";
-    const expHi = x.eh || "";
-    const expBlock = expHi ? `<br><br>${esc(expHi)}` : "";
-
-    if(answers[current] === x.a){
-      f.classList.add("correct");
-      f.innerHTML =
-        `<div class="feedback-title">✅ Correct!</div>` +
-        (exp ? `<b>Explanation:</b> ${esc(exp)}` : "") + expBlock;
-    }else{
-      f.classList.add("wrong");
-      f.innerHTML =
-        `<div class="feedback-title">❌ Wrong!</div>` +
-        `<b>Correct answer:</b> ${esc(labelForIndex(x.a))}. ${esc(getOptionText(x,x.a))}` +
-        (exp ? `<br><br><b>Explanation:</b> ${esc(exp)}` : "") + expBlock;
-    }
-  }else{
-    f.classList.add("hidden");
+ const box=document.getElementById("options");box.innerHTML="";
+ x.o.forEach((text,i)=>{
+  const b=document.createElement("button");
+  b.className="option";
+  b.textContent=String.fromCharCode(65+i)+". "+text;
+  if(answers[current]!==null){
+   b.classList.add("disabled");
+   if(i===x.a)b.classList.add("correct");
+   if(i===answers[current] && i!==x.a)b.classList.add("wrong");
   }
+  b.onclick=()=>choose(i);
+  box.appendChild(b);
+ });
 
-  buildPalette();
+ const f=document.getElementById("feedback");
+ if(answers[current]!==null){
+  f.classList.remove("hidden","correct","wrong");
+  if(answers[current]===x.a){
+   f.classList.add("correct");
+   f.innerHTML=`<div class="feedback-title">✅ Correct!</div><b>Explanation:</b> ${x.e}<br><br>${x.eh}`;
+  }else{
+   f.classList.add("wrong");
+   f.innerHTML=`<div class="feedback-title">❌ Wrong!</div><b>Correct answer:</b> ${String.fromCharCode(65+x.a)}. ${x.o[x.a]}<br><br><b>Explanation:</b> ${x.e}<br><br>${x.eh}`;
+  }
+ }else{
+  f.classList.add("hidden");
+ }
 
-  const prev = document.querySelector(".prev");
-  prev.disabled = current === 0;
-  prev.style.opacity = current === 0 ? ".5" : "1";
-  document.querySelector(".next").textContent =
-    current === questions.length-1 ? "Finish ▶" : "Next ▶";
+ buildPalette();
+
+ const prev=document.querySelector(".prev");
+ prev.disabled=current===0;
+ prev.style.opacity=current===0?".5":"1";
+ document.querySelector(".next").textContent =
+   current===questions.length-1 ? "Finish ▶" : "Next ▶";
 }
 
 function choose(i){
-  if(reviewMode || answers[current] !== null) return;
+ if(reviewMode || answers[current]!==null)return;
+ answers[current]=i;
+ saveProgress();
 
-  answers[current] = i;
+ // Answering Q25 completes the quiz automatically.
+ if(current===questions.length-1){
+  completed=true;
   saveProgress();
-
-  if(current === questions.length-1){
-    completed = true;
-    saveProgress();
-    showResult();
-    return;
-  }
-  render();
+  showResult();
+  return;
+ }
+ render();
 }
-
 function previousQuestion(){
-  if(current > 0){
-    current--;
-    saveProgress();
-    render();
-  }
-}
-
-function nextQuestion(){
-  if(current < questions.length-1){
-    current++;
-    saveProgress();
-    render();
-  }else{
-    completed = true;
-    saveProgress();
-    showResult();
-  }
-}
-
-function jump(i){
-  current = i;
+ if(current>0){
+  current--;
   saveProgress();
   render();
+ }
 }
-
-function buildPalette(){
-  const p = document.getElementById("palette");
-  p.innerHTML = "";
-  questions.forEach((q,i)=>{
-    const b = document.createElement("button");
-    b.className = "pbtn";
-    b.textContent = i+1;
-    if(i === current) b.classList.add("current");
-
-    if(answers[i] !== null){
-      if(answers[i] === q.a) b.classList.add("correct");
-      else b.classList.add("wrong");
-    }
-    b.onclick = () => jump(i);
-    p.appendChild(b);
-  });
-}
-
-function showResult(){
-  const score = calculateScore();
-  const wrong = answers.reduce((n,a,i) =>
-    n + (a !== null && a !== questions[i].a ? 1 : 0), 0);
-  const unanswered = answers.filter(a => a === null).length;
-
-  document.getElementById("quiz").classList.add("hidden");
-  document.getElementById("result").classList.remove("hidden");
-  document.getElementById("score").textContent =
-    `${score} / ${questions.length}`;
-  document.getElementById("resultText").innerHTML =
-    `Correct: <b>${score}</b> &nbsp;|&nbsp; Wrong: <b>${wrong}</b> &nbsp;|&nbsp; Unanswered: <b>${unanswered}</b><br><br>` +
-    `Your attempt is complete on this browser.`;
-}
-
-function openReview(){
-  const saved = getSaved();
-  if(!saved || !saved.completed){ startQuiz(); return; }
-
-  answers = Array.isArray(saved.answers) &&
-            saved.answers.length === questions.length
-    ? saved.answers : Array(questions.length).fill(null);
-  current = 0;
-  completed = true;
-  reviewMode = true;
-
-  document.getElementById("home").classList.add("hidden");
-  document.getElementById("result").classList.add("hidden");
-  document.getElementById("quiz").classList.remove("hidden");
+function nextQuestion(){
+ if(current<questions.length-1){
+  current++;
+  saveProgress();
   render();
+ }
+}
+function jump(i){
+ current=i;
+ saveProgress();
+ render();
+}
+function buildPalette(){
+ const p=document.getElementById("palette");p.innerHTML="";
+ questions.forEach((q,i)=>{
+  const b=document.createElement("button");
+  b.className="pbtn";
+  b.textContent=i+1;
+  if(i===current)b.classList.add("current");
+
+  if(answers[i]!==null){
+   if(answers[i]===q.a)b.classList.add("correct");
+   else b.classList.add("wrong");
+  }
+
+  b.onclick=()=>jump(i);
+  p.appendChild(b);
+ });
+}
+function showResult(){
+ const score=calculateScore();
+ const wrong=answers.reduce((n,a,i)=>n+(a!==null && a!==questions[i].a?1:0),0);
+ const unanswered=answers.filter(a=>a===null).length;
+
+ document.getElementById("quiz").classList.add("hidden");
+ document.getElementById("result").classList.remove("hidden");
+ document.getElementById("score").textContent=`${score} / ${questions.length}`;
+ document.getElementById("resultText").innerHTML=
+  `Correct: <b>${score}</b> &nbsp;|&nbsp; Wrong: <b>${wrong}</b> &nbsp;|&nbsp; Unanswered: <b>${unanswered}</b><br><br>`+
+  `Your attempt is complete on this browser.`;
+}
+function openReview(){
+ const saved=getSaved();
+ if(!saved || !saved.completed){startQuiz();return}
+ answers=Array.isArray(saved.answers)?saved.answers:Array(questions.length).fill(null);
+ current=0;
+ completed=true;
+ reviewMode=true;
+
+ document.getElementById("home").classList.add("hidden");
+ document.getElementById("result").classList.add("hidden");
+ document.getElementById("quiz").classList.remove("hidden");
+ render();
 }
 
 function buildPDFReport(){
-  const score = calculateScore();
-  const wrong = answers.reduce((n,a,i) =>
-    n + (a !== null && a !== questions[i].a ? 1 : 0), 0);
-  const unanswered = answers.filter(a => a === null).length;
-
-  const topicColors = [
-    ["#e5f1ff","#173f73","#b8d2ee"],
-    ["#e7f7ed","#087441","#a8d9bb"],
-    ["#f0eaff","#4d2a91","#cdb9ff"],
-    ["#fff0df","#9a4d00","#ffd19a"],
-    ["#eaf7f5","#08756d","#a9ddd7"],
-    ["#e5f1ff","#173f73","#b8d2ee"]
-  ];
-
-  const head = `<div class="pdf-head">
-    <div>
-      <div class="pdf-brand">📚 SSC Pioneer — <span>${esc(quizTitle)}</span></div>
-      <div class="pdf-meta">${esc(quizDate)} &nbsp; | &nbsp; ${questions.length} Questions &nbsp; | &nbsp; ${esc(quizLanguages.length ? quizLanguages.join(" + ") : (questions.some(q=>q.hi) ? "English + Hindi" : "English"))}</div>
-    </div>
-    <div class="pdf-report-title">Solutions &amp;<br>Performance Report</div>
-  </div>`;
-
-  const scorebar = `<div class="pdf-scorebar">
-    <div class="pdf-legendbox">🟢 Correct answer &nbsp; | &nbsp; 🔴 Your wrong answer &nbsp; | &nbsp; ⚪ Not answered</div>
-    <div class="pdf-summarybox"><b>Score: ${score} / ${questions.length}</b><br>Correct: ${score} &nbsp; | &nbsp; Wrong: ${wrong} &nbsp; | &nbsp; Unanswered: ${unanswered}</div>
-  </div>`;
-
-  const cards = questions.map((x,i)=>{
-    const ua = answers[i];
-    const status = ua === null ? "⚪ Not Answered" : (ua === x.a ? "🟢 Correct" : "🔴 Wrong");
-    const statusClass = ua === null ? "unanswered" : (ua === x.a ? "correct" : "wrong");
-    const pal = topicColors[i % topicColors.length];
-
-    const opts = (Array.isArray(x.o) ? x.o : []).map((text,j)=>{
-      const isCorrect = j === x.a;
-      const isWrong = ua !== null && ua !== x.a && j === ua;
-      const cls = "pdf-option" + (isCorrect ? " pdf-correct" : "") + (isWrong ? " pdf-user-wrong" : "");
-      const mark = isCorrect ? `<span class="mark green">✓</span>` : (isWrong ? `<span class="mark red">×</span>` : "");
-      return `<div class="${cls}">${mark}<b>${esc(labelForIndex(j))}.</b> ${esc(text)}</div>`;
-    }).join("");
-
-    const your = ua === null ? "Not answered" : `${labelForIndex(ua)}. ${getOptionText(x,ua)}`;
-    const correct = `${labelForIndex(x.a)}. ${getOptionText(x,x.a)}`;
-    const cardBg = statusClass === "correct" ? "#effaf2" : (statusClass === "wrong" ? "#fff1f1" : "#f7faff");
-    const cardBorder = statusClass === "correct" ? "#72bf91" : (statusClass === "wrong" ? "#e58b8b" : pal[2]);
-
-    return `<section class="pdf-question" style="border-color:${cardBorder};background:${cardBg}">
-      <div class="pdf-qhead" style="background:${pal[0]};border-bottom-color:${pal[2]}">
-        <span class="pdf-qnum" style="background:${pal[1]}">Q${i+1}</span>
-        <span class="pdf-topic" style="background:${pal[0]};color:${pal[1]};border-color:${pal[2]}">Topic: ${esc(x.topic || quizSubject || "General")}</span>
-      </div>
-      <div class="pdf-qtitle">${esc(x.q || "")}</div>
-      ${x.hi ? `<div class="pdf-hi" lang="hi">${esc(x.hi)}</div>` : ""}
-      <div class="pdf-options">${opts}</div>
-      <div class="pdf-status ${statusClass}">${status} &nbsp; | &nbsp; <b>Your Answer:</b> ${esc(your)} &nbsp; | &nbsp; <b>Correct Answer:</b> ${esc(correct)}</div>
-      ${(x.e || x.eh) ? `<div class="pdf-expl">${x.e ? `<div class="en">📘 <b>Explanation:</b> ${esc(x.e)}</div>` : ""}${x.eh ? `<div class="hi" lang="hi">🔍 <b>व्याख्या:</b> ${esc(x.eh)}</div>` : ""}</div>` : ""}
-    </section>`;
-  }).join("");
-
-  // IMPORTANT: Do not create artificial A4-height page containers.
-  // Let the browser's print engine flow complete question cards naturally
-  // from one page to the next. This fills every page with as many cards as
-  // can actually fit and only moves a card when it cannot fit.
-  document.getElementById("pdfReport").innerHTML =
-    `<div class="pdf-flow">${head}${scorebar}${cards}<div class="pdf-footer">SSC Pioneer • ${esc(quizTitle)} • Solutions &amp; Performance Report</div></div>`;
+ const score=calculateScore();
+ const wrong=answers.reduce((n,a,i)=>n+(a!==null && a!==questions[i].a?1:0),0);
+ const unanswered=answers.filter(a=>a===null).length;
+ const topicColors=[
+  ['#e5f1ff','#173f73','#b8d2ee'],['#e7f7ed','#087441','#a8d9bb'],['#f0eaff','#4d2a91','#cdb9ff'],
+  ['#fff0df','#9a4d00','#ffd19a'],['#eaf7f5','#08756d','#a9ddd7'],['#e5f1ff','#173f73','#b8d2ee']
+ ];
+ const langText=quizLanguages || '';
+ const meta=[quizDate, questions.length+' Questions', langText || quizSubject].filter(Boolean).join(' &nbsp; | &nbsp; ');
+ const header=`<div class="pdf-head"><div><div class="pdf-brand">📚 SSC Pioneer — <span>${escapeHtml(quizTitle)}</span></div><div class="pdf-meta">${meta}</div></div><div class="pdf-report-title">Solutions &amp;<br>Performance Report</div></div>`;
+ const scorebar=`<div class="pdf-scorebar"><div class="pdf-legendbox">🟢 Correct answer &nbsp; | &nbsp; 🔴 Your wrong answer &nbsp; | &nbsp; ⚪ Not answered</div><div class="pdf-summarybox"><b>Score: ${score} / ${questions.length}</b><br>Correct: ${score} &nbsp; | &nbsp; Wrong: ${wrong} &nbsp; | &nbsp; Unanswered: ${unanswered}</div></div>`;
+ const cards=questions.map((x,i)=>{
+   const ua=answers[i];
+   const status=ua===null ? '⚪ Not Answered' : (ua===x.a?'🟢 Correct':'🔴 Wrong');
+   const statusClass=ua===null?'unanswered':(ua===x.a?'correct':'wrong');
+   const pal=topicColors[i%topicColors.length];
+   const opts=x.o.map((text,j)=>{
+     const isCorrect=j===x.a;
+     const isWrong=ua!==null && ua!==x.a && j===ua;
+     let cls='pdf-option'+(isCorrect?' pdf-correct':'')+(isWrong?' pdf-user-wrong':'');
+     let mark=isCorrect?`<span class="mark green">✓</span>`:(isWrong?`<span class="mark red">×</span>`:'');
+     return `<div class="${cls}">${mark}<b>${String.fromCharCode(65+j)}.</b> ${escapeHtml(text)}</div>`;
+   }).join('');
+   const your=ua===null ? 'Not answered' : `${String.fromCharCode(65+ua)}. ${x.o[ua]}`;
+   const correct=`${String.fromCharCode(65+x.a)}. ${x.o[x.a]}`;
+   const cardBg=statusClass==='correct'?'#effaf2':(statusClass==='wrong'?'#fff1f1':'#f7faff');
+   const cardBorder=statusClass==='correct'?'#72bf91':(statusClass==='wrong'?'#e58b8b':pal[2]);
+   return `<section class="pdf-question" style="border-color:${cardBorder};background:${cardBg}">`+
+    `<div class="pdf-qhead" style="background:${pal[0]};border-bottom-color:${pal[2]}"><span class="pdf-qnum" style="background:${pal[1]}">Q${i+1}</span><span class="pdf-topic" style="background:${pal[0]};color:${pal[1]};border-color:${pal[2]}">Topic: ${escapeHtml(x.topic||'General')}</span></div>`+
+    `<div class="pdf-qtitle">${escapeHtml(x.q||'')}</div><div class="pdf-hi" lang="hi">${escapeHtml(x.hi||'')}</div>`+
+    `<div class="pdf-options">${opts}</div>`+
+    `<div class="pdf-status ${statusClass}">${status} &nbsp; | &nbsp; <b>Your Answer:</b> ${escapeHtml(your)} &nbsp; | &nbsp; <b>Correct Answer:</b> ${escapeHtml(correct)}</div>`+
+    `<div class="pdf-expl"><div class="en">📘 <b>Explanation:</b> ${escapeHtml(x.e||'')}</div><div class="hi" lang="hi">🔍 <b>व्याख्या:</b> ${escapeHtml(x.eh||'')}</div></div>`+
+   `</section>`;
+ }).join('');
+ document.getElementById('pdfReport').innerHTML=`<div class="pdf-wrap">${header}${scorebar}<div id="pdfPagesHost"></div></div>`;
+ const host=document.getElementById('pdfPagesHost');
+ const temp=document.createElement('div');
+ temp.className='pdf-page-questions';
+ temp.style.position='absolute'; temp.style.left='-100000px'; temp.style.top='0'; temp.style.width='100%';
+ temp.innerHTML=cards;
+ document.body.appendChild(temp);
+ const pageHeight=283*3.7795275591; // CSS px per mm at 96dpi
+ const headerHeight=document.querySelector('#pdfReport .pdf-head').getBoundingClientRect().height;
+ const scoreHeight=document.querySelector('#pdfReport .pdf-scorebar').getBoundingClientRect().height;
+ const footerAllowance=18;
+ const available=Math.max(100,pageHeight-headerHeight-scoreHeight-footerAllowance-10);
+ const cardEls=Array.from(temp.children);
+ // Build pages from measured natural heights. Header/scorebar appear only on page 1.
+ host.innerHTML='';
+ let used=0, pageQuestions=[];
+ function startPage(){
+   const pg=document.createElement('div'); pg.className='pdf-page';
+   if(host.children.length===0){ pg.insertAdjacentHTML('beforeend',header+scorebar); }
+   const qw=document.createElement('div'); qw.className='pdf-page-questions'; pg.appendChild(qw); host.appendChild(pg); return {pg,qw,used:0};
+ }
+ let state=startPage();
+ cardEls.forEach(card=>{
+   const h=card.getBoundingClientRect().height;
+   const gap=state.used>0?7:0;
+   const limit=(host.children.length===1)?firstAvailable:laterAvailable;
+   if(state.used>0 && state.used+gap+h>limit){ state=startPage(); }
+   state.qw.appendChild(card.cloneNode(true));
+   state.used+= (state.used>0?7:0)+h;
+ });
+ temp.remove();
+ // Remove the duplicated header/scorebar from the outer wrapper; pages now own them.
+ document.querySelector('#pdfReport .pdf-wrap').innerHTML=host.outerHTML;
+ // Slightly expand cards on each page to consume useful remaining vertical space.
+ document.querySelectorAll('#pdfReport .pdf-page').forEach((pg,idx)=>{
+   const qw=pg.querySelector('.pdf-page-questions');
+   if(!qw) return;
+   const qs=Array.from(qw.children);
+   if(!qs.length) return;
+   const fixed=qs.reduce((s,q)=>s+q.getBoundingClientRect().height,0)+Math.max(0,qs.length-1)*7;
+   const pageAvail=pageHeight-(idx===0?(headerHeight+scoreHeight+footerAllowance):footerAllowance);
+   const extra=Math.max(0,pageAvail-fixed);
+   // Spread only a moderate amount of free space. The remaining few pixels are intentionally left as breathing room.
+   const grow=Math.min(24,extra/qs.length);
+   qs.forEach(q=>q.style.paddingTop=`${6+grow/4}px`);
+ });
 }
-
+function escapeHtml(v){
+ return String(v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
 function downloadPDF(){
-  if(!completed) return;
-  buildPDFReport();
-  document.body.classList.add("printing");
-  setTimeout(()=>{
-    window.print();
-    setTimeout(()=>document.body.classList.remove("printing"),500);
-  },50);
+ if(!completed){return}
+ buildPDFReport();
+ document.body.classList.add('printing');
+ setTimeout(()=>{
+  window.print();
+  setTimeout(()=>document.body.classList.remove('printing'),500);
+ },50);
 }
 
 function init(){
-  const saved = getSaved();
+ const saved=getSaved();
 
-  if(saved && saved.completed){
-    document.getElementById("startBtn").classList.add("hidden");
-    document.getElementById("resumeBtn").classList.add("hidden");
-    document.getElementById("reviewHomeBtn").classList.remove("hidden");
-    document.getElementById("homeText").textContent =
-      "This quiz has already been completed on this browser. You cannot reattempt it here; you can view all questions, answers and explanations.";
-  }else if(saved && Array.isArray(saved.answers) &&
-           saved.answers.some(a => a !== null)){
-    document.getElementById("startBtn").classList.add("hidden");
-    document.getElementById("resumeBtn").classList.remove("hidden");
-    document.getElementById("homeText").textContent =
-      "You have an unfinished attempt on this browser. Your progress is saved automatically.";
-  }
+ if(saved && saved.completed){
+  document.getElementById("startBtn").classList.add("hidden");
+  document.getElementById("resumeBtn").classList.add("hidden");
+  document.getElementById("reviewHomeBtn").classList.remove("hidden");
+  document.getElementById("homeText").textContent=
+   "This quiz has already been completed on this browser. You cannot reattempt it here; you can view all questions, answers and explanations.";
+ }else if(saved && Array.isArray(saved.answers) && saved.answers.some(a=>a!==null)){
+  document.getElementById("startBtn").classList.add("hidden");
+  document.getElementById("resumeBtn").classList.remove("hidden");
+  document.getElementById("homeText").textContent=
+   "You have an unfinished attempt on this browser. Your progress is saved automatically.";
+ }
 }
-
 loadQuiz();
 </script>
 </body>
