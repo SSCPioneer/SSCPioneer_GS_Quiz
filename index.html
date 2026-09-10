@@ -92,46 +92,27 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 .pdf-page-cards .pdf-question{margin-bottom:7px}
 .pdf-page-footer{margin-top:auto;text-align:center;color:#667085;font-size:7.5pt;padding-top:3px}
 @media print{
-  @page{size:A4 portrait;margin:9mm 10mm}
+  @page{size:A4 portrait;margin:8mm 9mm}
   html,body{background:#fff!important}
   body.printing > *:not(#pdfReport){display:none!important}
   body.printing #pdfReport{display:block!important}
-  .pdf-wrap{width:100%;max-width:none}
-  .pdf-page{
-    position:relative;
-    width:100%;
-    min-height:279mm;
-    box-sizing:border-box;
-    page-break-after:always;
-    break-after:page;
-    overflow:hidden;
-  }
-  .pdf-page:last-child{page-break-after:auto;break-after:auto}
-  .pdf-page-content{
-    width:100%;
-    box-sizing:border-box;
-    padding-bottom:8mm;
-  }
-  .pdf-page-content.pdf-only-cards{
-    padding-top:0;
-  }
-  .pdf-page-footer{
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    height:7mm;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:7.5pt;
-    color:#64748b;
-    border-top:1px solid #e2e8f0;
-  }
+  .pdf-flow{width:100%;box-sizing:border-box}
   .pdf-question{
+    page-break-inside:avoid!important;
+    break-inside:avoid!important;
+    margin:0 0 6mm 0!important;
+    box-sizing:border-box;
+  }
+  .pdf-head{page-break-after:avoid;break-after:avoid}
+  .pdf-scorebar{page-break-after:avoid;break-after:avoid}
+  .pdf-footer{
+    text-align:center;
+    color:#667085;
+    font-size:7.5pt;
+    margin-top:2mm;
+    padding-top:2mm;
+    border-top:1px solid #e2e8f0;
     page-break-inside:avoid;
-    break-inside:avoid;
-    margin-bottom:7px;
   }
 }
 button:disabled{opacity:.55;cursor:default}
@@ -523,102 +504,14 @@ function buildPDFReport(){
       <div class="pdf-status ${statusClass}">${status} &nbsp; | &nbsp; <b>Your Answer:</b> ${esc(your)} &nbsp; | &nbsp; <b>Correct Answer:</b> ${esc(correct)}</div>
       ${(x.e || x.eh) ? `<div class="pdf-expl">${x.e ? `<div class="en">📘 <b>Explanation:</b> ${esc(x.e)}</div>` : ""}${x.eh ? `<div class="hi" lang="hi">🔍 <b>व्याख्या:</b> ${esc(x.eh)}</div>` : ""}</div>` : ""}
     </section>`;
-  });
+  }).join("");
 
-  const root = document.getElementById("pdfReport");
-  root.innerHTML = `<div class="pdf-wrap"></div>`;
-  const wrap = root.firstElementChild;
-
-  // Build actual page containers. Each page is the printable A4 content area.
-  // Cards are measured and packed without ever splitting a question.
-  const PAGE_H = 279 * 3.779527559; // A4 297mm - 9mm top - 9mm bottom
-  const FOOTER_H = 22;
-  const GAP_MIN = 7;
-
-  let pageNo = 0;
-  let page = null;
-  let cardArea = null;
-  let pageCards = [];
-
-  function makePage(first){
-    pageNo++;
-    page = document.createElement("div");
-    page.className = "pdf-page";
-    page.innerHTML = `<div class="pdf-page-content"></div>
-      <div class="pdf-page-footer">SSC Pioneer • ${esc(quizTitle)} • Solutions &amp; Performance Report</div>`;
-    wrap.appendChild(page);
-
-    cardArea = page.querySelector(".pdf-page-content");
-    cardArea.innerHTML = first ? head + scorebar : "";
-    if(!first) cardArea.classList.add("pdf-only-cards");
-    pageCards = [];
-  }
-
-  makePage(true);
-
-  cards.forEach(cardHTML=>{
-    const holder = document.createElement("div");
-    holder.innerHTML = cardHTML;
-    const card = holder.firstElementChild;
-
-    // Temporarily use the actual card dimensions at the final print width.
-    cardArea.appendChild(card);
-    const used = cardArea.scrollHeight;
-    const allowed = PAGE_H - FOOTER_H;
-
-    if(pageCards.length && used > allowed){
-      cardArea.removeChild(card);
-      balancePDFPage(cardArea, PAGE_H - FOOTER_H);
-      makePage(false);
-      cardArea.appendChild(card);
-      pageCards.push(card);
-    }else{
-      pageCards.push(card);
-      // If one unusually tall card is taller than the available area,
-      // keep it intact rather than splitting it.
-    }
-  });
-
-  balancePDFPage(cardArea, PAGE_H - FOOTER_H);
-  // Balance every completed page after packing.
-  Array.from(wrap.querySelectorAll(".pdf-page")).forEach(pg=>{
-    const area = pg.querySelector(".pdf-page-content");
-    if(area !== cardArea) balancePDFPage(area, PAGE_H - FOOTER_H);
-  });
-}
-
-function balancePDFPage(area, targetHeight){
-  const cards = Array.from(area.querySelectorAll(".pdf-question"));
-  if(!cards.length) return;
-
-  // Reset first so this function can be safely called more than once.
-  cards.forEach(c=>{
-    c.style.marginTop = "0px";
-    c.style.marginBottom = GAP_MIN + "px";
-    c.style.paddingTop = "";
-    c.style.paddingBottom = "";
-  });
-
-  // Measure the actual rendered content, including header/summary on page 1.
-  let used = area.scrollHeight;
-  let leftover = Math.max(0, targetHeight - used);
-
-  if(leftover <= 2) return;
-
-  if(cards.length > 1){
-    // Use ALL meaningful remaining space as intentional separation between
-    // complete cards. This is the key visual-balance rule.
-    const extra = leftover / (cards.length - 1);
-    cards.forEach((c,i)=>{
-      if(i < cards.length - 1) c.style.marginBottom = (GAP_MIN + extra) + "px";
-    });
-  }else{
-    // If a page has only one card, don't leave a giant empty lower half.
-    // Give the card balanced internal breathing room instead.
-    const extra = leftover / 2;
-    cards[0].style.paddingTop = (6 + extra) + "px";
-    cards[0].style.paddingBottom = (6 + extra) + "px";
-  }
+  // IMPORTANT: Do not create artificial A4-height page containers.
+  // Let the browser's print engine flow complete question cards naturally
+  // from one page to the next. This fills every page with as many cards as
+  // can actually fit and only moves a card when it cannot fit.
+  document.getElementById("pdfReport").innerHTML =
+    `<div class="pdf-flow">${head}${scorebar}${cards}<div class="pdf-footer">SSC Pioneer • ${esc(quizTitle)} • Solutions &amp; Performance Report</div></div>`;
 }
 
 function downloadPDF(){
