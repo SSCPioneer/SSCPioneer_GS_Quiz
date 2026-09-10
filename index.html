@@ -217,7 +217,8 @@ async function loadQuiz(){
     document.getElementById("quizSubtitle").textContent =
       quizDate + " • " + questions.length + " Questions" +
       (languageLine(data) ? " • " + languageLine(data) : "");
-    document.getElementById("pdfBrandTitle").textContent = quizTitle;
+    const pdfBrandTitle = document.getElementById("pdfBrandTitle");
+    if(pdfBrandTitle) pdfBrandTitle.textContent = quizTitle;
 
     const desc = data.description || "Answer the questions at your own pace. Your progress is saved automatically on this browser.";
     document.getElementById("homeText").textContent = desc;
