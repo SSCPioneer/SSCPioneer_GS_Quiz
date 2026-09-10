@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GS Quiz Test</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .quiz {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .option {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: white;
+      text-align: left;
+      font-size: 16px;
+    }
+
+    .option:active {
+      background: #eee;
+    }
+
+    #result {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      background: #f0f0f0;
+      display: none;
+    }
+
+    #next {
+      width: 100%;
+      padding: 14px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 10px;
+      background: #222;
+      color: white;
+      font-size: 16px;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="quiz">
+
+  <h1>📚 GS Quiz</h1>
+
+  <p><b>Question 1 / 2</b></p>
+
+  <p>
+    What is the capital of India?<br>
+    <small>भारत की राजधानी क्या है?</small>
+  </p>
+
+  <button class="option" onclick="answer(0)">A. Mumbai / मुंबई</button>
+  <button class="option" onclick="answer(1)">B. New Delhi / नई दिल्ली</button>
+  <button class="option" onclick="answer(2)">C. Kolkata / कोलकाता</button>
+  <button class="option" onclick="answer(3)">D. Chennai / चेन्नई</button>
+
+  <div id="result"></div>
+
+  <button id="next" onclick="nextQuestion()">NEXT →</button>
+
+</div>
+
+<script>
+
+let question = 1;
+
+function answer(choice) {
+
+  const result = document.getElementById("result");
+
+  if (choice === 1) {
+
+    result.innerHTML =
+      "✅ <b>Correct!</b><br><br>" +
+      "💡 <b>Explanation:</b> New Delhi is the capital of India.";
+
+  } else {
+
+    result.innerHTML =
+      "❌ <b>Wrong!</b><br><br>" +
+      "✅ <b>Correct Answer:</b> B. New Delhi / नई दिल्ली<br><br>" +
+      "💡 <b>Explanation:</b> New Delhi is the capital of India.";
+
+  }
+
+  result.style.display = "block";
+  document.getElementById("next").style.display = "block";
+
+}
+
+function nextQuestion() {
+
+  document.querySelector(".quiz").innerHTML = `
+
+    <h1>📚 GS Quiz</h1>
+
+    <p><b>Question 2 / 2</b></p>
+
+    <p>
+      Which planet is known as the Red Planet?<br>
+      <small>किस ग्रह को लाल ग्रह कहा जाता है?</small>
+    </p>
+
+    <button class="option" onclick="secondAnswer(0)">A. Earth / पृथ्वी</button>
+    <button class="option" onclick="secondAnswer(1)">B. Mars / मंगल</button>
+    <button class="option" onclick="secondAnswer(2)">C. Jupiter / बृहस्पति</button>
+    <button class="option" onclick="secondAnswer(3)">D. Venus / शुक्र</button>
+
+    <div id="result"></div>
+
+  `;
+
+}
+
+function secondAnswer(choice) {
+
+  const result = document.getElementById("result");
+
+  if (choice === 1) {
+
+    result.innerHTML =
+      "✅ <b>Correct!</b><br><br>" +
+      "💡 <b>Explanation:</b> Mars appears reddish because of iron minerals on its surface.";
+
+  } else {
+
+    result.innerHTML =
+      "❌ <b>Wrong!</b><br><br>" +
+      "✅ <b>Correct Answer:</b> B. Mars / मंगल<br><br>" +
+      "💡 <b>Explanation:</b> Mars appears reddish because of iron minerals on its surface.";
+
+  }
+
+  result.style.display = "block";
+
+}
+
+</script>
+
+</body>
+</html>
