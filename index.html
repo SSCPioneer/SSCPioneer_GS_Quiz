@@ -93,6 +93,18 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 .pdf-page-cards{width:100%}
 .pdf-page-footer{position:absolute;left:0;right:0;bottom:0;text-align:center;color:#667085;font-size:7.5pt;padding-top:3px}
 
+
+/* PDF QUESTION STATUS COLORS — exactly three card colours */
+.pdf-report .pdf-question.status-correct{background:#e8f7ed !important;border-color:#a8d9bb !important}
+.pdf-report .pdf-question.status-correct .pdf-qhead{background:#e8f7ed !important;border-bottom-color:#a8d9bb !important}
+.pdf-report .pdf-question.status-correct .pdf-topic{background:#e8f7ed !important;color:#087441 !important;border-color:#a8d9bb !important}
+.pdf-report .pdf-question.status-wrong{background:#fdeaea !important;border-color:#e58b8b !important}
+.pdf-report .pdf-question.status-wrong .pdf-qhead{background:#fdeaea !important;border-bottom-color:#e58b8b !important}
+.pdf-report .pdf-question.status-wrong .pdf-topic{background:#fdeaea !important;color:#b51f1f !important;border-color:#e58b8b !important}
+.pdf-report .pdf-question.status-unanswered{background:#eaf3ff !important;border-color:#b8d2ee !important}
+.pdf-report .pdf-question.status-unanswered .pdf-qhead{background:#eaf3ff !important;border-bottom-color:#b8d2ee !important}
+.pdf-report .pdf-question.status-unanswered .pdf-topic{background:#eaf3ff !important;color:#173f73 !important;border-color:#b8d2ee !important}
+
 @media print{
  body{background:#fff!important}
  .container{display:none!important}
@@ -515,7 +527,7 @@ function buildPDFReport(){
     const correct = `${labelForIndex(x.a)}. ${getOptionText(x,x.a)}`;
     const cardBg = pal[0];
     const cardBorder = pal[2];
-    return `<section class="pdf-question" style="border-color:${cardBorder};background:${cardBg}">
+    return `<section class="pdf-question status-${statusClass}" style="border-color:${cardBorder};background:${cardBg}">
       <div class="pdf-qhead" style="background:${pal[0]};border-bottom-color:${pal[2]}">
         <span class="pdf-qnum" style="background:${pal[1]}">Q${i+1}</span>
         <span class="pdf-topic" style="background:${pal[0]};color:${pal[1]};border-color:${pal[2]}">Topic: ${esc(x.topic || quizSubject || "General")}</span>
