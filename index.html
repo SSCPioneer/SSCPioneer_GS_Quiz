@@ -67,6 +67,10 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 /* PDF / print report — colorful SSC Pioneer solution booklet */
 .pdf-report{display:none;background:#fff;color:#10213b;font-family:Arial,Helvetica,sans-serif;padding:0;line-height:1.25;font-size:9.2pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .pdf-wrap{width:100%}
+ .pdf-page{page-break-after:always;break-after:page;transform-origin:top left;width:100%;overflow:hidden;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.pdf-page:last-child{page-break-after:auto;break-after:auto}
+ .pdf-brand-fill{margin-top:8px;border:1.5px solid #a9cdef;border-radius:12px;background:linear-gradient(135deg,#e9f3ff,#fff0f0);padding:16px 12px;text-align:center;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.pdf-brand-fill .brand-main{font-size:22pt;font-weight:900;letter-spacing:.5px;color:#173f73}.pdf-brand-fill .brand-main span{color:#c62828}.pdf-brand-fill .brand-sub{margin-top:4px;font-size:10pt;font-weight:800;color:#385574}.pdf-brand-fill .brand-line{margin-top:7px;font-size:8.5pt;font-weight:700;color:#667085}
 .pdf-head{display:grid;grid-template-columns:1fr 150px;gap:10px;align-items:center;margin-bottom:7px}
 .pdf-brand{font-size:20pt;font-weight:900;letter-spacing:-.4px;color:#173f73}
 .pdf-brand span{color:#c62828}
@@ -408,7 +412,7 @@ function render(){
       f.innerHTML='<div class="feedback-title">✅ Correct!</div>'+explanationHTML(x);
     }else{
       f.classList.add("wrong");
-      f.innerHTML='<div class="feedback-title">❌ Wrong!</div><div class="ex-block"><div class="ex-heading">Correct Answer</div><div class="ex-text"><b>'+esc(labelForIndex(x.a))+'.</b> '+esc(getOptionText(x,x.a))+'</div></div>'+explanationHTML(x);
+      f.innerHTML='<div class="feedback-title">❌ Wrong!</div>'+explanationHTML(x);
     }
   }else f.classList.add("hidden");
 
@@ -572,7 +576,7 @@ function buildPDFReport(){
       return '<div class="'+cls+'">'+mark+'<b>'+esc(labelForIndex(j))+'.</b> '+esc(text)+'</div>';
     }).join('');
     const your=ua===null?'Not answered':labelForIndex(ua)+'. '+getOptionText(x,ua), correct=labelForIndex(x.a)+'. '+getOptionText(x,x.a);
-    html+='<section class="pdf-question" style="border-color:'+cardBorder+';background:'+cardBg+'">';
+    html+='<section class="pdf-question" data-q="'+i+'" style="border-color:'+cardBorder+';background:'+cardBg+'">';
     html+='<div class="pdf-qhead" style="background:'+headBg+';border-bottom-color:'+cardBorder+'"><span class="pdf-qnum" style="background:'+headColor+'">Q'+(i+1)+'</span><span class="pdf-topic" style="background:'+headBg+';color:'+headColor+';border-color:'+cardBorder+'">Topic: '+esc(x.topic||quizSubject||'General')+'</span></div>';
     html+='<div class="pdf-instruction">'+esc(x.instruction||'')+'</div>';
     if(x.passage) html+='<div class="pdf-passage">'+esc(x.passage)+'</div>';
@@ -588,7 +592,61 @@ function buildPDFReport(){
     html+='</section>';
   });
   html+='<div class="pdf-footer">SSC Pioneer • '+esc(quizTitle)+' • Solutions &amp; Performance Report</div></div>';
-  document.getElementById('pdfReport').innerHTML=html;
+  const report=document.getElementById('pdfReport');
+  report.innerHTML=html;
+  // Temporarily expose the report so the browser can measure natural card heights.
+  const oldDisplay=report.style.display, oldPos=report.style.position, oldVis=report.style.visibility;
+  report.style.display='block'; report.style.position='absolute'; report.style.left='-100000px'; report.style.top='0'; report.style.visibility='hidden';
+  const wrap=report.querySelector('.pdf-wrap');
+  const cards=[...report.querySelectorAll('.pdf-question')];
+  const page1Head=(report.querySelector('.pdf-head')?.offsetHeight||0)+(report.querySelector('.pdf-scorebar')?.offsetHeight||0)+8;
+  const usable=1000, usableFirst=Math.max(820,usable-page1Head);
+  const groups=[]; let group=[], used=0, cap=usableFirst;
+  cards.forEach(card=>{
+    const h=card.offsetHeight+7;
+    if(group.length && used+h>cap){ groups.push(group); group=[]; used=0; cap=usable; }
+    group.push(card); used+=h;
+  });
+  if(group.length) groups.push(group);
+  const footer=report.querySelector('.pdf-footer');
+  // Rebuild into explicit A4 pages. Sparse pages get a proportional enlargement of the whole card content.
+  const pages=[];
+  groups.forEach((g,idx)=>{
+    const page=document.createElement('div'); page.className='pdf-page';
+    if(idx===0){
+      const head=report.querySelector('.pdf-head'); const scorebar=report.querySelector('.pdf-scorebar');
+      if(head) page.appendChild(head.cloneNode(true));
+      if(scorebar) page.appendChild(scorebar.cloneNode(true));
+    }
+    g.forEach(card=>page.appendChild(card));
+    pages.push(page);
+  });
+  if(footer) pages[pages.length-1].appendChild(footer.cloneNode(true));
+  wrap.innerHTML=''; pages.forEach(page=>wrap.appendChild(page));
+  // Use the available page area: enlarge the whole card content first; if a page is still very sparse,
+  // add a compact, colourful SSC Pioneer brand panel rather than leaving a large blank area.
+  pages.forEach((page,idx)=>{
+    const target=idx===0?1000:1040;
+    let natural=page.scrollHeight;
+    const maxScale=1.24;
+    const maxNaturalAtScale=target/maxScale;
+    if(natural < maxNaturalAtScale-40){
+      const filler=document.createElement('div');
+      filler.className='pdf-brand-fill';
+      filler.innerHTML='<div class="brand-main">📚 SSC <span>Pioneer</span></div><div class="brand-sub">Daily GS Quiz • Solutions &amp; Performance Report</div><div class="brand-line">Practice • Analyse • Improve</div>';
+      const remaining=Math.min(180, Math.max(0, maxNaturalAtScale-natural-10));
+      filler.style.minHeight=remaining+'px';
+      page.appendChild(filler);
+      natural=page.scrollHeight;
+    }
+    const scale=Math.min(maxScale, Math.max(1, target/Math.max(natural,1)));
+    if(scale>1.02){
+      page.style.transform='scale('+scale.toFixed(3)+')';
+      page.style.width=(100/scale).toFixed(3)+'%';
+      page.style.height=(natural*scale+2)+'px';
+    }
+  });
+  report.style.display=oldDisplay; report.style.position=oldPos; report.style.left=''; report.style.top=''; report.style.visibility=oldVis;
 }
 function downloadPDF(){
   if(!completed) return;
