@@ -20,7 +20,8 @@
       "a": 3,
       "e": "The Present Perfect Continuous tense is correctly used for an action that began in the recent past and is still ongoing. The standard expression is “under the assumption.”",
       "eh": "",
-      "topic": "Sentence Improvement"
+      "topic": "Sentence Improvement",
+      "instruction": "Choose the option that provides the correct/improved form of the sentence."
     },
     {
       "id": 2,
@@ -36,7 +37,30 @@
       "e": "The misspelled word is “critisism”; the correct spelling is “criticism.”",
       "eh": "",
       "topic": "Spelling Error",
-      "vocab": true
+      "vocab": true,
+      "instruction": "Identify the option that contains an incorrectly spelt word.",
+      "vocab_details": {
+        "target": {
+          "word": "Criticism",
+          "meaning": "The expression of disapproval or the analysis and evaluation of something.",
+          "synonyms": [
+            "Disapproval",
+            "Censure",
+            "Reproach"
+          ],
+          "antonyms": [
+            "Praise",
+            "Approval",
+            "Commendation"
+          ]
+        },
+        "options": {
+          "A": "Criticism: Correct spelling; the expression of disapproval or evaluation.",
+          "B": "Critisism: Incorrect spelling; the correct spelling is “criticism.”",
+          "C": "Critisizm: Incorrect spelling; the correct spelling is “criticism.”",
+          "D": "Criticismm: Incorrect spelling; the correct spelling is “criticism.”"
+        }
+      }
     },
     {
       "id": 3,
@@ -51,7 +75,8 @@
       "a": 2,
       "e": "The true subject is the plural noun “committee members,” so the verb must be plural: “were explicitly reluctant.”",
       "eh": "",
-      "topic": "Spotting the Error"
+      "topic": "Spotting the Error",
+      "instruction": "Identify the part of the sentence that contains a grammatical error."
     },
     {
       "id": 4,
@@ -64,9 +89,10 @@
         "The lead defense attorney asked the prime witness if he can state with absolute certainty that he observed the suspect leaving the residential complex before midnight."
       ],
       "a": 1,
-      "e": "In an indirect interrogative, “Can” changes to “could,” and the earlier action “observed” is represented as “had observed.” “Asked” takes “if/whether,” not “that whether.”",
+      "e": "In indirect speech, “Can” changes to “could” after the past reporting verb “asked.” The earlier observation is appropriately represented by “had observed.” “Asked” takes “if/whether,” not “that whether.”",
       "eh": "",
-      "topic": "Direct & Indirect Speech"
+      "topic": "Direct & Indirect Speech",
+      "instruction": "Choose the correct indirect-speech form of the given question."
     },
     {
       "id": 5,
@@ -104,7 +130,8 @@
           "C": "Detached: Separate or disconnected (contextual synonym).",
           "D": "Prejudiced: Having or showing a dislike or distrust derived from fixed preconceived ideas."
         }
-      }
+      },
+      "instruction": "Choose the word that is opposite in meaning to the highlighted word “insular”."
     },
     {
       "id": 6,
@@ -119,7 +146,8 @@
       "a": 0,
       "e": "R establishes the broad topic, P introduces the specific obstacle, Q presents the solution, and S gives the consequence of not using that solution. Hence, RPQS.",
       "eh": "",
-      "topic": "Para Jumbles"
+      "topic": "Para Jumbles",
+      "instruction": "Arrange P, Q, R and S in the most logical sequence."
     },
     {
       "id": 7,
@@ -143,7 +171,8 @@
           "C": "To stay vigilant against internal corporate espionage.",
           "D": "To voice complaints aggressively to the board."
         }
-      }
+      },
+      "instruction": "Choose the option that best expresses the meaning of the idiom “keep their chin up”."
     },
     {
       "id": 8,
@@ -158,7 +187,8 @@
       "a": 0,
       "e": "“Despite” is not followed by “of.” Use “Despite the unrelenting downpour” or “In spite of the unrelenting downpour.”",
       "eh": "",
-      "topic": "Spotting the Error"
+      "topic": "Spotting the Error",
+      "instruction": "Identify the part of the sentence that contains a grammatical error."
     },
     {
       "id": 9,
@@ -173,7 +203,8 @@
       "a": 1,
       "e": "Simple Past active changes to Object + was/were + V3 + by Subject. Hence, “was meticulously designed” is correct.",
       "eh": "",
-      "topic": "Active & Passive Voice"
+      "topic": "Active & Passive Voice",
+      "instruction": "Choose the correct passive-voice form of the sentence."
     },
     {
       "id": 10,
@@ -188,7 +219,8 @@
       "a": 0,
       "e": "A negative imperative can be reported as “warned/told + object + not to.” “Will” changes to “would,” and “next month” becomes “the following month.”",
       "eh": "",
-      "topic": "Direct & Indirect Speech"
+      "topic": "Direct & Indirect Speech",
+      "instruction": "Choose the correct indirect-speech form of the given statement."
     },
     {
       "id": 11,
@@ -207,12 +239,13 @@
       "vocab": true,
       "vocab_details": {
         "options": {
-          "A": "Maverick: An unorthodox or independent-minded person. Synonyms: Nonconformist, Dissenter, Rebel. Antonyms: Conformist, Traditionalist.",
-          "B": "Altruist: A person unselfishly concerned for or devoted to the welfare of others. Synonyms: Philanthropist, Benefactor. Antonyms: Egoist, Misanthrope.",
-          "C": "Sycophant: A person who acts obsequiously toward someone important to gain advantage. Synonyms: Toady, Flatterer, Bootlicker. Antonyms: Critic, Detractor.",
-          "D": "Epicure: A person who takes particular pleasure in fine food and drink. Synonyms: Gourmet, Connoisseur. Antonyms: Glutton."
+          "A": "Maverick: An unconventional or independent-minded person. Synonyms: Nonconformist, Dissenter, Rebel. Antonyms: Conformist, Traditionalist, Conventionalist.",
+          "B": "Altruist: A person concerned with the welfare of others. Synonyms: Philanthropist, Benefactor, Humanitarian. Antonyms: Egoist, Selfish person, Misanthrope.",
+          "C": "Sycophant: A person who flatters someone important for personal advantage. Synonyms: Toady, Flatterer, Bootlicker. Antonyms: Critic, Detractor, Opponent.",
+          "D": "Epicure: A person who takes particular pleasure in fine food and drink. Synonyms: Gourmet, Connoisseur, Epicurean. Antonyms: Ascetic, Abstemious person, Teetotaller."
         }
-      }
+      },
+      "instruction": "Choose the word that best fits the given description."
     },
     {
       "id": 12,
@@ -222,12 +255,13 @@
         "Not only did the investigative journalist uncover",
         "a massive financial fraud involving the offshore accounts,",
         "but he also revealed how deeply entrenched",
-        "corruption was in the administrative machinery. (No Error)"
+        "No Error"
       ],
       "a": 3,
       "e": "The sentence correctly uses inversion after “Not only” and the correlative pair “not only ... but ... also.” There is no grammatical error.",
       "eh": "",
-      "topic": "Spotting the Error"
+      "topic": "Spotting the Error",
+      "instruction": "Identify the part of the sentence that contains an error. Choose (D) if there is no error."
     },
     {
       "id": 13,
@@ -247,54 +281,60 @@
       "vocab_details": {
         "words": {
           "Sovereign": {
-            "meaning": "Possessing supreme or ultimate power.",
+            "meaning": "Possessing supreme or ultimate power; independent.",
             "synonyms": [
-              "Autonomous",
-              "Independent"
+              "Supreme",
+              "Independent",
+              "Autonomous"
             ],
             "antonyms": [
+              "Subordinate",
               "Dependent",
               "Subjugated"
             ]
           },
           "Obsolescence": {
-            "meaning": "The state of being driven out of use or becoming obsolete.",
+            "meaning": "The state of becoming outdated or no longer useful.",
             "synonyms": [
-              "Archaism",
-              "Outmodedness"
+              "Outdatedness",
+              "Obsoleteness",
+              "Desuetude"
             ],
             "antonyms": [
               "Modernity",
+              "Currency",
               "Novelty"
             ]
           },
           "Hypotheses": {
-            "meaning": "Plural form of hypothesis; proposed explanations made on the basis of limited evidence.",
+            "meaning": "Plural of hypothesis; proposed explanations based on limited evidence.",
             "synonyms": [
               "Theories",
-              "Premises",
-              "Postulates"
+              "Postulates",
+              "Suppositions"
             ],
             "antonyms": [
               "Facts",
-              "Certainties"
+              "Certainties",
+              "Proofs"
             ]
           },
           "Magnanimous": {
-            "meaning": "Generous or forgiving, especially toward a rival or less powerful person.",
+            "meaning": "Generous or forgiving, especially toward a rival.",
             "synonyms": [
-              "Beneficent",
+              "Generous",
               "Noble",
-              "Altruistic"
+              "Big-hearted"
             ],
             "antonyms": [
-              "Mean-spirited",
+              "Petty",
               "Vindictive",
-              "Petty"
+              "Mean-spirited"
             ]
           }
         }
-      }
+      },
+      "instruction": "Identify the option that contains a spelling error."
     },
     {
       "id": 14,
@@ -332,7 +372,8 @@
           "C": "Authentic: Of undisputed origin and genuine authenticity.",
           "D": "Equivocal: Open to more than one interpretation; ambiguous."
         }
-      }
+      },
+      "instruction": "Choose the word that is closest in meaning to the highlighted word “tenuous”."
     },
     {
       "id": 15,
@@ -347,7 +388,8 @@
       "a": 1,
       "e": "“Call off” means to cancel an event, meeting, or transaction. The extra “on” is incorrect.",
       "eh": "",
-      "topic": "Sentence Improvement"
+      "topic": "Sentence Improvement",
+      "instruction": "Choose the option that correctly improves the sentence."
     },
     {
       "id": 16,
@@ -357,12 +399,13 @@
         "Had the meteorological department issued",
         "the emergency severe weather warning a few hours prior,",
         "the coastal administrative authorities would have successfully evacuated",
-        "the vulnerable low-lying regions. (No Error)"
+        "No Error"
       ],
       "a": 3,
       "e": "This is a correctly formed third conditional in inversion: “Had + Subject + V3 ..., Subject + would have + V3.” There is no error.",
       "eh": "",
-      "topic": "Spotting the Error"
+      "topic": "Spotting the Error",
+      "instruction": "Identify the part of the sentence that contains an error. Choose (D) if there is no error."
     },
     {
       "id": 17,
@@ -377,7 +420,8 @@
       "a": 0,
       "e": "Present Continuous active changes to Object + is/are/am + being + V3 + by Subject. Hence, “are being closely monitored” is correct.",
       "eh": "",
-      "topic": "Active & Passive Voice"
+      "topic": "Active & Passive Voice",
+      "instruction": "Choose the correct passive-voice form of the sentence."
     },
     {
       "id": 18,
@@ -401,7 +445,8 @@
           "C": "A well-fortified strategy.",
           "D": "A dynamic milestone achieved unexpectedly."
         }
-      }
+      },
+      "instruction": "Choose the option that best expresses the meaning of the idiom “castle in the air”."
     },
     {
       "id": 19,
@@ -416,7 +461,8 @@
       "a": 2,
       "e": "R introduces the macro theme, Q adds another development, P refers back to the demographic shift, and S gives the consequence. Hence, RPQS.",
       "eh": "",
-      "topic": "Para Jumbles"
+      "topic": "Para Jumbles",
+      "instruction": "Arrange P, Q, R and S in the most logical sequence."
     },
     {
       "id": 20,
@@ -454,7 +500,8 @@
           "C": "Intricate: Very complicated or detailed.",
           "D": "Comprehensive: Complete; including all or nearly all elements or aspects of something."
         }
-      }
+      },
+      "instruction": "Choose the word that is closest in meaning to the highlighted word “lucid”."
     },
     {
       "id": 21,
@@ -470,7 +517,8 @@
       "a": 1,
       "e": "Since machine models train on historical human data, they naturally preserve and pass down old patterns. Perpetuate means to make something continue indefinitely.\nAlleviate / Mitigate: To make a problem less severe.\nRepudiate: To refuse to accept or reject something.",
       "eh": "",
-      "topic": "Cloze Test"
+      "topic": "Cloze Test",
+      "instruction": "Read the passage and choose the most appropriate word for blank (21)."
     },
     {
       "id": 22,
@@ -486,7 +534,8 @@
       "a": 0,
       "e": "A feedback loop actively grows or increases the power of systemic issues over time. Hence, bias is amplified (increased in strength or intensity).\nDiminished / Truncated / Neutralized: To decrease, cut short, or negate the power of something.",
       "eh": "",
-      "topic": "Cloze Test"
+      "topic": "Cloze Test",
+      "instruction": "Read the passage and choose the most appropriate word for blank (22)."
     },
     {
       "id": 23,
@@ -502,7 +551,8 @@
       "a": 1,
       "e": "Algorithmic bias compromises the core of fairness. Equitable means fair, impartial, and just.\nWhimsical / Arbitrary: Acting based on random choices or personal whim instead of system logic.",
       "eh": "",
-      "topic": "Cloze Test"
+      "topic": "Cloze Test",
+      "instruction": "Read the passage and choose the most appropriate word for blank (23)."
     },
     {
       "id": 24,
@@ -518,7 +568,8 @@
       "a": 1,
       "e": "To avoid machine errors, a human must review and monitor the output. Oversight means the action of overseeing or supervising something.\nNegligence / Ignorance: Lack of proper care or knowledge.",
       "eh": "",
-      "topic": "Cloze Test"
+      "topic": "Cloze Test",
+      "instruction": "Read the passage and choose the most appropriate word for blank (24)."
     },
     {
       "id": 25,
@@ -532,9 +583,10 @@
         "transient"
       ],
       "a": 2,
-      "e": "A binding legal verdict is legally enforceable. Tentative and transient indicate something provisional or temporary.",
+      "e": "A binding legal verdict is legally obligatory or enforceable. “Tentative” and “transient” indicate something provisional or temporary, while “superficial” means lacking depth.",
       "eh": "",
-      "topic": "Cloze Test"
+      "topic": "Cloze Test",
+      "instruction": "Read the passage and choose the most appropriate word for blank (25)."
     }
   ]
 }
