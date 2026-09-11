@@ -457,12 +457,39 @@ function buildPDFReport(){
  });
  temp.remove();
 
- // IMPORTANT: cards remain at natural content height. Any unused space is left
- // for the footer/branding rather than being injected into the question cards.
- document.querySelectorAll('#pdfReport .pdf-question').forEach(el=>{
-   el.style.flex='0 0 auto';
-   el.style.minHeight='0';
-   el.style.boxSizing='border-box';
+ // PAGE-FILL RULE:
+ // 1) Pack questions by their natural content height first.
+ // 2) If a page contains 3 or more complete questions, use the remaining
+ //    question-area space to proportionally enlarge those cards, producing the
+ //    full-page look of the reference without changing typography/content.
+ // 3) If only 1–2 questions fit, do NOT make them huge; keep natural heights
+ //    and let the SSC Pioneer footer/branding occupy the remaining space.
+ document.querySelectorAll('#pdfReport .pdf-page').forEach((pg, pageIndex)=>{
+   const qw=pg.querySelector('.pdf-page-questions');
+   if(!qw) return;
+   const items=Array.from(qw.querySelectorAll('.pdf-question'));
+   items.forEach(el=>{
+     el.style.flex='0 0 auto';
+     el.style.minHeight='0';
+     el.style.boxSizing='border-box';
+   });
+   if(items.length < 3) return;
+
+   const naturalTotal=items.reduce((sum,el)=>sum+el.getBoundingClientRect().height,0);
+   const gap=parseFloat(getComputedStyle(qw).gap)||0;
+   const gaps=gap*Math.max(0,items.length-1);
+   const target=qw.getBoundingClientRect().height;
+   const extra=Math.max(0,target-naturalTotal-gaps);
+   if(extra <= 2 || naturalTotal <= 0) return;
+
+   // Proportional expansion: longer question cards receive slightly more of
+   // the available space, so the original visual hierarchy is preserved.
+   items.forEach(el=>{
+     const h=el.getBoundingClientRect().height;
+     const add=extra*(h/naturalTotal);
+     el.style.height=Math.ceil(h+add)+'px';
+     el.style.flex='0 0 auto';
+   });
  });
  report.style.display='block';
  report.style.visibility='visible';
