@@ -12,8 +12,17 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 .header{text-align:center;margin-bottom:18px}
 .header h1{font-size:32px;margin:8px 0}
 .subtitle{color:#555}
-.progress{font-weight:700;font-size:18px;margin-bottom:16px}
-.question{font-size:20px;line-height:1.45;margin-bottom:8px}
+.quiz-topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px;position:relative}.progress{font-weight:800;font-size:20px;margin:0}.menu-btn{width:44px;height:44px;border:0;border-radius:10px;background:#111;color:#fff;font-size:26px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center}.palette-panel{margin:0 0 14px;padding:14px;background:#f8fafc;border:1px solid #d9e2ec;border-radius:14px}.palette-title{font-weight:800;font-size:18px;margin:0 0 10px}.palette{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.palette-actions{display:flex;gap:8px;margin-top:12px}.palette-actions button{flex:1;border:0;border-radius:10px;padding:10px;font-size:15px;font-weight:700;cursor:pointer}.palette-actions .finish-menu{background:#111;color:#fff}.palette-panel .legend{margin-top:10px}
+.instruction{font-size:18px;line-height:1.45;font-weight:800;margin-bottom:8px}
+.question{font-size:20px;line-height:1.45;margin-bottom:10px}
+.question-passage{background:#f5f8fc;border:1px solid #d9e2ec;border-radius:12px;padding:12px 13px;margin:10px 0 12px;font-size:17px;line-height:1.55}
+.explanation{margin-top:16px}
+.ex-block{margin-top:10px}
+.ex-heading{font-weight:800;font-size:17px;margin-bottom:4px}
+.ex-text{line-height:1.55;margin-bottom:8px}
+.ex-option{margin:7px 0;padding:9px 10px;background:#fff;border:1px solid #d9e2ec;border-radius:9px;line-height:1.45}
+.ex-vocab{margin-top:10px;padding-top:10px;border-top:1px solid #d9e2ec}
+.ex-list{margin:4px 0 0 20px;padding:0;line-height:1.5}
 .hindi{font-size:18px;line-height:1.5;margin-bottom:18px}
 .option{width:100%;text-align:left;background:#fff;border:2px solid #d5d9df;border-radius:13px;padding:14px 15px;margin:10px 0;font-size:17px;line-height:1.4;cursor:pointer}
 .option:active{transform:scale(.99)}
@@ -29,8 +38,7 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 .prev{background:#e7ebf0;flex:1}
 .next{background:#111;color:#fff;flex:1}
 .hidden{display:none}
-.palette-title{font-weight:700;font-size:18px;margin:20px 0 10px}
-.palette{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+
 .pbtn{border:2px solid #d5d9df;background:#fff;border-radius:10px;padding:11px 5px;font-weight:700;font-size:16px;cursor:pointer}
 .pbtn.current{border-color:#111}
 .pbtn.correct{background:#dff4e6;border-color:#2e9d57}
@@ -50,6 +58,8 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
  .card{padding:16px;border-radius:15px}
  .header h1{font-size:28px}
  .question{font-size:19px}
+ .instruction{font-size:17px}
+ .question-passage{font-size:16px}
  .hindi{font-size:17px}
  .option{font-size:16px}
 }
@@ -72,7 +82,10 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 .pdf-qhead{display:flex;justify-content:space-between;align-items:center;gap:7px;margin:-6px -7px 5px;padding:5px 7px;background:#e5f1ff;border-bottom:1px solid #c2ddf7;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .pdf-qnum{background:#173f73;color:#fff;border-radius:7px;padding:3px 8px;font-size:11pt;font-weight:900;white-space:nowrap}
 .pdf-topic{background:#d9ecff;color:#173f73;border:1px solid #a9cdef;border-radius:10px;padding:3px 7px;font-size:7.7pt;font-weight:800;white-space:nowrap}
-.pdf-qtitle{font-weight:800;font-size:10.2pt;line-height:1.22;margin-bottom:3px;color:#10213b}
+.pdf-instruction{font-weight:900;font-size:9.6pt;line-height:1.22;margin:2px 0 4px;color:#10213b}
+.pdf-qtitle{font-weight:800;font-size:10.2pt;line-height:1.22;margin-bottom:4px;color:#10213b}
+.pdf-passage{background:#f5f8fc;border:1px solid #d9e2ec;border-radius:5px;padding:4px 6px;margin:4px 0 5px;font-size:8.2pt;line-height:1.25}
+.pdf-expl .ex-heading{font-weight:900;font-size:8.6pt;margin-top:4px;margin-bottom:2px}.pdf-expl .ex-text{margin-bottom:3px}.pdf-expl .ex-option{margin:3px 0;padding:3px 4px;background:#fff;border:1px solid #d9e2ec;border-radius:3px;line-height:1.18}.pdf-expl .ex-vocab{margin-top:4px;padding-top:4px;border-top:1px solid #cdd8e3}.pdf-expl .ex-list{margin:2px 0 2px 15px;line-height:1.2}
 .pdf-question .pdf-hi{font-size:9.1pt;line-height:1.25;margin-bottom:4px;color:#17283c}
 .pdf-options{display:grid;grid-template-columns:1fr 1fr;gap:3px 5px;margin-top:4px}
 .pdf-option{padding:4px 5px;border:1px solid #d5dce5;border-radius:5px;background:#fff;font-size:8.4pt;line-height:1.18;min-height:29px}
@@ -110,24 +123,38 @@ button:disabled{opacity:.55;cursor:default}
 </div>
 
 <div id="quiz" class="hidden">
-<div class="progress" id="progress"></div>
+<div class="quiz-topbar">
+  <div class="progress" id="progress"></div>
+  <button class="menu-btn" id="paletteToggle" onclick="togglePalette()" aria-label="Open question palette" aria-expanded="false">☰</button>
+</div>
+
+<div id="palettePanel" class="palette-panel hidden">
+  <div class="palette-title">Question Palette</div>
+  <div id="palette" class="palette"></div>
+  <div class="legend">
+    <span><i class="dot current"></i> Current</span>
+    <span><i class="dot correct"></i> Correct</span>
+    <span><i class="dot wrong"></i> Wrong</span>
+  </div>
+  <div class="palette-actions">
+    <button onclick="previousQuestion();closePalette()">◀ Previous</button>
+    <button onclick="nextQuestion();closePalette()">Next ▶</button>
+    <button class="finish-menu" onclick="finishQuiz();closePalette()">Finish</button>
+  </div>
+</div>
+
+<div class="instruction" id="instruction"></div>
+<div class="question-passage hidden" id="questionPassage"></div>
 <div class="question" id="question"></div>
 <div class="hindi" id="questionHi"></div>
 <div id="options"></div>
-<div id="feedback" class="feedback hidden"></div>
-
-<div class="palette-title">Question Palette</div>
-<div id="palette" class="palette"></div>
-<div class="legend">
-<span><i class="dot current"></i> Current</span>
-<span><i class="dot correct"></i> Correct</span>
-<span><i class="dot wrong"></i> Wrong</span>
-</div>
 
 <div class="nav">
 <button class="prev" onclick="previousQuestion()">◀ Previous</button>
 <button class="next" onclick="nextQuestion()">Next ▶</button>
 </div>
+
+<div id="feedback" class="feedback hidden"></div>
 
 </div>
 
@@ -298,65 +325,79 @@ function startQuiz(){
 
 function resumeQuiz(){ startQuiz(); }
 
+function explanationHTML(x){
+  const ex = x.explanation || {};
+  let h = '<div class="explanation">';
+  if(ex.why_correct){
+    h += '<div class="ex-block"><div class="ex-heading">Why is it correct?</div><div class="ex-text">'+esc(ex.why_correct)+'</div></div>';
+  }
+  if(ex.option_explanations){
+    h += '<div class="ex-block"><div class="ex-heading">Option meanings</div>';
+    ['A','B','C','D'].forEach(L=>{ if(ex.option_explanations[L]) h += '<div class="ex-option"><b>'+L+'.</b> '+esc(ex.option_explanations[L])+'</div>'; });
+    h += '</div>';
+  }
+  if(ex.target_vocabulary){
+    const v=ex.target_vocabulary;
+    h += '<div class="ex-vocab"><div class="ex-heading">Target vocabulary: '+esc(v.word)+'</div>';
+    h += '<div class="ex-text"><b>Meaning:</b> '+esc(v.meaning)+'<br><b>Hindi:</b> '+esc(v.hindi_meaning)+'</div>';
+    h += '<div class="ex-heading">3 Synonyms</div><ol class="ex-list">'+v.synonyms.map(esc).map(z=>'<li>'+z+'</li>').join('')+'</ol>';
+    h += '<div class="ex-heading">3 Antonyms</div><ol class="ex-list">'+v.antonyms.map(esc).map(z=>'<li>'+z+'</li>').join('')+'</ol></div>';
+  }
+  if(ex.hindi_explanation){
+    h += '<div class="ex-block"><div class="ex-heading">Hindi Explanation</div><div class="ex-text" lang="hi">'+esc(ex.hindi_explanation)+'</div></div>';
+  }
+  h += '</div>';
+  return h;
+}
+
 function render(){
   const x = questions[current];
-  document.getElementById("progress").textContent =
-    `Question ${current+1} / ${questions.length}`;
+  document.getElementById("progress").textContent = `Question ${current+1} / ${questions.length}`;
 
-  document.getElementById("question").textContent = x.q || "";
+  const ins=document.getElementById("instruction");
+  ins.textContent=x.instruction || "";
+  ins.classList.toggle("hidden",!x.instruction);
+
+  const qEl=document.getElementById("question");
+  qEl.textContent=x.q || "";
+  qEl.classList.toggle("hidden",!x.q);
+
+  const pEl=document.getElementById("questionPassage");
+  if(x.passage){ pEl.textContent=x.passage; pEl.classList.remove("hidden"); }
+  else { pEl.textContent=""; pEl.classList.add("hidden"); }
+
   const hi = document.getElementById("questionHi");
   hi.textContent = x.hi || "";
   hi.classList.toggle("hidden", !x.hi);
 
-  const box = document.getElementById("options");
-  box.innerHTML = "";
-
-  (Array.isArray(x.o) ? x.o : []).forEach((text,i) => {
-    const b = document.createElement("button");
-    b.className = "option";
-    b.textContent = labelForIndex(i) + ". " + text;
-
-    if(answers[current] !== null){
+  const box = document.getElementById("options"); box.innerHTML = "";
+  (Array.isArray(x.o) ? x.o : []).forEach((text,i)=>{
+    const b=document.createElement("button"); b.className="option";
+    b.textContent=labelForIndex(i)+". "+text;
+    if(answers[current]!==null){
       b.classList.add("disabled");
-      if(i === x.a) b.classList.add("correct");
-      if(i === answers[current] && i !== x.a) b.classList.add("wrong");
+      if(i===x.a) b.classList.add("correct");
+      if(i===answers[current] && i!==x.a) b.classList.add("wrong");
     }
-    b.onclick = () => choose(i);
-    box.appendChild(b);
+    b.onclick=()=>choose(i); box.appendChild(b);
   });
 
-  const f = document.getElementById("feedback");
-  if(answers[current] !== null){
+  const f=document.getElementById("feedback");
+  if(answers[current]!==null){
     f.classList.remove("hidden","correct","wrong");
-    const exp = x.e || "";
-    const expHi = x.eh || "";
-    const expBlock = expHi ? `<br><br>${esc(expHi)}` : "";
-
-    if(answers[current] === x.a){
+    if(answers[current]===x.a){
       f.classList.add("correct");
-      f.innerHTML =
-        `<div class="feedback-title">✅ Correct!</div>` +
-        (exp ? `<b>Explanation:</b> ${esc(exp)}` : "") + expBlock;
+      f.innerHTML='<div class="feedback-title">✅ Correct!</div>'+explanationHTML(x);
     }else{
       f.classList.add("wrong");
-      f.innerHTML =
-        `<div class="feedback-title">❌ Wrong!</div>` +
-        `<b>Correct answer:</b> ${esc(labelForIndex(x.a))}. ${esc(getOptionText(x,x.a))}` +
-        (exp ? `<br><br><b>Explanation:</b> ${esc(exp)}` : "") + expBlock;
+      f.innerHTML='<div class="feedback-title">❌ Wrong!</div><div class="ex-block"><div class="ex-heading">Correct Answer</div><div class="ex-text"><b>'+esc(labelForIndex(x.a))+'.</b> '+esc(getOptionText(x,x.a))+'</div></div>'+explanationHTML(x);
     }
-  }else{
-    f.classList.add("hidden");
-  }
+  }else f.classList.add("hidden");
 
   buildPalette();
-
-  const prev = document.querySelector(".prev");
-  prev.disabled = current === 0;
-  prev.style.opacity = current === 0 ? ".5" : "1";
-  document.querySelector(".next").textContent =
-    current === questions.length-1 ? "Finish ▶" : "Next ▶";
+  const prev=document.querySelector(".prev"); prev.disabled=current===0; prev.style.opacity=current===0?".5":"1";
+  document.querySelector(".next").textContent=current===questions.length-1?"Finish ▶":"Next ▶";
 }
-
 function choose(i){
   if(reviewMode || answers[current] !== null) return;
 
@@ -396,6 +437,27 @@ function jump(i){
   current = i;
   saveProgress();
   render();
+}
+
+function togglePalette(){
+  const panel=document.getElementById("palettePanel");
+  const btn=document.getElementById("paletteToggle");
+  const isOpen=!panel.classList.contains("hidden");
+  panel.classList.toggle("hidden",isOpen);
+  btn.setAttribute("aria-expanded",String(!isOpen));
+}
+
+function closePalette(){
+  const panel=document.getElementById("palettePanel");
+  const btn=document.getElementById("paletteToggle");
+  panel.classList.add("hidden");
+  btn.setAttribute("aria-expanded","false");
+}
+
+function finishQuiz(){
+  completed=true;
+  saveProgress();
+  showResult();
 }
 
 function buildPalette(){
@@ -448,85 +510,57 @@ function openReview(){
   render();
 }
 
-function buildPDFReport(){
-  const score = calculateScore();
-  const wrong = answers.reduce((n,a,i) =>
-    n + (a !== null && a !== questions[i].a ? 1 : 0), 0);
-  const unanswered = answers.filter(a => a === null).length;
-
-  const topicColors = [
-    ["#e5f1ff","#173f73","#b8d2ee"],
-    ["#e7f7ed","#087441","#a8d9bb"],
-    ["#f0eaff","#4d2a91","#cdb9ff"],
-    ["#fff0df","#9a4d00","#ffd19a"],
-    ["#eaf7f5","#08756d","#a9ddd7"],
-    ["#e5f1ff","#173f73","#b8d2ee"]
-  ];
-
-  let html = `<div class="pdf-wrap">`;
-  html += `<div class="pdf-head">
-    <div>
-      <div class="pdf-brand">📚 SSC Pioneer — <span>${esc(quizTitle)}</span></div>
-      <div class="pdf-meta">${esc(quizDate)} &nbsp; | &nbsp; ${questions.length} Questions &nbsp; | &nbsp; ${esc(quizLanguages.length ? quizLanguages.join(" + ") : (questions.some(q=>q.hi) ? "English + Hindi" : "English"))}</div>
-    </div>
-    <div class="pdf-report-title">Solutions &amp;<br>Performance Report</div>
-  </div>`;
-
-  html += `<div class="pdf-scorebar">
-    <div class="pdf-legendbox">🟢 Correct answer &nbsp; | &nbsp; 🔴 Your wrong answer &nbsp; | &nbsp; ⚪ Not answered</div>
-    <div class="pdf-summarybox"><b>Score: ${score} / ${questions.length}</b><br>Correct: ${score} &nbsp; | &nbsp; Wrong: ${wrong} &nbsp; | &nbsp; Unanswered: ${unanswered}</div>
-  </div>`;
-
-  questions.forEach((x,i)=>{
-    const ua = answers[i];
-    const status = ua === null ? "⚪ Not Answered" :
-                   (ua === x.a ? "🟢 Correct" : "🔴 Wrong");
-    const statusClass = ua === null ? "unanswered" :
-                        (ua === x.a ? "correct" : "wrong");
-    const pal = topicColors[i % topicColors.length];
-    const opts = (Array.isArray(x.o) ? x.o : []).map((text,j)=>{
-      const isCorrect = j === x.a;
-      const isWrong = ua !== null && ua !== x.a && j === ua;
-      let cls = "pdf-option" +
-        (isCorrect ? " pdf-correct" : "") +
-        (isWrong ? " pdf-user-wrong" : "");
-      let mark = isCorrect
-        ? `<span class="mark green">✓</span>`
-        : (isWrong ? `<span class="mark red">×</span>` : "");
-      return `<div class="${cls}">${mark}<b>${esc(labelForIndex(j))}.</b> ${esc(text)}</div>`;
-    }).join("");
-
-    const your = ua === null ? "Not answered" :
-      `${labelForIndex(ua)}. ${getOptionText(x,ua)}`;
-    const correct = `${labelForIndex(x.a)}. ${getOptionText(x,x.a)}`;
-    const cardBg = statusClass === "correct" ? "#effaf2" :
-                   (statusClass === "wrong" ? "#fff1f1" : "#f7faff");
-    const cardBorder = statusClass === "correct" ? "#72bf91" :
-                       (statusClass === "wrong" ? "#e58b8b" : pal[2]);
-
-    html += `<section class="pdf-question" style="border-color:${cardBorder};background:${cardBg}">`;
-    html += `<div class="pdf-qhead" style="background:${pal[0]};border-bottom-color:${pal[2]}">
-      <span class="pdf-qnum" style="background:${pal[1]}">Q${i+1}</span>
-      <span class="pdf-topic" style="background:${pal[0]};color:${pal[1]};border-color:${pal[2]}">Topic: ${esc(x.topic || quizSubject || "General")}</span>
-    </div>`;
-    html += `<div class="pdf-qtitle">${esc(x.q || "")}</div>`;
-    if(x.hi) html += `<div class="pdf-hi" lang="hi">${esc(x.hi)}</div>`;
-    html += `<div class="pdf-options">${opts}</div>`;
-    html += `<div class="pdf-status ${statusClass}">${status} &nbsp; | &nbsp; <b>Your Answer:</b> ${esc(your)} &nbsp; | &nbsp; <b>Correct Answer:</b> ${esc(correct)}</div>`;
-
-    if(x.e || x.eh){
-      html += `<div class="pdf-expl">`;
-      if(x.e) html += `<div class="en">📘 <b>Explanation:</b> ${esc(x.e)}</div>`;
-      if(x.eh) html += `<div class="hi" lang="hi">🔍 <b>व्याख्या:</b> ${esc(x.eh)}</div>`;
-      html += `</div>`;
-    }
-    html += `</section>`;
-  });
-
-  html += `<div class="pdf-footer">SSC Pioneer • ${esc(quizTitle)} • Solutions &amp; Performance Report</div></div>`;
-  document.getElementById("pdfReport").innerHTML = html;
+function pdfExplanationHTML(x){
+  const ex=x.explanation||{}; let h='';
+  if(ex.why_correct) h+='<div class="ex-heading">Why is it correct?</div><div class="ex-text">'+esc(ex.why_correct)+'</div>';
+  if(ex.option_explanations){
+    h+='<div class="ex-heading">Option meanings</div>';
+    ['A','B','C','D'].forEach(L=>{if(ex.option_explanations[L])h+='<div class="ex-option"><b>'+L+'.</b> '+esc(ex.option_explanations[L])+'</div>';});
+  }
+  if(ex.target_vocabulary){const v=ex.target_vocabulary;
+    h+='<div class="ex-vocab"><div class="ex-heading">Target vocabulary: '+esc(v.word)+'</div><div class="ex-text"><b>Meaning:</b> '+esc(v.meaning)+'<br><b>Hindi:</b> '+esc(v.hindi_meaning)+'</div>';
+    h+='<div class="ex-heading">3 Synonyms</div><ol class="ex-list">'+v.synonyms.map(esc).map(z=>'<li>'+z+'</li>').join('')+'</ol>';
+    h+='<div class="ex-heading">3 Antonyms</div><ol class="ex-list">'+v.antonyms.map(esc).map(z=>'<li>'+z+'</li>').join('')+'</ol></div>';
+  }
+  if(ex.hindi_explanation) h+='<div class="ex-heading">Hindi Explanation</div><div class="ex-text" lang="hi">'+esc(ex.hindi_explanation)+'</div>';
+  return h;
 }
 
+function buildPDFReport(){
+  const score=calculateScore();
+  const wrong=answers.reduce((n,a,i)=>n+(a!==null&&a!==questions[i].a?1:0),0);
+  const unanswered=answers.filter(a=>a===null).length;
+  let html='<div class="pdf-wrap">';
+  html+='<div class="pdf-head"><div><div class="pdf-brand">📚 SSC Pioneer — <span>'+esc(quizTitle)+'</span></div><div class="pdf-meta">'+esc(quizDate)+' &nbsp; | &nbsp; '+questions.length+' Questions &nbsp; | &nbsp; '+esc(quizLanguages.length?quizLanguages.join(' + '):(questions.some(q=>q.hi)?'English + Hindi':'English'))+'</div></div><div class="pdf-report-title">Solutions &amp;<br>Performance Report</div></div>';
+  html+='<div class="pdf-scorebar"><div class="pdf-legendbox">🟢 Correct answer &nbsp; | &nbsp; 🔴 Your wrong answer &nbsp; | &nbsp; 🔵 Not answered</div><div class="pdf-summarybox"><b>Score: '+score+' / '+questions.length+'</b><br>Correct: '+score+' &nbsp; | &nbsp; Wrong: '+wrong+' &nbsp; | &nbsp; Unanswered: '+unanswered+'</div></div>';
+  questions.forEach((x,i)=>{
+    const ua=answers[i], status=ua===null?'⚪ Not Answered':(ua===x.a?'🟢 Correct':'🔴 Wrong');
+    const statusClass=ua===null?'unanswered':(ua===x.a?'correct':'wrong');
+    const cardBg=statusClass==='correct'?'#effaf2':(statusClass==='wrong'?'#fff1f1':'#f7faff');
+    const cardBorder=statusClass==='correct'?'#72bf91':(statusClass==='wrong'?'#e58b8b':'#72a9df');
+    const headBg=statusClass==='correct'?'#dcf4e4':(statusClass==='wrong'?'#fde1e1':'#e3f0ff');
+    const headColor=statusClass==='correct'?'#087441':(statusClass==='wrong'?'#b51f1f':'#173f73');
+    const opts=(Array.isArray(x.o)?x.o:[]).map((text,j)=>{
+      const isCorrect=j===x.a, isWrong=ua!==null&&ua!==x.a&&j===ua;
+      let cls='pdf-option'+(isCorrect?' pdf-correct':'')+(isWrong?' pdf-user-wrong':'');
+      let mark=isCorrect?'<span class="mark green">✓</span>':(isWrong?'<span class="mark red">×</span>':'');
+      return '<div class="'+cls+'">'+mark+'<b>'+esc(labelForIndex(j))+'.</b> '+esc(text)+'</div>';
+    }).join('');
+    const your=ua===null?'Not answered':labelForIndex(ua)+'. '+getOptionText(x,ua), correct=labelForIndex(x.a)+'. '+getOptionText(x,x.a);
+    html+='<section class="pdf-question" style="border-color:'+cardBorder+';background:'+cardBg+'">';
+    html+='<div class="pdf-qhead" style="background:'+headBg+';border-bottom-color:'+cardBorder+'"><span class="pdf-qnum" style="background:'+headColor+'">Q'+(i+1)+'</span><span class="pdf-topic" style="background:'+headBg+';color:'+headColor+';border-color:'+cardBorder+'">Topic: '+esc(x.topic||quizSubject||'General')+'</span></div>';
+    html+='<div class="pdf-instruction">'+esc(x.instruction||'')+'</div>';
+    if(x.passage) html+='<div class="pdf-passage">'+esc(x.passage)+'</div>';
+    html+='<div class="pdf-qtitle">'+esc(x.q||'')+'</div>';
+    if(x.hi) html+='<div class="pdf-hi" lang="hi">'+esc(x.hi)+'</div>';
+    html+='<div class="pdf-options">'+opts+'</div>';
+    html+='<div class="pdf-status '+statusClass+'">'+status+' &nbsp; | &nbsp; <b>Your Answer:</b> '+esc(your)+' &nbsp; | &nbsp; <b>Correct Answer:</b> '+esc(correct)+'</div>';
+    html+='<div class="pdf-expl">'+pdfExplanationHTML(x)+'</div>';
+    html+='</section>';
+  });
+  html+='<div class="pdf-footer">SSC Pioneer • '+esc(quizTitle)+' • Solutions &amp; Performance Report</div></div>';
+  document.getElementById('pdfReport').innerHTML=html;
+}
 function downloadPDF(){
   if(!completed) return;
   buildPDFReport();
