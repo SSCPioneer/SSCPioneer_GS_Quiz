@@ -1,263 +1,466 @@
 {
-  "id": "english_2026_09_11_day1_set1",
+  "id": "english_2026_09_11_day1_set1_original",
   "date": "2026-09-11",
   "title": "SSC CGL Tier-1 English (Eduquity Pattern) — Day 1: Set 1",
   "subject": "English Language",
   "languages": [
     "English"
   ],
-  "description": "SSC CGL Tier-1 English practice set — 25 questions.",
   "questions": [
     {
-      "q": "Choose the most appropriate improvement for the underlined part: The committee members have been discussing the proposal since three hours.",
+      "id": 1,
+      "type": "Sentence Improvement",
+      "q": "The newly appointed chief executive officer has been working under the assumption that the quarterly revenue targets could be achieved without downsizing the operations department.",
       "o": [
-        "for three hours",
-        "since three hours",
-        "from three hours",
-        "by three hours"
+        "had been worked under the assumption",
+        "has worked below the assumption",
+        "was working under an assumption",
+        "No improvement required"
       ],
-      "a": 0,
-      "e": "The duration of an action is expressed with for, while since is used with a starting point in time.",
+      "a": 3,
+      "e": "The Present Perfect Continuous tense is correctly used for an action that began in the recent past and is still ongoing. The standard expression is “under the assumption.”",
+      "eh": "",
       "topic": "Sentence Improvement"
     },
     {
-      "q": "Identify the correctly spelt word.",
+      "id": 2,
+      "type": "Spelling Error",
+      "q": "Identify the option that contains an incorrectly spelt word.",
       "o": [
-        "Criticism",
-        "Critisism",
-        "Critisizm",
-        "Criticismm"
+        "The corporate restructuring caused significant administrative inconvenience.",
+        "Superstitious beliefs often hinder the development of a scientific temperament.",
+        "The chef prepared an exquisite dessert featuring an assortment of exotic fruits.",
+        "The hypercritical analysis of the movie received widespread public critisism."
       ],
-      "a": 0,
-      "e": "Criticism is the correct spelling. Option B uses critisism, while C and D are also incorrectly formed spellings.",
+      "a": 3,
+      "e": "The misspelled word is “critisism”; the correct spelling is “criticism.”",
+      "eh": "",
       "topic": "Spelling Error",
       "vocab": true
     },
     {
-      "q": "Identify the part of the sentence that contains an error: The manager, along with his assistants, are attending the conference.",
+      "id": 3,
+      "type": "Spotting the Error",
+      "q": "The committee members, having spent over three hours deliberating the intricate nuances of the corporate merger, was explicitly reluctant to ratify the proposed clause despite the chairperson’s persuasive remarks.",
       "o": [
-        "The manager, along with his assistants",
-        "are attending the conference",
-        "The manager, along with his assistants, are",
-        "No Error"
-      ],
-      "a": 1,
-      "e": "The main subject is the singular noun manager. The phrase along with his assistants does not change the number of the subject, so the singular verb is required: is attending.",
-      "topic": "Spotting Error"
-    },
-    {
-      "q": "Change the following into indirect speech: He said, “I can finish the work because I had observed the process carefully.”",
-      "o": [
-        "He said that he can finish the work because he had observed the process carefully.",
-        "He said that he could finish the work because he had observed the process carefully.",
-        "He said that he could finish the work because he observed the process carefully.",
-        "He said that he can finish the work because he observed the process carefully."
-      ],
-      "a": 1,
-      "e": "With a past reporting verb, can normally changes to could. The earlier observation is appropriately represented by had observed, making the standard exam-style transformation: could ... had observed.",
-      "topic": "Direct/Indirect"
-    },
-    {
-      "q": "Choose the antonym of “ABUNDANT”.",
-      "o": [
-        "Plentiful",
-        "Ample",
-        "Scarce",
-        "Copious"
+        "The committee members, having spent over three hours",
+        "deliberating the intricate nuances of the corporate merger,",
+        "was explicitly reluctant to ratify the proposed clause",
+        "despite the chairperson’s persuasive remarks."
       ],
       "a": 2,
-      "e": "Abundant means available in large quantity. Plentiful = existing in large quantity; Ample = more than sufficient; Scarce = insufficient or in short supply; Copious = abundant in quantity. Synonyms of abundant: plentiful, ample, copious. Antonyms: scarce, sparse, insufficient.",
+      "e": "The true subject is the plural noun “committee members,” so the verb must be plural: “were explicitly reluctant.”",
+      "eh": "",
+      "topic": "Spotting the Error"
+    },
+    {
+      "id": 4,
+      "type": "Direct & Indirect Speech",
+      "q": "The lead defense attorney asked the prime witness, \"Can you state with absolute certainty that you observed the suspect leaving the residential complex before midnight?\"",
+      "o": [
+        "The lead defense attorney asked the prime witness if he could state with absolute certainty that he observed the suspect leaving the residential complex before midnight.",
+        "The lead defense attorney asked the prime witness if he could state with absolute certainty that he had observed the suspect leaving the residential complex before midnight.",
+        "The lead defense attorney inquired from the prime witness that whether he can state with absolute certainty that he had observed the suspect leaving the residential complex before midnight.",
+        "The lead defense attorney asked the prime witness if he can state with absolute certainty that he observed the suspect leaving the residential complex before midnight."
+      ],
+      "a": 1,
+      "e": "In an indirect interrogative, “Can” changes to “could,” and the earlier action “observed” is represented as “had observed.” “Asked” takes “if/whether,” not “that whether.”",
+      "eh": "",
+      "topic": "Direct & Indirect Speech"
+    },
+    {
+      "id": 5,
+      "type": "Antonyms",
+      "q": "In an era dominated by rapid globalization, maintaining an insular approach to foreign policy can severely alienate a developing country from its global allies. (Find Antonym)",
+      "o": [
+        "Parochial",
+        "Cosmopolitan",
+        "Detached",
+        "Prejudiced"
+      ],
+      "a": 1,
+      "e": "Insular means narrow-minded or uninterested in cultures and ideas outside one’s own experience. Cosmopolitan is its true antonym.",
+      "eh": "",
       "topic": "Antonyms",
-      "vocab": true
+      "vocab": true,
+      "vocab_details": {
+        "target": {
+          "word": "Insular",
+          "meaning": "Ignorant of or uninterested in cultures, ideas, or peoples outside one's own experience; narrow-minded.",
+          "synonyms": [
+            "Parochial",
+            "Provincial",
+            "Illiberal"
+          ],
+          "antonyms": [
+            "Cosmopolitan",
+            "Broad-minded",
+            "Universal"
+          ]
+        },
+        "options": {
+          "A": "Parochial: Having a limited or narrow outlook or scope (synonym to Insular).",
+          "B": "Cosmopolitan: Familiar with and at ease in many different countries and cultures (true antonym).",
+          "C": "Detached: Separate or disconnected (contextual synonym).",
+          "D": "Prejudiced: Having or showing a dislike or distrust derived from fixed preconceived ideas."
+        }
+      }
     },
     {
-      "q": "Arrange the following sentences in the most logical order: P. The discovery changed the direction of the research. Q. The scientists had initially expected a different result. R. They repeated the experiment to verify the finding. S. The unexpected observation appeared during the first trial.",
+      "id": 6,
+      "type": "Para Jumbles",
+      "q": "Arrange the sentences in the most logical sequence:\nP: While green energy sources like solar and wind power offer a sustainable alternative, their intermittent nature presents a significant operational hurdle for heavy industries.\nQ: To resolve this grid instability, engineering firms are investing heavily in advanced lithium-ion battery storage infrastructure.\nR: The global transition toward a carbon-neutral economy requires an immediate and massive overhaul of existing power grids.\nS: Without these robust storage systems, manufacturing plants risk frequent operational blackouts during seasonal weather changes.",
       "o": [
-        "Q-S-P-R",
-        "S-Q-P-R",
-        "Q-P-S-R",
-        "S-P-Q-R"
+        "RPQS",
+        "RQPS",
+        "PRSQ",
+        "PRQS"
       ],
       "a": 0,
-      "e": "Q introduces the scientists' initial expectation, S presents the unexpected observation, P gives its consequence, and R describes the verification step.",
+      "e": "R establishes the broad topic, P introduces the specific obstacle, Q presents the solution, and S gives the consequence of not using that solution. Hence, RPQS.",
+      "eh": "",
       "topic": "Para Jumbles"
     },
     {
-      "q": "Choose the option that best expresses the meaning of the idiom “to add fuel to the fire”.",
+      "id": 7,
+      "type": "Idioms",
+      "q": "During the corporate crisis, the junior executives were told to keep their chin up as the management was actively working to secure an external bailout package.",
       "o": [
-        "To calm an already tense situation",
-        "To make an already difficult situation worse",
-        "To solve a problem immediately",
-        "To avoid discussing a serious issue"
+        "To remain arrogant and unyielding",
+        "To remain cheerful and optimistic in difficult circumstances",
+        "To stay vigilant against internal corporate espionage",
+        "To voice their complaints aggressively to the board"
       ],
       "a": 1,
-      "e": "Add fuel to the fire means to make an already bad, angry, or difficult situation worse.",
+      "e": "“Keep your chin up” means to stay brave, hopeful, and resilient during difficult circumstances.",
+      "eh": "",
       "topic": "Idioms",
-      "vocab": true
+      "vocab": true,
+      "vocab_details": {
+        "options": {
+          "A": "To remain arrogant and unyielding.",
+          "B": "To remain cheerful and optimistic in difficult circumstances.",
+          "C": "To stay vigilant against internal corporate espionage.",
+          "D": "To voice complaints aggressively to the board."
+        }
+      }
     },
     {
-      "q": "Identify the part of the sentence that contains an error: Neither the principal nor the teachers was willing to postpone the examination.",
+      "id": 8,
+      "type": "Spotting the Error",
+      "q": "Despite of the unrelenting downpour and the subsequent waterlogging across the primary arterial roads, the dedicated medical staff managed to reach the emergency ward right on time.",
       "o": [
-        "Neither the principal nor the teachers",
-        "was willing to postpone",
-        "the examination",
-        "No Error"
+        "Despite of the unrelenting downpour",
+        "and the subsequent waterlogging across the primary arterial roads,",
+        "the dedicated medical staff managed to reach",
+        "the emergency ward right on time."
+      ],
+      "a": 0,
+      "e": "“Despite” is not followed by “of.” Use “Despite the unrelenting downpour” or “In spite of the unrelenting downpour.”",
+      "eh": "",
+      "topic": "Spotting the Error"
+    },
+    {
+      "id": 9,
+      "type": "Active & Passive Voice",
+      "q": "The architectural firm meticulously designed the futuristic blueprint of the smart city to ensure optimal utilization of renewable energy resources.",
+      "o": [
+        "The futuristic blueprint of the smart city was being meticulously designed by the architectural firm to ensure optimal utilization of renewable energy resources.",
+        "The futuristic blueprint of the smart city was meticulously designed by the architectural firm to ensure optimal utilization of renewable energy resources.",
+        "The futuristic blueprint of the smart city had been meticulously designed by the architectural firm to ensure optimal utilization of renewable energy resources.",
+        "To ensure optimal utilization of renewable energy resources, the futuristic blueprint of the smart city is meticulously designed by the architectural firm."
       ],
       "a": 1,
-      "e": "With neither...nor, the verb agrees with the subject nearer to it. Teachers is plural, so were willing is required.",
-      "topic": "Spotting Error"
+      "e": "Simple Past active changes to Object + was/were + V3 + by Subject. Hence, “was meticulously designed” is correct.",
+      "eh": "",
+      "topic": "Active & Passive Voice"
     },
     {
-      "q": "Change into passive voice: The research team will publish the findings next month.",
+      "id": 10,
+      "type": "Direct & Indirect Speech",
+      "q": "The project coordinator said to the team members, \"Do not compromise on the software quality checks, otherwise the deployment phase will face severe delays next month.\"",
       "o": [
-        "The findings will be published by the research team next month.",
-        "The findings would be published by the research team next month.",
-        "The findings will have been published by the research team next month.",
-        "The research team will be published the findings next month."
+        "The project coordinator warned the team members not to compromise on the software quality checks, otherwise the deployment phase would face severe delays the following month.",
+        "The project coordinator told the team members to not compromise on the software quality checks, otherwise the deployment phase will face severe delays next month.",
+        "The project coordinator ordered the team members that they should not compromise on the software quality checks, otherwise the deployment phase would face severe delays next month.",
+        "The project coordinator warned the team members against compromising on the software quality checks, otherwise the deployment phase will face severe delays the following month."
       ],
       "a": 0,
-      "e": "The active object the findings becomes the passive subject. The future form will publish changes to will be published.",
-      "topic": "Active/Passive"
+      "e": "A negative imperative can be reported as “warned/told + object + not to.” “Will” changes to “would,” and “next month” becomes “the following month.”",
+      "eh": "",
+      "topic": "Direct & Indirect Speech"
     },
     {
-      "q": "Change the following into indirect speech: She said to me, “Did you complete the assignment?”",
+      "id": 11,
+      "type": "One Word Substitution",
+      "q": "A person who holds an unconventional, non-conformist, and independent view, especially in social, artistic, or political matters, refusing to follow the rules of a group.",
       "o": [
-        "She asked me if I had completed the assignment.",
-        "She told me if I completed the assignment.",
-        "She asked me that I had completed the assignment.",
-        "She said to me whether I complete the assignment."
+        "Maverick",
+        "Altruist",
+        "Sycophant",
+        "Epicure"
       ],
       "a": 0,
-      "e": "A yes/no question is introduced with if or whether, and the past reporting verb normally shifts completed to had completed.",
-      "topic": "Direct/Indirect"
-    },
-    {
-      "q": "Choose the one-word substitution for “A person who deliberately sets fire to property”.",
-      "o": [
-        "Arsonist",
-        "Extortionist",
-        "Embezzler",
-        "Vandal"
-      ],
-      "a": 0,
-      "e": "Arsonist = a person who deliberately sets fire to property. Extortionist = a person who obtains something through threats; Embezzler = a person who fraudulently misappropriates entrusted money or property; Vandal = a person who deliberately damages property.",
+      "e": "Maverick means an unorthodox or independent-minded person.",
+      "eh": "",
       "topic": "One Word Substitution",
-      "vocab": true
+      "vocab": true,
+      "vocab_details": {
+        "options": {
+          "A": "Maverick: An unorthodox or independent-minded person. Synonyms: Nonconformist, Dissenter, Rebel. Antonyms: Conformist, Traditionalist.",
+          "B": "Altruist: A person unselfishly concerned for or devoted to the welfare of others. Synonyms: Philanthropist, Benefactor. Antonyms: Egoist, Misanthrope.",
+          "C": "Sycophant: A person who acts obsequiously toward someone important to gain advantage. Synonyms: Toady, Flatterer, Bootlicker. Antonyms: Critic, Detractor.",
+          "D": "Epicure: A person who takes particular pleasure in fine food and drink. Synonyms: Gourmet, Connoisseur. Antonyms: Glutton."
+        }
+      }
     },
     {
-      "q": "Identify the part of the sentence that contains an error: Not only did the investigative journalist uncover a massive financial fraud involving the offshore accounts, but he also revealed how deeply entrenched corruption was in the administrative machinery.",
+      "id": 12,
+      "type": "Spotting the Error",
+      "q": "Not only did the investigative journalist uncover a massive financial fraud involving the offshore accounts, but he also revealed how deeply entrenched corruption was in the administrative machinery.",
       "o": [
-        "Not only did the investigative journalist uncover a massive financial fraud",
-        "involving the offshore accounts, but he also revealed how deeply entrenched",
-        "corruption was in the administrative machinery.",
-        "No Error"
+        "Not only did the investigative journalist uncover",
+        "a massive financial fraud involving the offshore accounts,",
+        "but he also revealed how deeply entrenched",
+        "corruption was in the administrative machinery. (No Error)"
       ],
       "a": 3,
-      "e": "The correlative construction not only...but also is correctly formed, and the sentence is grammatically complete. There is no error.",
-      "topic": "Spotting Error"
+      "e": "The sentence correctly uses inversion after “Not only” and the correlative pair “not only ... but ... also.” There is no grammatical error.",
+      "eh": "",
+      "topic": "Spotting the Error"
     },
     {
-      "q": "Identify the correctly spelt word.",
+      "id": 13,
+      "type": "Spelling Error",
+      "q": "Identify the option that contains a spelling error within the given context.",
       "o": [
-        "Accommodation",
-        "Accomodation",
-        "Acommodation",
-        "Accommadation"
+        "The sovereign nation maintained its autonomy through strict diplomatic protocols.",
+        "The sudden obsolescence of the old manufacturing equipment paralyzed production.",
+        "The archeologist discovered a historical artifact that contradicted previous timeline hipotheses.",
+        "His magnanimous gesture toward his political rivals surprised the entire electorate."
       ],
-      "a": 0,
-      "e": "Accommodation is the standard spelling, with double c and double m.",
+      "a": 2,
+      "e": "“Hipotheses” is incorrectly spelled; the correct spelling is “hypotheses.”",
+      "eh": "",
       "topic": "Spelling Error",
-      "vocab": true
+      "vocab": true,
+      "vocab_details": {
+        "words": {
+          "Sovereign": {
+            "meaning": "Possessing supreme or ultimate power.",
+            "synonyms": [
+              "Autonomous",
+              "Independent"
+            ],
+            "antonyms": [
+              "Dependent",
+              "Subjugated"
+            ]
+          },
+          "Obsolescence": {
+            "meaning": "The state of being driven out of use or becoming obsolete.",
+            "synonyms": [
+              "Archaism",
+              "Outmodedness"
+            ],
+            "antonyms": [
+              "Modernity",
+              "Novelty"
+            ]
+          },
+          "Hypotheses": {
+            "meaning": "Plural form of hypothesis; proposed explanations made on the basis of limited evidence.",
+            "synonyms": [
+              "Theories",
+              "Premises",
+              "Postulates"
+            ],
+            "antonyms": [
+              "Facts",
+              "Certainties"
+            ]
+          },
+          "Magnanimous": {
+            "meaning": "Generous or forgiving, especially toward a rival or less powerful person.",
+            "synonyms": [
+              "Beneficent",
+              "Noble",
+              "Altruistic"
+            ],
+            "antonyms": [
+              "Mean-spirited",
+              "Vindictive",
+              "Petty"
+            ]
+          }
+        }
+      }
     },
     {
-      "q": "Choose the synonym of “PRUDENT”.",
+      "id": 14,
+      "type": "Synonyms",
+      "q": "The magistrate noted that the evidence presented by the prosecution was entirely tenuous, lacking any substantive material to link the accused directly to the white-collar crime. (Find Synonym)",
       "o": [
-        "Cautious",
-        "Reckless",
-        "Impulsive",
-        "Careless"
-      ],
-      "a": 0,
-      "e": "Prudent means showing careful judgment. Cautious = careful to avoid danger or mistakes; Reckless = careless of consequences; Impulsive = acting without sufficient thought; Careless = not giving enough attention. Synonyms of prudent: cautious, judicious, sensible. Antonyms: reckless, imprudent, careless.",
-      "topic": "Synonyms",
-      "vocab": true
-    },
-    {
-      "q": "Choose the most appropriate improvement: Hardly had the meeting begun when the power supply failed.",
-      "o": [
-        "than the power supply failed",
-        "when the power supply failed",
-        "then the power supply failed",
-        "and the power supply had failed"
+        "Formidable",
+        "Flimsy",
+        "Authentic",
+        "Equivocal"
       ],
       "a": 1,
-      "e": "The correlative structure hardly...when is correctly used to show that one event happened immediately after another.",
+      "e": "Tenuous means very weak, slight, flimsy, or insubstantial. “Flimsy” is the true synonym.",
+      "eh": "",
+      "topic": "Synonyms",
+      "vocab": true,
+      "vocab_details": {
+        "target": {
+          "word": "Tenuous",
+          "meaning": "Very weak, slight, flimsy, or insubstantial.",
+          "synonyms": [
+            "Flimsy",
+            "Fragile",
+            "Insubstantial"
+          ],
+          "antonyms": [
+            "Formidable",
+            "Robust",
+            "Substantial"
+          ]
+        },
+        "options": {
+          "A": "Formidable: Inspiring fear or respect through being impressively large, powerful, or intense (antonym).",
+          "B": "Flimsy: Lacking strength or solidity; weak (true synonym).",
+          "C": "Authentic: Of undisputed origin and genuine authenticity.",
+          "D": "Equivocal: Open to more than one interpretation; ambiguous."
+        }
+      }
+    },
+    {
+      "id": 15,
+      "type": "Sentence Improvement",
+      "q": "The diplomatic delegation decided to call off on the bilateral negotiations after the host country abruptly altered the pre-negotiated trade tariffs.",
+      "o": [
+        "call away the bilateral negotiations",
+        "call off the bilateral negotiations",
+        "call out on the bilateral negotiations",
+        "No improvement required"
+      ],
+      "a": 1,
+      "e": "“Call off” means to cancel an event, meeting, or transaction. The extra “on” is incorrect.",
+      "eh": "",
       "topic": "Sentence Improvement"
     },
     {
-      "q": "Identify the part of the sentence that contains an error: Had the meteorological department issued the emergency severe weather warning a few hours prior, the coastal administrative authorities would have successfully evacuated the vulnerable low-lying regions.",
+      "id": 16,
+      "type": "Spotting the Error",
+      "q": "Had the meteorological department issued the emergency severe weather warning a few hours prior, the coastal administrative authorities would have successfully evacuated the vulnerable low-lying regions.",
       "o": [
-        "Had the meteorological department issued the emergency severe weather warning",
-        "a few hours prior, the coastal administrative authorities would have successfully evacuated",
-        "the vulnerable low-lying regions.",
-        "No Error"
+        "Had the meteorological department issued",
+        "the emergency severe weather warning a few hours prior,",
+        "the coastal administrative authorities would have successfully evacuated",
+        "the vulnerable low-lying regions. (No Error)"
       ],
       "a": 3,
-      "e": "The inverted third conditional is correctly formed: Had + past participle in the condition, followed by would have + past participle in the result. There is no error.",
-      "topic": "Spotting Error"
+      "e": "This is a correctly formed third conditional in inversion: “Had + Subject + V3 ..., Subject + would have + V3.” There is no error.",
+      "eh": "",
+      "topic": "Spotting the Error"
     },
     {
-      "q": "Change into passive voice: The authorities have implemented several safety measures.",
+      "id": 17,
+      "type": "Active & Passive Voice",
+      "q": "Analysts are closely monitoring the fluctuating patterns of the stock index to predict the upcoming economic correction.",
       "o": [
-        "Several safety measures have been implemented by the authorities.",
-        "Several safety measures had been implemented by the authorities.",
-        "Several safety measures are being implemented by the authorities.",
-        "Several safety measures have implemented the authorities."
+        "The fluctuating patterns of the stock index are being closely monitored by analysts to predict the upcoming economic correction.",
+        "The fluctuating patterns of the stock index were closely monitored by analysts to predict the upcoming economic correction.",
+        "The fluctuating patterns of the stock index are closely monitored by analysts to predict the upcoming economic correction.",
+        "The upcoming economic correction is being predicted by analysts by closely monitoring the fluctuating patterns of the stock index."
       ],
       "a": 0,
-      "e": "The present perfect active form have implemented changes to have been implemented in the passive voice.",
-      "topic": "Active/Passive"
+      "e": "Present Continuous active changes to Object + is/are/am + being + V3 + by Subject. Hence, “are being closely monitored” is correct.",
+      "eh": "",
+      "topic": "Active & Passive Voice"
     },
     {
-      "q": "Choose the option that best expresses the meaning of the idiom “once in a blue moon”.",
+      "id": 18,
+      "type": "Idioms",
+      "q": "The scientific research facility was forced to shut down its experimental project because the expected breakthroughs turned out to be a mere castle in the air.",
       "o": [
-        "Very frequently",
-        "At a very early stage",
-        "Very rarely",
-        "Without any warning"
+        "An expensive architectural failure",
+        "A visionary but highly impractical plan",
+        "A well-fortified strategy",
+        "A dynamic milestone achieved unexpectedly"
+      ],
+      "a": 1,
+      "e": "“Castles in the air” means daydreams, plans, or grand designs with no practical basis or realistic possibility of success.",
+      "eh": "",
+      "topic": "Idioms",
+      "vocab": true,
+      "vocab_details": {
+        "options": {
+          "A": "An expensive architectural failure.",
+          "B": "A visionary but highly impractical plan.",
+          "C": "A well-fortified strategy.",
+          "D": "A dynamic milestone achieved unexpectedly."
+        }
+      }
+    },
+    {
+      "id": 19,
+      "type": "Para Jumbles",
+      "q": "Arrange the sentences in the most logical sequence:\nP: This demographic shift has created an unprecedented demand for flexible healthcare policies that prioritize preventative care over emergency treatments.\nQ: Furthermore, urban migration has compressed the available housing space, fundamentally altering family structures and support systems for the elderly.\nR: Over the past two decades, the nation has witnessed a substantial transformation in its socio-economic landscape due to rapid industrial growth.\nS: Consequently, municipal corporations are forced to re-evaluate their city planning layout to accommodate both commercial zoning and residential wellbeing.",
+      "o": [
+        "RPSQ",
+        "RQPS",
+        "RPQS",
+        "SQRP"
       ],
       "a": 2,
-      "e": "Once in a blue moon means something that happens very rarely.",
-      "topic": "Idioms",
-      "vocab": true
-    },
-    {
-      "q": "Arrange the following sentences in the most logical order: P. As a result, the company revised its safety procedures. Q. An internal inspection revealed several weaknesses. R. The revised procedures were then communicated to all employees. S. The management immediately reviewed the inspection report.",
-      "o": [
-        "Q-S-P-R",
-        "S-Q-P-R",
-        "Q-P-S-R",
-        "S-P-Q-R"
-      ],
-      "a": 0,
-      "e": "The inspection first reveals weaknesses (Q), management reviews the report (S), procedures are revised (P), and the revisions are communicated (R).",
+      "e": "R introduces the macro theme, Q adds another development, P refers back to the demographic shift, and S gives the consequence. Hence, RPQS.",
+      "eh": "",
       "topic": "Para Jumbles"
     },
     {
-      "q": "Choose the synonym of “METICULOUS”.",
+      "id": 20,
+      "type": "Synonyms",
+      "q": "The professor’s lucid explanation of the complex thermodynamic principles allowed even the novice undergraduate students to grasp the core concepts effortlessly. (Find Synonym)",
       "o": [
-        "Careless",
-        "Thorough",
-        "Hasty",
-        "Negligent"
+        "Obscure",
+        "Transparent",
+        "Intricate",
+        "Comprehensive"
       ],
       "a": 1,
-      "e": "Meticulous means extremely careful and precise. Careless = lacking attention; Thorough = complete and careful; Hasty = done with excessive speed; Negligent = failing to take proper care. Synonyms of meticulous: thorough, painstaking, scrupulous. Antonyms: careless, negligent, sloppy.",
+      "e": "Lucid means expressed clearly and easy to understand. “Transparent” is the intended contextual synonym.",
+      "eh": "",
       "topic": "Synonyms",
-      "vocab": true
+      "vocab": true,
+      "vocab_details": {
+        "target": {
+          "word": "Lucid",
+          "meaning": "Expressed clearly; easy to understand.",
+          "synonyms": [
+            "Transparent",
+            "Intelligible",
+            "Clear"
+          ],
+          "antonyms": [
+            "Obscure",
+            "Ambiguous",
+            "Convoluted"
+          ]
+        },
+        "options": {
+          "A": "Obscure: Not discovered or known about; uncertain or difficult to comprehend (antonym).",
+          "B": "Transparent: Easy to perceive or detect; perfectly clear in meaning (true contextual synonym).",
+          "C": "Intricate: Very complicated or detailed.",
+          "D": "Comprehensive: Complete; including all or nearly all elements or aspects of something."
+        }
+      }
     },
     {
-      "q": "Fill in the blank: The rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. Since machine learning models are trained on historical data, they inherently □ the historical prejudices embedded within those past judicial rulings.",
+      "id": 21,
+      "type": "Cloze Test",
+      "passage": "The rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a \"human-in-the-loop\" framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.",
+      "q": "Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings.",
       "o": [
         "alleviate",
         "perpetuate",
@@ -265,11 +468,15 @@
         "repudiate"
       ],
       "a": 1,
-      "e": "Perpetuate means to make something continue or persist. Historical training data can therefore perpetuate prejudices embedded in earlier rulings.",
+      "e": "Since machine models train on historical human data, they naturally preserve and pass down old patterns. Perpetuate means to make something continue indefinitely.\nAlleviate / Mitigate: To make a problem less severe.\nRepudiate: To refuse to accept or reject something.",
+      "eh": "",
       "topic": "Cloze Test"
     },
     {
-      "q": "Fill in the blank: This creates a feedback loop where systemic biases are not just maintained, but actively □.",
+      "id": 22,
+      "type": "Cloze Test",
+      "passage": "The rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a \"human-in-the-loop\" framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.",
+      "q": "This creates a feedback loop where systemic biases are not just maintained, but actively (22).",
       "o": [
         "amplified",
         "diminished",
@@ -277,11 +484,15 @@
         "neutralized"
       ],
       "a": 0,
-      "e": "Amplified means increased in strength or intensity, which fits the passage's description of a feedback loop that worsens systemic bias.",
+      "e": "A feedback loop actively grows or increases the power of systemic issues over time. Hence, bias is amplified (increased in strength or intensity).\nDiminished / Truncated / Neutralized: To decrease, cut short, or negate the power of something.",
+      "eh": "",
       "topic": "Cloze Test"
     },
     {
-      "q": "Fill in the blank: Therefore, relying blindly on automated legal assistants could jeopardize the very core of □ justice.",
+      "id": 23,
+      "type": "Cloze Test",
+      "passage": "The rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a \"human-in-the-loop\" framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.",
+      "q": "Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice.",
       "o": [
         "whimsical",
         "equitable",
@@ -289,11 +500,15 @@
         "fractured"
       ],
       "a": 1,
-      "e": "Equitable means fair and impartial, so equitable justice fits the context of protecting fairness from algorithmic bias.",
+      "e": "Algorithmic bias compromises the core of fairness. Equitable means fair, impartial, and just.\nWhimsical / Arbitrary: Acting based on random choices or personal whim instead of system logic.",
+      "eh": "",
       "topic": "Cloze Test"
     },
     {
-      "q": "Fill in the blank: Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human □.",
+      "id": 24,
+      "type": "Cloze Test",
+      "passage": "The rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a \"human-in-the-loop\" framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.",
+      "q": "...rather, it must serve as an auxiliary tool under strict human (24).",
       "o": [
         "negligence",
         "oversight",
@@ -301,11 +516,15 @@
         "regression"
       ],
       "a": 1,
-      "e": "Oversight means supervision or monitoring. Human oversight is therefore the appropriate safeguard when AI assists with legal decisions.",
+      "e": "To avoid machine errors, a human must review and monitor the output. Oversight means the action of overseeing or supervising something.\nNegligence / Ignorance: Lack of proper care or knowledge.",
+      "eh": "",
       "topic": "Cloze Test"
     },
     {
-      "q": "Fill in the blank: Maintaining a “human-in-the-loop” framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a □ legal verdict.",
+      "id": 25,
+      "type": "Cloze Test",
+      "passage": "The rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a \"human-in-the-loop\" framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.",
+      "q": "...ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.",
       "o": [
         "tentative",
         "superficial",
@@ -313,7 +532,8 @@
         "transient"
       ],
       "a": 2,
-      "e": "Binding means legally obligatory or enforceable. It fits a legal verdict that carries legal authority.",
+      "e": "A binding legal verdict is legally enforceable. Tentative and transient indicate something provisional or temporary.",
+      "eh": "",
       "topic": "Cloze Test"
     }
   ]
