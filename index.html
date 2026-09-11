@@ -14,7 +14,7 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 .subtitle{color:#555}
 .quiz-topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px;position:relative}.progress{font-weight:800;font-size:20px;margin:0}.menu-btn{width:44px;height:44px;border:0;border-radius:10px;background:#111;color:#fff;font-size:26px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center}.palette-panel{margin:0 0 14px;padding:14px;background:#f8fafc;border:1px solid #d9e2ec;border-radius:14px}.palette-title{font-weight:800;font-size:18px;margin:0 0 10px}.palette{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.palette-actions{display:flex;gap:8px;margin-top:12px}.palette-actions button{flex:1;border:0;border-radius:10px;padding:10px;font-size:15px;font-weight:700;cursor:pointer}.palette-actions .finish-menu{background:#111;color:#fff}.palette-panel .legend{margin-top:10px}
 .instruction{font-size:18px;line-height:1.45;font-weight:800;margin-bottom:8px}
-.question{font-size:20px;line-height:1.45;margin-bottom:10px}
+.question{font-size:20px;line-height:1.45;margin-bottom:10px}.jumble-line{margin:0 0 10px}.jumble-line:last-child{margin-bottom:0}
 .question-passage{background:#f5f8fc;border:1px solid #d9e2ec;border-radius:12px;padding:12px 13px;margin:10px 0 12px;font-size:17px;line-height:1.55}
 .explanation{margin-top:16px}
 .ex-block{margin-top:10px}
@@ -326,30 +326,43 @@ function startQuiz(){
 function resumeQuiz(){ startQuiz(); }
 
 function explanationHTML(x){
-  const ex = x.explanation || {};
-  let h = '<div class="explanation">';
-  if(ex.why_correct){
-    h += '<div class="ex-block"><div class="ex-heading">Why is it correct?</div><div class="ex-text">'+esc(ex.why_correct)+'</div></div>';
+  const ex=x.explanation||{};
+  let h='<div class="explanation">';
+  const correctLabel=labelForIndex(x.a);
+  const correctText=getOptionText(x,x.a);
+
+  h+='<div class="ex-block"><div class="ex-heading">Correct Answer</div><div class="ex-text"><b>'+esc(correctLabel)+'.</b> '+esc(correctText)+'</div></div>';
+
+  if(ex.vocabulary){
+    const v=ex.vocabulary;
+    h+='<div class="ex-vocab">';
+    h+='<div class="ex-text"><b>Meaning:</b> '+esc(v.meaning)+'</div>';
+    h+='<div class="ex-text"><b>Hindi Meaning:</b> '+esc(v.hindi_meaning)+'</div>';
+    h+='<div class="ex-text"><b>Syn:</b> '+v.synonyms.map(esc).join(', ')+'</div>';
+    h+='<div class="ex-text"><b>Ant:</b> '+v.antonyms.map(esc).join(', ')+'</div>';
+    const opts=ex.options||{};
+    ['A','B','C','D'].forEach(L=>{
+      if(L===correctLabel || !opts[L]) return;
+      h+='<div class="ex-option"><b>'+L+'. '+esc(opts[L].word)+'</b> — '+esc(opts[L].meaning)+'<br><span>Hindi: '+esc(opts[L].hindi)+'</span></div>';
+    });
+    h+='</div>';
+  } else if(ex.correct_meaning){
+    h+='<div class="ex-vocab">';
+    h+='<div class="ex-text"><b>Meaning:</b> '+esc(ex.correct_meaning.meaning)+'</div>';
+    h+='<div class="ex-text"><b>Hindi Meaning:</b> '+esc(ex.correct_meaning.hindi)+'</div>';
+    const opts=ex.options||{};
+    ['A','B','C','D'].forEach(L=>{
+      if(L===correctLabel || !opts[L]) return;
+      h+='<div class="ex-option"><b>'+L+'. '+esc(opts[L].word)+'</b> — '+esc(opts[L].meaning)+'<br><span>Hindi: '+esc(opts[L].hindi)+'</span></div>';
+    });
+    h+='</div>';
+  } else {
+    if(ex.explanation) h+='<div class="ex-block"><div class="ex-heading">Explanation</div><div class="ex-text">'+esc(ex.explanation)+'</div></div>';
+    if(ex.hindi) h+='<div class="ex-block"><div class="ex-heading">Hindi</div><div class="ex-text" lang="hi">'+esc(ex.hindi)+'</div></div>';
   }
-  if(ex.option_explanations){
-    h += '<div class="ex-block"><div class="ex-heading">Option meanings</div>';
-    ['A','B','C','D'].forEach(L=>{ if(ex.option_explanations[L]) h += '<div class="ex-option"><b>'+L+'.</b> '+esc(ex.option_explanations[L])+'</div>'; });
-    h += '</div>';
-  }
-  if(ex.target_vocabulary){
-    const v=ex.target_vocabulary;
-    h += '<div class="ex-vocab"><div class="ex-heading">Target vocabulary: '+esc(v.word)+'</div>';
-    h += '<div class="ex-text"><b>Meaning:</b> '+esc(v.meaning)+'<br><b>Hindi:</b> '+esc(v.hindi_meaning)+'</div>';
-    h += '<div class="ex-heading">3 Synonyms</div><ol class="ex-list">'+v.synonyms.map(esc).map(z=>'<li>'+z+'</li>').join('')+'</ol>';
-    h += '<div class="ex-heading">3 Antonyms</div><ol class="ex-list">'+v.antonyms.map(esc).map(z=>'<li>'+z+'</li>').join('')+'</ol></div>';
-  }
-  if(ex.hindi_explanation){
-    h += '<div class="ex-block"><div class="ex-heading">Hindi Explanation</div><div class="ex-text" lang="hi">'+esc(ex.hindi_explanation)+'</div></div>';
-  }
-  h += '</div>';
+  h+='</div>';
   return h;
 }
-
 function render(){
   const x = questions[current];
   document.getElementById("progress").textContent = `Question ${current+1} / ${questions.length}`;
@@ -359,8 +372,13 @@ function render(){
   ins.classList.toggle("hidden",!x.instruction);
 
   const qEl=document.getElementById("question");
-  qEl.textContent=x.q || "";
-  qEl.classList.toggle("hidden",!x.q);
+  if(Array.isArray(x.sentences) && x.sentences.length){
+    qEl.innerHTML=x.sentences.map(s=>'<div class="jumble-line"><b>'+esc(s.label)+':</b> '+esc(s.text)+'</div>').join('');
+    qEl.classList.remove("hidden");
+  }else{
+    qEl.textContent=x.q || "";
+    qEl.classList.toggle("hidden",!x.q);
+  }
 
   const pEl=document.getElementById("questionPassage");
   if(x.passage){ pEl.textContent=x.passage; pEl.classList.remove("hidden"); }
@@ -512,20 +530,27 @@ function openReview(){
 
 function pdfExplanationHTML(x){
   const ex=x.explanation||{}; let h='';
-  if(ex.why_correct) h+='<div class="ex-heading">Why is it correct?</div><div class="ex-text">'+esc(ex.why_correct)+'</div>';
-  if(ex.option_explanations){
-    h+='<div class="ex-heading">Option meanings</div>';
-    ['A','B','C','D'].forEach(L=>{if(ex.option_explanations[L])h+='<div class="ex-option"><b>'+L+'.</b> '+esc(ex.option_explanations[L])+'</div>';});
+  const correctLabel=labelForIndex(x.a), correctText=getOptionText(x,x.a);
+  h+='<div class="ex-heading">Correct Answer</div><div class="ex-text"><b>'+esc(correctLabel)+'.</b> '+esc(correctText)+'</div>';
+  if(ex.vocabulary){
+    const v=ex.vocabulary;
+    h+='<div class="ex-text"><b>Meaning:</b> '+esc(v.meaning)+'</div>';
+    h+='<div class="ex-text"><b>Hindi Meaning:</b> '+esc(v.hindi_meaning)+'</div>';
+    h+='<div class="ex-text"><b>Syn:</b> '+v.synonyms.map(esc).join(', ')+'</div>';
+    h+='<div class="ex-text"><b>Ant:</b> '+v.antonyms.map(esc).join(', ')+'</div>';
+    const opts=ex.options||{};
+    ['A','B','C','D'].forEach(L=>{if(L===correctLabel||!opts[L])return; h+='<div class="ex-option"><b>'+L+'. '+esc(opts[L].word)+'</b> — '+esc(opts[L].meaning)+'<br>Hindi: '+esc(opts[L].hindi)+'</div>';});
+  } else if(ex.correct_meaning){
+    h+='<div class="ex-text"><b>Meaning:</b> '+esc(ex.correct_meaning.meaning)+'</div>';
+    h+='<div class="ex-text"><b>Hindi Meaning:</b> '+esc(ex.correct_meaning.hindi)+'</div>';
+    const opts=ex.options||{};
+    ['A','B','C','D'].forEach(L=>{if(L===correctLabel||!opts[L])return; h+='<div class="ex-option"><b>'+L+'. '+esc(opts[L].word)+'</b> — '+esc(opts[L].meaning)+'<br>Hindi: '+esc(opts[L].hindi)+'</div>';});
+  } else {
+    if(ex.explanation) h+='<div class="ex-heading">Explanation</div><div class="ex-text">'+esc(ex.explanation)+'</div>';
+    if(ex.hindi) h+='<div class="ex-heading">Hindi</div><div class="ex-text" lang="hi">'+esc(ex.hindi)+'</div>';
   }
-  if(ex.target_vocabulary){const v=ex.target_vocabulary;
-    h+='<div class="ex-vocab"><div class="ex-heading">Target vocabulary: '+esc(v.word)+'</div><div class="ex-text"><b>Meaning:</b> '+esc(v.meaning)+'<br><b>Hindi:</b> '+esc(v.hindi_meaning)+'</div>';
-    h+='<div class="ex-heading">3 Synonyms</div><ol class="ex-list">'+v.synonyms.map(esc).map(z=>'<li>'+z+'</li>').join('')+'</ol>';
-    h+='<div class="ex-heading">3 Antonyms</div><ol class="ex-list">'+v.antonyms.map(esc).map(z=>'<li>'+z+'</li>').join('')+'</ol></div>';
-  }
-  if(ex.hindi_explanation) h+='<div class="ex-heading">Hindi Explanation</div><div class="ex-text" lang="hi">'+esc(ex.hindi_explanation)+'</div>';
   return h;
 }
-
 function buildPDFReport(){
   const score=calculateScore();
   const wrong=answers.reduce((n,a,i)=>n+(a!==null&&a!==questions[i].a?1:0),0);
@@ -551,7 +576,11 @@ function buildPDFReport(){
     html+='<div class="pdf-qhead" style="background:'+headBg+';border-bottom-color:'+cardBorder+'"><span class="pdf-qnum" style="background:'+headColor+'">Q'+(i+1)+'</span><span class="pdf-topic" style="background:'+headBg+';color:'+headColor+';border-color:'+cardBorder+'">Topic: '+esc(x.topic||quizSubject||'General')+'</span></div>';
     html+='<div class="pdf-instruction">'+esc(x.instruction||'')+'</div>';
     if(x.passage) html+='<div class="pdf-passage">'+esc(x.passage)+'</div>';
-    html+='<div class="pdf-qtitle">'+esc(x.q||'')+'</div>';
+    if(Array.isArray(x.sentences) && x.sentences.length){
+      html+='<div class="pdf-qtitle pdf-jumbles">'+x.sentences.map(s=>'<div><b>'+esc(s.label)+':</b> '+esc(s.text)+'</div>').join('')+'</div>';
+    }else{
+      html+='<div class="pdf-qtitle">'+esc(x.q||'')+'</div>';
+    }
     if(x.hi) html+='<div class="pdf-hi" lang="hi">'+esc(x.hi)+'</div>';
     html+='<div class="pdf-options">'+opts+'</div>';
     html+='<div class="pdf-status '+statusClass+'">'+status+' &nbsp; | &nbsp; <b>Your Answer:</b> '+esc(your)+' &nbsp; | &nbsp; <b>Correct Answer:</b> '+esc(correct)+'</div>';

@@ -18,19 +18,17 @@
         "No improvement required"
       ],
       "a": 3,
-      "e": "The Present Perfect Continuous “has been working” correctly describes an action that began in the past and is still continuing. “Under the assumption” is the standard expression, so no improvement is required.",
-      "eh": "“Has been working” ऐसे कार्य के लिए सही है जो अतीत में शुरू हुआ और अभी भी जारी है। “Under the assumption” मानक expression है, इसलिए सुधार आवश्यक नहीं है.",
       "topic": "Sentence Improvement",
       "instruction": "Choose the option that provides the correct/improved form of the sentence.",
       "explanation": {
-        "why_correct": "The Present Perfect Continuous “has been working” correctly describes an action that began in the past and is still continuing. “Under the assumption” is the standard expression, so no improvement is required.",
-        "hindi_explanation": "“Has been working” ऐसे कार्य के लिए सही है जो अतीत में शुरू हुआ और अभी भी जारी है। “Under the assumption” मानक expression है, इसलिए सुधार आवश्यक नहीं है."
+        "explanation": "The Present Perfect Continuous “has been working” correctly describes an action that began in the past and is still continuing. “Under the assumption” is the standard expression, so no improvement is required.",
+        "hindi": "“Has been working” ऐसे कार्य के लिए सही है जो अतीत में शुरू हुआ और अभी भी जारी है। “Under the assumption” मानक expression है, इसलिए सुधार आवश्यक नहीं है."
       }
     },
     {
       "id": 2,
       "type": "Spelling Error",
-      "q": "Look at the four options below and identify the sentence containing the spelling error.",
+      "q": "Which sentence contains the spelling error?",
       "o": [
         "The corporate restructuring caused significant administrative inconvenience.",
         "Superstitious beliefs often hinder the development of a scientific temperament.",
@@ -38,20 +36,10 @@
         "The hypercritical analysis of the movie received widespread public critisism."
       ],
       "a": 3,
-      "e": "Option D contains the misspelling “critisism”; the correct spelling is “criticism”.",
-      "eh": "Option D में “critisism” की spelling गलत है। सही spelling “criticism” है.",
       "topic": "Spelling Error",
       "instruction": "Identify the option that contains an incorrectly spelt word.",
       "explanation": {
-        "why_correct": "Option D contains the misspelling “critisism”; the correct spelling is “criticism”.",
-        "hindi_explanation": "Option D में “critisism” की spelling गलत है। सही spelling “criticism” है.",
-        "option_explanations": {
-          "A": "Inconvenience = trouble or difficulty. Hindi: असुविधा या परेशानी.",
-          "B": "Superstitious = based on irrational beliefs or fears. Hindi: अंधविश्वासी; तर्कहीन मान्यताओं पर आधारित.",
-          "C": "Exquisite = extremely beautiful, delicate, or refined. Hindi: अत्यंत सुंदर, उत्कृष्ट या नफ़ीस.",
-          "D": "Criticism = disapproval or the analysis and evaluation of something. Hindi: आलोचना या मूल्यांकन."
-        },
-        "target_vocabulary": {
+        "vocabulary": {
           "word": "Criticism",
           "meaning": "The expression of disapproval or the analysis and evaluation of something.",
           "hindi_meaning": "आलोचना या किसी चीज़ का विश्लेषण एवं मूल्यांकन।",
@@ -65,6 +53,28 @@
             "Approval",
             "Commendation"
           ]
+        },
+        "options": {
+          "A": {
+            "word": "Inconvenience",
+            "meaning": "trouble or difficulty.",
+            "hindi": "असुविधा या परेशानी."
+          },
+          "B": {
+            "word": "Superstitious",
+            "meaning": "based on irrational beliefs or fears.",
+            "hindi": "अंधविश्वासी; तर्कहीन मान्यताओं पर आधारित."
+          },
+          "C": {
+            "word": "Exquisite",
+            "meaning": "extremely beautiful, delicate, or refined.",
+            "hindi": "अत्यंत सुंदर, उत्कृष्ट या नफ़ीस."
+          },
+          "D": {
+            "word": "Criticism",
+            "meaning": "disapproval or the analysis and evaluation of something.",
+            "hindi": "आलोचना या मूल्यांकन."
+          }
         }
       }
     },
@@ -79,13 +89,11 @@
         "despite the chairperson’s persuasive remarks."
       ],
       "a": 2,
-      "e": "The subject “committee members” is plural, so the verb must be “were”, not “was”. The phrase “having spent...” does not change the subject.",
-      "eh": "“Committee members” plural subject है, इसलिए verb “were” होना चाहिए, “was” नहीं। “Having spent...” subject को नहीं बदलता.",
       "topic": "Spotting the Error",
       "instruction": "Identify the part of the sentence that contains a grammatical error. If there is no error, choose “No Error”.",
       "explanation": {
-        "why_correct": "The subject “committee members” is plural, so the verb must be “were”, not “was”. The phrase “having spent...” does not change the subject.",
-        "hindi_explanation": "“Committee members” plural subject है, इसलिए verb “were” होना चाहिए, “was” नहीं। “Having spent...” subject को नहीं बदलता."
+        "explanation": "The subject “committee members” is plural, so the verb must be “were”, not “was”. The phrase “having spent...” does not change the subject.",
+        "hindi": "“Committee members” plural subject है, इसलिए verb “were” होना चाहिए, “was” नहीं। “Having spent...” subject को नहीं बदलता."
       }
     },
     {
@@ -99,13 +107,11 @@
         "The lead defense attorney asked the prime witness if he can state with absolute certainty that he observed the suspect leaving the residential complex before midnight."
       ],
       "a": 1,
-      "e": "The reporting verb “asked” is in the past, so “can” changes to “could”. The observation occurred earlier, so “had observed” appropriately represents that earlier action. An indirect question takes “if/whether”, not “that whether”.",
-      "eh": "“Asked” past में है, इसलिए “can” सामान्यतः “could” होता है। Observation पहले हुई थी, इसलिए “had observed” उपयुक्त है। Indirect question में “if/whether” आता है, “that whether” नहीं.",
       "topic": "Direct & Indirect Speech",
       "instruction": "Choose the correct indirect-speech form of the given sentence.",
       "explanation": {
-        "why_correct": "The reporting verb “asked” is in the past, so “can” changes to “could”. The observation occurred earlier, so “had observed” appropriately represents that earlier action. An indirect question takes “if/whether”, not “that whether”.",
-        "hindi_explanation": "“Asked” past में है, इसलिए “can” सामान्यतः “could” होता है। Observation पहले हुई थी, इसलिए “had observed” उपयुक्त है। Indirect question में “if/whether” आता है, “that whether” नहीं."
+        "explanation": "The reporting verb “asked” is in the past, so “can” changes to “could”. The observation occurred earlier, so “had observed” appropriately represents that earlier action. An indirect question takes “if/whether”, not “that whether”.",
+        "hindi": "“Asked” past में है, इसलिए “can” सामान्यतः “could” होता है। Observation पहले हुई थी, इसलिए “had observed” उपयुक्त है। Indirect question में “if/whether” आता है, “that whether” नहीं."
       }
     },
     {
@@ -119,20 +125,10 @@
         "Prejudiced"
       ],
       "a": 1,
-      "e": "“Insular” means narrow-minded or limited to one’s own group, culture, or ideas. “Cosmopolitan” means familiar with and open to different cultures and ideas, so it is the antonym.",
-      "eh": "“Insular” का अर्थ संकीर्ण सोच वाला या अपने ही समूह/संस्कृति/विचारों तक सीमित होना है। “Cosmopolitan” विभिन्न संस्कृतियों और विचारों के प्रति परिचित एवं उदार होने को दर्शाता है, इसलिए यह antonym है.",
       "topic": "Antonyms",
       "instruction": "Choose the word that is opposite in meaning to the word “insular”.",
       "explanation": {
-        "why_correct": "“Insular” means narrow-minded or limited to one’s own group, culture, or ideas. “Cosmopolitan” means familiar with and open to different cultures and ideas, so it is the antonym.",
-        "hindi_explanation": "“Insular” का अर्थ संकीर्ण सोच वाला या अपने ही समूह/संस्कृति/विचारों तक सीमित होना है। “Cosmopolitan” विभिन्न संस्कृतियों और विचारों के प्रति परिचित एवं उदार होने को दर्शाता है, इसलिए यह antonym है.",
-        "option_explanations": {
-          "A": "Parochial = narrow or limited in outlook. Hindi: संकीर्ण या सीमित दृष्टिकोण वाला.",
-          "B": "Cosmopolitan = familiar with and open to many different cultures and places. Hindi: विभिन्न संस्कृतियों से परिचित और उदार.",
-          "C": "Detached = separate, disconnected, or emotionally uninvolved. Hindi: अलग, असंबद्ध या भावनात्मक रूप से दूर.",
-          "D": "Prejudiced = having preconceived and often unfair opinions. Hindi: पूर्वाग्रह से ग्रस्त."
-        },
-        "target_vocabulary": {
+        "vocabulary": {
           "word": "Insular",
           "meaning": "Narrow-minded; uninterested in ideas, cultures, or people outside one’s own experience.",
           "hindi_meaning": "संकीर्ण सोच वाला; बाहरी विचारों, संस्कृतियों या लोगों के प्रति अनुदार।",
@@ -146,13 +142,35 @@
             "Broad-minded",
             "Universal"
           ]
+        },
+        "options": {
+          "A": {
+            "word": "Parochial",
+            "meaning": "narrow or limited in outlook.",
+            "hindi": "संकीर्ण या सीमित दृष्टिकोण वाला."
+          },
+          "B": {
+            "word": "Cosmopolitan",
+            "meaning": "familiar with and open to many different cultures and places.",
+            "hindi": "विभिन्न संस्कृतियों से परिचित और उदार."
+          },
+          "C": {
+            "word": "Detached",
+            "meaning": "separate, disconnected, or emotionally uninvolved.",
+            "hindi": "अलग, असंबद्ध या भावनात्मक रूप से दूर."
+          },
+          "D": {
+            "word": "Prejudiced",
+            "meaning": "having preconceived and often unfair opinions.",
+            "hindi": "पूर्वाग्रह से ग्रस्त."
+          }
         }
       }
     },
     {
       "id": 6,
       "type": "Para Jumbles",
-      "q": "P: While green energy sources like solar and wind power offer a sustainable alternative, their intermittent nature presents a significant operational hurdle for heavy industries.\nQ: To resolve this grid instability, engineering firms are investing heavily in advanced lithium-ion battery storage infrastructure.\nR: The global transition toward a carbon-neutral economy requires an immediate and massive overhaul of existing power grids.\nS: Without these robust storage systems, manufacturing plants risk frequent operational blackouts during seasonal weather changes.",
+      "q": "",
       "o": [
         "RPQS",
         "RQPS",
@@ -160,14 +178,30 @@
         "PRQS"
       ],
       "a": 0,
-      "e": "R introduces the broad issue of the power-grid overhaul. P identifies the intermittency problem. Q presents battery storage as the solution, and S gives the consequence of lacking that storage. Therefore, the sequence is RPQS.",
-      "eh": "R power-grid overhaul का व्यापक विषय देता है। P intermittency की समस्या बताता है। Q battery storage का solution देता है और S storage न होने का परिणाम बताता है। इसलिए क्रम RPQS है.",
       "topic": "Para Jumbles",
       "instruction": "Arrange the sentences in the most logical sequence.",
       "explanation": {
-        "why_correct": "R introduces the broad issue of the power-grid overhaul. P identifies the intermittency problem. Q presents battery storage as the solution, and S gives the consequence of lacking that storage. Therefore, the sequence is RPQS.",
-        "hindi_explanation": "R power-grid overhaul का व्यापक विषय देता है। P intermittency की समस्या बताता है। Q battery storage का solution देता है और S storage न होने का परिणाम बताता है। इसलिए क्रम RPQS है."
-      }
+        "explanation": "R introduces the broad issue of the power-grid overhaul. P identifies the intermittency problem. Q presents battery storage as the solution, and S gives the consequence of lacking that storage. Therefore, the sequence is RPQS.",
+        "hindi": "R power-grid overhaul का व्यापक विषय देता है। P intermittency की समस्या बताता है। Q battery storage का solution देता है और S storage न होने का परिणाम बताता है। इसलिए क्रम RPQS है."
+      },
+      "sentences": [
+        {
+          "label": "P",
+          "text": "While green energy sources like solar and wind power offer a sustainable alternative, their intermittent nature presents a significant operational hurdle for heavy industries."
+        },
+        {
+          "label": "Q",
+          "text": "To resolve this grid instability, engineering firms are investing heavily in advanced lithium-ion battery storage infrastructure."
+        },
+        {
+          "label": "R",
+          "text": "The global transition toward a carbon-neutral economy requires an immediate and massive overhaul of existing power grids."
+        },
+        {
+          "label": "S",
+          "text": "Without these robust storage systems, manufacturing plants risk frequent operational blackouts during seasonal weather changes."
+        }
+      ]
     },
     {
       "id": 7,
@@ -180,18 +214,35 @@
         "To voice their complaints aggressively to the board"
       ],
       "a": 1,
-      "e": "“Keep your chin up” means to remain brave, hopeful, and optimistic during a difficult situation.",
-      "eh": "“Keep your chin up” का अर्थ कठिन परिस्थिति में हिम्मत, उम्मीद और सकारात्मकता बनाए रखना है.",
       "topic": "Idioms",
       "instruction": "Choose the option that gives the correct meaning of the idiom “keep your chin up”.",
       "explanation": {
-        "why_correct": "“Keep your chin up” means to remain brave, hopeful, and optimistic during a difficult situation.",
-        "hindi_explanation": "“Keep your chin up” का अर्थ कठिन परिस्थिति में हिम्मत, उम्मीद और सकारात्मकता बनाए रखना है.",
-        "option_explanations": {
-          "A": "Remain arrogant and unyielding = stay proud and unwilling to change. Hindi: घमंडी और अड़ियल बने रहना.",
-          "B": "Remain cheerful and optimistic in difficulty = stay hopeful and positive. Hindi: कठिनाई में भी खुश और आशावादी रहना.",
-          "C": "Stay vigilant against internal corporate espionage = remain alert to spying within the organization. Hindi: संगठन के भीतर जासूसी के प्रति सतर्क रहना.",
-          "D": "Voice complaints aggressively to the board = express grievances forcefully to senior management. Hindi: बोर्ड के सामने शिकायतें आक्रामक ढंग से रखना."
+        "correct_meaning": {
+          "word": "Remain cheerful and optimistic in difficulty",
+          "meaning": "stay hopeful and positive.",
+          "hindi": "कठिनाई में भी खुश और आशावादी रहना."
+        },
+        "options": {
+          "A": {
+            "word": "Remain arrogant and unyielding",
+            "meaning": "stay proud and unwilling to change.",
+            "hindi": "घमंडी और अड़ियल बने रहना."
+          },
+          "B": {
+            "word": "Remain cheerful and optimistic in difficulty",
+            "meaning": "stay hopeful and positive.",
+            "hindi": "कठिनाई में भी खुश और आशावादी रहना."
+          },
+          "C": {
+            "word": "Stay vigilant against internal corporate espionage",
+            "meaning": "remain alert to spying within the organization.",
+            "hindi": "संगठन के भीतर जासूसी के प्रति सतर्क रहना."
+          },
+          "D": {
+            "word": "Voice complaints aggressively to the board",
+            "meaning": "express grievances forcefully to senior management.",
+            "hindi": "बोर्ड के सामने शिकायतें आक्रामक ढंग से रखना."
+          }
         }
       }
     },
@@ -206,13 +257,11 @@
         "the emergency ward right on time."
       ],
       "a": 0,
-      "e": "“Despite” is not followed by “of”. The correct forms are “Despite the unrelenting downpour” or “In spite of the unrelenting downpour”.",
-      "eh": "“Despite” के बाद “of” नहीं आता। सही रूप “Despite the unrelenting downpour” या “In spite of the unrelenting downpour” है.",
       "topic": "Spotting the Error",
       "instruction": "Identify the part of the sentence that contains a grammatical error. If there is no error, choose “No Error”.",
       "explanation": {
-        "why_correct": "“Despite” is not followed by “of”. The correct forms are “Despite the unrelenting downpour” or “In spite of the unrelenting downpour”.",
-        "hindi_explanation": "“Despite” के बाद “of” नहीं आता। सही रूप “Despite the unrelenting downpour” या “In spite of the unrelenting downpour” है."
+        "explanation": "“Despite” is not followed by “of”. The correct forms are “Despite the unrelenting downpour” or “In spite of the unrelenting downpour”.",
+        "hindi": "“Despite” के बाद “of” नहीं आता। सही रूप “Despite the unrelenting downpour” या “In spite of the unrelenting downpour” है."
       }
     },
     {
@@ -226,13 +275,11 @@
         "To ensure optimal utilization of renewable energy resources, the futuristic blueprint of the smart city is meticulously designed by the architectural firm."
       ],
       "a": 1,
-      "e": "The active sentence is in the Simple Past (“designed”). Its passive form is “was/were + past participle”, giving “was meticulously designed”.",
-      "eh": "“Designed” Simple Past है, इसलिए passive में “was/were + V3” आएगा। सही रूप “was meticulously designed” है.",
       "topic": "Active & Passive Voice",
       "instruction": "Choose the correct passive-voice form of the given sentence.",
       "explanation": {
-        "why_correct": "The active sentence is in the Simple Past (“designed”). Its passive form is “was/were + past participle”, giving “was meticulously designed”.",
-        "hindi_explanation": "“Designed” Simple Past है, इसलिए passive में “was/were + V3” आएगा। सही रूप “was meticulously designed” है."
+        "explanation": "The active sentence is in the Simple Past (“designed”). Its passive form is “was/were + past participle”, giving “was meticulously designed”.",
+        "hindi": "“Designed” Simple Past है, इसलिए passive में “was/were + V3” आएगा। सही रूप “was meticulously designed” है."
       }
     },
     {
@@ -246,13 +293,11 @@
         "The project coordinator warned the team members against compromising on the software quality checks, otherwise the deployment phase will face severe delays the following month."
       ],
       "a": 0,
-      "e": "A negative imperative can be reported with “warned/told + object + not to”. Because the reporting verb is in the past, “will” becomes “would”, and “next month” becomes “the following month”.",
-      "eh": "Negative imperative को “warned/told + object + not to” से report किया जा सकता है। Past reporting के कारण “will” → “would” और “next month” → “the following month” होता है.",
       "topic": "Direct & Indirect Speech",
       "instruction": "Choose the correct indirect-speech form of the given sentence.",
       "explanation": {
-        "why_correct": "A negative imperative can be reported with “warned/told + object + not to”. Because the reporting verb is in the past, “will” becomes “would”, and “next month” becomes “the following month”.",
-        "hindi_explanation": "Negative imperative को “warned/told + object + not to” से report किया जा सकता है। Past reporting के कारण “will” → “would” और “next month” → “the following month” होता है."
+        "explanation": "A negative imperative can be reported with “warned/told + object + not to”. Because the reporting verb is in the past, “will” becomes “would”, and “next month” becomes “the following month”.",
+        "hindi": "Negative imperative को “warned/told + object + not to” से report किया जा सकता है। Past reporting के कारण “will” → “would” और “next month” → “the following month” होता है."
       }
     },
     {
@@ -266,20 +311,10 @@
         "Epicure"
       ],
       "a": 0,
-      "e": "A “maverick” is an unconventional or independent-minded person who does not readily follow established rules or conventions.",
-      "eh": "“Maverick” ऐसे व्यक्ति को कहते हैं जो परंपरागत नियमों से अलग स्वतंत्र और असामान्य सोच रखता है.",
       "topic": "One Word Substitution",
       "instruction": "Choose the word that best describes the person given in the statement.",
       "explanation": {
-        "why_correct": "A “maverick” is an unconventional or independent-minded person who does not readily follow established rules or conventions.",
-        "hindi_explanation": "“Maverick” ऐसे व्यक्ति को कहते हैं जो परंपरागत नियमों से अलग स्वतंत्र और असामान्य सोच रखता है.",
-        "option_explanations": {
-          "A": "Maverick = an unconventional or independent-minded person. Hindi: परंपरा से अलग स्वतंत्र सोच वाला व्यक्ति.",
-          "B": "Altruist = a person concerned with the welfare of others. Hindi: दूसरों के कल्याण की चिंता करने वाला व्यक्ति.",
-          "C": "Sycophant = a person who flatters an influential person for personal advantage. Hindi: निजी लाभ के लिए प्रभावशाली व्यक्ति की चापलूसी करने वाला.",
-          "D": "Epicure = a person who takes particular pleasure in fine food and drink. Hindi: अच्छे भोजन और पेय का विशेष आनंद लेने वाला व्यक्ति."
-        },
-        "target_vocabulary": {
+        "vocabulary": {
           "word": "Maverick",
           "meaning": "An unconventional or independent-minded person.",
           "hindi_meaning": "परंपरा से अलग स्वतंत्र सोच वाला व्यक्ति।",
@@ -293,6 +328,28 @@
             "Traditionalist",
             "Conventionalist"
           ]
+        },
+        "options": {
+          "A": {
+            "word": "Maverick",
+            "meaning": "an unconventional or independent-minded person.",
+            "hindi": "परंपरा से अलग स्वतंत्र सोच वाला व्यक्ति."
+          },
+          "B": {
+            "word": "Altruist",
+            "meaning": "a person concerned with the welfare of others.",
+            "hindi": "दूसरों के कल्याण की चिंता करने वाला व्यक्ति."
+          },
+          "C": {
+            "word": "Sycophant",
+            "meaning": "a person who flatters an influential person for personal advantage.",
+            "hindi": "निजी लाभ के लिए प्रभावशाली व्यक्ति की चापलूसी करने वाला."
+          },
+          "D": {
+            "word": "Epicure",
+            "meaning": "a person who takes particular pleasure in fine food and drink.",
+            "hindi": "अच्छे भोजन और पेय का विशेष आनंद लेने वाला व्यक्ति."
+          }
         }
       }
     },
@@ -307,19 +364,17 @@
         "No Error"
       ],
       "a": 3,
-      "e": "The sentence correctly uses inversion after “Not only” and the correlative structure “not only ... but ... also”. There is no grammatical error.",
-      "eh": "“Not only” के बाद inversion और “not only ... but ... also” structure सही है। कोई grammatical error नहीं है.",
       "topic": "Spotting the Error",
       "instruction": "Identify the part of the sentence that contains a grammatical error. If there is no error, choose “No Error”.",
       "explanation": {
-        "why_correct": "The sentence correctly uses inversion after “Not only” and the correlative structure “not only ... but ... also”. There is no grammatical error.",
-        "hindi_explanation": "“Not only” के बाद inversion और “not only ... but ... also” structure सही है। कोई grammatical error नहीं है."
+        "explanation": "The sentence correctly uses inversion after “Not only” and the correlative structure “not only ... but ... also”. There is no grammatical error.",
+        "hindi": "“Not only” के बाद inversion और “not only ... but ... also” structure सही है। कोई grammatical error नहीं है."
       }
     },
     {
       "id": 13,
       "type": "Spelling Error",
-      "q": "Look at the four options below and identify the sentence containing the spelling error.",
+      "q": "Which sentence contains the spelling error?",
       "o": [
         "The sovereign nation maintained its autonomy through strict diplomatic protocols.",
         "The sudden obsolescence of the old manufacturing equipment paralyzed production.",
@@ -327,20 +382,10 @@
         "His magnanimous gesture toward his political rivals surprised the entire electorate."
       ],
       "a": 2,
-      "e": "Option C contains the misspelling “hipotheses”. The correct spelling is “hypotheses”.",
-      "eh": "Option C में “hipotheses” की spelling गलत है। सही spelling “hypotheses” है.",
       "topic": "Spelling Error",
       "instruction": "Identify the option that contains a spelling error within the given context.",
       "explanation": {
-        "why_correct": "Option C contains the misspelling “hipotheses”. The correct spelling is “hypotheses”.",
-        "hindi_explanation": "Option C में “hipotheses” की spelling गलत है। सही spelling “hypotheses” है.",
-        "option_explanations": {
-          "A": "Sovereign = possessing supreme power or independence. Hindi: सर्वोच्च शक्ति वाला या स्वतंत्र.",
-          "B": "Obsolescence = the state of becoming outdated or no longer useful. Hindi: अप्रचलित या पुराना हो जाने की अवस्था.",
-          "C": "Hypotheses = proposed explanations or ideas to be tested. Hindi: परिकल्पनाएँ या परीक्षण योग्य प्रस्तावित व्याख्याएँ.",
-          "D": "Magnanimous = generous or forgiving, especially toward a rival. Hindi: विशेषकर प्रतिद्वंद्वी के प्रति उदार और क्षमाशील."
-        },
-        "target_vocabulary": {
+        "vocabulary": {
           "word": "Hypotheses",
           "meaning": "Proposed explanations or ideas that can be tested.",
           "hindi_meaning": "परिकल्पनाएँ या परीक्षण योग्य प्रस्तावित व्याख्याएँ।",
@@ -354,13 +399,35 @@
             "Certainties",
             "Proofs"
           ]
+        },
+        "options": {
+          "A": {
+            "word": "Sovereign",
+            "meaning": "possessing supreme power or independence.",
+            "hindi": "सर्वोच्च शक्ति वाला या स्वतंत्र."
+          },
+          "B": {
+            "word": "Obsolescence",
+            "meaning": "the state of becoming outdated or no longer useful.",
+            "hindi": "अप्रचलित या पुराना हो जाने की अवस्था."
+          },
+          "C": {
+            "word": "Hypotheses",
+            "meaning": "proposed explanations or ideas to be tested.",
+            "hindi": "परिकल्पनाएँ या परीक्षण योग्य प्रस्तावित व्याख्याएँ."
+          },
+          "D": {
+            "word": "Magnanimous",
+            "meaning": "generous or forgiving, especially toward a rival.",
+            "hindi": "विशेषकर प्रतिद्वंद्वी के प्रति उदार और क्षमाशील."
+          }
         }
       }
     },
     {
       "id": 14,
       "type": "Synonyms",
-      "q": "The magistrate noted that the evidence presented by the prosecution was entirely tenuous, lacking any substantive material to link the accused directly to the white-collar crime. (Find Synonym)",
+      "q": "The magistrate noted that the evidence presented by the prosecution was entirely tenuous, lacking any substantive material to link the accused directly to the white-collar crime.",
       "o": [
         "Formidable",
         "Flimsy",
@@ -368,20 +435,10 @@
         "Equivocal"
       ],
       "a": 1,
-      "e": "“Tenuous” means very weak, slight, or lacking a substantial basis. “Flimsy” is the closest synonym.",
-      "eh": "“Tenuous” का अर्थ बहुत कमजोर, मामूली या ठोस आधार से रहित है। “Flimsy” इसका निकटतम synonym है.",
       "topic": "Synonyms",
       "instruction": "Choose the word that is closest in meaning to the word “tenuous”.",
       "explanation": {
-        "why_correct": "“Tenuous” means very weak, slight, or lacking a substantial basis. “Flimsy” is the closest synonym.",
-        "hindi_explanation": "“Tenuous” का अर्थ बहुत कमजोर, मामूली या ठोस आधार से रहित है। “Flimsy” इसका निकटतम synonym है.",
-        "option_explanations": {
-          "A": "Formidable = very powerful, impressive, or difficult to overcome. Hindi: बहुत शक्तिशाली या प्रभावशाली.",
-          "B": "Flimsy = weak or lacking solidity. Hindi: कमजोर या ठोस आधार से रहित.",
-          "C": "Authentic = genuine or of undisputed origin. Hindi: वास्तविक या प्रामाणिक.",
-          "D": "Equivocal = open to more than one interpretation; ambiguous. Hindi: अस्पष्ट या जिसका एक से अधिक अर्थ निकले."
-        },
-        "target_vocabulary": {
+        "vocabulary": {
           "word": "Tenuous",
           "meaning": "Very weak, slight, or insubstantial.",
           "hindi_meaning": "बहुत कमजोर, मामूली या ठोस आधार से रहित।",
@@ -395,6 +452,28 @@
             "Robust",
             "Substantial"
           ]
+        },
+        "options": {
+          "A": {
+            "word": "Formidable",
+            "meaning": "very powerful, impressive, or difficult to overcome.",
+            "hindi": "बहुत शक्तिशाली या प्रभावशाली."
+          },
+          "B": {
+            "word": "Flimsy",
+            "meaning": "weak or lacking solidity.",
+            "hindi": "कमजोर या ठोस आधार से रहित."
+          },
+          "C": {
+            "word": "Authentic",
+            "meaning": "genuine or of undisputed origin.",
+            "hindi": "वास्तविक या प्रामाणिक."
+          },
+          "D": {
+            "word": "Equivocal",
+            "meaning": "open to more than one interpretation; ambiguous.",
+            "hindi": "अस्पष्ट या जिसका एक से अधिक अर्थ निकले."
+          }
         }
       }
     },
@@ -409,13 +488,11 @@
         "No improvement required"
       ],
       "a": 1,
-      "e": "“Call off” means to cancel. The sentence needs “call off the bilateral negotiations”; the extra “on” is incorrect.",
-      "eh": "“Call off” का अर्थ cancel करना है। सही phrase “call off the bilateral negotiations” है; “on” गलत है.",
       "topic": "Sentence Improvement",
       "instruction": "Choose the option that provides the correct/improved form of the sentence.",
       "explanation": {
-        "why_correct": "“Call off” means to cancel. The sentence needs “call off the bilateral negotiations”; the extra “on” is incorrect.",
-        "hindi_explanation": "“Call off” का अर्थ cancel करना है। सही phrase “call off the bilateral negotiations” है; “on” गलत है."
+        "explanation": "“Call off” means to cancel. The sentence needs “call off the bilateral negotiations”; the extra “on” is incorrect.",
+        "hindi": "“Call off” का अर्थ cancel करना है। सही phrase “call off the bilateral negotiations” है; “on” गलत है."
       }
     },
     {
@@ -429,13 +506,11 @@
         "No Error"
       ],
       "a": 3,
-      "e": "This is a correctly formed third conditional in inversion: “Had + subject + past participle ..., subject + would have + past participle.” There is no error.",
-      "eh": "यह inversion वाला correctly formed third conditional है: “Had + subject + V3 ..., subject + would have + V3.” कोई error नहीं है.",
       "topic": "Spotting the Error",
       "instruction": "Identify the part of the sentence that contains a grammatical error. If there is no error, choose “No Error”.",
       "explanation": {
-        "why_correct": "This is a correctly formed third conditional in inversion: “Had + subject + past participle ..., subject + would have + past participle.” There is no error.",
-        "hindi_explanation": "यह inversion वाला correctly formed third conditional है: “Had + subject + V3 ..., subject + would have + V3.” कोई error नहीं है."
+        "explanation": "This is a correctly formed third conditional in inversion: “Had + subject + past participle ..., subject + would have + past participle.” There is no error.",
+        "hindi": "यह inversion वाला correctly formed third conditional है: “Had + subject + V3 ..., subject + would have + V3.” कोई error नहीं है."
       }
     },
     {
@@ -449,13 +524,11 @@
         "The upcoming economic correction is being predicted by analysts by closely monitoring the fluctuating patterns of the stock index."
       ],
       "a": 0,
-      "e": "The active sentence is in the Present Continuous (“are monitoring”). Its passive form is “are being + past participle”, giving “are being closely monitored”.",
-      "eh": "“Are monitoring” Present Continuous है, इसलिए passive में “are being + V3” आएगा। सही रूप “are being closely monitored” है.",
       "topic": "Active & Passive Voice",
       "instruction": "Choose the correct passive-voice form of the given sentence.",
       "explanation": {
-        "why_correct": "The active sentence is in the Present Continuous (“are monitoring”). Its passive form is “are being + past participle”, giving “are being closely monitored”.",
-        "hindi_explanation": "“Are monitoring” Present Continuous है, इसलिए passive में “are being + V3” आएगा। सही रूप “are being closely monitored” है."
+        "explanation": "The active sentence is in the Present Continuous (“are monitoring”). Its passive form is “are being + past participle”, giving “are being closely monitored”.",
+        "hindi": "“Are monitoring” Present Continuous है, इसलिए passive में “are being + V3” आएगा। सही रूप “are being closely monitored” है."
       }
     },
     {
@@ -469,25 +542,42 @@
         "A dynamic milestone achieved unexpectedly"
       ],
       "a": 1,
-      "e": "“Castle in the air” means an unrealistic dream, plan, or grand idea without a practical basis.",
-      "eh": "“Castle in the air” का अर्थ ऐसा अवास्तविक सपना, योजना या विचार है जिसका practical basis नहीं है.",
       "topic": "Idioms",
       "instruction": "Choose the option that gives the correct meaning of the idiom “castle in the air”.",
       "explanation": {
-        "why_correct": "“Castle in the air” means an unrealistic dream, plan, or grand idea without a practical basis.",
-        "hindi_explanation": "“Castle in the air” का अर्थ ऐसा अवास्तविक सपना, योजना या विचार है जिसका practical basis नहीं है.",
-        "option_explanations": {
-          "A": "An expensive architectural failure = a costly failure involving a building or design. Hindi: भवन/डिज़ाइन से जुड़ी महंगी विफलता.",
-          "B": "A visionary but highly impractical plan = an attractive idea without realistic feasibility. Hindi: कल्पनाशील लेकिन अत्यंत अव्यावहारिक योजना.",
-          "C": "A well-fortified strategy = a strongly protected or defended plan. Hindi: अच्छी तरह सुरक्षित या मजबूत रणनीति.",
-          "D": "A dynamic milestone achieved unexpectedly = an important achievement reached without being planned. Hindi: अप्रत्याशित रूप से प्राप्त महत्वपूर्ण उपलब्धि."
+        "correct_meaning": {
+          "word": "A visionary but highly impractical plan",
+          "meaning": "an attractive idea without realistic feasibility.",
+          "hindi": "कल्पनाशील लेकिन अत्यंत अव्यावहारिक योजना."
+        },
+        "options": {
+          "A": {
+            "word": "An expensive architectural failure",
+            "meaning": "a costly failure involving a building or design.",
+            "hindi": "भवन/डिज़ाइन से जुड़ी महंगी विफलता."
+          },
+          "B": {
+            "word": "A visionary but highly impractical plan",
+            "meaning": "an attractive idea without realistic feasibility.",
+            "hindi": "कल्पनाशील लेकिन अत्यंत अव्यावहारिक योजना."
+          },
+          "C": {
+            "word": "A well-fortified strategy",
+            "meaning": "a strongly protected or defended plan.",
+            "hindi": "अच्छी तरह सुरक्षित या मजबूत रणनीति."
+          },
+          "D": {
+            "word": "A dynamic milestone achieved unexpectedly",
+            "meaning": "an important achievement reached without being planned.",
+            "hindi": "अप्रत्याशित रूप से प्राप्त महत्वपूर्ण उपलब्धि."
+          }
         }
       }
     },
     {
       "id": 19,
       "type": "Para Jumbles",
-      "q": "P: This demographic shift has created an unprecedented demand for flexible healthcare policies that prioritize preventative care over emergency treatments.\nQ: Furthermore, urban migration has compressed the available housing space, fundamentally altering family structures and support systems for the elderly.\nR: Over the past two decades, the nation has witnessed a substantial transformation in its socio-economic landscape due to rapid industrial growth.\nS: Consequently, municipal corporations are forced to re-evaluate their city planning layout to accommodate both commercial zoning and residential wellbeing.",
+      "q": "",
       "o": [
         "RPSQ",
         "RQPS",
@@ -495,19 +585,35 @@
         "SQRP"
       ],
       "a": 1,
-      "e": "R introduces the broad socio-economic transformation. Q adds urban migration and its effects on housing and family structures, establishing the demographic shift referred to by “This demographic shift” in P. S then gives a consequence for municipal planning. Therefore, the logical sequence is RQPS.",
-      "eh": "R व्यापक socio-economic transformation को प्रस्तुत करता है। Q urban migration और उसके प्रभाव बताता है, जिससे P का “This demographic shift” स्पष्ट होता है। S इसके बाद municipal planning का consequence देता है। इसलिए क्रम RQPS है.",
       "topic": "Para Jumbles",
       "instruction": "Arrange the sentences in the most logical sequence.",
       "explanation": {
-        "why_correct": "R introduces the broad socio-economic transformation. Q adds urban migration and its effects on housing and family structures, establishing the demographic shift referred to by “This demographic shift” in P. S then gives a consequence for municipal planning. Therefore, the logical sequence is RQPS.",
-        "hindi_explanation": "R व्यापक socio-economic transformation को प्रस्तुत करता है। Q urban migration और उसके प्रभाव बताता है, जिससे P का “This demographic shift” स्पष्ट होता है। S इसके बाद municipal planning का consequence देता है। इसलिए क्रम RQPS है."
-      }
+        "explanation": "R introduces the broad socio-economic transformation. Q adds urban migration and its effects on housing and family structures, establishing the demographic shift referred to by “This demographic shift” in P. S then gives a consequence for municipal planning. Therefore, the logical sequence is RQPS.",
+        "hindi": "R व्यापक socio-economic transformation को प्रस्तुत करता है। Q urban migration और उसके प्रभाव बताता है, जिससे P का “This demographic shift” स्पष्ट होता है। S इसके बाद municipal planning का consequence देता है। इसलिए क्रम RQPS है."
+      },
+      "sentences": [
+        {
+          "label": "P",
+          "text": "This demographic shift has created an unprecedented demand for flexible healthcare policies that prioritize preventative care over emergency treatments."
+        },
+        {
+          "label": "Q",
+          "text": "Furthermore, urban migration has compressed the available housing space, fundamentally altering family structures and support systems for the elderly."
+        },
+        {
+          "label": "R",
+          "text": "Over the past two decades, the nation has witnessed a substantial transformation in its socio-economic landscape due to rapid industrial growth."
+        },
+        {
+          "label": "S",
+          "text": "Consequently, municipal corporations are forced to re-evaluate their city planning layout to accommodate both commercial zoning and residential wellbeing."
+        }
+      ]
     },
     {
       "id": 20,
       "type": "Synonyms",
-      "q": "The professor’s lucid explanation of the complex thermodynamic principles allowed even the novice undergraduate students to grasp the core concepts effortlessly. (Find Synonym)",
+      "q": "The professor’s lucid explanation of the complex thermodynamic principles allowed even the novice undergraduate students to grasp the core concepts effortlessly.",
       "o": [
         "Obscure",
         "Transparent",
@@ -515,20 +621,10 @@
         "Comprehensive"
       ],
       "a": 1,
-      "e": "“Lucid” means clear and easy to understand. “Transparent” is the intended contextual synonym among the given options.",
-      "eh": "“Lucid” का अर्थ स्पष्ट और आसानी से समझ में आने वाला है। दिए गए options में “Transparent” intended contextual synonym है.",
       "topic": "Synonyms",
       "instruction": "Choose the word that is closest in meaning to the word “lucid”.",
       "explanation": {
-        "why_correct": "“Lucid” means clear and easy to understand. “Transparent” is the intended contextual synonym among the given options.",
-        "hindi_explanation": "“Lucid” का अर्थ स्पष्ट और आसानी से समझ में आने वाला है। दिए गए options में “Transparent” intended contextual synonym है.",
-        "option_explanations": {
-          "A": "Obscure = difficult to understand or unclear. Hindi: अस्पष्ट या समझने में कठिन.",
-          "B": "Transparent = clear or easy to understand in this context. Hindi: स्पष्ट और आसानी से समझ में आने वाला.",
-          "C": "Intricate = very complicated or detailed. Hindi: जटिल या पेचीदा.",
-          "D": "Comprehensive = including all or nearly all important aspects. Hindi: व्यापक या सभी प्रमुख पहलुओं को शामिल करने वाला."
-        },
-        "target_vocabulary": {
+        "vocabulary": {
           "word": "Lucid",
           "meaning": "Clear and easy to understand.",
           "hindi_meaning": "स्पष्ट और आसानी से समझ में आने वाला।",
@@ -542,6 +638,28 @@
             "Ambiguous",
             "Convoluted"
           ]
+        },
+        "options": {
+          "A": {
+            "word": "Obscure",
+            "meaning": "difficult to understand or unclear.",
+            "hindi": "अस्पष्ट या समझने में कठिन."
+          },
+          "B": {
+            "word": "Transparent",
+            "meaning": "clear or easy to understand in this context.",
+            "hindi": "स्पष्ट और आसानी से समझ में आने वाला."
+          },
+          "C": {
+            "word": "Intricate",
+            "meaning": "very complicated or detailed.",
+            "hindi": "जटिल या पेचीदा."
+          },
+          "D": {
+            "word": "Comprehensive",
+            "meaning": "including all or nearly all important aspects.",
+            "hindi": "व्यापक या सभी प्रमुख पहलुओं को शामिल करने वाला."
+          }
         }
       }
     },
@@ -557,18 +675,35 @@
         "repudiate"
       ],
       "a": 1,
-      "e": "The context says historical training data can preserve old prejudices. “Perpetuate” means to make something continue or preserve it over time.",
-      "eh": "Historical training data पुरानी prejudices को बनाए रख सकता है। “Perpetuate” का अर्थ किसी चीज़ को जारी रखना या बनाए रखना है.",
       "topic": "Cloze Test",
       "instruction": "Choose the most appropriate option to complete blank (21) in the Cloze Test.",
       "explanation": {
-        "why_correct": "The context says historical training data can preserve old prejudices. “Perpetuate” means to make something continue or preserve it over time.",
-        "hindi_explanation": "Historical training data पुरानी prejudices को बनाए रख सकता है। “Perpetuate” का अर्थ किसी चीज़ को जारी रखना या बनाए रखना है.",
-        "option_explanations": {
-          "A": "Alleviate = make something less severe. Hindi: कम या हल्का करना.",
-          "B": "Perpetuate = make something continue or preserve it over time. Hindi: जारी रखना या बनाए रखना.",
-          "C": "Mitigate = make something less severe or harmful. Hindi: कम करना या प्रभाव घटाना.",
-          "D": "Repudiate = reject or refuse to accept something. Hindi: अस्वीकार करना."
+        "correct_meaning": {
+          "word": "Perpetuate",
+          "meaning": "make something continue or preserve it over time.",
+          "hindi": "जारी रखना या बनाए रखना."
+        },
+        "options": {
+          "A": {
+            "word": "Alleviate",
+            "meaning": "make something less severe.",
+            "hindi": "कम या हल्का करना."
+          },
+          "B": {
+            "word": "Perpetuate",
+            "meaning": "make something continue or preserve it over time.",
+            "hindi": "जारी रखना या बनाए रखना."
+          },
+          "C": {
+            "word": "Mitigate",
+            "meaning": "make something less severe or harmful.",
+            "hindi": "कम करना या प्रभाव घटाना."
+          },
+          "D": {
+            "word": "Repudiate",
+            "meaning": "reject or refuse to accept something.",
+            "hindi": "अस्वीकार करना."
+          }
         }
       }
     },
@@ -584,18 +719,35 @@
         "neutralized"
       ],
       "a": 0,
-      "e": "A feedback loop can increase the strength or intensity of an existing bias. “Amplified” expresses that increase.",
-      "eh": "Feedback loop existing bias की intensity बढ़ा सकता है। “Amplified” इसी वृद्धि को दर्शाता है.",
       "topic": "Cloze Test",
       "instruction": "Choose the most appropriate option to complete blank (22) in the Cloze Test.",
       "explanation": {
-        "why_correct": "A feedback loop can increase the strength or intensity of an existing bias. “Amplified” expresses that increase.",
-        "hindi_explanation": "Feedback loop existing bias की intensity बढ़ा सकता है। “Amplified” इसी वृद्धि को दर्शाता है.",
-        "option_explanations": {
-          "A": "Amplified = increased in strength or intensity. Hindi: शक्ति या तीव्रता बढ़ाई गई.",
-          "B": "Diminished = reduced in strength or importance. Hindi: कम किया गया.",
-          "C": "Truncated = shortened or cut short. Hindi: छोटा या बीच में काटा गया.",
-          "D": "Neutralized = made ineffective or counterbalanced. Hindi: प्रभावहीन या निष्प्रभावी किया गया."
+        "correct_meaning": {
+          "word": "Amplified",
+          "meaning": "increased in strength or intensity.",
+          "hindi": "शक्ति या तीव्रता बढ़ाई गई."
+        },
+        "options": {
+          "A": {
+            "word": "Amplified",
+            "meaning": "increased in strength or intensity.",
+            "hindi": "शक्ति या तीव्रता बढ़ाई गई."
+          },
+          "B": {
+            "word": "Diminished",
+            "meaning": "reduced in strength or importance.",
+            "hindi": "कम किया गया."
+          },
+          "C": {
+            "word": "Truncated",
+            "meaning": "shortened or cut short.",
+            "hindi": "छोटा या बीच में काटा गया."
+          },
+          "D": {
+            "word": "Neutralized",
+            "meaning": "made ineffective or counterbalanced.",
+            "hindi": "प्रभावहीन या निष्प्रभावी किया गया."
+          }
         }
       }
     },
@@ -611,18 +763,35 @@
         "fractured"
       ],
       "a": 1,
-      "e": "The passage is concerned with fairness in legal systems. “Equitable” means fair and impartial, so it fits the context of justice.",
-      "eh": "Passage fairness की बात करता है। “Equitable” का अर्थ fair और impartial है, इसलिए यह justice के context में सही है.",
       "topic": "Cloze Test",
       "instruction": "Choose the most appropriate option to complete blank (23) in the Cloze Test.",
       "explanation": {
-        "why_correct": "The passage is concerned with fairness in legal systems. “Equitable” means fair and impartial, so it fits the context of justice.",
-        "hindi_explanation": "Passage fairness की बात करता है। “Equitable” का अर्थ fair और impartial है, इसलिए यह justice के context में सही है.",
-        "option_explanations": {
-          "A": "Whimsical = based on sudden, fanciful, or playful ideas. Hindi: सनकी या मनमाना.",
-          "B": "Equitable = fair, impartial, and just. Hindi: न्यायसंगत और निष्पक्ष.",
-          "C": "Arbitrary = based on random choice rather than a consistent principle. Hindi: मनमाना, बिना उचित नियम के.",
-          "D": "Fractured = broken, divided, or damaged into parts. Hindi: टूटा हुआ या विभाजित."
+        "correct_meaning": {
+          "word": "Equitable",
+          "meaning": "fair, impartial, and just.",
+          "hindi": "न्यायसंगत और निष्पक्ष."
+        },
+        "options": {
+          "A": {
+            "word": "Whimsical",
+            "meaning": "based on sudden, fanciful, or playful ideas.",
+            "hindi": "सनकी या मनमाना."
+          },
+          "B": {
+            "word": "Equitable",
+            "meaning": "fair, impartial, and just.",
+            "hindi": "न्यायसंगत और निष्पक्ष."
+          },
+          "C": {
+            "word": "Arbitrary",
+            "meaning": "based on random choice rather than a consistent principle.",
+            "hindi": "मनमाना, बिना उचित नियम के."
+          },
+          "D": {
+            "word": "Fractured",
+            "meaning": "broken, divided, or damaged into parts.",
+            "hindi": "टूटा हुआ या विभाजित."
+          }
         }
       }
     },
@@ -638,18 +807,35 @@
         "regression"
       ],
       "a": 1,
-      "e": "AI should remain under human supervision. “Oversight” means supervision or monitoring, so it fits the sentence.",
-      "eh": "AI को human supervision के अधीन रहना चाहिए। “Oversight” का अर्थ supervision या निगरानी है.",
       "topic": "Cloze Test",
       "instruction": "Choose the most appropriate option to complete blank (24) in the Cloze Test.",
       "explanation": {
-        "why_correct": "AI should remain under human supervision. “Oversight” means supervision or monitoring, so it fits the sentence.",
-        "hindi_explanation": "AI को human supervision के अधीन रहना चाहिए। “Oversight” का अर्थ supervision या निगरानी है.",
-        "option_explanations": {
-          "A": "Negligence = failure to take proper care. Hindi: लापरवाही.",
-          "B": "Oversight = supervision or monitoring. Hindi: निगरानी या पर्यवेक्षण.",
-          "C": "Ignorance = lack of knowledge or awareness. Hindi: अज्ञानता या जानकारी का अभाव.",
-          "D": "Regression = a return to a previous or less advanced state. Hindi: पिछली या कम उन्नत अवस्था की ओर लौटना."
+        "correct_meaning": {
+          "word": "Oversight",
+          "meaning": "supervision or monitoring.",
+          "hindi": "निगरानी या पर्यवेक्षण."
+        },
+        "options": {
+          "A": {
+            "word": "Negligence",
+            "meaning": "failure to take proper care.",
+            "hindi": "लापरवाही."
+          },
+          "B": {
+            "word": "Oversight",
+            "meaning": "supervision or monitoring.",
+            "hindi": "निगरानी या पर्यवेक्षण."
+          },
+          "C": {
+            "word": "Ignorance",
+            "meaning": "lack of knowledge or awareness.",
+            "hindi": "अज्ञानता या जानकारी का अभाव."
+          },
+          "D": {
+            "word": "Regression",
+            "meaning": "a return to a previous or less advanced state.",
+            "hindi": "पिछली या कम उन्नत अवस्था की ओर लौटना."
+          }
         }
       }
     },
@@ -665,21 +851,38 @@
         "transient"
       ],
       "a": 2,
-      "e": "A “binding” legal verdict is legally obligatory or enforceable. “Tentative” means provisional, “superficial” means lacking depth, and “transient” means temporary.",
-      "eh": "“Binding” legal verdict का अर्थ कानूनी रूप से बाध्यकारी या enforceable verdict है। “Tentative” = provisional, “superficial” = सतही, और “transient” = अल्पकालिक.",
       "topic": "Cloze Test",
       "instruction": "Choose the most appropriate option to complete blank (25) in the Cloze Test.",
       "explanation": {
-        "why_correct": "A “binding” legal verdict is legally obligatory or enforceable. “Tentative” means provisional, “superficial” means lacking depth, and “transient” means temporary.",
-        "hindi_explanation": "“Binding” legal verdict का अर्थ कानूनी रूप से बाध्यकारी या enforceable verdict है। “Tentative” = provisional, “superficial” = सतही, और “transient” = अल्पकालिक.",
-        "option_explanations": {
-          "A": "Tentative = provisional or not final. Hindi: अस्थायी या अंतिम नहीं.",
-          "B": "Superficial = lacking depth or serious consideration. Hindi: सतही.",
-          "C": "Binding = legally obligatory or enforceable. Hindi: कानूनी रूप से बाध्यकारी या enforceable.",
-          "D": "Transient = temporary or short-lived. Hindi: अल्पकालिक या थोड़े समय तक रहने वाला."
+        "correct_meaning": {
+          "word": "Binding",
+          "meaning": "legally obligatory or enforceable.",
+          "hindi": "कानूनी रूप से बाध्यकारी या enforceable."
+        },
+        "options": {
+          "A": {
+            "word": "Tentative",
+            "meaning": "provisional or not final.",
+            "hindi": "अस्थायी या अंतिम नहीं."
+          },
+          "B": {
+            "word": "Superficial",
+            "meaning": "lacking depth or serious consideration.",
+            "hindi": "सतही."
+          },
+          "C": {
+            "word": "Binding",
+            "meaning": "legally obligatory or enforceable.",
+            "hindi": "कानूनी रूप से बाध्यकारी या enforceable."
+          },
+          "D": {
+            "word": "Transient",
+            "meaning": "temporary or short-lived.",
+            "hindi": "अल्पकालिक या थोड़े समय तक रहने वाला."
+          }
         }
       }
     }
   ],
-  "description": "Read the bold instruction first. Then read the question carefully and choose one correct option."
+  "description": "25-question SSC CGL Tier-1 English quiz with concise bilingual explanations."
 }
