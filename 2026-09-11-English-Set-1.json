@@ -10,7 +10,7 @@
     {
       "id": 1,
       "type": "Sentence Improvement",
-      "q": "Choose the option that provides the correct/improved form of the sentence.\nThe newly appointed chief executive officer has been working under the assumption that the quarterly revenue targets could be achieved without downsizing the operations department.",
+      "q": "The newly appointed chief executive officer has been working under the assumption that the quarterly revenue targets could be achieved without downsizing the operations department.",
       "o": [
         "had been worked under the assumption",
         "has worked below the assumption",
@@ -18,15 +18,19 @@
         "No improvement required"
       ],
       "a": 3,
-      "e": "The Present Perfect Continuous tense (“has been working”) correctly describes an action that started in the past and is still continuing. “Under the assumption” is the standard expression, so no improvement is required. \n\nHindi Explanation: “Has been working” का प्रयोग ऐसे कार्य के लिए सही है जो अतीत में शुरू हुआ और अभी भी जारी है। “Under the assumption” मानक और सही expression है, इसलिए कोई सुधार आवश्यक नहीं है।",
-      "eh": "“Has been working” का प्रयोग ऐसे कार्य के लिए सही है जो अतीत में शुरू हुआ और अभी भी जारी है। “Under the assumption” मानक और सही expression है, इसलिए कोई सुधार आवश्यक नहीं है।",
+      "e": "The Present Perfect Continuous “has been working” correctly describes an action that began in the past and is still continuing. “Under the assumption” is the standard expression, so no improvement is required.",
+      "eh": "“Has been working” ऐसे कार्य के लिए सही है जो अतीत में शुरू हुआ और अभी भी जारी है। “Under the assumption” मानक expression है, इसलिए सुधार आवश्यक नहीं है.",
       "topic": "Sentence Improvement",
-      "instruction": "Choose the option that provides the correct/improved form of the sentence."
+      "instruction": "Choose the option that provides the correct/improved form of the sentence.",
+      "explanation": {
+        "why_correct": "The Present Perfect Continuous “has been working” correctly describes an action that began in the past and is still continuing. “Under the assumption” is the standard expression, so no improvement is required.",
+        "hindi_explanation": "“Has been working” ऐसे कार्य के लिए सही है जो अतीत में शुरू हुआ और अभी भी जारी है। “Under the assumption” मानक expression है, इसलिए सुधार आवश्यक नहीं है."
+      }
     },
     {
       "id": 2,
       "type": "Spelling Error",
-      "q": "Identify the option that contains an incorrectly spelt word.\nA. The corporate restructuring caused significant administrative inconvenience.\nB. Superstitious beliefs often hinder the development of a scientific temperament.\nC. The chef prepared an exquisite dessert featuring an assortment of exotic fruits.\nD. The hypercritical analysis of the movie received widespread public critisism.",
+      "q": "Look at the four options below and identify the sentence containing the spelling error.",
       "o": [
         "The corporate restructuring caused significant administrative inconvenience.",
         "Superstitious beliefs often hinder the development of a scientific temperament.",
@@ -34,18 +38,26 @@
         "The hypercritical analysis of the movie received widespread public critisism."
       ],
       "a": 3,
-      "e": "D is incorrect because “critisism” is misspelt; the correct spelling is “criticism.”\n\nVocabulary: A. Inconvenience = trouble or difficulty; synonyms: trouble, difficulty, nuisance; antonyms: convenience, ease, advantage. B. Superstitious = based on irrational beliefs; synonyms: credulous, irrational, unscientific; antonyms: rational, scientific, skeptical. C. Exquisite = extremely beautiful or delicate; synonyms: elegant, refined, superb; antonyms: crude, ordinary, coarse. D. Criticism = disapproval or evaluation; synonyms: censure, disapproval, reproach; antonyms: praise, approval, commendation.\n\nHindi Explanation: D में “critisism” की spelling गलत है; सही spelling “criticism” है।\nA. Inconvenience = असुविधा/परेशानी। B. Superstitious = अंधविश्वासी। C. Exquisite = अत्यंत सुंदर/उत्कृष्ट। D. Criticism = आलोचना।",
-      "eh": "D में “critisism” की spelling गलत है; सही spelling “criticism” है।\nA. Inconvenience = असुविधा/परेशानी। B. Superstitious = अंधविश्वासी। C. Exquisite = अत्यंत सुंदर/उत्कृष्ट। D. Criticism = आलोचना।",
+      "e": "Option D contains the misspelling “critisism”; the correct spelling is “criticism”.",
+      "eh": "Option D में “critisism” की spelling गलत है। सही spelling “criticism” है.",
       "topic": "Spelling Error",
-      "vocab": true,
       "instruction": "Identify the option that contains an incorrectly spelt word.",
-      "vocab_details": {
-        "target": {
+      "explanation": {
+        "why_correct": "Option D contains the misspelling “critisism”; the correct spelling is “criticism”.",
+        "hindi_explanation": "Option D में “critisism” की spelling गलत है। सही spelling “criticism” है.",
+        "option_explanations": {
+          "A": "Inconvenience = trouble or difficulty. Hindi: असुविधा या परेशानी.",
+          "B": "Superstitious = based on irrational beliefs or fears. Hindi: अंधविश्वासी; तर्कहीन मान्यताओं पर आधारित.",
+          "C": "Exquisite = extremely beautiful, delicate, or refined. Hindi: अत्यंत सुंदर, उत्कृष्ट या नफ़ीस.",
+          "D": "Criticism = disapproval or the analysis and evaluation of something. Hindi: आलोचना या मूल्यांकन."
+        },
+        "target_vocabulary": {
           "word": "Criticism",
           "meaning": "The expression of disapproval or the analysis and evaluation of something.",
+          "hindi_meaning": "आलोचना या किसी चीज़ का विश्लेषण एवं मूल्यांकन।",
           "synonyms": [
-            "Disapproval",
             "Censure",
+            "Disapproval",
             "Reproach"
           ],
           "antonyms": [
@@ -53,19 +65,13 @@
             "Approval",
             "Commendation"
           ]
-        },
-        "options": {
-          "A": "Criticism: Correct spelling; the expression of disapproval or evaluation.",
-          "B": "Critisism: Incorrect spelling; the correct spelling is “criticism.”",
-          "C": "Critisizm: Incorrect spelling; the correct spelling is “criticism.”",
-          "D": "Criticismm: Incorrect spelling; the correct spelling is “criticism.”"
         }
       }
     },
     {
       "id": 3,
       "type": "Spotting the Error",
-      "q": "Identify the part of the sentence that contains a grammatical error.\nThe committee members, having spent over three hours deliberating the intricate nuances of the corporate merger, was explicitly reluctant to ratify the proposed clause despite the chairperson’s persuasive remarks.",
+      "q": "The committee members, having spent over three hours deliberating the intricate nuances of the corporate merger, was explicitly reluctant to ratify the proposed clause despite the chairperson’s persuasive remarks.",
       "o": [
         "The committee members, having spent over three hours",
         "deliberating the intricate nuances of the corporate merger,",
@@ -73,15 +79,19 @@
         "despite the chairperson’s persuasive remarks."
       ],
       "a": 2,
-      "e": "The error is in C. The subject “committee members” is plural, so the verb must be “were,” not “was.” The participial phrase “having spent...” does not change the subject. \n\nHindi Explanation: त्रुटि C में है। “Committee members” plural subject है, इसलिए verb “were” होना चाहिए, “was” नहीं। “Having spent...” वाला phrase subject को नहीं बदलता।",
-      "eh": "त्रुटि C में है। “Committee members” plural subject है, इसलिए verb “were” होना चाहिए, “was” नहीं। “Having spent...” वाला phrase subject को नहीं बदलता।",
+      "e": "The subject “committee members” is plural, so the verb must be “were”, not “was”. The phrase “having spent...” does not change the subject.",
+      "eh": "“Committee members” plural subject है, इसलिए verb “were” होना चाहिए, “was” नहीं। “Having spent...” subject को नहीं बदलता.",
       "topic": "Spotting the Error",
-      "instruction": "Identify the part of the sentence that contains a grammatical error."
+      "instruction": "Identify the part of the sentence that contains a grammatical error. If there is no error, choose “No Error”.",
+      "explanation": {
+        "why_correct": "The subject “committee members” is plural, so the verb must be “were”, not “was”. The phrase “having spent...” does not change the subject.",
+        "hindi_explanation": "“Committee members” plural subject है, इसलिए verb “were” होना चाहिए, “was” नहीं। “Having spent...” subject को नहीं बदलता."
+      }
     },
     {
       "id": 4,
       "type": "Direct & Indirect Speech",
-      "q": "Choose the correct indirect-speech form of the given sentence.\nThe lead defense attorney asked the prime witness, \"Can you state with absolute certainty that you observed the suspect leaving the residential complex before midnight?\"",
+      "q": "The lead defense attorney asked the prime witness, \"Can you state with absolute certainty that you observed the suspect leaving the residential complex before midnight?\"",
       "o": [
         "The lead defense attorney asked the prime witness if he could state with absolute certainty that he observed the suspect leaving the residential complex before midnight.",
         "The lead defense attorney asked the prime witness if he could state with absolute certainty that he had observed the suspect leaving the residential complex before midnight.",
@@ -89,15 +99,19 @@
         "The lead defense attorney asked the prime witness if he can state with absolute certainty that he observed the suspect leaving the residential complex before midnight."
       ],
       "a": 1,
-      "e": "In indirect speech, “Can” changes to “could” after the past reporting verb “asked.” The earlier observation is appropriately represented by “had observed.” “Asked” takes “if/whether,” not “that whether.”\n\nHindi Explanation: Indirect speech में past reporting verb “asked” के बाद “can” सामान्यतः “could” हो जाता है। पहले हुई observation को “had observed” से दिखाया गया है। “Asked” के साथ “if/whether” आता है, “that whether” नहीं।",
-      "eh": "Indirect speech में past reporting verb “asked” के बाद “can” सामान्यतः “could” हो जाता है। पहले हुई observation को “had observed” से दिखाया गया है। “Asked” के साथ “if/whether” आता है, “that whether” नहीं।",
+      "e": "The reporting verb “asked” is in the past, so “can” changes to “could”. The observation occurred earlier, so “had observed” appropriately represents that earlier action. An indirect question takes “if/whether”, not “that whether”.",
+      "eh": "“Asked” past में है, इसलिए “can” सामान्यतः “could” होता है। Observation पहले हुई थी, इसलिए “had observed” उपयुक्त है। Indirect question में “if/whether” आता है, “that whether” नहीं.",
       "topic": "Direct & Indirect Speech",
-      "instruction": "Choose the correct indirect-speech form of the given sentence."
+      "instruction": "Choose the correct indirect-speech form of the given sentence.",
+      "explanation": {
+        "why_correct": "The reporting verb “asked” is in the past, so “can” changes to “could”. The observation occurred earlier, so “had observed” appropriately represents that earlier action. An indirect question takes “if/whether”, not “that whether”.",
+        "hindi_explanation": "“Asked” past में है, इसलिए “can” सामान्यतः “could” होता है। Observation पहले हुई थी, इसलिए “had observed” उपयुक्त है। Indirect question में “if/whether” आता है, “that whether” नहीं."
+      }
     },
     {
       "id": 5,
       "type": "Antonyms",
-      "q": "Choose the word that is opposite in meaning to the given word.\nIn an era dominated by rapid globalization, maintaining an insular approach to foreign policy can severely alienate a developing country from its global allies. (Find Antonym)",
+      "q": "In an era dominated by rapid globalization, maintaining an insular approach to foreign policy can severely alienate a developing country from its global allies.",
       "o": [
         "Parochial",
         "Cosmopolitan",
@@ -105,14 +119,23 @@
         "Prejudiced"
       ],
       "a": 1,
-      "e": "The target word is “insular,” meaning narrow-minded or uninterested in cultures and ideas outside one’s own experience. B. Cosmopolitan is the antonym.\n\nOption meanings: A. Parochial = narrow or limited in outlook (synonym of insular). B. Cosmopolitan = familiar with and open to many cultures (antonym). C. Detached = separate or emotionally uninvolved. D. Prejudiced = having preconceived and often unfair opinions.\n\nTarget vocabulary: Synonyms — Parochial, Provincial, Illiberal. Antonyms — Cosmopolitan, Broad-minded, Universal.\n\nHindi Explanation: “Insular” का अर्थ है संकीर्ण सोच वाला या बाहरी संस्कृतियों/विचारों में रुचि न रखने वाला। इसका antonym B. Cosmopolitan है।\nA. Parochial = संकीर्ण/सीमित दृष्टिकोण वाला। B. Cosmopolitan = विभिन्न संस्कृतियों से परिचित और उदार। C. Detached = अलग या असंबद्ध। D. Prejudiced = पूर्वाग्रह से ग्रस्त।\nSynonyms: Parochial, Provincial, Illiberal. Antonyms: Cosmopolitan, Broad-minded, Universal.",
-      "eh": "“Insular” का अर्थ है संकीर्ण सोच वाला या बाहरी संस्कृतियों/विचारों में रुचि न रखने वाला। इसका antonym B. Cosmopolitan है।\nA. Parochial = संकीर्ण/सीमित दृष्टिकोण वाला। B. Cosmopolitan = विभिन्न संस्कृतियों से परिचित और उदार। C. Detached = अलग या असंबद्ध। D. Prejudiced = पूर्वाग्रह से ग्रस्त।\nSynonyms: Parochial, Provincial, Illiberal. Antonyms: Cosmopolitan, Broad-minded, Universal.",
+      "e": "“Insular” means narrow-minded or limited to one’s own group, culture, or ideas. “Cosmopolitan” means familiar with and open to different cultures and ideas, so it is the antonym.",
+      "eh": "“Insular” का अर्थ संकीर्ण सोच वाला या अपने ही समूह/संस्कृति/विचारों तक सीमित होना है। “Cosmopolitan” विभिन्न संस्कृतियों और विचारों के प्रति परिचित एवं उदार होने को दर्शाता है, इसलिए यह antonym है.",
       "topic": "Antonyms",
-      "vocab": true,
-      "vocab_details": {
-        "target": {
+      "instruction": "Choose the word that is opposite in meaning to the word “insular”.",
+      "explanation": {
+        "why_correct": "“Insular” means narrow-minded or limited to one’s own group, culture, or ideas. “Cosmopolitan” means familiar with and open to different cultures and ideas, so it is the antonym.",
+        "hindi_explanation": "“Insular” का अर्थ संकीर्ण सोच वाला या अपने ही समूह/संस्कृति/विचारों तक सीमित होना है। “Cosmopolitan” विभिन्न संस्कृतियों और विचारों के प्रति परिचित एवं उदार होने को दर्शाता है, इसलिए यह antonym है.",
+        "option_explanations": {
+          "A": "Parochial = narrow or limited in outlook. Hindi: संकीर्ण या सीमित दृष्टिकोण वाला.",
+          "B": "Cosmopolitan = familiar with and open to many different cultures and places. Hindi: विभिन्न संस्कृतियों से परिचित और उदार.",
+          "C": "Detached = separate, disconnected, or emotionally uninvolved. Hindi: अलग, असंबद्ध या भावनात्मक रूप से दूर.",
+          "D": "Prejudiced = having preconceived and often unfair opinions. Hindi: पूर्वाग्रह से ग्रस्त."
+        },
+        "target_vocabulary": {
           "word": "Insular",
-          "meaning": "Ignorant of or uninterested in cultures, ideas, or peoples outside one's own experience; narrow-minded.",
+          "meaning": "Narrow-minded; uninterested in ideas, cultures, or people outside one’s own experience.",
+          "hindi_meaning": "संकीर्ण सोच वाला; बाहरी विचारों, संस्कृतियों या लोगों के प्रति अनुदार।",
           "synonyms": [
             "Parochial",
             "Provincial",
@@ -123,20 +146,13 @@
             "Broad-minded",
             "Universal"
           ]
-        },
-        "options": {
-          "A": "Parochial: Having a limited or narrow outlook or scope (synonym to Insular).",
-          "B": "Cosmopolitan: Familiar with and at ease in many different countries and cultures (true antonym).",
-          "C": "Detached: Separate or disconnected (contextual synonym).",
-          "D": "Prejudiced: Having or showing a dislike or distrust derived from fixed preconceived ideas."
         }
-      },
-      "instruction": "Choose the word that is opposite in meaning to the given word."
+      }
     },
     {
       "id": 6,
       "type": "Para Jumbles",
-      "q": "Arrange the sentences in the most logical sequence.\nP: While green energy sources like solar and wind power offer a sustainable alternative, their intermittent nature presents a significant operational hurdle for heavy industries.\nQ: To resolve this grid instability, engineering firms are investing heavily in advanced lithium-ion battery storage infrastructure.\nR: The global transition toward a carbon-neutral economy requires an immediate and massive overhaul of existing power grids.\nS: Without these robust storage systems, manufacturing plants risk frequent operational blackouts during seasonal weather changes.",
+      "q": "P: While green energy sources like solar and wind power offer a sustainable alternative, their intermittent nature presents a significant operational hurdle for heavy industries.\nQ: To resolve this grid instability, engineering firms are investing heavily in advanced lithium-ion battery storage infrastructure.\nR: The global transition toward a carbon-neutral economy requires an immediate and massive overhaul of existing power grids.\nS: Without these robust storage systems, manufacturing plants risk frequent operational blackouts during seasonal weather changes.",
       "o": [
         "RPQS",
         "RQPS",
@@ -144,15 +160,19 @@
         "PRQS"
       ],
       "a": 0,
-      "e": "R introduces the broad topic of the power-grid overhaul. P narrows the discussion to the intermittency problem. Q gives the storage solution, and S explains the consequence without that solution. Hence, RPQS (A).\n\nHindi Explanation: R मुख्य विषय यानी power-grid overhaul को प्रस्तुत करता है। P renewable energy की intermittency वाली समस्या बताता है। Q उसका storage solution देता है और S बताता है कि storage न होने पर क्या परिणाम होगा। इसलिए क्रम RPQS (A) है।",
-      "eh": "R मुख्य विषय यानी power-grid overhaul को प्रस्तुत करता है। P renewable energy की intermittency वाली समस्या बताता है। Q उसका storage solution देता है और S बताता है कि storage न होने पर क्या परिणाम होगा। इसलिए क्रम RPQS (A) है।",
+      "e": "R introduces the broad issue of the power-grid overhaul. P identifies the intermittency problem. Q presents battery storage as the solution, and S gives the consequence of lacking that storage. Therefore, the sequence is RPQS.",
+      "eh": "R power-grid overhaul का व्यापक विषय देता है। P intermittency की समस्या बताता है। Q battery storage का solution देता है और S storage न होने का परिणाम बताता है। इसलिए क्रम RPQS है.",
       "topic": "Para Jumbles",
-      "instruction": "Arrange the sentences in the most logical sequence."
+      "instruction": "Arrange the sentences in the most logical sequence.",
+      "explanation": {
+        "why_correct": "R introduces the broad issue of the power-grid overhaul. P identifies the intermittency problem. Q presents battery storage as the solution, and S gives the consequence of lacking that storage. Therefore, the sequence is RPQS.",
+        "hindi_explanation": "R power-grid overhaul का व्यापक विषय देता है। P intermittency की समस्या बताता है। Q battery storage का solution देता है और S storage न होने का परिणाम बताता है। इसलिए क्रम RPQS है."
+      }
     },
     {
       "id": 7,
       "type": "Idioms",
-      "q": "Choose the option that gives the correct meaning of the idiom.\nDuring the corporate crisis, the junior executives were told to keep their chin up as the management was actively working to secure an external bailout package.",
+      "q": "During the corporate crisis, the junior executives were told to keep their chin up as the management was actively working to secure an external bailout package.",
       "o": [
         "To remain arrogant and unyielding",
         "To remain cheerful and optimistic in difficult circumstances",
@@ -160,24 +180,25 @@
         "To voice their complaints aggressively to the board"
       ],
       "a": 1,
-      "e": "“Keep your chin up” means to remain brave, hopeful, and optimistic during a difficult situation. B is correct.\n\nOption meanings: A. Remain arrogant and unyielding — stay proud and unwilling to change. B. Remain cheerful and optimistic in difficulty — stay hopeful and positive. C. Stay vigilant against internal corporate espionage — remain alert to spying within the organization. D. Voice complaints aggressively to the board — express grievances forcefully to senior management.\n\nHindi Explanation: “Keep your chin up” का अर्थ कठिन परिस्थिति में हिम्मत और उम्मीद बनाए रखना है। इसलिए B सही है।\nA. घमंडी और अड़ियल बने रहना। B. कठिनाई में भी खुश और आशावादी रहना। C. संगठन के अंदर जासूसी के प्रति सतर्क रहना। D. Board के सामने शिकायतें आक्रामक ढंग से रखना।",
-      "eh": "“Keep your chin up” का अर्थ कठिन परिस्थिति में हिम्मत और उम्मीद बनाए रखना है। इसलिए B सही है।\nA. घमंडी और अड़ियल बने रहना। B. कठिनाई में भी खुश और आशावादी रहना। C. संगठन के अंदर जासूसी के प्रति सतर्क रहना। D. Board के सामने शिकायतें आक्रामक ढंग से रखना।",
+      "e": "“Keep your chin up” means to remain brave, hopeful, and optimistic during a difficult situation.",
+      "eh": "“Keep your chin up” का अर्थ कठिन परिस्थिति में हिम्मत, उम्मीद और सकारात्मकता बनाए रखना है.",
       "topic": "Idioms",
-      "vocab": true,
-      "vocab_details": {
-        "options": {
-          "A": "To remain arrogant and unyielding.",
-          "B": "To remain cheerful and optimistic in difficult circumstances.",
-          "C": "To stay vigilant against internal corporate espionage.",
-          "D": "To voice complaints aggressively to the board."
+      "instruction": "Choose the option that gives the correct meaning of the idiom “keep your chin up”.",
+      "explanation": {
+        "why_correct": "“Keep your chin up” means to remain brave, hopeful, and optimistic during a difficult situation.",
+        "hindi_explanation": "“Keep your chin up” का अर्थ कठिन परिस्थिति में हिम्मत, उम्मीद और सकारात्मकता बनाए रखना है.",
+        "option_explanations": {
+          "A": "Remain arrogant and unyielding = stay proud and unwilling to change. Hindi: घमंडी और अड़ियल बने रहना.",
+          "B": "Remain cheerful and optimistic in difficulty = stay hopeful and positive. Hindi: कठिनाई में भी खुश और आशावादी रहना.",
+          "C": "Stay vigilant against internal corporate espionage = remain alert to spying within the organization. Hindi: संगठन के भीतर जासूसी के प्रति सतर्क रहना.",
+          "D": "Voice complaints aggressively to the board = express grievances forcefully to senior management. Hindi: बोर्ड के सामने शिकायतें आक्रामक ढंग से रखना."
         }
-      },
-      "instruction": "Choose the option that gives the correct meaning of the idiom."
+      }
     },
     {
       "id": 8,
       "type": "Spotting the Error",
-      "q": "Identify the part of the sentence that contains a grammatical error.\nDespite of the unrelenting downpour and the subsequent waterlogging across the primary arterial roads, the dedicated medical staff managed to reach the emergency ward right on time.",
+      "q": "Despite of the unrelenting downpour and the subsequent waterlogging across the primary arterial roads, the dedicated medical staff managed to reach the emergency ward right on time.",
       "o": [
         "Despite of the unrelenting downpour",
         "and the subsequent waterlogging across the primary arterial roads,",
@@ -185,15 +206,19 @@
         "the emergency ward right on time."
       ],
       "a": 0,
-      "e": "The error is in A. “Despite” is not followed by “of.” Use “Despite the unrelenting downpour” or “In spite of the unrelenting downpour.”\n\nHindi Explanation: त्रुटि A में है। “Despite” के बाद “of” नहीं आता। सही रूप “Despite the unrelenting downpour” या “In spite of the unrelenting downpour” होगा।",
-      "eh": "त्रुटि A में है। “Despite” के बाद “of” नहीं आता। सही रूप “Despite the unrelenting downpour” या “In spite of the unrelenting downpour” होगा।",
+      "e": "“Despite” is not followed by “of”. The correct forms are “Despite the unrelenting downpour” or “In spite of the unrelenting downpour”.",
+      "eh": "“Despite” के बाद “of” नहीं आता। सही रूप “Despite the unrelenting downpour” या “In spite of the unrelenting downpour” है.",
       "topic": "Spotting the Error",
-      "instruction": "Identify the part of the sentence that contains a grammatical error."
+      "instruction": "Identify the part of the sentence that contains a grammatical error. If there is no error, choose “No Error”.",
+      "explanation": {
+        "why_correct": "“Despite” is not followed by “of”. The correct forms are “Despite the unrelenting downpour” or “In spite of the unrelenting downpour”.",
+        "hindi_explanation": "“Despite” के बाद “of” नहीं आता। सही रूप “Despite the unrelenting downpour” या “In spite of the unrelenting downpour” है."
+      }
     },
     {
       "id": 9,
       "type": "Active & Passive Voice",
-      "q": "Choose the correct passive-voice form of the given sentence.\nThe architectural firm meticulously designed the futuristic blueprint of the smart city to ensure optimal utilization of renewable energy resources.",
+      "q": "The architectural firm meticulously designed the futuristic blueprint of the smart city to ensure optimal utilization of renewable energy resources.",
       "o": [
         "The futuristic blueprint of the smart city was being meticulously designed by the architectural firm to ensure optimal utilization of renewable energy resources.",
         "The futuristic blueprint of the smart city was meticulously designed by the architectural firm to ensure optimal utilization of renewable energy resources.",
@@ -201,15 +226,19 @@
         "To ensure optimal utilization of renewable energy resources, the futuristic blueprint of the smart city is meticulously designed by the architectural firm."
       ],
       "a": 1,
-      "e": "The active verb “designed” is in Simple Past. Its passive form is “was/were + V3.” The object “the futuristic blueprint” becomes the passive subject, so “was meticulously designed” is correct.\n\nHindi Explanation: “Designed” Simple Past में है। इसका passive form “was/were + V3” होगा। Object “the futuristic blueprint” passive sentence का subject बनता है, इसलिए “was meticulously designed” सही है।",
-      "eh": "“Designed” Simple Past में है। इसका passive form “was/were + V3” होगा। Object “the futuristic blueprint” passive sentence का subject बनता है, इसलिए “was meticulously designed” सही है।",
+      "e": "The active sentence is in the Simple Past (“designed”). Its passive form is “was/were + past participle”, giving “was meticulously designed”.",
+      "eh": "“Designed” Simple Past है, इसलिए passive में “was/were + V3” आएगा। सही रूप “was meticulously designed” है.",
       "topic": "Active & Passive Voice",
-      "instruction": "Choose the correct passive-voice form of the given sentence."
+      "instruction": "Choose the correct passive-voice form of the given sentence.",
+      "explanation": {
+        "why_correct": "The active sentence is in the Simple Past (“designed”). Its passive form is “was/were + past participle”, giving “was meticulously designed”.",
+        "hindi_explanation": "“Designed” Simple Past है, इसलिए passive में “was/were + V3” आएगा। सही रूप “was meticulously designed” है."
+      }
     },
     {
       "id": 10,
       "type": "Direct & Indirect Speech",
-      "q": "Choose the correct indirect-speech form of the given sentence.\nThe project coordinator said to the team members, \"Do not compromise on the software quality checks, otherwise the deployment phase will face severe delays next month.\"",
+      "q": "The project coordinator said to the team members, \"Do not compromise on the software quality checks, otherwise the deployment phase will face severe delays next month.\"",
       "o": [
         "The project coordinator warned the team members not to compromise on the software quality checks, otherwise the deployment phase would face severe delays the following month.",
         "The project coordinator told the team members to not compromise on the software quality checks, otherwise the deployment phase will face severe delays next month.",
@@ -217,15 +246,19 @@
         "The project coordinator warned the team members against compromising on the software quality checks, otherwise the deployment phase will face severe delays the following month."
       ],
       "a": 0,
-      "e": "A negative imperative can be reported as “warned/told + object + not to.” Because the reporting verb is in the past, “will” changes to “would,” and “next month” changes to “the following month.”\n\nHindi Explanation: Negative imperative को “warned/told + object + not to” से report किया जा सकता है। Past reporting verb के कारण “will” → “would” और “next month” → “the following month” होगा।",
-      "eh": "Negative imperative को “warned/told + object + not to” से report किया जा सकता है। Past reporting verb के कारण “will” → “would” और “next month” → “the following month” होगा।",
+      "e": "A negative imperative can be reported with “warned/told + object + not to”. Because the reporting verb is in the past, “will” becomes “would”, and “next month” becomes “the following month”.",
+      "eh": "Negative imperative को “warned/told + object + not to” से report किया जा सकता है। Past reporting के कारण “will” → “would” और “next month” → “the following month” होता है.",
       "topic": "Direct & Indirect Speech",
-      "instruction": "Choose the correct indirect-speech form of the given sentence."
+      "instruction": "Choose the correct indirect-speech form of the given sentence.",
+      "explanation": {
+        "why_correct": "A negative imperative can be reported with “warned/told + object + not to”. Because the reporting verb is in the past, “will” becomes “would”, and “next month” becomes “the following month”.",
+        "hindi_explanation": "Negative imperative को “warned/told + object + not to” से report किया जा सकता है। Past reporting के कारण “will” → “would” और “next month” → “the following month” होता है."
+      }
     },
     {
       "id": 11,
       "type": "One Word Substitution",
-      "q": "Choose the word that best describes the person given in the statement.\nA person who holds an unconventional, non-conformist, and independent view, especially in social, artistic, or political matters, refusing to follow the rules of a group.",
+      "q": "A person who holds an unconventional, non-conformist, and independent view, especially in social, artistic, or political matters, refusing to follow the rules of a group.",
       "o": [
         "Maverick",
         "Altruist",
@@ -233,24 +266,40 @@
         "Epicure"
       ],
       "a": 0,
-      "e": "A. Maverick is correct: an unconventional or independent-minded person.\n\nA. Maverick — an unconventional person; synonyms: Nonconformist, Dissenter, Rebel; antonyms: Conformist, Traditionalist, Conventionalist.\nB. Altruist — a person concerned with others’ welfare; synonyms: Philanthropist, Benefactor, Humanitarian; antonyms: Egoist, Selfish person, Misanthrope.\nC. Sycophant — a person who flatters an influential person for personal advantage; synonyms: Toady, Flatterer, Bootlicker; antonyms: Critic, Detractor, Opponent.\nD. Epicure — a person who takes particular pleasure in fine food and drink; synonyms: Gourmet, Connoisseur, Epicurean; antonyms: Ascetic, Abstemious person, Teetotaller.\n\nHindi Explanation: A. Maverick = परंपरा से अलग स्वतंत्र सोच वाला व्यक्ति; synonyms: Nonconformist, Dissenter, Rebel; antonyms: Conformist, Traditionalist, Conventionalist.\nB. Altruist = दूसरों के कल्याण की चिंता करने वाला व्यक्ति; synonyms: Philanthropist, Benefactor, Humanitarian; antonyms: Egoist, Selfish person, Misanthrope.\nC. Sycophant = निजी लाभ के लिए प्रभावशाली व्यक्ति की चापलूसी करने वाला; synonyms: Toady, Flatterer, Bootlicker; antonyms: Critic, Detractor, Opponent.\nD. Epicure = अच्छे भोजन और पेय का विशेष आनंद लेने वाला; synonyms: Gourmet, Connoisseur, Epicurean; antonyms: Ascetic, Abstemious person, Teetotaller.",
-      "eh": "A. Maverick = परंपरा से अलग स्वतंत्र सोच वाला व्यक्ति; synonyms: Nonconformist, Dissenter, Rebel; antonyms: Conformist, Traditionalist, Conventionalist.\nB. Altruist = दूसरों के कल्याण की चिंता करने वाला व्यक्ति; synonyms: Philanthropist, Benefactor, Humanitarian; antonyms: Egoist, Selfish person, Misanthrope.\nC. Sycophant = निजी लाभ के लिए प्रभावशाली व्यक्ति की चापलूसी करने वाला; synonyms: Toady, Flatterer, Bootlicker; antonyms: Critic, Detractor, Opponent.\nD. Epicure = अच्छे भोजन और पेय का विशेष आनंद लेने वाला; synonyms: Gourmet, Connoisseur, Epicurean; antonyms: Ascetic, Abstemious person, Teetotaller.",
+      "e": "A “maverick” is an unconventional or independent-minded person who does not readily follow established rules or conventions.",
+      "eh": "“Maverick” ऐसे व्यक्ति को कहते हैं जो परंपरागत नियमों से अलग स्वतंत्र और असामान्य सोच रखता है.",
       "topic": "One Word Substitution",
-      "vocab": true,
-      "vocab_details": {
-        "options": {
-          "A": "Maverick: An unconventional or independent-minded person. Synonyms: Nonconformist, Dissenter, Rebel. Antonyms: Conformist, Traditionalist, Conventionalist.",
-          "B": "Altruist: A person concerned with the welfare of others. Synonyms: Philanthropist, Benefactor, Humanitarian. Antonyms: Egoist, Selfish person, Misanthrope.",
-          "C": "Sycophant: A person who flatters someone important for personal advantage. Synonyms: Toady, Flatterer, Bootlicker. Antonyms: Critic, Detractor, Opponent.",
-          "D": "Epicure: A person who takes particular pleasure in fine food and drink. Synonyms: Gourmet, Connoisseur, Epicurean. Antonyms: Ascetic, Abstemious person, Teetotaller."
+      "instruction": "Choose the word that best describes the person given in the statement.",
+      "explanation": {
+        "why_correct": "A “maverick” is an unconventional or independent-minded person who does not readily follow established rules or conventions.",
+        "hindi_explanation": "“Maverick” ऐसे व्यक्ति को कहते हैं जो परंपरागत नियमों से अलग स्वतंत्र और असामान्य सोच रखता है.",
+        "option_explanations": {
+          "A": "Maverick = an unconventional or independent-minded person. Hindi: परंपरा से अलग स्वतंत्र सोच वाला व्यक्ति.",
+          "B": "Altruist = a person concerned with the welfare of others. Hindi: दूसरों के कल्याण की चिंता करने वाला व्यक्ति.",
+          "C": "Sycophant = a person who flatters an influential person for personal advantage. Hindi: निजी लाभ के लिए प्रभावशाली व्यक्ति की चापलूसी करने वाला.",
+          "D": "Epicure = a person who takes particular pleasure in fine food and drink. Hindi: अच्छे भोजन और पेय का विशेष आनंद लेने वाला व्यक्ति."
+        },
+        "target_vocabulary": {
+          "word": "Maverick",
+          "meaning": "An unconventional or independent-minded person.",
+          "hindi_meaning": "परंपरा से अलग स्वतंत्र सोच वाला व्यक्ति।",
+          "synonyms": [
+            "Nonconformist",
+            "Dissenter",
+            "Rebel"
+          ],
+          "antonyms": [
+            "Conformist",
+            "Traditionalist",
+            "Conventionalist"
+          ]
         }
-      },
-      "instruction": "Choose the word that best describes the person given in the statement."
+      }
     },
     {
       "id": 12,
       "type": "Spotting the Error",
-      "q": "Identify the part of the sentence that contains a grammatical error.\nNot only did the investigative journalist uncover a massive financial fraud involving the offshore accounts, but he also revealed how deeply entrenched corruption was in the administrative machinery.",
+      "q": "Not only did the investigative journalist uncover a massive financial fraud involving the offshore accounts, but he also revealed how deeply entrenched corruption was in the administrative machinery.",
       "o": [
         "Not only did the investigative journalist uncover",
         "a massive financial fraud involving the offshore accounts,",
@@ -258,15 +307,19 @@
         "No Error"
       ],
       "a": 3,
-      "e": "There is no grammatical error. The correlative structure “not only ... but ... also” is correctly used, and inversion after sentence-initial “Not only” is also correct. Therefore, D. No Error.\n\nHindi Explanation: इस वाक्य में कोई grammatical error नहीं है। “Not only ... but ... also” का प्रयोग सही है और sentence के आरंभ में “Not only” आने पर inversion भी सही है। इसलिए D. No Error सही है।",
-      "eh": "इस वाक्य में कोई grammatical error नहीं है। “Not only ... but ... also” का प्रयोग सही है और sentence के आरंभ में “Not only” आने पर inversion भी सही है। इसलिए D. No Error सही है।",
+      "e": "The sentence correctly uses inversion after “Not only” and the correlative structure “not only ... but ... also”. There is no grammatical error.",
+      "eh": "“Not only” के बाद inversion और “not only ... but ... also” structure सही है। कोई grammatical error नहीं है.",
       "topic": "Spotting the Error",
-      "instruction": "Identify the part of the sentence that contains a grammatical error."
+      "instruction": "Identify the part of the sentence that contains a grammatical error. If there is no error, choose “No Error”.",
+      "explanation": {
+        "why_correct": "The sentence correctly uses inversion after “Not only” and the correlative structure “not only ... but ... also”. There is no grammatical error.",
+        "hindi_explanation": "“Not only” के बाद inversion और “not only ... but ... also” structure सही है। कोई grammatical error नहीं है."
+      }
     },
     {
       "id": 13,
       "type": "Spelling Error",
-      "q": "Identify the option that contains a spelling error within the given context.\nA. The sovereign nation maintained its autonomy through strict diplomatic protocols.\nB. The sudden obsolescence of the old manufacturing equipment paralyzed production.\nC. The archeologist discovered a historical artifact that contradicted previous timeline hipotheses.\nD. His magnanimous gesture toward his political rivals surprised the entire electorate.",
+      "q": "Look at the four options below and identify the sentence containing the spelling error.",
       "o": [
         "The sovereign nation maintained its autonomy through strict diplomatic protocols.",
         "The sudden obsolescence of the old manufacturing equipment paralyzed production.",
@@ -274,72 +327,40 @@
         "His magnanimous gesture toward his political rivals surprised the entire electorate."
       ],
       "a": 2,
-      "e": "C is incorrect because “hipotheses” is misspelt; the correct spelling is “hypotheses.”\n\nVocabulary: A. Sovereign = possessing supreme power or independence; synonyms: Supreme, Independent, Autonomous; antonyms: Subordinate, Dependent, Subjugated. B. Obsolescence = the state of becoming outdated; synonyms: Outdatedness, Obsoleteness, Desuetude; antonyms: Modernity, Currency, Novelty. C. Hypotheses = proposed explanations; synonyms: Theories, Postulates, Suppositions; antonyms: Facts, Certainties, Proofs. D. Magnanimous = generous or forgiving, especially toward a rival; synonyms: Generous, Noble, Big-hearted; antonyms: Petty, Vindictive, Mean-spirited.\n\nHindi Explanation: C में “hipotheses” की spelling गलत है; सही spelling “hypotheses” है।\nA. Sovereign = सर्वोच्च शक्ति वाला/स्वतंत्र। B. Obsolescence = पुराना या अप्रचलित हो जाने की अवस्था। C. Hypotheses = परिकल्पनाएँ/प्रस्तावित explanations। D. Magnanimous = उदार और क्षमाशील।\nSynonyms/antonyms ऊपर दिए गए अनुसार हैं।",
-      "eh": "C में “hipotheses” की spelling गलत है; सही spelling “hypotheses” है।\nA. Sovereign = सर्वोच्च शक्ति वाला/स्वतंत्र। B. Obsolescence = पुराना या अप्रचलित हो जाने की अवस्था। C. Hypotheses = परिकल्पनाएँ/प्रस्तावित explanations। D. Magnanimous = उदार और क्षमाशील।\nSynonyms/antonyms ऊपर दिए गए अनुसार हैं।",
+      "e": "Option C contains the misspelling “hipotheses”. The correct spelling is “hypotheses”.",
+      "eh": "Option C में “hipotheses” की spelling गलत है। सही spelling “hypotheses” है.",
       "topic": "Spelling Error",
-      "vocab": true,
-      "vocab_details": {
-        "words": {
-          "Sovereign": {
-            "meaning": "Possessing supreme or ultimate power; independent.",
-            "synonyms": [
-              "Supreme",
-              "Independent",
-              "Autonomous"
-            ],
-            "antonyms": [
-              "Subordinate",
-              "Dependent",
-              "Subjugated"
-            ]
-          },
-          "Obsolescence": {
-            "meaning": "The state of becoming outdated or no longer useful.",
-            "synonyms": [
-              "Outdatedness",
-              "Obsoleteness",
-              "Desuetude"
-            ],
-            "antonyms": [
-              "Modernity",
-              "Currency",
-              "Novelty"
-            ]
-          },
-          "Hypotheses": {
-            "meaning": "Plural of hypothesis; proposed explanations based on limited evidence.",
-            "synonyms": [
-              "Theories",
-              "Postulates",
-              "Suppositions"
-            ],
-            "antonyms": [
-              "Facts",
-              "Certainties",
-              "Proofs"
-            ]
-          },
-          "Magnanimous": {
-            "meaning": "Generous or forgiving, especially toward a rival.",
-            "synonyms": [
-              "Generous",
-              "Noble",
-              "Big-hearted"
-            ],
-            "antonyms": [
-              "Petty",
-              "Vindictive",
-              "Mean-spirited"
-            ]
-          }
+      "instruction": "Identify the option that contains a spelling error within the given context.",
+      "explanation": {
+        "why_correct": "Option C contains the misspelling “hipotheses”. The correct spelling is “hypotheses”.",
+        "hindi_explanation": "Option C में “hipotheses” की spelling गलत है। सही spelling “hypotheses” है.",
+        "option_explanations": {
+          "A": "Sovereign = possessing supreme power or independence. Hindi: सर्वोच्च शक्ति वाला या स्वतंत्र.",
+          "B": "Obsolescence = the state of becoming outdated or no longer useful. Hindi: अप्रचलित या पुराना हो जाने की अवस्था.",
+          "C": "Hypotheses = proposed explanations or ideas to be tested. Hindi: परिकल्पनाएँ या परीक्षण योग्य प्रस्तावित व्याख्याएँ.",
+          "D": "Magnanimous = generous or forgiving, especially toward a rival. Hindi: विशेषकर प्रतिद्वंद्वी के प्रति उदार और क्षमाशील."
+        },
+        "target_vocabulary": {
+          "word": "Hypotheses",
+          "meaning": "Proposed explanations or ideas that can be tested.",
+          "hindi_meaning": "परिकल्पनाएँ या परीक्षण योग्य प्रस्तावित व्याख्याएँ।",
+          "synonyms": [
+            "Theories",
+            "Postulates",
+            "Suppositions"
+          ],
+          "antonyms": [
+            "Facts",
+            "Certainties",
+            "Proofs"
+          ]
         }
-      },
-      "instruction": "Identify the option that contains a spelling error within the given context."
+      }
     },
     {
       "id": 14,
       "type": "Synonyms",
-      "q": "Choose the word that is closest in meaning to the given word.\nThe magistrate noted that the evidence presented by the prosecution was entirely tenuous, lacking any substantive material to link the accused directly to the white-collar crime. (Find Synonym)",
+      "q": "The magistrate noted that the evidence presented by the prosecution was entirely tenuous, lacking any substantive material to link the accused directly to the white-collar crime. (Find Synonym)",
       "o": [
         "Formidable",
         "Flimsy",
@@ -347,14 +368,23 @@
         "Equivocal"
       ],
       "a": 1,
-      "e": "The target word “tenuous” means very weak, slight, or insubstantial. B. Flimsy is the closest synonym.\n\nOption meanings: A. Formidable = very powerful or impressive; an antonym. B. Flimsy = weak or lacking solidity; true synonym. C. Authentic = genuine or of undisputed origin. D. Equivocal = open to more than one interpretation; ambiguous.\n\nTarget vocabulary: Synonyms — Flimsy, Fragile, Insubstantial. Antonyms — Formidable, Robust, Substantial.\n\nHindi Explanation: “Tenuous” का अर्थ बहुत कमजोर, मामूली या ठोस आधार से रहित है। B. Flimsy इसका निकटतम synonym है।\nA. Formidable = बहुत शक्तिशाली/प्रभावशाली। B. Flimsy = कमजोर/ठोस न होना। C. Authentic = वास्तविक/प्रामाणिक। D. Equivocal = जिसका अर्थ एक से अधिक हो सकता है/अस्पष्ट।\nSynonyms: Flimsy, Fragile, Insubstantial. Antonyms: Formidable, Robust, Substantial.",
-      "eh": "“Tenuous” का अर्थ बहुत कमजोर, मामूली या ठोस आधार से रहित है। B. Flimsy इसका निकटतम synonym है।\nA. Formidable = बहुत शक्तिशाली/प्रभावशाली। B. Flimsy = कमजोर/ठोस न होना। C. Authentic = वास्तविक/प्रामाणिक। D. Equivocal = जिसका अर्थ एक से अधिक हो सकता है/अस्पष्ट।\nSynonyms: Flimsy, Fragile, Insubstantial. Antonyms: Formidable, Robust, Substantial.",
+      "e": "“Tenuous” means very weak, slight, or lacking a substantial basis. “Flimsy” is the closest synonym.",
+      "eh": "“Tenuous” का अर्थ बहुत कमजोर, मामूली या ठोस आधार से रहित है। “Flimsy” इसका निकटतम synonym है.",
       "topic": "Synonyms",
-      "vocab": true,
-      "vocab_details": {
-        "target": {
+      "instruction": "Choose the word that is closest in meaning to the word “tenuous”.",
+      "explanation": {
+        "why_correct": "“Tenuous” means very weak, slight, or lacking a substantial basis. “Flimsy” is the closest synonym.",
+        "hindi_explanation": "“Tenuous” का अर्थ बहुत कमजोर, मामूली या ठोस आधार से रहित है। “Flimsy” इसका निकटतम synonym है.",
+        "option_explanations": {
+          "A": "Formidable = very powerful, impressive, or difficult to overcome. Hindi: बहुत शक्तिशाली या प्रभावशाली.",
+          "B": "Flimsy = weak or lacking solidity. Hindi: कमजोर या ठोस आधार से रहित.",
+          "C": "Authentic = genuine or of undisputed origin. Hindi: वास्तविक या प्रामाणिक.",
+          "D": "Equivocal = open to more than one interpretation; ambiguous. Hindi: अस्पष्ट या जिसका एक से अधिक अर्थ निकले."
+        },
+        "target_vocabulary": {
           "word": "Tenuous",
-          "meaning": "Very weak, slight, flimsy, or insubstantial.",
+          "meaning": "Very weak, slight, or insubstantial.",
+          "hindi_meaning": "बहुत कमजोर, मामूली या ठोस आधार से रहित।",
           "synonyms": [
             "Flimsy",
             "Fragile",
@@ -365,20 +395,13 @@
             "Robust",
             "Substantial"
           ]
-        },
-        "options": {
-          "A": "Formidable: Inspiring fear or respect through being impressively large, powerful, or intense (antonym).",
-          "B": "Flimsy: Lacking strength or solidity; weak (true synonym).",
-          "C": "Authentic: Of undisputed origin and genuine authenticity.",
-          "D": "Equivocal: Open to more than one interpretation; ambiguous."
         }
-      },
-      "instruction": "Choose the word that is closest in meaning to the given word."
+      }
     },
     {
       "id": 15,
       "type": "Sentence Improvement",
-      "q": "Choose the option that provides the correct/improved form of the sentence.\nThe diplomatic delegation decided to call off on the bilateral negotiations after the host country abruptly altered the pre-negotiated trade tariffs.",
+      "q": "The diplomatic delegation decided to call off on the bilateral negotiations after the host country abruptly altered the pre-negotiated trade tariffs.",
       "o": [
         "call away the bilateral negotiations",
         "call off the bilateral negotiations",
@@ -386,15 +409,19 @@
         "No improvement required"
       ],
       "a": 1,
-      "e": "“Call off” means to cancel something. It is a phrasal verb that does not take “on” here. Therefore, “call off the bilateral negotiations” is correct.\n\nHindi Explanation: “Call off” का अर्थ किसी event, meeting या activity को रद्द करना है। यहाँ इसके बाद “on” नहीं आएगा। इसलिए “call off the bilateral negotiations” सही है।",
-      "eh": "“Call off” का अर्थ किसी event, meeting या activity को रद्द करना है। यहाँ इसके बाद “on” नहीं आएगा। इसलिए “call off the bilateral negotiations” सही है।",
+      "e": "“Call off” means to cancel. The sentence needs “call off the bilateral negotiations”; the extra “on” is incorrect.",
+      "eh": "“Call off” का अर्थ cancel करना है। सही phrase “call off the bilateral negotiations” है; “on” गलत है.",
       "topic": "Sentence Improvement",
-      "instruction": "Choose the option that provides the correct/improved form of the sentence."
+      "instruction": "Choose the option that provides the correct/improved form of the sentence.",
+      "explanation": {
+        "why_correct": "“Call off” means to cancel. The sentence needs “call off the bilateral negotiations”; the extra “on” is incorrect.",
+        "hindi_explanation": "“Call off” का अर्थ cancel करना है। सही phrase “call off the bilateral negotiations” है; “on” गलत है."
+      }
     },
     {
       "id": 16,
       "type": "Spotting the Error",
-      "q": "Identify the part of the sentence that contains a grammatical error.\nHad the meteorological department issued the emergency severe weather warning a few hours prior, the coastal administrative authorities would have successfully evacuated the vulnerable low-lying regions.",
+      "q": "Had the meteorological department issued the emergency severe weather warning a few hours prior, the coastal administrative authorities would have successfully evacuated the vulnerable low-lying regions.",
       "o": [
         "Had the meteorological department issued",
         "the emergency severe weather warning a few hours prior,",
@@ -402,15 +429,19 @@
         "No Error"
       ],
       "a": 3,
-      "e": "There is no grammatical error. This is a correct third conditional in inverted form: “Had + subject + V3..., subject + would have + V3.” Therefore, D. No Error.\n\nHindi Explanation: इस वाक्य में कोई grammatical error नहीं है। यह inverted third conditional का सही उदाहरण है: “Had + subject + V3..., subject + would have + V3.” इसलिए D. No Error सही है।",
-      "eh": "इस वाक्य में कोई grammatical error नहीं है। यह inverted third conditional का सही उदाहरण है: “Had + subject + V3..., subject + would have + V3.” इसलिए D. No Error सही है।",
+      "e": "This is a correctly formed third conditional in inversion: “Had + subject + past participle ..., subject + would have + past participle.” There is no error.",
+      "eh": "यह inversion वाला correctly formed third conditional है: “Had + subject + V3 ..., subject + would have + V3.” कोई error नहीं है.",
       "topic": "Spotting the Error",
-      "instruction": "Identify the part of the sentence that contains a grammatical error."
+      "instruction": "Identify the part of the sentence that contains a grammatical error. If there is no error, choose “No Error”.",
+      "explanation": {
+        "why_correct": "This is a correctly formed third conditional in inversion: “Had + subject + past participle ..., subject + would have + past participle.” There is no error.",
+        "hindi_explanation": "यह inversion वाला correctly formed third conditional है: “Had + subject + V3 ..., subject + would have + V3.” कोई error नहीं है."
+      }
     },
     {
       "id": 17,
       "type": "Active & Passive Voice",
-      "q": "Choose the correct passive-voice form of the given sentence.\nAnalysts are closely monitoring the fluctuating patterns of the stock index to predict the upcoming economic correction.",
+      "q": "Analysts are closely monitoring the fluctuating patterns of the stock index to predict the upcoming economic correction.",
       "o": [
         "The fluctuating patterns of the stock index are being closely monitored by analysts to predict the upcoming economic correction.",
         "The fluctuating patterns of the stock index were closely monitored by analysts to predict the upcoming economic correction.",
@@ -418,15 +449,19 @@
         "The upcoming economic correction is being predicted by analysts by closely monitoring the fluctuating patterns of the stock index."
       ],
       "a": 0,
-      "e": "The active verb “are monitoring” is Present Continuous. Its passive form is “are being monitored.” Therefore, A is correct.\n\nHindi Explanation: “Are monitoring” Present Continuous Active है। इसका passive form “are being monitored” होगा। इसलिए A सही है।",
-      "eh": "“Are monitoring” Present Continuous Active है। इसका passive form “are being monitored” होगा। इसलिए A सही है।",
+      "e": "The active sentence is in the Present Continuous (“are monitoring”). Its passive form is “are being + past participle”, giving “are being closely monitored”.",
+      "eh": "“Are monitoring” Present Continuous है, इसलिए passive में “are being + V3” आएगा। सही रूप “are being closely monitored” है.",
       "topic": "Active & Passive Voice",
-      "instruction": "Choose the correct passive-voice form of the given sentence."
+      "instruction": "Choose the correct passive-voice form of the given sentence.",
+      "explanation": {
+        "why_correct": "The active sentence is in the Present Continuous (“are monitoring”). Its passive form is “are being + past participle”, giving “are being closely monitored”.",
+        "hindi_explanation": "“Are monitoring” Present Continuous है, इसलिए passive में “are being + V3” आएगा। सही रूप “are being closely monitored” है."
+      }
     },
     {
       "id": 18,
       "type": "Idioms",
-      "q": "Choose the option that gives the correct meaning of the idiom.\nThe scientific research facility was forced to shut down its experimental project because the expected breakthroughs turned out to be a mere castle in the air.",
+      "q": "The scientific research facility was forced to shut down its experimental project because the expected breakthroughs turned out to be a mere castle in the air.",
       "o": [
         "An expensive architectural failure",
         "A visionary but highly impractical plan",
@@ -434,24 +469,25 @@
         "A dynamic milestone achieved unexpectedly"
       ],
       "a": 1,
-      "e": "“Castle in the air” means an unrealistic dream, plan, or grand idea without a practical basis. B is correct.\n\nOption meanings: A. An expensive architectural failure — a costly failure involving a building/design. B. A visionary but highly impractical plan — an attractive idea lacking realistic feasibility. C. A well-fortified strategy — a strongly protected or defended plan. D. A dynamic milestone achieved unexpectedly — an important achievement reached in an unplanned way.\n\nHindi Explanation: “Castle in the air” का अर्थ ऐसा अवास्तविक सपना या योजना है जिसका practical basis नहीं है। इसलिए B सही है।\nA. महंगी architectural failure। B. कल्पनाशील लेकिन अत्यंत अव्यावहारिक योजना। C. अच्छी तरह सुरक्षित/मजबूत strategy। D. अचानक प्राप्त की गई महत्वपूर्ण उपलब्धि।",
-      "eh": "“Castle in the air” का अर्थ ऐसा अवास्तविक सपना या योजना है जिसका practical basis नहीं है। इसलिए B सही है।\nA. महंगी architectural failure। B. कल्पनाशील लेकिन अत्यंत अव्यावहारिक योजना। C. अच्छी तरह सुरक्षित/मजबूत strategy। D. अचानक प्राप्त की गई महत्वपूर्ण उपलब्धि।",
+      "e": "“Castle in the air” means an unrealistic dream, plan, or grand idea without a practical basis.",
+      "eh": "“Castle in the air” का अर्थ ऐसा अवास्तविक सपना, योजना या विचार है जिसका practical basis नहीं है.",
       "topic": "Idioms",
-      "vocab": true,
-      "vocab_details": {
-        "options": {
-          "A": "An expensive architectural failure.",
-          "B": "A visionary but highly impractical plan.",
-          "C": "A well-fortified strategy.",
-          "D": "A dynamic milestone achieved unexpectedly."
+      "instruction": "Choose the option that gives the correct meaning of the idiom “castle in the air”.",
+      "explanation": {
+        "why_correct": "“Castle in the air” means an unrealistic dream, plan, or grand idea without a practical basis.",
+        "hindi_explanation": "“Castle in the air” का अर्थ ऐसा अवास्तविक सपना, योजना या विचार है जिसका practical basis नहीं है.",
+        "option_explanations": {
+          "A": "An expensive architectural failure = a costly failure involving a building or design. Hindi: भवन/डिज़ाइन से जुड़ी महंगी विफलता.",
+          "B": "A visionary but highly impractical plan = an attractive idea without realistic feasibility. Hindi: कल्पनाशील लेकिन अत्यंत अव्यावहारिक योजना.",
+          "C": "A well-fortified strategy = a strongly protected or defended plan. Hindi: अच्छी तरह सुरक्षित या मजबूत रणनीति.",
+          "D": "A dynamic milestone achieved unexpectedly = an important achievement reached without being planned. Hindi: अप्रत्याशित रूप से प्राप्त महत्वपूर्ण उपलब्धि."
         }
-      },
-      "instruction": "Choose the option that gives the correct meaning of the idiom."
+      }
     },
     {
       "id": 19,
       "type": "Para Jumbles",
-      "q": "Arrange the sentences in the most logical sequence.\nP: This demographic shift has created an unprecedented demand for flexible healthcare policies that prioritize preventative care over emergency treatments.\nQ: Furthermore, urban migration has compressed the available housing space, fundamentally altering family structures and support systems for the elderly.\nR: Over the past two decades, the nation has witnessed a substantial transformation in its socio-economic landscape due to rapid industrial growth.\nS: Consequently, municipal corporations are forced to re-evaluate their city planning layout to accommodate both commercial zoning and residential wellbeing.",
+      "q": "P: This demographic shift has created an unprecedented demand for flexible healthcare policies that prioritize preventative care over emergency treatments.\nQ: Furthermore, urban migration has compressed the available housing space, fundamentally altering family structures and support systems for the elderly.\nR: Over the past two decades, the nation has witnessed a substantial transformation in its socio-economic landscape due to rapid industrial growth.\nS: Consequently, municipal corporations are forced to re-evaluate their city planning layout to accommodate both commercial zoning and residential wellbeing.",
       "o": [
         "RPSQ",
         "RQPS",
@@ -459,15 +495,19 @@
         "SQRP"
       ],
       "a": 1,
-      "e": "The best sequence is RQPS (B). R introduces the broad socio-economic transformation. Q gives a concrete demographic development—urban migration and its effect on families. P begins with “This demographic shift,” referring back to Q. S then begins with “Consequently,” giving a resulting policy/planning response.\n\nHindi Explanation: सही क्रम RQPS (B) है। R व्यापक socio-economic transformation बताता है। Q urban migration और उसके family structure पर प्रभाव की बात करता है। P में “This demographic shift” Q के demographic development को refer करता है। S “Consequently” के साथ उसका परिणाम बताता है।",
-      "eh": "सही क्रम RQPS (B) है। R व्यापक socio-economic transformation बताता है। Q urban migration और उसके family structure पर प्रभाव की बात करता है। P में “This demographic shift” Q के demographic development को refer करता है। S “Consequently” के साथ उसका परिणाम बताता है।",
+      "e": "R introduces the broad socio-economic transformation. Q adds urban migration and its effects on housing and family structures, establishing the demographic shift referred to by “This demographic shift” in P. S then gives a consequence for municipal planning. Therefore, the logical sequence is RQPS.",
+      "eh": "R व्यापक socio-economic transformation को प्रस्तुत करता है। Q urban migration और उसके प्रभाव बताता है, जिससे P का “This demographic shift” स्पष्ट होता है। S इसके बाद municipal planning का consequence देता है। इसलिए क्रम RQPS है.",
       "topic": "Para Jumbles",
-      "instruction": "Arrange the sentences in the most logical sequence."
+      "instruction": "Arrange the sentences in the most logical sequence.",
+      "explanation": {
+        "why_correct": "R introduces the broad socio-economic transformation. Q adds urban migration and its effects on housing and family structures, establishing the demographic shift referred to by “This demographic shift” in P. S then gives a consequence for municipal planning. Therefore, the logical sequence is RQPS.",
+        "hindi_explanation": "R व्यापक socio-economic transformation को प्रस्तुत करता है। Q urban migration और उसके प्रभाव बताता है, जिससे P का “This demographic shift” स्पष्ट होता है। S इसके बाद municipal planning का consequence देता है। इसलिए क्रम RQPS है."
+      }
     },
     {
       "id": 20,
       "type": "Synonyms",
-      "q": "Choose the word that is closest in meaning to the given word.\nThe professor’s lucid explanation of the complex thermodynamic principles allowed even the novice undergraduate students to grasp the core concepts effortlessly. (Find Synonym)",
+      "q": "The professor’s lucid explanation of the complex thermodynamic principles allowed even the novice undergraduate students to grasp the core concepts effortlessly. (Find Synonym)",
       "o": [
         "Obscure",
         "Transparent",
@@ -475,39 +515,41 @@
         "Comprehensive"
       ],
       "a": 1,
-      "e": "“Lucid” means clear and easy to understand. B. Transparent is the intended contextual synonym.\n\nOption meanings: A. Obscure = unclear or difficult to understand; antonym. B. Transparent = clear or easy to understand in this context; synonym. C. Intricate = complicated or highly detailed. D. Comprehensive = complete and covering all or nearly all aspects.\n\nTarget vocabulary: Synonyms — Transparent, Intelligible, Clear. Antonyms — Obscure, Ambiguous, Convoluted.\n\nHindi Explanation: “Lucid” का अर्थ स्पष्ट और आसानी से समझ आने वाला है। B. Transparent यहाँ contextual synonym है।\nA. Obscure = अस्पष्ट/समझने में कठिन। B. Transparent = स्पष्ट। C. Intricate = जटिल/बहुत detailed। D. Comprehensive = व्यापक और लगभग सभी पहलुओं को शामिल करने वाला।\nSynonyms: Transparent, Intelligible, Clear. Antonyms: Obscure, Ambiguous, Convoluted.",
-      "eh": "“Lucid” का अर्थ स्पष्ट और आसानी से समझ आने वाला है। B. Transparent यहाँ contextual synonym है।\nA. Obscure = अस्पष्ट/समझने में कठिन। B. Transparent = स्पष्ट। C. Intricate = जटिल/बहुत detailed। D. Comprehensive = व्यापक और लगभग सभी पहलुओं को शामिल करने वाला।\nSynonyms: Transparent, Intelligible, Clear. Antonyms: Obscure, Ambiguous, Convoluted.",
+      "e": "“Lucid” means clear and easy to understand. “Transparent” is the intended contextual synonym among the given options.",
+      "eh": "“Lucid” का अर्थ स्पष्ट और आसानी से समझ में आने वाला है। दिए गए options में “Transparent” intended contextual synonym है.",
       "topic": "Synonyms",
-      "vocab": true,
-      "vocab_details": {
-        "target": {
+      "instruction": "Choose the word that is closest in meaning to the word “lucid”.",
+      "explanation": {
+        "why_correct": "“Lucid” means clear and easy to understand. “Transparent” is the intended contextual synonym among the given options.",
+        "hindi_explanation": "“Lucid” का अर्थ स्पष्ट और आसानी से समझ में आने वाला है। दिए गए options में “Transparent” intended contextual synonym है.",
+        "option_explanations": {
+          "A": "Obscure = difficult to understand or unclear. Hindi: अस्पष्ट या समझने में कठिन.",
+          "B": "Transparent = clear or easy to understand in this context. Hindi: स्पष्ट और आसानी से समझ में आने वाला.",
+          "C": "Intricate = very complicated or detailed. Hindi: जटिल या पेचीदा.",
+          "D": "Comprehensive = including all or nearly all important aspects. Hindi: व्यापक या सभी प्रमुख पहलुओं को शामिल करने वाला."
+        },
+        "target_vocabulary": {
           "word": "Lucid",
-          "meaning": "Expressed clearly; easy to understand.",
+          "meaning": "Clear and easy to understand.",
+          "hindi_meaning": "स्पष्ट और आसानी से समझ में आने वाला।",
           "synonyms": [
-            "Transparent",
+            "Clear",
             "Intelligible",
-            "Clear"
+            "Comprehensible"
           ],
           "antonyms": [
             "Obscure",
             "Ambiguous",
             "Convoluted"
           ]
-        },
-        "options": {
-          "A": "Obscure: Not discovered or known about; uncertain or difficult to comprehend (antonym).",
-          "B": "Transparent: Easy to perceive or detect; perfectly clear in meaning (true contextual synonym).",
-          "C": "Intricate: Very complicated or detailed.",
-          "D": "Comprehensive: Complete; including all or nearly all elements or aspects of something."
         }
-      },
-      "instruction": "Choose the word that is closest in meaning to the given word."
+      }
     },
     {
       "id": 21,
       "type": "Cloze Test",
-      "passage": "The rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a \"human-in-the-loop\" framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.",
-      "q": "Choose the most appropriate option to complete the blank in the Cloze Test.\n\nCLOZE PASSAGE:\nThe rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a \"human-in-the-loop\" framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.\n\nQuestion 21: Choose the most appropriate option for blank (21).",
+      "passage": "The rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a “human-in-the-loop” framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.",
+      "q": "Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings.",
       "o": [
         "alleviate",
         "perpetuate",
@@ -515,16 +557,26 @@
         "repudiate"
       ],
       "a": 1,
-      "e": "The context says models trained on historical data can preserve old prejudices. “Perpetuate” means to cause something to continue or preserve it over time. A. Alleviate and C. Mitigate mean to reduce severity; D. Repudiate means to reject or refuse to accept.\n\nHindi Explanation: यहाँ historical data पुरानी prejudices को बनाए रखता है। “Perpetuate” का अर्थ किसी चीज़ को जारी रखना या बनाए रखना है। A. Alleviate और C. Mitigate = कम करना; D. Repudiate = अस्वीकार करना।",
-      "eh": "यहाँ historical data पुरानी prejudices को बनाए रखता है। “Perpetuate” का अर्थ किसी चीज़ को जारी रखना या बनाए रखना है। A. Alleviate और C. Mitigate = कम करना; D. Repudiate = अस्वीकार करना।",
+      "e": "The context says historical training data can preserve old prejudices. “Perpetuate” means to make something continue or preserve it over time.",
+      "eh": "Historical training data पुरानी prejudices को बनाए रख सकता है। “Perpetuate” का अर्थ किसी चीज़ को जारी रखना या बनाए रखना है.",
       "topic": "Cloze Test",
-      "instruction": "Choose the most appropriate option to complete the blank in the Cloze Test."
+      "instruction": "Choose the most appropriate option to complete blank (21) in the Cloze Test.",
+      "explanation": {
+        "why_correct": "The context says historical training data can preserve old prejudices. “Perpetuate” means to make something continue or preserve it over time.",
+        "hindi_explanation": "Historical training data पुरानी prejudices को बनाए रख सकता है। “Perpetuate” का अर्थ किसी चीज़ को जारी रखना या बनाए रखना है.",
+        "option_explanations": {
+          "A": "Alleviate = make something less severe. Hindi: कम या हल्का करना.",
+          "B": "Perpetuate = make something continue or preserve it over time. Hindi: जारी रखना या बनाए रखना.",
+          "C": "Mitigate = make something less severe or harmful. Hindi: कम करना या प्रभाव घटाना.",
+          "D": "Repudiate = reject or refuse to accept something. Hindi: अस्वीकार करना."
+        }
+      }
     },
     {
       "id": 22,
       "type": "Cloze Test",
-      "passage": "The rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a \"human-in-the-loop\" framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.",
-      "q": "Choose the most appropriate option to complete the blank in the Cloze Test.\n\nCLOZE PASSAGE:\nThe rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a \"human-in-the-loop\" framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.\n\nQuestion 22: Choose the most appropriate option for blank (22).",
+      "passage": "The rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a “human-in-the-loop” framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.",
+      "q": "This creates a feedback loop where systemic biases are not just maintained, but actively (22).",
       "o": [
         "amplified",
         "diminished",
@@ -532,16 +584,26 @@
         "neutralized"
       ],
       "a": 0,
-      "e": "A feedback loop can increase the strength of an existing bias. “Amplified” means increased in strength or intensity. B. Diminished means reduced, C. Truncated means shortened/cut short, and D. Neutralized means rendered ineffective.\n\nHindi Explanation: Feedback loop में bias की intensity बढ़ती है, इसलिए “amplified” सही है। B. Diminished = कम किया गया; C. Truncated = छोटा/कट किया गया; D. Neutralized = प्रभावहीन किया गया।",
-      "eh": "Feedback loop में bias की intensity बढ़ती है, इसलिए “amplified” सही है। B. Diminished = कम किया गया; C. Truncated = छोटा/कट किया गया; D. Neutralized = प्रभावहीन किया गया।",
+      "e": "A feedback loop can increase the strength or intensity of an existing bias. “Amplified” expresses that increase.",
+      "eh": "Feedback loop existing bias की intensity बढ़ा सकता है। “Amplified” इसी वृद्धि को दर्शाता है.",
       "topic": "Cloze Test",
-      "instruction": "Choose the most appropriate option to complete the blank in the Cloze Test."
+      "instruction": "Choose the most appropriate option to complete blank (22) in the Cloze Test.",
+      "explanation": {
+        "why_correct": "A feedback loop can increase the strength or intensity of an existing bias. “Amplified” expresses that increase.",
+        "hindi_explanation": "Feedback loop existing bias की intensity बढ़ा सकता है। “Amplified” इसी वृद्धि को दर्शाता है.",
+        "option_explanations": {
+          "A": "Amplified = increased in strength or intensity. Hindi: शक्ति या तीव्रता बढ़ाई गई.",
+          "B": "Diminished = reduced in strength or importance. Hindi: कम किया गया.",
+          "C": "Truncated = shortened or cut short. Hindi: छोटा या बीच में काटा गया.",
+          "D": "Neutralized = made ineffective or counterbalanced. Hindi: प्रभावहीन या निष्प्रभावी किया गया."
+        }
+      }
     },
     {
       "id": 23,
       "type": "Cloze Test",
-      "passage": "The rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a \"human-in-the-loop\" framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.",
-      "q": "Choose the most appropriate option to complete the blank in the Cloze Test.\n\nCLOZE PASSAGE:\nThe rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a \"human-in-the-loop\" framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.\n\nQuestion 23: Choose the most appropriate option for blank (23).",
+      "passage": "The rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a “human-in-the-loop” framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.",
+      "q": "Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice.",
       "o": [
         "whimsical",
         "equitable",
@@ -549,16 +611,26 @@
         "fractured"
       ],
       "a": 1,
-      "e": "The passage is concerned with algorithmic bias and fairness. “Equitable” means fair and impartial. A. Whimsical means based on sudden or fanciful ideas, C. Arbitrary means based on random choice rather than a consistent principle, and D. Fractured means broken or divided.\n\nHindi Explanation: Passage fairness की बात करता है, इसलिए “equitable” सही है, जिसका अर्थ fair और impartial है। A. Whimsical = सनकी/मनमाना; C. Arbitrary = बिना उचित नियम के मनमाना; D. Fractured = टूटा हुआ/विभाजित।",
-      "eh": "Passage fairness की बात करता है, इसलिए “equitable” सही है, जिसका अर्थ fair और impartial है। A. Whimsical = सनकी/मनमाना; C. Arbitrary = बिना उचित नियम के मनमाना; D. Fractured = टूटा हुआ/विभाजित।",
+      "e": "The passage is concerned with fairness in legal systems. “Equitable” means fair and impartial, so it fits the context of justice.",
+      "eh": "Passage fairness की बात करता है। “Equitable” का अर्थ fair और impartial है, इसलिए यह justice के context में सही है.",
       "topic": "Cloze Test",
-      "instruction": "Choose the most appropriate option to complete the blank in the Cloze Test."
+      "instruction": "Choose the most appropriate option to complete blank (23) in the Cloze Test.",
+      "explanation": {
+        "why_correct": "The passage is concerned with fairness in legal systems. “Equitable” means fair and impartial, so it fits the context of justice.",
+        "hindi_explanation": "Passage fairness की बात करता है। “Equitable” का अर्थ fair और impartial है, इसलिए यह justice के context में सही है.",
+        "option_explanations": {
+          "A": "Whimsical = based on sudden, fanciful, or playful ideas. Hindi: सनकी या मनमाना.",
+          "B": "Equitable = fair, impartial, and just. Hindi: न्यायसंगत और निष्पक्ष.",
+          "C": "Arbitrary = based on random choice rather than a consistent principle. Hindi: मनमाना, बिना उचित नियम के.",
+          "D": "Fractured = broken, divided, or damaged into parts. Hindi: टूटा हुआ या विभाजित."
+        }
+      }
     },
     {
       "id": 24,
       "type": "Cloze Test",
-      "passage": "The rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a \"human-in-the-loop\" framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.",
-      "q": "Choose the most appropriate option to complete the blank in the Cloze Test.\n\nCLOZE PASSAGE:\nThe rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a \"human-in-the-loop\" framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.\n\nQuestion 24: Choose the most appropriate option for blank (24).",
+      "passage": "The rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a “human-in-the-loop” framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.",
+      "q": "Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24).",
       "o": [
         "negligence",
         "oversight",
@@ -566,16 +638,26 @@
         "regression"
       ],
       "a": 1,
-      "e": "AI should remain under human supervision. “Oversight” means supervision or monitoring. A. Negligence means failure to take proper care, C. Ignorance means lack of knowledge, and D. Regression means a return to a previous state.\n\nHindi Explanation: AI को human supervision के अधीन रहना चाहिए। “Oversight” का अर्थ supervision/निगरानी है। A. Negligence = लापरवाही; C. Ignorance = अज्ञानता; D. Regression = पिछली अवस्था की ओर लौटना।",
-      "eh": "AI को human supervision के अधीन रहना चाहिए। “Oversight” का अर्थ supervision/निगरानी है। A. Negligence = लापरवाही; C. Ignorance = अज्ञानता; D. Regression = पिछली अवस्था की ओर लौटना।",
+      "e": "AI should remain under human supervision. “Oversight” means supervision or monitoring, so it fits the sentence.",
+      "eh": "AI को human supervision के अधीन रहना चाहिए। “Oversight” का अर्थ supervision या निगरानी है.",
       "topic": "Cloze Test",
-      "instruction": "Choose the most appropriate option to complete the blank in the Cloze Test."
+      "instruction": "Choose the most appropriate option to complete blank (24) in the Cloze Test.",
+      "explanation": {
+        "why_correct": "AI should remain under human supervision. “Oversight” means supervision or monitoring, so it fits the sentence.",
+        "hindi_explanation": "AI को human supervision के अधीन रहना चाहिए। “Oversight” का अर्थ supervision या निगरानी है.",
+        "option_explanations": {
+          "A": "Negligence = failure to take proper care. Hindi: लापरवाही.",
+          "B": "Oversight = supervision or monitoring. Hindi: निगरानी या पर्यवेक्षण.",
+          "C": "Ignorance = lack of knowledge or awareness. Hindi: अज्ञानता या जानकारी का अभाव.",
+          "D": "Regression = a return to a previous or less advanced state. Hindi: पिछली या कम उन्नत अवस्था की ओर लौटना."
+        }
+      }
     },
     {
       "id": 25,
       "type": "Cloze Test",
-      "passage": "The rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a \"human-in-the-loop\" framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.",
-      "q": "Choose the most appropriate option to complete the blank in the Cloze Test.\n\nCLOZE PASSAGE:\nThe rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a \"human-in-the-loop\" framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.\n\nQuestion 25: Choose the most appropriate option for blank (25).",
+      "passage": "The rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. While proponents argue that automated algorithms can drastically reduce case backlogs by quickly parsing millions of legal documents, critics raise concerns regarding algorithmic bias. Since machine learning models are trained on historical data, they inherently (21) the historical prejudices embedded within those past judicial rulings. This creates a feedback loop where systemic biases are not just maintained, but actively (22). Therefore, relying blindly on automated legal assistants could jeopardize the very core of (23) justice. Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human (24). Maintaining a “human-in-the-loop” framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.",
+      "q": "Maintaining a “human-in-the-loop” framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a (25) legal verdict.",
       "o": [
         "tentative",
         "superficial",
@@ -583,10 +665,21 @@
         "transient"
       ],
       "a": 2,
-      "e": "A “binding” legal verdict is legally obligatory or enforceable. A. Tentative means provisional/not final, B. Superficial means lacking depth, and D. Transient means temporary or short-lived.\n\nHindi Explanation: “Binding” legal verdict का अर्थ कानूनी रूप से बाध्यकारी या enforceable verdict है। A. Tentative = अस्थायी/अंतिम नहीं; B. Superficial = सतही; D. Transient = थोड़े समय तक रहने वाला।",
-      "eh": "“Binding” legal verdict का अर्थ कानूनी रूप से बाध्यकारी या enforceable verdict है। A. Tentative = अस्थायी/अंतिम नहीं; B. Superficial = सतही; D. Transient = थोड़े समय तक रहने वाला।",
+      "e": "A “binding” legal verdict is legally obligatory or enforceable. “Tentative” means provisional, “superficial” means lacking depth, and “transient” means temporary.",
+      "eh": "“Binding” legal verdict का अर्थ कानूनी रूप से बाध्यकारी या enforceable verdict है। “Tentative” = provisional, “superficial” = सतही, और “transient” = अल्पकालिक.",
       "topic": "Cloze Test",
-      "instruction": "Choose the most appropriate option to complete the blank in the Cloze Test."
+      "instruction": "Choose the most appropriate option to complete blank (25) in the Cloze Test.",
+      "explanation": {
+        "why_correct": "A “binding” legal verdict is legally obligatory or enforceable. “Tentative” means provisional, “superficial” means lacking depth, and “transient” means temporary.",
+        "hindi_explanation": "“Binding” legal verdict का अर्थ कानूनी रूप से बाध्यकारी या enforceable verdict है। “Tentative” = provisional, “superficial” = सतही, और “transient” = अल्पकालिक.",
+        "option_explanations": {
+          "A": "Tentative = provisional or not final. Hindi: अस्थायी या अंतिम नहीं.",
+          "B": "Superficial = lacking depth or serious consideration. Hindi: सतही.",
+          "C": "Binding = legally obligatory or enforceable. Hindi: कानूनी रूप से बाध्यकारी या enforceable.",
+          "D": "Transient = temporary or short-lived. Hindi: अल्पकालिक या थोड़े समय तक रहने वाला."
+        }
+      }
     }
-  ]
+  ],
+  "description": "Read the bold instruction first. Then read the question carefully and choose one correct option."
 }
