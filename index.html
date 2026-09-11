@@ -478,14 +478,13 @@ function buildPDFReport(){
   const wrong = answers.reduce((n,a,i) => n + (a !== null && a !== questions[i].a ? 1 : 0), 0);
   const unanswered = answers.filter(a => a === null).length;
 
-  const topicColors = [
-    ["#e5f1ff","#173f73","#b8d2ee"],
-    ["#e7f7ed","#087441","#a8d9bb"],
-    ["#f0eaff","#4d2a91","#cdb9ff"],
-    ["#fff0df","#9a4d00","#ffd19a"],
-    ["#eaf7f5","#08756d","#a9ddd7"],
-    ["#e5f1ff","#173f73","#b8d2ee"]
-  ];
+  // PDF question cards use exactly three status colours:
+  // correctly attempted = green, wrong = red, unattempted = blue.
+  const statusColors = {
+    correct: ["#e7f7ed", "#087441", "#a8d9bb"],
+    wrong: ["#fdeaea", "#b51f1f", "#e58b8b"],
+    unanswered: ["#e5f1ff", "#173f73", "#b8d2ee"]
+  };
 
   const head = `<div class="pdf-head">
     <div>
@@ -496,7 +495,7 @@ function buildPDFReport(){
   </div>`;
 
   const scorebar = `<div class="pdf-scorebar">
-    <div class="pdf-legendbox">🟢 Correct answer &nbsp; | &nbsp; 🔴 Your wrong answer &nbsp; | &nbsp; ⚪ Not answered</div>
+    <div class="pdf-legendbox">🟢 Correctly attempted &nbsp; | &nbsp; 🔴 Wrong &nbsp; | &nbsp; 🔵 Not attempted</div>
     <div class="pdf-summarybox"><b>Score: ${score} / ${questions.length}</b><br>Correct: ${score} &nbsp; | &nbsp; Wrong: ${wrong} &nbsp; | &nbsp; Unanswered: ${unanswered}</div>
   </div>`;
 
@@ -504,7 +503,7 @@ function buildPDFReport(){
     const ua = answers[i];
     const status = ua === null ? "⚪ Not Answered" : (ua === x.a ? "🟢 Correct" : "🔴 Wrong");
     const statusClass = ua === null ? "unanswered" : (ua === x.a ? "correct" : "wrong");
-    const pal = topicColors[i % topicColors.length];
+    const pal = statusColors[statusClass];
     const opts = (Array.isArray(x.o) ? x.o : []).map((text,j)=>{
       const isCorrect = j === x.a;
       const isWrong = ua !== null && ua !== x.a && j === ua;
@@ -514,8 +513,8 @@ function buildPDFReport(){
     }).join("");
     const your = ua === null ? "Not answered" : `${labelForIndex(ua)}. ${getOptionText(x,ua)}`;
     const correct = `${labelForIndex(x.a)}. ${getOptionText(x,x.a)}`;
-    const cardBg = statusClass === "correct" ? "#effaf2" : (statusClass === "wrong" ? "#fff1f1" : "#f7faff");
-    const cardBorder = statusClass === "correct" ? "#72bf91" : (statusClass === "wrong" ? "#e58b8b" : pal[2]);
+    const cardBg = pal[0];
+    const cardBorder = pal[2];
     return `<section class="pdf-question" style="border-color:${cardBorder};background:${cardBg}">
       <div class="pdf-qhead" style="background:${pal[0]};border-bottom-color:${pal[2]}">
         <span class="pdf-qnum" style="background:${pal[1]}">Q${i+1}</span>
