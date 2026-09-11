@@ -1,0 +1,320 @@
+{
+  "id": "english_2026_09_11_day1_set1",
+  "date": "2026-09-11",
+  "title": "SSC CGL Tier-1 English (Eduquity Pattern) — Day 1: Set 1",
+  "subject": "English Language",
+  "languages": [
+    "English"
+  ],
+  "description": "SSC CGL Tier-1 English practice set — 25 questions.",
+  "questions": [
+    {
+      "q": "Choose the most appropriate improvement for the underlined part: The committee members have been discussing the proposal since three hours.",
+      "o": [
+        "for three hours",
+        "since three hours",
+        "from three hours",
+        "by three hours"
+      ],
+      "a": 0,
+      "e": "The duration of an action is expressed with for, while since is used with a starting point in time.",
+      "topic": "Sentence Improvement"
+    },
+    {
+      "q": "Identify the correctly spelt word.",
+      "o": [
+        "Criticism",
+        "Critisism",
+        "Critisizm",
+        "Criticismm"
+      ],
+      "a": 0,
+      "e": "Criticism is the correct spelling. Option B uses critisism, while C and D are also incorrectly formed spellings.",
+      "topic": "Spelling Error",
+      "vocab": true
+    },
+    {
+      "q": "Identify the part of the sentence that contains an error: The manager, along with his assistants, are attending the conference.",
+      "o": [
+        "The manager, along with his assistants",
+        "are attending the conference",
+        "The manager, along with his assistants, are",
+        "No Error"
+      ],
+      "a": 1,
+      "e": "The main subject is the singular noun manager. The phrase along with his assistants does not change the number of the subject, so the singular verb is required: is attending.",
+      "topic": "Spotting Error"
+    },
+    {
+      "q": "Change the following into indirect speech: He said, “I can finish the work because I had observed the process carefully.”",
+      "o": [
+        "He said that he can finish the work because he had observed the process carefully.",
+        "He said that he could finish the work because he had observed the process carefully.",
+        "He said that he could finish the work because he observed the process carefully.",
+        "He said that he can finish the work because he observed the process carefully."
+      ],
+      "a": 1,
+      "e": "With a past reporting verb, can normally changes to could. The earlier observation is appropriately represented by had observed, making the standard exam-style transformation: could ... had observed.",
+      "topic": "Direct/Indirect"
+    },
+    {
+      "q": "Choose the antonym of “ABUNDANT”.",
+      "o": [
+        "Plentiful",
+        "Ample",
+        "Scarce",
+        "Copious"
+      ],
+      "a": 2,
+      "e": "Abundant means available in large quantity. Plentiful = existing in large quantity; Ample = more than sufficient; Scarce = insufficient or in short supply; Copious = abundant in quantity. Synonyms of abundant: plentiful, ample, copious. Antonyms: scarce, sparse, insufficient.",
+      "topic": "Antonyms",
+      "vocab": true
+    },
+    {
+      "q": "Arrange the following sentences in the most logical order: P. The discovery changed the direction of the research. Q. The scientists had initially expected a different result. R. They repeated the experiment to verify the finding. S. The unexpected observation appeared during the first trial.",
+      "o": [
+        "Q-S-P-R",
+        "S-Q-P-R",
+        "Q-P-S-R",
+        "S-P-Q-R"
+      ],
+      "a": 0,
+      "e": "Q introduces the scientists' initial expectation, S presents the unexpected observation, P gives its consequence, and R describes the verification step.",
+      "topic": "Para Jumbles"
+    },
+    {
+      "q": "Choose the option that best expresses the meaning of the idiom “to add fuel to the fire”.",
+      "o": [
+        "To calm an already tense situation",
+        "To make an already difficult situation worse",
+        "To solve a problem immediately",
+        "To avoid discussing a serious issue"
+      ],
+      "a": 1,
+      "e": "Add fuel to the fire means to make an already bad, angry, or difficult situation worse.",
+      "topic": "Idioms",
+      "vocab": true
+    },
+    {
+      "q": "Identify the part of the sentence that contains an error: Neither the principal nor the teachers was willing to postpone the examination.",
+      "o": [
+        "Neither the principal nor the teachers",
+        "was willing to postpone",
+        "the examination",
+        "No Error"
+      ],
+      "a": 1,
+      "e": "With neither...nor, the verb agrees with the subject nearer to it. Teachers is plural, so were willing is required.",
+      "topic": "Spotting Error"
+    },
+    {
+      "q": "Change into passive voice: The research team will publish the findings next month.",
+      "o": [
+        "The findings will be published by the research team next month.",
+        "The findings would be published by the research team next month.",
+        "The findings will have been published by the research team next month.",
+        "The research team will be published the findings next month."
+      ],
+      "a": 0,
+      "e": "The active object the findings becomes the passive subject. The future form will publish changes to will be published.",
+      "topic": "Active/Passive"
+    },
+    {
+      "q": "Change the following into indirect speech: She said to me, “Did you complete the assignment?”",
+      "o": [
+        "She asked me if I had completed the assignment.",
+        "She told me if I completed the assignment.",
+        "She asked me that I had completed the assignment.",
+        "She said to me whether I complete the assignment."
+      ],
+      "a": 0,
+      "e": "A yes/no question is introduced with if or whether, and the past reporting verb normally shifts completed to had completed.",
+      "topic": "Direct/Indirect"
+    },
+    {
+      "q": "Choose the one-word substitution for “A person who deliberately sets fire to property”.",
+      "o": [
+        "Arsonist",
+        "Extortionist",
+        "Embezzler",
+        "Vandal"
+      ],
+      "a": 0,
+      "e": "Arsonist = a person who deliberately sets fire to property. Extortionist = a person who obtains something through threats; Embezzler = a person who fraudulently misappropriates entrusted money or property; Vandal = a person who deliberately damages property.",
+      "topic": "One Word Substitution",
+      "vocab": true
+    },
+    {
+      "q": "Identify the part of the sentence that contains an error: Not only did the investigative journalist uncover a massive financial fraud involving the offshore accounts, but he also revealed how deeply entrenched corruption was in the administrative machinery.",
+      "o": [
+        "Not only did the investigative journalist uncover a massive financial fraud",
+        "involving the offshore accounts, but he also revealed how deeply entrenched",
+        "corruption was in the administrative machinery.",
+        "No Error"
+      ],
+      "a": 3,
+      "e": "The correlative construction not only...but also is correctly formed, and the sentence is grammatically complete. There is no error.",
+      "topic": "Spotting Error"
+    },
+    {
+      "q": "Identify the correctly spelt word.",
+      "o": [
+        "Accommodation",
+        "Accomodation",
+        "Acommodation",
+        "Accommadation"
+      ],
+      "a": 0,
+      "e": "Accommodation is the standard spelling, with double c and double m.",
+      "topic": "Spelling Error",
+      "vocab": true
+    },
+    {
+      "q": "Choose the synonym of “PRUDENT”.",
+      "o": [
+        "Cautious",
+        "Reckless",
+        "Impulsive",
+        "Careless"
+      ],
+      "a": 0,
+      "e": "Prudent means showing careful judgment. Cautious = careful to avoid danger or mistakes; Reckless = careless of consequences; Impulsive = acting without sufficient thought; Careless = not giving enough attention. Synonyms of prudent: cautious, judicious, sensible. Antonyms: reckless, imprudent, careless.",
+      "topic": "Synonyms",
+      "vocab": true
+    },
+    {
+      "q": "Choose the most appropriate improvement: Hardly had the meeting begun when the power supply failed.",
+      "o": [
+        "than the power supply failed",
+        "when the power supply failed",
+        "then the power supply failed",
+        "and the power supply had failed"
+      ],
+      "a": 1,
+      "e": "The correlative structure hardly...when is correctly used to show that one event happened immediately after another.",
+      "topic": "Sentence Improvement"
+    },
+    {
+      "q": "Identify the part of the sentence that contains an error: Had the meteorological department issued the emergency severe weather warning a few hours prior, the coastal administrative authorities would have successfully evacuated the vulnerable low-lying regions.",
+      "o": [
+        "Had the meteorological department issued the emergency severe weather warning",
+        "a few hours prior, the coastal administrative authorities would have successfully evacuated",
+        "the vulnerable low-lying regions.",
+        "No Error"
+      ],
+      "a": 3,
+      "e": "The inverted third conditional is correctly formed: Had + past participle in the condition, followed by would have + past participle in the result. There is no error.",
+      "topic": "Spotting Error"
+    },
+    {
+      "q": "Change into passive voice: The authorities have implemented several safety measures.",
+      "o": [
+        "Several safety measures have been implemented by the authorities.",
+        "Several safety measures had been implemented by the authorities.",
+        "Several safety measures are being implemented by the authorities.",
+        "Several safety measures have implemented the authorities."
+      ],
+      "a": 0,
+      "e": "The present perfect active form have implemented changes to have been implemented in the passive voice.",
+      "topic": "Active/Passive"
+    },
+    {
+      "q": "Choose the option that best expresses the meaning of the idiom “once in a blue moon”.",
+      "o": [
+        "Very frequently",
+        "At a very early stage",
+        "Very rarely",
+        "Without any warning"
+      ],
+      "a": 2,
+      "e": "Once in a blue moon means something that happens very rarely.",
+      "topic": "Idioms",
+      "vocab": true
+    },
+    {
+      "q": "Arrange the following sentences in the most logical order: P. As a result, the company revised its safety procedures. Q. An internal inspection revealed several weaknesses. R. The revised procedures were then communicated to all employees. S. The management immediately reviewed the inspection report.",
+      "o": [
+        "Q-S-P-R",
+        "S-Q-P-R",
+        "Q-P-S-R",
+        "S-P-Q-R"
+      ],
+      "a": 0,
+      "e": "The inspection first reveals weaknesses (Q), management reviews the report (S), procedures are revised (P), and the revisions are communicated (R).",
+      "topic": "Para Jumbles"
+    },
+    {
+      "q": "Choose the synonym of “METICULOUS”.",
+      "o": [
+        "Careless",
+        "Thorough",
+        "Hasty",
+        "Negligent"
+      ],
+      "a": 1,
+      "e": "Meticulous means extremely careful and precise. Careless = lacking attention; Thorough = complete and careful; Hasty = done with excessive speed; Negligent = failing to take proper care. Synonyms of meticulous: thorough, painstaking, scrupulous. Antonyms: careless, negligent, sloppy.",
+      "topic": "Synonyms",
+      "vocab": true
+    },
+    {
+      "q": "Fill in the blank: The rapid integration of Artificial Intelligence (AI) into modern legal systems has sparked an intense global debate among jurists and tech ethicists. Since machine learning models are trained on historical data, they inherently □ the historical prejudices embedded within those past judicial rulings.",
+      "o": [
+        "alleviate",
+        "perpetuate",
+        "mitigate",
+        "repudiate"
+      ],
+      "a": 1,
+      "e": "Perpetuate means to make something continue or persist. Historical training data can therefore perpetuate prejudices embedded in earlier rulings.",
+      "topic": "Cloze Test"
+    },
+    {
+      "q": "Fill in the blank: This creates a feedback loop where systemic biases are not just maintained, but actively □.",
+      "o": [
+        "amplified",
+        "diminished",
+        "truncated",
+        "neutralized"
+      ],
+      "a": 0,
+      "e": "Amplified means increased in strength or intensity, which fits the passage's description of a feedback loop that worsens systemic bias.",
+      "topic": "Cloze Test"
+    },
+    {
+      "q": "Fill in the blank: Therefore, relying blindly on automated legal assistants could jeopardize the very core of □ justice.",
+      "o": [
+        "whimsical",
+        "equitable",
+        "arbitrary",
+        "fractured"
+      ],
+      "a": 1,
+      "e": "Equitable means fair and impartial, so equitable justice fits the context of protecting fairness from algorithmic bias.",
+      "topic": "Cloze Test"
+    },
+    {
+      "q": "Fill in the blank: Legal experts suggest that AI should never be allowed to operate with absolute autonomy; rather, it must serve as an auxiliary tool under strict human □.",
+      "o": [
+        "negligence",
+        "oversight",
+        "ignorance",
+        "regression"
+      ],
+      "a": 1,
+      "e": "Oversight means supervision or monitoring. Human oversight is therefore the appropriate safeguard when AI assists with legal decisions.",
+      "topic": "Cloze Test"
+    },
+    {
+      "q": "Fill in the blank: Maintaining a “human-in-the-loop” framework ensures that ethical nuances and situational contexts are carefully weighed before arriving at a □ legal verdict.",
+      "o": [
+        "tentative",
+        "superficial",
+        "binding",
+        "transient"
+      ],
+      "a": 2,
+      "e": "Binding means legally obligatory or enforceable. It fits a legal verdict that carries legal authority.",
+      "topic": "Cloze Test"
+    }
+  ]
+}
