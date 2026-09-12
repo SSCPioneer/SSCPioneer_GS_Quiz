@@ -15,6 +15,7 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 .quiz-topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px;position:relative}.progress{font-weight:800;font-size:20px;margin:0}.menu-btn{width:44px;height:44px;border:0;border-radius:10px;background:#111;color:#fff;font-size:26px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center}.palette-panel{margin:0 0 14px;padding:14px;background:#f8fafc;border:1px solid #d9e2ec;border-radius:14px}.palette-title{font-weight:800;font-size:18px;margin:0 0 10px}.palette{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.palette-actions{display:flex;gap:8px;margin-top:12px}.palette-actions button{flex:1;border:0;border-radius:10px;padding:10px;font-size:15px;font-weight:700;cursor:pointer}.palette-actions .finish-menu{background:#111;color:#fff}.palette-panel .legend{margin-top:10px}
 .instruction{font-size:18px;line-height:1.45;font-weight:800;margin-bottom:8px}
 .question{font-size:20px;line-height:1.45;margin-bottom:10px}.jumble-line{margin:0 0 10px}.jumble-line:last-child{margin-bottom:0}
+.matching-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px 22px;margin:8px 0 10px;padding:10px 12px;background:#f8fafc;border:1px solid #d9e2ec;border-radius:10px}.matching-row{display:grid;grid-template-columns:34px 1fr;gap:6px;align-items:start;line-height:1.4}.matching-row b{font-weight:900}.matching-right{font-weight:700}.matching-prompt{margin-bottom:8px}
 .question-passage{background:#f5f8fc;border:1px solid #d9e2ec;border-radius:12px;padding:12px 13px;margin:10px 0 12px;font-size:17px;line-height:1.55}
 .explanation{margin-top:16px}
 .ex-block{margin-top:10px}
@@ -67,10 +68,6 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 /* PDF / print report — colorful SSC Pioneer solution booklet */
 .pdf-report{display:none;background:#fff;color:#10213b;font-family:Arial,Helvetica,sans-serif;padding:0;line-height:1.25;font-size:9.2pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .pdf-wrap{width:100%}
- .pdf-page{page-break-after:always;break-after:page;transform-origin:top left;width:100%;overflow:hidden;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.pdf-page:last-child{page-break-after:auto;break-after:auto}
- .pdf-brand-fill{margin-top:8px;border:1.5px solid #a9cdef;border-radius:12px;background:linear-gradient(135deg,#e9f3ff,#fff0f0);padding:16px 12px;text-align:center;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.pdf-brand-fill .brand-main{font-size:22pt;font-weight:900;letter-spacing:.5px;color:#173f73}.pdf-brand-fill .brand-main span{color:#c62828}.pdf-brand-fill .brand-sub{margin-top:4px;font-size:10pt;font-weight:800;color:#385574}.pdf-brand-fill .brand-line{margin-top:7px;font-size:8.5pt;font-weight:700;color:#667085}
 .pdf-head{display:grid;grid-template-columns:1fr 150px;gap:10px;align-items:center;margin-bottom:7px}
 .pdf-brand{font-size:20pt;font-weight:900;letter-spacing:-.4px;color:#173f73}
 .pdf-brand span{color:#c62828}
@@ -82,7 +79,7 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 .pdf-legendbox,.pdf-summarybox{border-radius:7px;padding:6px 8px;font-weight:700}
 .pdf-legendbox{background:#f1f5f9;border:1px solid #dbe3ec;color:#23344b}
 .pdf-summarybox{background:#fff0df;border:1px solid #ffd4a6;text-align:center}
-.pdf-question{page-break-inside:avoid;break-inside:avoid;border:1.4px solid #b8d2ee;border-radius:10px;padding:6px 7px;margin:0 0 7px;background:#f8fbff;overflow:hidden;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.pdf-question{page-break-inside:avoid;break-inside:avoid;display:block;border:1.4px solid #b8d2ee;border-radius:10px;padding:6px 7px;margin:0 0 7px;background:#f8fbff;overflow:hidden;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .pdf-qhead{display:flex;justify-content:space-between;align-items:center;gap:7px;margin:-6px -7px 5px;padding:5px 7px;background:#e5f1ff;border-bottom:1px solid #c2ddf7;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .pdf-qnum{background:#173f73;color:#fff;border-radius:7px;padding:3px 8px;font-size:11pt;font-weight:900;white-space:nowrap}
 .pdf-topic{background:#d9ecff;color:#173f73;border:1px solid #a9cdef;border-radius:10px;padding:3px 7px;font-size:7.7pt;font-weight:800;white-space:nowrap}
@@ -92,6 +89,7 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
 .pdf-expl .ex-heading{font-weight:900;font-size:8.6pt;margin-top:4px;margin-bottom:2px}.pdf-expl .ex-text{margin-bottom:3px}.pdf-expl .ex-option{margin:3px 0;padding:3px 4px;background:#fff;border:1px solid #d9e2ec;border-radius:3px;line-height:1.18}.pdf-expl .ex-vocab{margin-top:4px;padding-top:4px;border-top:1px solid #cdd8e3}.pdf-expl .ex-list{margin:2px 0 2px 15px;line-height:1.2}
 .pdf-question .pdf-hi{font-size:9.1pt;line-height:1.25;margin-bottom:4px;color:#17283c}
 .pdf-options{display:grid;grid-template-columns:1fr 1fr;gap:3px 5px;margin-top:4px}
+.pdf-matching-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px 18px;margin:4px 0 5px;padding:4px 6px;background:#f8fafc;border:1px solid #d9e2ec;border-radius:5px}.pdf-matching-row{display:grid;grid-template-columns:22px 1fr;gap:4px;line-height:1.18}.pdf-matching-row b{font-weight:900}.pdf-matching-right{font-weight:700}
 .pdf-option{padding:4px 5px;border:1px solid #d5dce5;border-radius:5px;background:#fff;font-size:8.4pt;line-height:1.18;min-height:29px}
 .pdf-option.pdf-correct{background:#e5f7eb;border:1.4px solid #2e9d57}
 .pdf-option.pdf-user-wrong{background:#fde8e8;border:1.4px solid #d64545}
@@ -107,6 +105,7 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
  .container{display:none!important}
  .pdf-report{display:block!important}
  @page{size:A4 portrait;margin:7mm}
+.pdf-page{display:block;page-break-inside:avoid;break-inside:avoid;}
  .pdf-question{page-break-inside:avoid;break-inside:avoid}
 }
 button:disabled{opacity:.55;cursor:default}
@@ -329,9 +328,62 @@ function startQuiz(){
 
 function resumeQuiz(){ startQuiz(); }
 
+function subjectIs(name){
+  const s=String(quizSubject||'').toLowerCase().replace(/[^a-z]/g,'');
+  return name==='math' ? (s.includes('math')) : name==='reasoning' ? (s.includes('reason')) : name==='gs' ? (s==='gs'||s.includes('generalstud')) : name==='english' ? s.includes('english') : false;
+}
+
+function getSolutionParts(x){
+  const en = x.solution ?? x.solutionEnglish ?? x.solution_en ?? x.se ?? x.sol ?? x.solutionText;
+  const hi = x.solutionHindi ?? x.solution_hindi ?? x.solution_hi ?? x.sh ?? x.sol_hi;
+  return {en,hi};
+}
+
+function parseMatching(text){
+  const raw=String(text||'').replace(/\r/g,'').split('\n').map(v=>v.trim()).filter(v=>v!=='');
+  const left=[], right=[], prompt=[]; let side='prompt';
+  raw.forEach(line=>{
+    const mLeft=line.match(/^([A-D])\.\s*(.+)$/i);
+    const mRight=line.match(/^([1-9][0-9]?)\.\s*(.+)$/);
+    if(side==='prompt' && mLeft){side='left'; left.push({label:mLeft[1].toUpperCase(),text:mLeft[2]});return;}
+    if(side==='left' && mRight){side='right'; right.push({label:mRight[1],text:mRight[2]});return;}
+    if(side==='left' && mLeft){left.push({label:mLeft[1].toUpperCase(),text:mLeft[2]});return;}
+    if(side==='right' && mRight){right.push({label:mRight[1],text:mRight[2]});return;}
+    if(side==='prompt') prompt.push(line);
+  });
+  return (left.length && right.length) ? {prompt,left,right} : null;
+}
+
+function matchingHTML(text, pdf=false){
+  const m=parseMatching(text);
+  if(!m) return null;
+  const cls=pdf?'pdf-matching-grid':'matching-grid', row=pdf?'pdf-matching-row':'matching-row', rcls=pdf?'pdf-matching-right':'matching-right';
+  let h='';
+  if(m.prompt.length) h+='<div class="matching-prompt">'+m.prompt.map(esc).join('<br>')+'</div>';
+  h+='<div class="'+cls+'">';
+  const n=Math.max(m.left.length,m.right.length);
+  for(let i=0;i<n;i++){
+    const l=m.left[i], r=m.right[i];
+    h+='<div class="'+row+'"><b>'+esc(l?l.label:'')+(l?'.':'')+'</b><span>'+esc(l?l.text:'')+'</span></div>';
+    h+='<div class="'+row+'"><b>'+esc(r?r.label:'')+(r?'.':'')+'</b><span class="'+rcls+'">'+esc(r?r.text:'')+'</span></div>';
+  }
+  h+='</div>';
+  return h;
+}
+
 function explanationHTML(x){
-  const ex=x.explanation||{};
   let h='<div class="explanation">';
+  // Math and Reasoning have their own simple two-part solution format. English is untouched.
+  if(subjectIs('math') || subjectIs('reasoning')){
+    const correctLabel=labelForIndex(x.a), correctText=getOptionText(x,x.a);
+    h+='<div class="ex-block"><div class="ex-heading">Correct Answer</div><div class="ex-text"><b>'+esc(correctLabel)+'.</b> '+esc(correctText)+'</div></div>';
+    const parts=getSolutionParts(x);
+    if(parts.en) h+='<div class="ex-block"><div class="ex-text">'+esc(parts.en)+'</div></div>';
+    if(parts.hi) h+='<div class="ex-block"><div class="ex-text" lang="hi">'+esc(parts.hi)+'</div></div>';
+    h+='</div>';
+    return h;
+  }
+  const ex=x.explanation||{};
   const correctLabel=labelForIndex(x.a);
   const correctText=getOptionText(x,x.a);
 
@@ -360,9 +412,19 @@ function explanationHTML(x){
       h+='<div class="ex-option"><b>'+L+'. '+esc(opts[L].word)+'</b> — '+esc(opts[L].meaning)+'<br><span>Hindi: '+esc(opts[L].hindi)+'</span></div>';
     });
     h+='</div>';
-  } else {
+  } else if(ex.explanation || ex.hindi) {
     if(ex.explanation) h+='<div class="ex-block"><div class="ex-heading">Explanation</div><div class="ex-text">'+esc(ex.explanation)+'</div></div>';
     if(ex.hindi) h+='<div class="ex-block"><div class="ex-heading">Hindi</div><div class="ex-text" lang="hi">'+esc(ex.hindi)+'</div></div>';
+  } else {
+    // GS-format fallback: keep GS independent from English's explanation object.
+    if(x.e) h+='<div class="ex-block"><div class="ex-text">'+esc(x.e)+'</div></div>';
+    if(x.eh) h+='<div class="ex-block"><div class="ex-text" lang="hi">'+esc(x.eh)+'</div></div>';
+    const facts = x.extraFacts || x.extra_facts || x.facts;
+    if(Array.isArray(facts) && facts.length){
+      h+='<div class="ex-block"><div class="ex-heading">Extra Facts</div><div class="ex-text">'+facts.map(f=>'• '+esc(f)).join('<br>')+'</div></div>';
+    } else if(typeof facts === 'string' && facts.trim()){
+      h+='<div class="ex-block"><div class="ex-heading">Extra Facts</div><div class="ex-text">'+esc(facts)+'</div></div>';
+    }
   }
   h+='</div>';
   return h;
@@ -380,8 +442,9 @@ function render(){
     qEl.innerHTML=x.sentences.map(s=>'<div class="jumble-line"><b>'+esc(s.label)+':</b> '+esc(s.text)+'</div>').join('');
     qEl.classList.remove("hidden");
   }else{
-    qEl.textContent=x.q || "";
-    qEl.classList.toggle("hidden",!x.q);
+    const matching=matchingHTML(x.q||'',false);
+    if(matching){ qEl.innerHTML=matching; qEl.classList.remove("hidden"); }
+    else { qEl.textContent=x.q || ""; qEl.classList.toggle("hidden",!x.q); }
   }
 
   const pEl=document.getElementById("questionPassage");
@@ -405,9 +468,11 @@ function render(){
   });
 
   const f=document.getElementById("feedback");
-  if(answers[current]!==null){
+  if(answers[current]!==null || reviewMode){
     f.classList.remove("hidden","correct","wrong");
-    if(answers[current]===x.a){
+    if(answers[current]===null){
+      f.innerHTML='<div class="feedback-title">⏭️ Unanswered</div>'+explanationHTML(x);
+    } else if(answers[current]===x.a){
       f.classList.add("correct");
       f.innerHTML='<div class="feedback-title">✅ Correct!</div>'+explanationHTML(x);
     }else{
@@ -536,6 +601,12 @@ function pdfExplanationHTML(x){
   const ex=x.explanation||{}; let h='';
   const correctLabel=labelForIndex(x.a), correctText=getOptionText(x,x.a);
   h+='<div class="ex-heading">Correct Answer</div><div class="ex-text"><b>'+esc(correctLabel)+'.</b> '+esc(correctText)+'</div>';
+  if(subjectIs('math') || subjectIs('reasoning')){
+    const parts=getSolutionParts(x);
+    if(parts.en) h+='<div class="ex-text">'+esc(parts.en)+'</div>';
+    if(parts.hi) h+='<div class="ex-text" lang="hi">'+esc(parts.hi)+'</div>';
+    return h;
+  }
   if(ex.vocabulary){
     const v=ex.vocabulary;
     h+='<div class="ex-text"><b>Meaning:</b> '+esc(v.meaning)+'</div>';
@@ -552,6 +623,13 @@ function pdfExplanationHTML(x){
   } else {
     if(ex.explanation) h+='<div class="ex-heading">Explanation</div><div class="ex-text">'+esc(ex.explanation)+'</div>';
     if(ex.hindi) h+='<div class="ex-heading">Hindi</div><div class="ex-text" lang="hi">'+esc(ex.hindi)+'</div>';
+    if(subjectIs('gs') || x.e !== undefined || x.eh !== undefined){
+      if(x.e) h+='<div class="ex-text">'+esc(x.e)+'</div>';
+      if(x.eh) h+='<div class="ex-text" lang="hi">'+esc(x.eh)+'</div>';
+      const facts=x.extraFacts||x.extra_facts||x.facts;
+      if(Array.isArray(facts)&&facts.length) h+='<div class="ex-heading">Extra Facts</div><div class="ex-text">'+facts.map(f=>'• '+esc(f)).join('<br>')+'</div>';
+      else if(typeof facts==='string'&&facts.trim()) h+='<div class="ex-heading">Extra Facts</div><div class="ex-text">'+esc(facts)+'</div>';
+    }
   }
   return h;
 }
@@ -562,10 +640,11 @@ function buildPDFReport(){
   let html='<div class="pdf-wrap">';
   html+='<div class="pdf-head"><div><div class="pdf-brand">📚 SSC Pioneer — <span>'+esc(quizTitle)+'</span></div><div class="pdf-meta">'+esc(quizDate)+' &nbsp; | &nbsp; '+questions.length+' Questions &nbsp; | &nbsp; '+esc(quizLanguages.length?quizLanguages.join(' + '):(questions.some(q=>q.hi)?'English + Hindi':'English'))+'</div></div><div class="pdf-report-title">Solutions &amp;<br>Performance Report</div></div>';
   html+='<div class="pdf-scorebar"><div class="pdf-legendbox">🟢 Correct answer &nbsp; | &nbsp; 🔴 Your wrong answer &nbsp; | &nbsp; 🔵 Not answered</div><div class="pdf-summarybox"><b>Score: '+score+' / '+questions.length+'</b><br>Correct: '+score+' &nbsp; | &nbsp; Wrong: '+wrong+' &nbsp; | &nbsp; Unanswered: '+unanswered+'</div></div>';
+
   questions.forEach((x,i)=>{
-    const ua=answers[i], status=ua===null?'⚪ Not Answered':(ua===x.a?'🟢 Correct':'🔴 Wrong');
+    const ua=answers[i], status=ua===null?'🔵 Not Answered':(ua===x.a?'🟢 Correct':'🔴 Wrong');
     const statusClass=ua===null?'unanswered':(ua===x.a?'correct':'wrong');
-    const cardBg=statusClass==='correct'?'#effaf2':(statusClass==='wrong'?'#fff1f1':'#f7faff');
+    const cardBg=statusClass==='correct'?'#effaf2':(statusClass==='wrong'?'#fff1f1':'#f2f7ff');
     const cardBorder=statusClass==='correct'?'#72bf91':(statusClass==='wrong'?'#e58b8b':'#72a9df');
     const headBg=statusClass==='correct'?'#dcf4e4':(statusClass==='wrong'?'#fde1e1':'#e3f0ff');
     const headColor=statusClass==='correct'?'#087441':(statusClass==='wrong'?'#b51f1f':'#173f73');
@@ -575,15 +654,17 @@ function buildPDFReport(){
       let mark=isCorrect?'<span class="mark green">✓</span>':(isWrong?'<span class="mark red">×</span>':'');
       return '<div class="'+cls+'">'+mark+'<b>'+esc(labelForIndex(j))+'.</b> '+esc(text)+'</div>';
     }).join('');
-    const your=ua===null?'Not answered':labelForIndex(ua)+'. '+getOptionText(x,ua), correct=labelForIndex(x.a)+'. '+getOptionText(x,x.a);
+    const your=ua===null?'Not answered':labelForIndex(ua)+'. '+getOptionText(x,ua);
+    const correct=labelForIndex(x.a)+'. '+getOptionText(x,x.a);
     html+='<section class="pdf-question" data-q="'+i+'" style="border-color:'+cardBorder+';background:'+cardBg+'">';
     html+='<div class="pdf-qhead" style="background:'+headBg+';border-bottom-color:'+cardBorder+'"><span class="pdf-qnum" style="background:'+headColor+'">Q'+(i+1)+'</span><span class="pdf-topic" style="background:'+headBg+';color:'+headColor+';border-color:'+cardBorder+'">Topic: '+esc(x.topic||quizSubject||'General')+'</span></div>';
-    html+='<div class="pdf-instruction">'+esc(x.instruction||'')+'</div>';
+    if(x.instruction) html+='<div class="pdf-instruction">'+esc(x.instruction)+'</div>';
     if(x.passage) html+='<div class="pdf-passage">'+esc(x.passage)+'</div>';
     if(Array.isArray(x.sentences) && x.sentences.length){
       html+='<div class="pdf-qtitle pdf-jumbles">'+x.sentences.map(s=>'<div><b>'+esc(s.label)+':</b> '+esc(s.text)+'</div>').join('')+'</div>';
     }else{
-      html+='<div class="pdf-qtitle">'+esc(x.q||'')+'</div>';
+      const matching=matchingHTML(x.q||'',true);
+      html+=matching?'<div class="pdf-qtitle">'+matching+'</div>':'<div class="pdf-qtitle">'+esc(x.q||'')+'</div>';
     }
     if(x.hi) html+='<div class="pdf-hi" lang="hi">'+esc(x.hi)+'</div>';
     html+='<div class="pdf-options">'+opts+'</div>';
@@ -591,62 +672,10 @@ function buildPDFReport(){
     html+='<div class="pdf-expl">'+pdfExplanationHTML(x)+'</div>';
     html+='</section>';
   });
+
   html+='<div class="pdf-footer">SSC Pioneer • '+esc(quizTitle)+' • Solutions &amp; Performance Report</div></div>';
   const report=document.getElementById('pdfReport');
   report.innerHTML=html;
-  // Temporarily expose the report so the browser can measure natural card heights.
-  const oldDisplay=report.style.display, oldPos=report.style.position, oldVis=report.style.visibility;
-  report.style.display='block'; report.style.position='absolute'; report.style.left='-100000px'; report.style.top='0'; report.style.visibility='hidden';
-  const wrap=report.querySelector('.pdf-wrap');
-  const cards=[...report.querySelectorAll('.pdf-question')];
-  const page1Head=(report.querySelector('.pdf-head')?.offsetHeight||0)+(report.querySelector('.pdf-scorebar')?.offsetHeight||0)+8;
-  const usable=1000, usableFirst=Math.max(820,usable-page1Head);
-  const groups=[]; let group=[], used=0, cap=usableFirst;
-  cards.forEach(card=>{
-    const h=card.offsetHeight+7;
-    if(group.length && used+h>cap){ groups.push(group); group=[]; used=0; cap=usable; }
-    group.push(card); used+=h;
-  });
-  if(group.length) groups.push(group);
-  const footer=report.querySelector('.pdf-footer');
-  // Rebuild into explicit A4 pages. Sparse pages get a proportional enlargement of the whole card content.
-  const pages=[];
-  groups.forEach((g,idx)=>{
-    const page=document.createElement('div'); page.className='pdf-page';
-    if(idx===0){
-      const head=report.querySelector('.pdf-head'); const scorebar=report.querySelector('.pdf-scorebar');
-      if(head) page.appendChild(head.cloneNode(true));
-      if(scorebar) page.appendChild(scorebar.cloneNode(true));
-    }
-    g.forEach(card=>page.appendChild(card));
-    pages.push(page);
-  });
-  if(footer) pages[pages.length-1].appendChild(footer.cloneNode(true));
-  wrap.innerHTML=''; pages.forEach(page=>wrap.appendChild(page));
-  // Use the available page area: enlarge the whole card content first; if a page is still very sparse,
-  // add a compact, colourful SSC Pioneer brand panel rather than leaving a large blank area.
-  pages.forEach((page,idx)=>{
-    const target=idx===0?1000:1040;
-    let natural=page.scrollHeight;
-    const maxScale=1.24;
-    const maxNaturalAtScale=target/maxScale;
-    if(natural < maxNaturalAtScale-40){
-      const filler=document.createElement('div');
-      filler.className='pdf-brand-fill';
-      filler.innerHTML='<div class="brand-main">📚 SSC <span>Pioneer</span></div><div class="brand-sub">Daily GS Quiz • Solutions &amp; Performance Report</div><div class="brand-line">Practice • Analyse • Improve</div>';
-      const remaining=Math.min(180, Math.max(0, maxNaturalAtScale-natural-10));
-      filler.style.minHeight=remaining+'px';
-      page.appendChild(filler);
-      natural=page.scrollHeight;
-    }
-    const scale=Math.min(maxScale, Math.max(1, target/Math.max(natural,1)));
-    if(scale>1.02){
-      page.style.transform='scale('+scale.toFixed(3)+')';
-      page.style.width=(100/scale).toFixed(3)+'%';
-      page.style.height=(natural*scale+2)+'px';
-    }
-  });
-  report.style.display=oldDisplay; report.style.position=oldPos; report.style.left=''; report.style.top=''; report.style.visibility=oldVis;
 }
 function downloadPDF(){
   if(!completed) return;
