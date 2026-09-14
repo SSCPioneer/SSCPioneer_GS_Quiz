@@ -105,7 +105,8 @@ body{margin:0;background:#f3f6fa;font-family:Arial,Helvetica,sans-serif;color:#1
  .container{display:none!important}
  .pdf-report{display:block!important}
  @page{size:A4 portrait;margin:7mm}
-.pdf-page{display:block;page-break-inside:avoid;break-inside:avoid;}
+.pdf-page{display:block;page-break-inside:auto;break-inside:auto;}
+.pdf-page.pdf-three{zoom:.94}.pdf-page.pdf-four{zoom:.82}
  .pdf-question{page-break-inside:avoid;break-inside:avoid}
 }
 button:disabled{opacity:.55;cursor:default}
@@ -214,6 +215,7 @@ async function loadQuiz(){
     const requestedFile = params.get("file");
     const requestedDate = params.get("date");
     const requestedSubject = params.get("subject");
+    const requestedType = params.get("type") || params.get("quiz");
     const requestedSet = params.get("set");
 
     const today = new Date();
@@ -233,13 +235,26 @@ async function loadQuiz(){
       : "";
     const safeSet = requestedSet && /^\d+$/.test(requestedSet)
       ? requestedSet : "";
+    const safeType = requestedType
+      ? requestedType.replace(/[^A-Za-z0-9_-]/g, "")
+      : "";
 
     const candidates = [];
     if(requestedFile && /^[A-Za-z0-9._-]+\.json$/.test(requestedFile)){
       candidates.push(requestedFile);
     }
+    // Multiple quiz types can share the same engine.
+    // URL examples:
+    // ?subject=English&type=Synonym&set=1
+    // ?subject=English&type=Antonym&set=1
+    // ?quiz=Synonym&set=1
+    if(safeSubject && safeType && safeSet){
+      candidates.push(`${date}-${safeSubject}-${safeType}-Set-${safeSet}.json`);
+      candidates.push(`${safeSubject}-${safeType}-Set-${safeSet}.json`);
+    }
     if(safeSubject && safeSet){
       candidates.push(`${date}-${safeSubject}-Set-${safeSet}.json`);
+      candidates.push(`${safeSubject}-Set-${safeSet}.json`);
     }
     if(safeSubject){
       candidates.push(`${date}-${safeSubject}.json`);
@@ -641,7 +656,13 @@ function buildPDFReport(){
   html+='<div class="pdf-head"><div><div class="pdf-brand">📚 SSC Pioneer — <span>'+esc(quizTitle)+'</span></div><div class="pdf-meta">'+esc(quizDate)+' &nbsp; | &nbsp; '+questions.length+' Questions &nbsp; | &nbsp; '+esc(quizLanguages.length?quizLanguages.join(' + '):(questions.some(q=>q.hi)?'English + Hindi':'English'))+'</div></div><div class="pdf-report-title">Solutions &amp;<br>Performance Report</div></div>';
   html+='<div class="pdf-scorebar"><div class="pdf-legendbox">🟢 Correct answer &nbsp; | &nbsp; 🔴 Your wrong answer &nbsp; | &nbsp; 🔵 Not answered</div><div class="pdf-summarybox"><b>Score: '+score+' / '+questions.length+'</b><br>Correct: '+score+' &nbsp; | &nbsp; Wrong: '+wrong+' &nbsp; | &nbsp; Unanswered: '+unanswered+'</div></div>';
 
-  questions.forEach((x,i)=>{
+  const pageGroups=questions.length===25?[[0,3],[3,6],[6,10],[10,13],[13,16],[16,19],[19,22],[22,25]]:[[0,questions.length]];
+  pageGroups.forEach((group,gi)=>{
+    const groupSize=Math.min(group[1],questions.length)-group[0];
+    const pageClass=questions.length===25?(groupSize===4?'pdf-four':'pdf-three'):'pdf-three';
+    html+='<div class="pdf-page '+pageClass+'"'+(gi<pageGroups.length-1?' style="page-break-after:always;"':'')+'>';
+    for(let i=group[0];i<Math.min(group[1],questions.length);i++){
+      const x=questions[i];
     const ua=answers[i], status=ua===null?'🔵 Not Answered':(ua===x.a?'🟢 Correct':'🔴 Wrong');
     const statusClass=ua===null?'unanswered':(ua===x.a?'correct':'wrong');
     const cardBg=statusClass==='correct'?'#effaf2':(statusClass==='wrong'?'#fff1f1':'#f2f7ff');
@@ -671,6 +692,8 @@ function buildPDFReport(){
     html+='<div class="pdf-status '+statusClass+'">'+status+' &nbsp; | &nbsp; <b>Your Answer:</b> '+esc(your)+' &nbsp; | &nbsp; <b>Correct Answer:</b> '+esc(correct)+'</div>';
     html+='<div class="pdf-expl">'+pdfExplanationHTML(x)+'</div>';
     html+='</section>';
+    }
+    html+='</div>';
   });
 
   html+='<div class="pdf-footer">SSC Pioneer • '+esc(quizTitle)+' • Solutions &amp; Performance Report</div></div>';
