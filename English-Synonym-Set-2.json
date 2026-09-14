@@ -1,0 +1,2611 @@
+{
+  "id": "english_synonym_set2_50",
+  "title": "SSC CGL English — Synonym Quiz — Set 2",
+  "subject": "English Language",
+  "languages": [
+    "English",
+    "Hindi"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Despot”.",
+      "o": [
+        "Haphazard",
+        "Impecunious",
+        "Gregarious",
+        "Tyrant"
+      ],
+      "a": 3,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Tyrant",
+          "hindi_meaning": "निरंकुश शासक",
+          "synonyms": [
+            "Tyrant",
+            "Dictator",
+            "Autocrat"
+          ],
+          "antonyms": [
+            "Democrat",
+            "Servant",
+            "Subject"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Haphazard",
+            "meaning": "Haphazard",
+            "hindi": "अव्यवस्थित"
+          },
+          "B": {
+            "word": "Impecunious",
+            "meaning": "Impecunious",
+            "hindi": "निर्धन"
+          },
+          "C": {
+            "word": "Gregarious",
+            "meaning": "Gregarious",
+            "hindi": "मिलनसार"
+          },
+          "D": {
+            "word": "Tyrant",
+            "meaning": "a cruel or oppressive ruler",
+            "hindi": ""
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 2,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Diaphanous”.",
+      "o": [
+        "Implacable",
+        "Exhilaration",
+        "Ebullient",
+        "Translucent"
+      ],
+      "a": 3,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Translucent",
+          "hindi_meaning": "पारदर्शी",
+          "synonyms": [
+            "Translucent",
+            "Sheer",
+            "Gossamer"
+          ],
+          "antonyms": [
+            "Opaque",
+            "Thick",
+            "Dense"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Implacable",
+            "meaning": "Implacable",
+            "hindi": "अडिग"
+          },
+          "B": {
+            "word": "Exhilaration",
+            "meaning": "Exhilaration",
+            "hindi": "उल्लास"
+          },
+          "C": {
+            "word": "Ebullient",
+            "meaning": "Ebullient",
+            "hindi": "उत्साही"
+          },
+          "D": {
+            "word": "Translucent",
+            "meaning": "allowing some light through",
+            "hindi": ""
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 3,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Diatribe”.",
+      "o": [
+        "Fastidious",
+        "Germane",
+        "Tirade",
+        "Egregious"
+      ],
+      "a": 2,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Tirade",
+          "hindi_meaning": "कटु आलोचना",
+          "synonyms": [
+            "Tirade",
+            "Harangue",
+            "Rant"
+          ],
+          "antonyms": [
+            "Praise",
+            "Commendation",
+            "Approval"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Fastidious",
+            "meaning": "Fastidious",
+            "hindi": "नकचढ़ा"
+          },
+          "B": {
+            "word": "Germane",
+            "meaning": "Germane",
+            "hindi": "प्रासंगिक"
+          },
+          "C": {
+            "word": "Tirade",
+            "meaning": "a long angry speech",
+            "hindi": ""
+          },
+          "D": {
+            "word": "Egregious",
+            "meaning": "Egregious",
+            "hindi": "घोर"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 4,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Diffident”.",
+      "o": [
+        "Eclectic",
+        "Shy",
+        "Enmity",
+        "Elucidate"
+      ],
+      "a": 1,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Shy",
+          "hindi_meaning": "संकोची",
+          "synonyms": [
+            "Shy",
+            "Hesitant",
+            "Timid"
+          ],
+          "antonyms": [
+            "Confident",
+            "Bold",
+            "Assertive"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Eclectic",
+            "meaning": "Eclectic",
+            "hindi": "विविधतापूर्ण"
+          },
+          "B": {
+            "word": "Shy",
+            "meaning": "nervous around others",
+            "hindi": ""
+          },
+          "C": {
+            "word": "Enmity",
+            "meaning": "Enmity",
+            "hindi": "शत्रुता"
+          },
+          "D": {
+            "word": "Elucidate",
+            "meaning": "Elucidate",
+            "hindi": "स्पष्ट करना"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 5,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Disparate”.",
+      "o": [
+        "Erudite",
+        "Dissimilar",
+        "Implacable",
+        "Festivity"
+      ],
+      "a": 1,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Dissimilar",
+          "hindi_meaning": "असमान",
+          "synonyms": [
+            "Dissimilar",
+            "Different",
+            "Diverse"
+          ],
+          "antonyms": [
+            "Similar",
+            "Alike",
+            "Identical"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Erudite",
+            "meaning": "Erudite",
+            "hindi": "विद्वान"
+          },
+          "B": {
+            "word": "Dissimilar",
+            "meaning": "not alike",
+            "hindi": ""
+          },
+          "C": {
+            "word": "Implacable",
+            "meaning": "Implacable",
+            "hindi": "अडिग"
+          },
+          "D": {
+            "word": "Festivity",
+            "meaning": "Festivity",
+            "hindi": "उत्सव"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 6,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Dissemble”.",
+      "o": [
+        "Fatuous",
+        "Festivity",
+        "Deceive",
+        "Eclectic"
+      ],
+      "a": 2,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Deceive",
+          "hindi_meaning": "छल करना",
+          "synonyms": [
+            "Deceive",
+            "Pretend",
+            "Feign"
+          ],
+          "antonyms": [
+            "Reveal",
+            "Disclose",
+            "Sincere"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Fatuous",
+            "meaning": "Fatuous",
+            "hindi": "मूर्खतापूर्ण"
+          },
+          "B": {
+            "word": "Festivity",
+            "meaning": "Festivity",
+            "hindi": "उत्सव"
+          },
+          "C": {
+            "word": "Deceive",
+            "meaning": "to mislead",
+            "hindi": ""
+          },
+          "D": {
+            "word": "Eclectic",
+            "meaning": "Eclectic",
+            "hindi": "विविधतापूर्ण"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 7,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Dogmatic”.",
+      "o": [
+        "Egregious",
+        "Germane",
+        "Doctrinaire",
+        "Equivocal"
+      ],
+      "a": 2,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Doctrinaire",
+          "hindi_meaning": "हठधर्मी",
+          "synonyms": [
+            "Doctrinaire",
+            "Opinionated",
+            "Authoritarian"
+          ],
+          "antonyms": [
+            "Open-minded",
+            "Flexible",
+            "Tolerant"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Egregious",
+            "meaning": "Egregious",
+            "hindi": "घोर"
+          },
+          "B": {
+            "word": "Germane",
+            "meaning": "Germane",
+            "hindi": "प्रासंगिक"
+          },
+          "C": {
+            "word": "Doctrinaire",
+            "meaning": "rigidly adhering to doctrine",
+            "hindi": ""
+          },
+          "D": {
+            "word": "Equivocal",
+            "meaning": "Equivocal",
+            "hindi": "अस्पष्ट"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 8,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Ebullient”.",
+      "o": [
+        "Evanescent",
+        "Elucidate",
+        "Enthusiastic",
+        "Fecund"
+      ],
+      "a": 2,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Enthusiastic",
+          "hindi_meaning": "उत्साही",
+          "synonyms": [
+            "Enthusiastic",
+            "Exuberant",
+            "Vivacious"
+          ],
+          "antonyms": [
+            "Dull",
+            "Depressed",
+            "Lethargic"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Evanescent",
+            "meaning": "Evanescent",
+            "hindi": "क्षणभंगुर"
+          },
+          "B": {
+            "word": "Elucidate",
+            "meaning": "Elucidate",
+            "hindi": "स्पष्ट करना"
+          },
+          "C": {
+            "word": "Enthusiastic",
+            "meaning": "full of eagerness",
+            "hindi": ""
+          },
+          "D": {
+            "word": "Fecund",
+            "meaning": "Fecund",
+            "hindi": "उर्वर"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 9,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Eclectic”.",
+      "o": [
+        "Exhilaration",
+        "Elucidate",
+        "Diverse",
+        "Ebullient"
+      ],
+      "a": 2,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Diverse",
+          "hindi_meaning": "विविधतापूर्ण",
+          "synonyms": [
+            "Diverse",
+            "Selective",
+            "Varied"
+          ],
+          "antonyms": [
+            "Uniform",
+            "Narrow",
+            "Limited"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Exhilaration",
+            "meaning": "Exhilaration",
+            "hindi": "उल्लास"
+          },
+          "B": {
+            "word": "Elucidate",
+            "meaning": "Elucidate",
+            "hindi": "स्पष्ट करना"
+          },
+          "C": {
+            "word": "Diverse",
+            "meaning": "varied or unlike",
+            "hindi": ""
+          },
+          "D": {
+            "word": "Ebullient",
+            "meaning": "Ebullient",
+            "hindi": "उत्साही"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 10,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Egregious”.",
+      "o": [
+        "Hackneyed",
+        "Garrulous",
+        "Flagrant",
+        "Inchoate"
+      ],
+      "a": 2,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Flagrant",
+          "hindi_meaning": "घोर",
+          "synonyms": [
+            "Flagrant",
+            "Blatant",
+            "Shocking"
+          ],
+          "antonyms": [
+            "Trivial",
+            "Minor",
+            "Moderate"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Hackneyed",
+            "meaning": "Hackneyed",
+            "hindi": "घिसा-पिटा"
+          },
+          "B": {
+            "word": "Garrulous",
+            "meaning": "Garrulous",
+            "hindi": "बातूनी"
+          },
+          "C": {
+            "word": "Flagrant",
+            "meaning": "obviously wrong or offensive",
+            "hindi": ""
+          },
+          "D": {
+            "word": "Inchoate",
+            "meaning": "Inchoate",
+            "hindi": "अपरिपक्व"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 11,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Elucidate”.",
+      "o": [
+        "Clarify",
+        "Enmity",
+        "Furtive",
+        "Evanescent"
+      ],
+      "a": 0,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Clarify",
+          "hindi_meaning": "स्पष्ट करना",
+          "synonyms": [
+            "Clarify",
+            "Explain",
+            "Illuminate"
+          ],
+          "antonyms": [
+            "Confuse",
+            "Obscure",
+            "Complicate"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Clarify",
+            "meaning": "make clear",
+            "hindi": ""
+          },
+          "B": {
+            "word": "Enmity",
+            "meaning": "Enmity",
+            "hindi": "शत्रुता"
+          },
+          "C": {
+            "word": "Furtive",
+            "meaning": "Furtive",
+            "hindi": "गुप्त"
+          },
+          "D": {
+            "word": "Evanescent",
+            "meaning": "Evanescent",
+            "hindi": "क्षणभंगुर"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 12,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Enervate”.",
+      "o": [
+        "Inadvertent",
+        "Weaken",
+        "Erudite",
+        "Diaphanous"
+      ],
+      "a": 1,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Weaken",
+          "hindi_meaning": "कमजोर करना",
+          "synonyms": [
+            "Weaken",
+            "Debilitate",
+            "Exhaust"
+          ],
+          "antonyms": [
+            "Strengthen",
+            "Energize",
+            "Invigorate"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Inadvertent",
+            "meaning": "Inadvertent",
+            "hindi": "अनजाने में"
+          },
+          "B": {
+            "word": "Weaken",
+            "meaning": "make less strong",
+            "hindi": ""
+          },
+          "C": {
+            "word": "Erudite",
+            "meaning": "Erudite",
+            "hindi": "विद्वान"
+          },
+          "D": {
+            "word": "Diaphanous",
+            "meaning": "Diaphanous",
+            "hindi": "पारदर्शी"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 13,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Enigmatic”.",
+      "o": [
+        "Diaphanous",
+        "Germane",
+        "Mysterious",
+        "Ebullient"
+      ],
+      "a": 2,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Mysterious",
+          "hindi_meaning": "रहस्यमय",
+          "synonyms": [
+            "Mysterious",
+            "Puzzling",
+            "Cryptic"
+          ],
+          "antonyms": [
+            "Clear",
+            "Obvious",
+            "Explicit"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Diaphanous",
+            "meaning": "Diaphanous",
+            "hindi": "पारदर्शी"
+          },
+          "B": {
+            "word": "Germane",
+            "meaning": "Germane",
+            "hindi": "प्रासंगिक"
+          },
+          "C": {
+            "word": "Mysterious",
+            "meaning": "difficult to understand",
+            "hindi": ""
+          },
+          "D": {
+            "word": "Ebullient",
+            "meaning": "Ebullient",
+            "hindi": "उत्साही"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 14,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Enmity”.",
+      "o": [
+        "Exiguous",
+        "Hostility",
+        "Diffident",
+        "Imbroglio"
+      ],
+      "a": 1,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Hostility",
+          "hindi_meaning": "शत्रुता",
+          "synonyms": [
+            "Hostility",
+            "Antagonism",
+            "Animosity"
+          ],
+          "antonyms": [
+            "Friendship",
+            "Affection",
+            "Harmony"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Exiguous",
+            "meaning": "Exiguous",
+            "hindi": "बहुत कम"
+          },
+          "B": {
+            "word": "Hostility",
+            "meaning": "unfriendliness",
+            "hindi": ""
+          },
+          "C": {
+            "word": "Diffident",
+            "meaning": "Diffident",
+            "hindi": "संकोची"
+          },
+          "D": {
+            "word": "Imbroglio",
+            "meaning": "Imbroglio",
+            "hindi": "उलझन"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 15,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Ephemeral”.",
+      "o": [
+        "Transient",
+        "Iconoclast",
+        "Gregarious",
+        "Hackneyed"
+      ],
+      "a": 0,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Transient",
+          "hindi_meaning": "क्षणिक",
+          "synonyms": [
+            "Transient",
+            "Fleeting",
+            "Short-lived"
+          ],
+          "antonyms": [
+            "Permanent",
+            "Enduring",
+            "Lasting"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Transient",
+            "meaning": "lasting briefly",
+            "hindi": ""
+          },
+          "B": {
+            "word": "Iconoclast",
+            "meaning": "Iconoclast",
+            "hindi": "रूढ़िभंजक"
+          },
+          "C": {
+            "word": "Gregarious",
+            "meaning": "Gregarious",
+            "hindi": "मिलनसार"
+          },
+          "D": {
+            "word": "Hackneyed",
+            "meaning": "Hackneyed",
+            "hindi": "घिसा-पिटा"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 16,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Epigrammatic”.",
+      "o": [
+        "Extol",
+        "Pithy",
+        "Eclectic",
+        "Felicitous"
+      ],
+      "a": 1,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Pithy",
+          "hindi_meaning": "सूक्तिपूर्ण",
+          "synonyms": [
+            "Pithy",
+            "Concise",
+            "Aphoristic"
+          ],
+          "antonyms": [
+            "Verbose",
+            "Wordy",
+            "Lengthy"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Extol",
+            "meaning": "Extol",
+            "hindi": "प्रशंसा करना"
+          },
+          "B": {
+            "word": "Pithy",
+            "meaning": "brief and forceful",
+            "hindi": ""
+          },
+          "C": {
+            "word": "Eclectic",
+            "meaning": "Eclectic",
+            "hindi": "विविधतापूर्ण"
+          },
+          "D": {
+            "word": "Felicitous",
+            "meaning": "Felicitous",
+            "hindi": "उपयुक्त"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 17,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Equanimity”.",
+      "o": [
+        "Grumpy",
+        "Garrulous",
+        "Evanescent",
+        "Composure"
+      ],
+      "a": 3,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Composure",
+          "hindi_meaning": "समभाव",
+          "synonyms": [
+            "Composure",
+            "Serenity",
+            "Calmness"
+          ],
+          "antonyms": [
+            "Agitation",
+            "Anxiety",
+            "Distress"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Grumpy",
+            "meaning": "Grumpy",
+            "hindi": "चिड़चिड़ा"
+          },
+          "B": {
+            "word": "Garrulous",
+            "meaning": "Garrulous",
+            "hindi": "बातूनी"
+          },
+          "C": {
+            "word": "Evanescent",
+            "meaning": "Evanescent",
+            "hindi": "क्षणभंगुर"
+          },
+          "D": {
+            "word": "Composure",
+            "meaning": "calm self-control",
+            "hindi": ""
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 18,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Equivocal”.",
+      "o": [
+        "Fatuous",
+        "Haphazard",
+        "Eclectic",
+        "Ambiguous"
+      ],
+      "a": 3,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Ambiguous",
+          "hindi_meaning": "अस्पष्ट",
+          "synonyms": [
+            "Ambiguous",
+            "Vague",
+            "Uncertain"
+          ],
+          "antonyms": [
+            "Clear",
+            "Definite",
+            "Explicit"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Fatuous",
+            "meaning": "Fatuous",
+            "hindi": "मूर्खतापूर्ण"
+          },
+          "B": {
+            "word": "Haphazard",
+            "meaning": "Haphazard",
+            "hindi": "अव्यवस्थित"
+          },
+          "C": {
+            "word": "Eclectic",
+            "meaning": "Eclectic",
+            "hindi": "विविधतापूर्ण"
+          },
+          "D": {
+            "word": "Ambiguous",
+            "meaning": "open to more than one meaning",
+            "hindi": ""
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 19,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Erudite”.",
+      "o": [
+        "Learned",
+        "Imbroglio",
+        "Epigrammatic",
+        "Fatuous"
+      ],
+      "a": 0,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Learned",
+          "hindi_meaning": "विद्वान",
+          "synonyms": [
+            "Learned",
+            "Scholarly",
+            "Knowledgeable"
+          ],
+          "antonyms": [
+            "Ignorant",
+            "Uneducated",
+            "Unlearned"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Learned",
+            "meaning": "highly educated",
+            "hindi": ""
+          },
+          "B": {
+            "word": "Imbroglio",
+            "meaning": "Imbroglio",
+            "hindi": "उलझन"
+          },
+          "C": {
+            "word": "Epigrammatic",
+            "meaning": "Epigrammatic",
+            "hindi": "सूक्तिपूर्ण"
+          },
+          "D": {
+            "word": "Fatuous",
+            "meaning": "Fatuous",
+            "hindi": "मूर्खतापूर्ण"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 20,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Esoteric”.",
+      "o": [
+        "Grumpy",
+        "Eclectic",
+        "Evanescent",
+        "Abstruse"
+      ],
+      "a": 3,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Abstruse",
+          "hindi_meaning": "गूढ़",
+          "synonyms": [
+            "Abstruse",
+            "Arcane",
+            "Cryptic"
+          ],
+          "antonyms": [
+            "Common",
+            "Simple",
+            "Obvious"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Grumpy",
+            "meaning": "Grumpy",
+            "hindi": "चिड़चिड़ा"
+          },
+          "B": {
+            "word": "Eclectic",
+            "meaning": "Eclectic",
+            "hindi": "विविधतापूर्ण"
+          },
+          "C": {
+            "word": "Evanescent",
+            "meaning": "Evanescent",
+            "hindi": "क्षणभंगुर"
+          },
+          "D": {
+            "word": "Abstruse",
+            "meaning": "difficult to understand",
+            "hindi": ""
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 21,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Evanescent”.",
+      "o": [
+        "Esoteric",
+        "Equanimity",
+        "Harbinger",
+        "Fleeting"
+      ],
+      "a": 3,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Fleeting",
+          "hindi_meaning": "क्षणभंगुर",
+          "synonyms": [
+            "Fleeting",
+            "Transient",
+            "Vanishing"
+          ],
+          "antonyms": [
+            "Permanent",
+            "Stable",
+            "Lasting"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Esoteric",
+            "meaning": "Esoteric",
+            "hindi": "गूढ़"
+          },
+          "B": {
+            "word": "Equanimity",
+            "meaning": "Equanimity",
+            "hindi": "समभाव"
+          },
+          "C": {
+            "word": "Harbinger",
+            "meaning": "Harbinger",
+            "hindi": "अग्रदूत"
+          },
+          "D": {
+            "word": "Fleeting",
+            "meaning": "passing quickly",
+            "hindi": ""
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 22,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Exacerbate”.",
+      "o": [
+        "Haphazard",
+        "Dissemble",
+        "Aggravate",
+        "Germane"
+      ],
+      "a": 2,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Aggravate",
+          "hindi_meaning": "बिगाड़ना",
+          "synonyms": [
+            "Aggravate",
+            "Worsen",
+            "Intensify"
+          ],
+          "antonyms": [
+            "Improve",
+            "Alleviate",
+            "Reduce"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Haphazard",
+            "meaning": "Haphazard",
+            "hindi": "अव्यवस्थित"
+          },
+          "B": {
+            "word": "Dissemble",
+            "meaning": "Dissemble",
+            "hindi": "छल करना"
+          },
+          "C": {
+            "word": "Aggravate",
+            "meaning": "make worse",
+            "hindi": ""
+          },
+          "D": {
+            "word": "Germane",
+            "meaning": "Germane",
+            "hindi": "प्रासंगिक"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 23,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Exhilaration”.",
+      "o": [
+        "Excitement",
+        "Haphazard",
+        "Exiguous",
+        "Hackneyed"
+      ],
+      "a": 0,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Excitement",
+          "hindi_meaning": "उल्लास",
+          "synonyms": [
+            "Excitement",
+            "Elation",
+            "Euphoria"
+          ],
+          "antonyms": [
+            "Sadness",
+            "Gloom",
+            "Depression"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Excitement",
+            "meaning": "strong pleasurable feeling",
+            "hindi": ""
+          },
+          "B": {
+            "word": "Haphazard",
+            "meaning": "Haphazard",
+            "hindi": "अव्यवस्थित"
+          },
+          "C": {
+            "word": "Exiguous",
+            "meaning": "Exiguous",
+            "hindi": "बहुत कम"
+          },
+          "D": {
+            "word": "Hackneyed",
+            "meaning": "Hackneyed",
+            "hindi": "घिसा-पिटा"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 24,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Exigent”.",
+      "o": [
+        "Despot",
+        "Urgent",
+        "Imbroglio",
+        "Evanescent"
+      ],
+      "a": 1,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Urgent",
+          "hindi_meaning": "अत्यावश्यक",
+          "synonyms": [
+            "Urgent",
+            "Pressing",
+            "Imperative"
+          ],
+          "antonyms": [
+            "Optional",
+            "Unimportant",
+            "Negligible"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Despot",
+            "meaning": "Despot",
+            "hindi": "निरंकुश शासक"
+          },
+          "B": {
+            "word": "Urgent",
+            "meaning": "requiring immediate action",
+            "hindi": ""
+          },
+          "C": {
+            "word": "Imbroglio",
+            "meaning": "Imbroglio",
+            "hindi": "उलझन"
+          },
+          "D": {
+            "word": "Evanescent",
+            "meaning": "Evanescent",
+            "hindi": "क्षणभंगुर"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 25,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Exiguous”.",
+      "o": [
+        "Gainsay",
+        "Fastidious",
+        "Enigmatic",
+        "Scanty"
+      ],
+      "a": 3,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Scanty",
+          "hindi_meaning": "बहुत कम",
+          "synonyms": [
+            "Scanty",
+            "Meagre",
+            "Sparse"
+          ],
+          "antonyms": [
+            "Abundant",
+            "Copious",
+            "Plentiful"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Gainsay",
+            "meaning": "Gainsay",
+            "hindi": "खंडन करना"
+          },
+          "B": {
+            "word": "Fastidious",
+            "meaning": "Fastidious",
+            "hindi": "नकचढ़ा"
+          },
+          "C": {
+            "word": "Enigmatic",
+            "meaning": "Enigmatic",
+            "hindi": "रहस्यमय"
+          },
+          "D": {
+            "word": "Scanty",
+            "meaning": "small in amount",
+            "hindi": ""
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 26,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Exonerate”.",
+      "o": [
+        "Felicitous",
+        "Ephemeral",
+        "Gainsay",
+        "Acquit"
+      ],
+      "a": 3,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Acquit",
+          "hindi_meaning": "दोषमुक्त करना",
+          "synonyms": [
+            "Acquit",
+            "Absolve",
+            "Vindicate"
+          ],
+          "antonyms": [
+            "Convict",
+            "Blame",
+            "Condemn"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Felicitous",
+            "meaning": "Felicitous",
+            "hindi": "उपयुक्त"
+          },
+          "B": {
+            "word": "Ephemeral",
+            "meaning": "Ephemeral",
+            "hindi": "क्षणिक"
+          },
+          "C": {
+            "word": "Gainsay",
+            "meaning": "Gainsay",
+            "hindi": "खंडन करना"
+          },
+          "D": {
+            "word": "Acquit",
+            "meaning": "declare free from blame",
+            "hindi": ""
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 27,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Extol”.",
+      "o": [
+        "Enigmatic",
+        "Erudite",
+        "Grandiloquent",
+        "Praise"
+      ],
+      "a": 3,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Praise",
+          "hindi_meaning": "प्रशंसा करना",
+          "synonyms": [
+            "Praise",
+            "Eulogize",
+            "Laud"
+          ],
+          "antonyms": [
+            "Criticize",
+            "Condemn",
+            "Censure"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Enigmatic",
+            "meaning": "Enigmatic",
+            "hindi": "रहस्यमय"
+          },
+          "B": {
+            "word": "Erudite",
+            "meaning": "Erudite",
+            "hindi": "विद्वान"
+          },
+          "C": {
+            "word": "Grandiloquent",
+            "meaning": "Grandiloquent",
+            "hindi": "आडंबरपूर्ण"
+          },
+          "D": {
+            "word": "Praise",
+            "meaning": "express approval",
+            "hindi": ""
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 28,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Extirpate”.",
+      "o": [
+        "Fatuous",
+        "Fecund",
+        "Eradicate",
+        "Enervate"
+      ],
+      "a": 2,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Eradicate",
+          "hindi_meaning": "पूरी तरह नष्ट करना",
+          "synonyms": [
+            "Eradicate",
+            "Destroy",
+            "Uproot"
+          ],
+          "antonyms": [
+            "Create",
+            "Preserve",
+            "Protect"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Fatuous",
+            "meaning": "Fatuous",
+            "hindi": "मूर्खतापूर्ण"
+          },
+          "B": {
+            "word": "Fecund",
+            "meaning": "Fecund",
+            "hindi": "उर्वर"
+          },
+          "C": {
+            "word": "Eradicate",
+            "meaning": "destroy completely",
+            "hindi": ""
+          },
+          "D": {
+            "word": "Enervate",
+            "meaning": "Enervate",
+            "hindi": "कमजोर करना"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 29,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Fatuous”.",
+      "o": [
+        "Epigrammatic",
+        "Extol",
+        "Foolish",
+        "Eclectic"
+      ],
+      "a": 2,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Foolish",
+          "hindi_meaning": "मूर्खतापूर्ण",
+          "synonyms": [
+            "Foolish",
+            "Silly",
+            "Inane"
+          ],
+          "antonyms": [
+            "Sensible",
+            "Wise",
+            "Prudent"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Epigrammatic",
+            "meaning": "Epigrammatic",
+            "hindi": "सूक्तिपूर्ण"
+          },
+          "B": {
+            "word": "Extol",
+            "meaning": "Extol",
+            "hindi": "प्रशंसा करना"
+          },
+          "C": {
+            "word": "Foolish",
+            "meaning": "lacking good sense",
+            "hindi": ""
+          },
+          "D": {
+            "word": "Eclectic",
+            "meaning": "Eclectic",
+            "hindi": "विविधतापूर्ण"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 30,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Fastidious”.",
+      "o": [
+        "Garrulous",
+        "Meticulous",
+        "Grandiloquent",
+        "Epigrammatic"
+      ],
+      "a": 1,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Meticulous",
+          "hindi_meaning": "नकचढ़ा",
+          "synonyms": [
+            "Meticulous",
+            "Fussy",
+            "Exacting"
+          ],
+          "antonyms": [
+            "Careless",
+            "Uncritical",
+            "Easygoing"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Garrulous",
+            "meaning": "Garrulous",
+            "hindi": "बातूनी"
+          },
+          "B": {
+            "word": "Meticulous",
+            "meaning": "very careful",
+            "hindi": ""
+          },
+          "C": {
+            "word": "Grandiloquent",
+            "meaning": "Grandiloquent",
+            "hindi": "आडंबरपूर्ण"
+          },
+          "D": {
+            "word": "Epigrammatic",
+            "meaning": "Epigrammatic",
+            "hindi": "सूक्तिपूर्ण"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 31,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Fecund”.",
+      "o": [
+        "Equivocal",
+        "Fertile",
+        "Extol",
+        "Extirpate"
+      ],
+      "a": 1,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Fertile",
+          "hindi_meaning": "उर्वर",
+          "synonyms": [
+            "Fertile",
+            "Productive",
+            "Prolific"
+          ],
+          "antonyms": [
+            "Barren",
+            "Sterile",
+            "Unproductive"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Equivocal",
+            "meaning": "Equivocal",
+            "hindi": "अस्पष्ट"
+          },
+          "B": {
+            "word": "Fertile",
+            "meaning": "capable of producing abundantly",
+            "hindi": ""
+          },
+          "C": {
+            "word": "Extol",
+            "meaning": "Extol",
+            "hindi": "प्रशंसा करना"
+          },
+          "D": {
+            "word": "Extirpate",
+            "meaning": "Extirpate",
+            "hindi": "पूरी तरह नष्ट करना"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 32,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Felicitous”.",
+      "o": [
+        "Apt",
+        "Fatuous",
+        "Egregious",
+        "Inchoate"
+      ],
+      "a": 0,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Apt",
+          "hindi_meaning": "उपयुक्त",
+          "synonyms": [
+            "Apt",
+            "Appropriate",
+            "Fortunate"
+          ],
+          "antonyms": [
+            "Inappropriate",
+            "Unsuitable",
+            "Unfortunate"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Apt",
+            "meaning": "suitable",
+            "hindi": ""
+          },
+          "B": {
+            "word": "Fatuous",
+            "meaning": "Fatuous",
+            "hindi": "मूर्खतापूर्ण"
+          },
+          "C": {
+            "word": "Egregious",
+            "meaning": "Egregious",
+            "hindi": "घोर"
+          },
+          "D": {
+            "word": "Inchoate",
+            "meaning": "Inchoate",
+            "hindi": "अपरिपक्व"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 33,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Festivity”.",
+      "o": [
+        "Extirpate",
+        "Hackneyed",
+        "Despot",
+        "Celebration"
+      ],
+      "a": 3,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Celebration",
+          "hindi_meaning": "उत्सव",
+          "synonyms": [
+            "Celebration",
+            "Merrymaking",
+            "Rejoicing"
+          ],
+          "antonyms": [
+            "Mourning",
+            "Sorrow",
+            "Grief"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Extirpate",
+            "meaning": "Extirpate",
+            "hindi": "पूरी तरह नष्ट करना"
+          },
+          "B": {
+            "word": "Hackneyed",
+            "meaning": "Hackneyed",
+            "hindi": "घिसा-पिटा"
+          },
+          "C": {
+            "word": "Despot",
+            "meaning": "Despot",
+            "hindi": "निरंकुश शासक"
+          },
+          "D": {
+            "word": "Celebration",
+            "meaning": "a festive observance",
+            "hindi": ""
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 34,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Furtive”.",
+      "o": [
+        "Diaphanous",
+        "Secretive",
+        "Impecunious",
+        "Erudite"
+      ],
+      "a": 1,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Secretive",
+          "hindi_meaning": "गुप्त",
+          "synonyms": [
+            "Secretive",
+            "Sly",
+            "Stealthy"
+          ],
+          "antonyms": [
+            "Open",
+            "Overt",
+            "Frank"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Diaphanous",
+            "meaning": "Diaphanous",
+            "hindi": "पारदर्शी"
+          },
+          "B": {
+            "word": "Secretive",
+            "meaning": "inclined to conceal",
+            "hindi": ""
+          },
+          "C": {
+            "word": "Impecunious",
+            "meaning": "Impecunious",
+            "hindi": "निर्धन"
+          },
+          "D": {
+            "word": "Erudite",
+            "meaning": "Erudite",
+            "hindi": "विद्वान"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 35,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Gainsay”.",
+      "o": [
+        "Impecunious",
+        "Deny",
+        "Harbinger",
+        "Esoteric"
+      ],
+      "a": 1,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Deny",
+          "hindi_meaning": "खंडन करना",
+          "synonyms": [
+            "Deny",
+            "Contradict",
+            "Dispute"
+          ],
+          "antonyms": [
+            "Agree",
+            "Accept",
+            "Confirm"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Impecunious",
+            "meaning": "Impecunious",
+            "hindi": "निर्धन"
+          },
+          "B": {
+            "word": "Deny",
+            "meaning": "state that something is untrue",
+            "hindi": ""
+          },
+          "C": {
+            "word": "Harbinger",
+            "meaning": "Harbinger",
+            "hindi": "अग्रदूत"
+          },
+          "D": {
+            "word": "Esoteric",
+            "meaning": "Esoteric",
+            "hindi": "गूढ़"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 36,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Garrulous”.",
+      "o": [
+        "Enigmatic",
+        "Grandiloquent",
+        "Talkative",
+        "Implacable"
+      ],
+      "a": 2,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Talkative",
+          "hindi_meaning": "बातूनी",
+          "synonyms": [
+            "Talkative",
+            "Loquacious",
+            "Voluble"
+          ],
+          "antonyms": [
+            "Taciturn",
+            "Quiet",
+            "Reserved"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Enigmatic",
+            "meaning": "Enigmatic",
+            "hindi": "रहस्यमय"
+          },
+          "B": {
+            "word": "Grandiloquent",
+            "meaning": "Grandiloquent",
+            "hindi": "आडंबरपूर्ण"
+          },
+          "C": {
+            "word": "Talkative",
+            "meaning": "fond of talking",
+            "hindi": ""
+          },
+          "D": {
+            "word": "Implacable",
+            "meaning": "Implacable",
+            "hindi": "अडिग"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 37,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Germane”.",
+      "o": [
+        "Diatribe",
+        "Elucidate",
+        "Equanimity",
+        "Relevant"
+      ],
+      "a": 3,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Relevant",
+          "hindi_meaning": "प्रासंगिक",
+          "synonyms": [
+            "Relevant",
+            "Pertinent",
+            "Applicable"
+          ],
+          "antonyms": [
+            "Irrelevant",
+            "Unrelated",
+            "Inapplicable"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Diatribe",
+            "meaning": "Diatribe",
+            "hindi": "कटु आलोचना"
+          },
+          "B": {
+            "word": "Elucidate",
+            "meaning": "Elucidate",
+            "hindi": "स्पष्ट करना"
+          },
+          "C": {
+            "word": "Equanimity",
+            "meaning": "Equanimity",
+            "hindi": "समभाव"
+          },
+          "D": {
+            "word": "Relevant",
+            "meaning": "closely connected",
+            "hindi": ""
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 38,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Gregarious”.",
+      "o": [
+        "Impetuous",
+        "Iconoclast",
+        "Exiguous",
+        "Sociable"
+      ],
+      "a": 3,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Sociable",
+          "hindi_meaning": "मिलनसार",
+          "synonyms": [
+            "Sociable",
+            "Outgoing",
+            "Companionable"
+          ],
+          "antonyms": [
+            "Reserved",
+            "Unsociable",
+            "Solitary"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Impetuous",
+            "meaning": "Impetuous",
+            "hindi": "आवेगी"
+          },
+          "B": {
+            "word": "Iconoclast",
+            "meaning": "Iconoclast",
+            "hindi": "रूढ़िभंजक"
+          },
+          "C": {
+            "word": "Exiguous",
+            "meaning": "Exiguous",
+            "hindi": "बहुत कम"
+          },
+          "D": {
+            "word": "Sociable",
+            "meaning": "fond of company",
+            "hindi": ""
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 39,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Grandiloquent”.",
+      "o": [
+        "Despot",
+        "Implacable",
+        "Bombastic",
+        "Disparate"
+      ],
+      "a": 2,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Bombastic",
+          "hindi_meaning": "आडंबरपूर्ण",
+          "synonyms": [
+            "Bombastic",
+            "Pompous",
+            "Rhetorical"
+          ],
+          "antonyms": [
+            "Plain",
+            "Simple",
+            "Modest"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Despot",
+            "meaning": "Despot",
+            "hindi": "निरंकुश शासक"
+          },
+          "B": {
+            "word": "Implacable",
+            "meaning": "Implacable",
+            "hindi": "अडिग"
+          },
+          "C": {
+            "word": "Bombastic",
+            "meaning": "pretentious in language",
+            "hindi": ""
+          },
+          "D": {
+            "word": "Disparate",
+            "meaning": "Disparate",
+            "hindi": "असमान"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 40,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Grumpy”.",
+      "o": [
+        "Irritable",
+        "Equanimity",
+        "Enigmatic",
+        "Ebullient"
+      ],
+      "a": 0,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Irritable",
+          "hindi_meaning": "चिड़चिड़ा",
+          "synonyms": [
+            "Irritable",
+            "Grouchy",
+            "Bad-tempered"
+          ],
+          "antonyms": [
+            "Cheerful",
+            "Pleasant",
+            "Good-natured"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Irritable",
+            "meaning": "easily annoyed",
+            "hindi": ""
+          },
+          "B": {
+            "word": "Equanimity",
+            "meaning": "Equanimity",
+            "hindi": "समभाव"
+          },
+          "C": {
+            "word": "Enigmatic",
+            "meaning": "Enigmatic",
+            "hindi": "रहस्यमय"
+          },
+          "D": {
+            "word": "Ebullient",
+            "meaning": "Ebullient",
+            "hindi": "उत्साही"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 41,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Hackneyed”.",
+      "o": [
+        "Ebullient",
+        "Furtive",
+        "Trite",
+        "Dogmatic"
+      ],
+      "a": 2,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Trite",
+          "hindi_meaning": "घिसा-पिटा",
+          "synonyms": [
+            "Trite",
+            "Clichéd",
+            "Banal"
+          ],
+          "antonyms": [
+            "Original",
+            "Novel",
+            "Fresh"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Ebullient",
+            "meaning": "Ebullient",
+            "hindi": "उत्साही"
+          },
+          "B": {
+            "word": "Furtive",
+            "meaning": "Furtive",
+            "hindi": "गुप्त"
+          },
+          "C": {
+            "word": "Trite",
+            "meaning": "overused and unoriginal",
+            "hindi": ""
+          },
+          "D": {
+            "word": "Dogmatic",
+            "meaning": "Dogmatic",
+            "hindi": "हठधर्मी"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 42,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Harbinger”.",
+      "o": [
+        "Hackneyed",
+        "Forerunner",
+        "Germane",
+        "Exigent"
+      ],
+      "a": 1,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Forerunner",
+          "hindi_meaning": "अग्रदूत",
+          "synonyms": [
+            "Forerunner",
+            "Herald",
+            "Precursor"
+          ],
+          "antonyms": [
+            "Follower",
+            "Successor",
+            "Laggard"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Hackneyed",
+            "meaning": "Hackneyed",
+            "hindi": "घिसा-पिटा"
+          },
+          "B": {
+            "word": "Forerunner",
+            "meaning": "one that comes before",
+            "hindi": ""
+          },
+          "C": {
+            "word": "Germane",
+            "meaning": "Germane",
+            "hindi": "प्रासंगिक"
+          },
+          "D": {
+            "word": "Exigent",
+            "meaning": "Exigent",
+            "hindi": "अत्यावश्यक"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 43,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Haphazard”.",
+      "o": [
+        "Random",
+        "Dogmatic",
+        "Implacable",
+        "Furtive"
+      ],
+      "a": 0,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Random",
+          "hindi_meaning": "अव्यवस्थित",
+          "synonyms": [
+            "Random",
+            "Disorderly",
+            "Unsystematic"
+          ],
+          "antonyms": [
+            "Orderly",
+            "Systematic",
+            "Organized"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Random",
+            "meaning": "without pattern or plan",
+            "hindi": ""
+          },
+          "B": {
+            "word": "Dogmatic",
+            "meaning": "Dogmatic",
+            "hindi": "हठधर्मी"
+          },
+          "C": {
+            "word": "Implacable",
+            "meaning": "Implacable",
+            "hindi": "अडिग"
+          },
+          "D": {
+            "word": "Furtive",
+            "meaning": "Furtive",
+            "hindi": "गुप्त"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 44,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Iconoclast”.",
+      "o": [
+        "Diatribe",
+        "Fecund",
+        "Garrulous",
+        "Nonconformist"
+      ],
+      "a": 3,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Nonconformist",
+          "hindi_meaning": "रूढ़िभंजक",
+          "synonyms": [
+            "Nonconformist",
+            "Dissenter",
+            "Radical"
+          ],
+          "antonyms": [
+            "Conformist",
+            "Traditionalist",
+            "Conservative"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Diatribe",
+            "meaning": "Diatribe",
+            "hindi": "कटु आलोचना"
+          },
+          "B": {
+            "word": "Fecund",
+            "meaning": "Fecund",
+            "hindi": "उर्वर"
+          },
+          "C": {
+            "word": "Garrulous",
+            "meaning": "Garrulous",
+            "hindi": "बातूनी"
+          },
+          "D": {
+            "word": "Nonconformist",
+            "meaning": "one who does not follow convention",
+            "hindi": ""
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 45,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Imbroglio”.",
+      "o": [
+        "Ebullient",
+        "Confusion",
+        "Fastidious",
+        "Germane"
+      ],
+      "a": 1,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Confusion",
+          "hindi_meaning": "उलझन",
+          "synonyms": [
+            "Confusion",
+            "Entanglement",
+            "Complication"
+          ],
+          "antonyms": [
+            "Clarity",
+            "Order",
+            "Simplicity"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Ebullient",
+            "meaning": "Ebullient",
+            "hindi": "उत्साही"
+          },
+          "B": {
+            "word": "Confusion",
+            "meaning": "lack of clarity",
+            "hindi": ""
+          },
+          "C": {
+            "word": "Fastidious",
+            "meaning": "Fastidious",
+            "hindi": "नकचढ़ा"
+          },
+          "D": {
+            "word": "Germane",
+            "meaning": "Germane",
+            "hindi": "प्रासंगिक"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 46,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Impecunious”.",
+      "o": [
+        "Penniless",
+        "Epigrammatic",
+        "Fastidious",
+        "Fecund"
+      ],
+      "a": 0,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Penniless",
+          "hindi_meaning": "निर्धन",
+          "synonyms": [
+            "Penniless",
+            "Indigent",
+            "Destitute"
+          ],
+          "antonyms": [
+            "Wealthy",
+            "Affluent",
+            "Rich"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Penniless",
+            "meaning": "having no money",
+            "hindi": ""
+          },
+          "B": {
+            "word": "Epigrammatic",
+            "meaning": "Epigrammatic",
+            "hindi": "सूक्तिपूर्ण"
+          },
+          "C": {
+            "word": "Fastidious",
+            "meaning": "Fastidious",
+            "hindi": "नकचढ़ा"
+          },
+          "D": {
+            "word": "Fecund",
+            "meaning": "Fecund",
+            "hindi": "उर्वर"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 47,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Impetuous”.",
+      "o": [
+        "Fastidious",
+        "Impulsive",
+        "Haphazard",
+        "Dissemble"
+      ],
+      "a": 1,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Impulsive",
+          "hindi_meaning": "आवेगी",
+          "synonyms": [
+            "Impulsive",
+            "Rash",
+            "Hasty"
+          ],
+          "antonyms": [
+            "Cautious",
+            "Deliberate",
+            "Prudent"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Fastidious",
+            "meaning": "Fastidious",
+            "hindi": "नकचढ़ा"
+          },
+          "B": {
+            "word": "Impulsive",
+            "meaning": "acting without thought",
+            "hindi": ""
+          },
+          "C": {
+            "word": "Haphazard",
+            "meaning": "Haphazard",
+            "hindi": "अव्यवस्थित"
+          },
+          "D": {
+            "word": "Dissemble",
+            "meaning": "Dissemble",
+            "hindi": "छल करना"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 48,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Implacable”.",
+      "o": [
+        "Elucidate",
+        "Grumpy",
+        "Unyielding",
+        "Fecund"
+      ],
+      "a": 2,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Unyielding",
+          "hindi_meaning": "अडिग",
+          "synonyms": [
+            "Unyielding",
+            "Relentless",
+            "Unforgiving"
+          ],
+          "antonyms": [
+            "Merciful",
+            "Flexible",
+            "Yielding"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Elucidate",
+            "meaning": "Elucidate",
+            "hindi": "स्पष्ट करना"
+          },
+          "B": {
+            "word": "Grumpy",
+            "meaning": "Grumpy",
+            "hindi": "चिड़चिड़ा"
+          },
+          "C": {
+            "word": "Unyielding",
+            "meaning": "not giving way",
+            "hindi": ""
+          },
+          "D": {
+            "word": "Fecund",
+            "meaning": "Fecund",
+            "hindi": "उर्वर"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 49,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Inadvertent”.",
+      "o": [
+        "Accidental",
+        "Elucidate",
+        "Diffident",
+        "Diaphanous"
+      ],
+      "a": 0,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Accidental",
+          "hindi_meaning": "अनजाने में",
+          "synonyms": [
+            "Accidental",
+            "Unintentional",
+            "Unwitting"
+          ],
+          "antonyms": [
+            "Intentional",
+            "Deliberate",
+            "Purposeful"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Accidental",
+            "meaning": "happening by chance",
+            "hindi": ""
+          },
+          "B": {
+            "word": "Elucidate",
+            "meaning": "Elucidate",
+            "hindi": "स्पष्ट करना"
+          },
+          "C": {
+            "word": "Diffident",
+            "meaning": "Diffident",
+            "hindi": "संकोची"
+          },
+          "D": {
+            "word": "Diaphanous",
+            "meaning": "Diaphanous",
+            "hindi": "पारदर्शी"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    },
+    {
+      "id": 50,
+      "type": "Synonym",
+      "q": "Choose the word that is closest in meaning to “Inchoate”.",
+      "o": [
+        "Germane",
+        "Rudimentary",
+        "Exonerate",
+        "Enervate"
+      ],
+      "a": 1,
+      "explanation": {
+        "vocabulary": {
+          "meaning": "Rudimentary",
+          "hindi_meaning": "अपरिपक्व",
+          "synonyms": [
+            "Rudimentary",
+            "Unformed",
+            "Nascent"
+          ],
+          "antonyms": [
+            "Mature",
+            "Developed",
+            "Complete"
+          ]
+        },
+        "options": {
+          "A": {
+            "word": "Germane",
+            "meaning": "Germane",
+            "hindi": "प्रासंगिक"
+          },
+          "B": {
+            "word": "Rudimentary",
+            "meaning": "Rudimentary",
+            "hindi": ""
+          },
+          "C": {
+            "word": "Exonerate",
+            "meaning": "Exonerate",
+            "hindi": "दोषमुक्त करना"
+          },
+          "D": {
+            "word": "Enervate",
+            "meaning": "Enervate",
+            "hindi": "कमजोर करना"
+          }
+        }
+      },
+      "topic": "Vocabulary — Synonym",
+      "instruction": "Choose the word that is closest in meaning to the given word."
+    }
+  ]
+}
