@@ -22,10 +22,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Renounce",
+          "hindi_meaning": "त्याग करना",
+          "synonyms": [
+            "Renounce",
+            "Forgo",
+            "Sacrifice"
+          ],
+          "antonyms": [
+            "Embrace",
+            "Accept",
+            "Retain"
+          ]
         },
         "options": {
           "A": {
@@ -36,17 +44,17 @@
           "B": {
             "word": "Abundant",
             "meaning": "Abundant",
-            "hindi": ""
+            "hindi": "प्रचुर"
           },
           "C": {
             "word": "Hostility",
             "meaning": "Hostility",
-            "hindi": ""
+            "hindi": "शत्रुता"
           },
           "D": {
             "word": "Renounce",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Renounce",
+            "hindi": "त्याग करना"
           }
         }
       }
@@ -66,10 +74,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Repeal",
+          "hindi_meaning": "निरस्त करना",
+          "synonyms": [
+            "Repeal",
+            "Revoke",
+            "Annul"
+          ],
+          "antonyms": [
+            "Enact",
+            "Approve",
+            "Establish"
+          ]
         },
         "options": {
           "A": {
@@ -80,17 +96,17 @@
           "B": {
             "word": "Diligent",
             "meaning": "Diligent",
-            "hindi": ""
+            "hindi": "परिश्रमी"
           },
           "C": {
             "word": "Persuade",
             "meaning": "Persuade",
-            "hindi": ""
+            "hindi": "फुसलाना"
           },
           "D": {
             "word": "Repeal",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Repeal",
+            "hindi": "निरस्त करना"
           }
         }
       }
@@ -110,10 +126,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Esoteric",
+          "hindi_meaning": "जटिल",
+          "synonyms": [
+            "Esoteric",
+            "Arcane",
+            "Recondite"
+          ],
+          "antonyms": [
+            "Simple",
+            "Clear",
+            "Obvious"
+          ]
         },
         "options": {
           "A": {
@@ -123,13 +147,13 @@
           },
           "B": {
             "word": "Esoteric",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Esoteric",
+            "hindi": "जटिल"
           },
           "C": {
             "word": "Charitable",
             "meaning": "Charitable",
-            "hindi": ""
+            "hindi": "परोपकारी"
           },
           "D": {
             "word": "Fertile",
@@ -154,26 +178,34 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Temperate",
+          "hindi_meaning": "संयमी",
+          "synonyms": [
+            "Temperate",
+            "Moderate",
+            "Restrained"
+          ],
+          "antonyms": [
+            "Excessive",
+            "Intemperate",
+            "Indulgent"
+          ]
         },
         "options": {
           "A": {
             "word": "Aggressive",
             "meaning": "Aggressive",
-            "hindi": ""
+            "hindi": "युद्धप्रिय"
           },
           "B": {
             "word": "Temperate",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Temperate",
+            "hindi": "संयमी"
           },
           "C": {
             "word": "Mysterious",
             "meaning": "Mysterious",
-            "hindi": ""
+            "hindi": "रहस्यमय"
           },
           "D": {
             "word": "Productive",
@@ -198,31 +230,39 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Skillful",
+          "hindi_meaning": "निपुण",
+          "synonyms": [
+            "Skillful",
+            "Dexterous",
+            "Adept"
+          ],
+          "antonyms": [
+            "Awkward",
+            "Clumsy",
+            "Inept"
+          ]
         },
         "options": {
           "A": {
             "word": "Barren",
             "meaning": "Barren",
-            "hindi": ""
+            "hindi": "उजाड़"
           },
           "B": {
             "word": "Mocking",
             "meaning": "Mocking",
-            "hindi": ""
+            "hindi": "उपहासपूर्ण"
           },
           "C": {
             "word": "Uncertain",
             "meaning": "Uncertain",
-            "hindi": ""
+            "hindi": "संदिग्ध"
           },
           "D": {
             "word": "Skillful",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Skillful",
+            "hindi": "निपुण"
           }
         }
       }
@@ -242,31 +282,39 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Outline",
+          "hindi_meaning": "संकेत करना",
+          "synonyms": [
+            "Outline",
+            "Foreshadow",
+            "Indicate"
+          ],
+          "antonyms": [
+            "Clarify",
+            "Explain",
+            "Elaborate"
+          ]
         },
         "options": {
           "A": {
             "word": "Warlike",
             "meaning": "Warlike",
-            "hindi": ""
+            "hindi": "युद्धप्रिय"
           },
           "B": {
             "word": "Inactive",
             "meaning": "Inactive",
-            "hindi": ""
+            "hindi": "मृत/निष्क्रिय"
           },
           "C": {
             "word": "Outline",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Outline",
+            "hindi": "संकेत करना"
           },
           "D": {
             "word": "Greedy",
             "meaning": "Greedy",
-            "hindi": ""
+            "hindi": "लालची"
           }
         }
       }
@@ -286,21 +334,29 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Artistic",
+          "hindi_meaning": "सौंदर्य संबंधी",
+          "synonyms": [
+            "Artistic",
+            "Beautiful",
+            "Tasteful"
+          ],
+          "antonyms": [
+            "Unattractive",
+            "Ugly",
+            "Unrefined"
+          ]
         },
         "options": {
           "A": {
             "word": "Scarcity",
             "meaning": "Scarcity",
-            "hindi": ""
+            "hindi": "कमी"
           },
           "B": {
             "word": "Hostile",
             "meaning": "Hostile",
-            "hindi": ""
+            "hindi": "लड़ाकू"
           },
           "C": {
             "word": "Hasty",
@@ -309,8 +365,8 @@
           },
           "D": {
             "word": "Artistic",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Artistic",
+            "hindi": "सौंदर्य संबंधी"
           }
         }
       }
@@ -330,21 +386,29 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Eagerness",
+          "hindi_meaning": "तत्परता",
+          "synonyms": [
+            "Eagerness",
+            "Promptness",
+            "Readiness"
+          ],
+          "antonyms": [
+            "Reluctance",
+            "Hesitation",
+            "Lethargy"
+          ]
         },
         "options": {
           "A": {
             "word": "Lonely",
             "meaning": "Lonely",
-            "hindi": ""
+            "hindi": "उजाड़"
           },
           "B": {
             "word": "Eagerness",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Eagerness",
+            "hindi": "तत्परता"
           },
           "C": {
             "word": "Deceitful",
@@ -354,7 +418,7 @@
           "D": {
             "word": "Harshness",
             "meaning": "Harshness",
-            "hindi": ""
+            "hindi": "कठोरता"
           }
         }
       }
@@ -374,26 +438,34 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Improve",
+          "hindi_meaning": "सुधारना",
+          "synonyms": [
+            "Improve",
+            "Better",
+            "Mitigate"
+          ],
+          "antonyms": [
+            "Worsen",
+            "Aggravate",
+            "Deteriorate"
+          ]
         },
         "options": {
           "A": {
             "word": "Aggressive",
             "meaning": "Aggressive",
-            "hindi": ""
+            "hindi": "युद्धप्रिय"
           },
           "B": {
             "word": "Obscure",
             "meaning": "Obscure",
-            "hindi": ""
+            "hindi": "रहस्यमय"
           },
           "C": {
             "word": "Improve",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Improve",
+            "hindi": "सुधारना"
           },
           "D": {
             "word": "Penniless",
@@ -418,10 +490,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Outdated",
+          "hindi_meaning": "कालविसंगत",
+          "synonyms": [
+            "Outdated",
+            "Archaic",
+            "Obsolete"
+          ],
+          "antonyms": [
+            "Modern",
+            "Contemporary",
+            "Up-to-date"
+          ]
         },
         "options": {
           "A": {
@@ -432,12 +512,12 @@
           "B": {
             "word": "Charitable",
             "meaning": "Charitable",
-            "hindi": ""
+            "hindi": "परोपकारी"
           },
           "C": {
             "word": "Outdated",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Outdated",
+            "hindi": "कालविसंगत"
           },
           "D": {
             "word": "Concise",
@@ -462,10 +542,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Abomination",
+          "hindi_meaning": "घोर घृणित वस्तु",
+          "synonyms": [
+            "Abomination",
+            "Curse",
+            "Detestation"
+          ],
+          "antonyms": [
+            "Delight",
+            "Blessing",
+            "Admiration"
+          ]
         },
         "options": {
           "A": {
@@ -476,12 +564,12 @@
           "B": {
             "word": "Confidence",
             "meaning": "Confidence",
-            "hindi": ""
+            "hindi": "आत्मविश्वास"
           },
           "C": {
             "word": "Abomination",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Abomination",
+            "hindi": "घोर घृणित वस्तु"
           },
           "D": {
             "word": "Productive",
@@ -506,21 +594,29 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Hostility",
+          "hindi_meaning": "शत्रुता",
+          "synonyms": [
+            "Hostility",
+            "Enmity",
+            "Antagonism"
+          ],
+          "antonyms": [
+            "Friendship",
+            "Amity",
+            "Affection"
+          ]
         },
         "options": {
           "A": {
             "word": "Beautiful",
             "meaning": "Beautiful",
-            "hindi": ""
+            "hindi": "सौंदर्य संबंधी"
           },
           "B": {
             "word": "Mysterious",
             "meaning": "Mysterious",
-            "hindi": ""
+            "hindi": "रहस्यमय"
           },
           "C": {
             "word": "Fertile",
@@ -529,8 +625,8 @@
           },
           "D": {
             "word": "Hostility",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Hostility",
+            "hindi": "शत्रुता"
           }
         }
       }
@@ -550,21 +646,29 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Opposed",
+          "hindi_meaning": "विरोधी",
+          "synonyms": [
+            "Opposed",
+            "Contrary",
+            "Contrasting"
+          ],
+          "antonyms": [
+            "Similar",
+            "Compatible",
+            "Identical"
+          ]
         },
         "options": {
           "A": {
             "word": "Diligent",
             "meaning": "Diligent",
-            "hindi": ""
+            "hindi": "परिश्रमी"
           },
           "B": {
             "word": "Opposed",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Opposed",
+            "hindi": "विरोधी"
           },
           "C": {
             "word": "Fragrant",
@@ -574,7 +678,7 @@
           "D": {
             "word": "Abundant",
             "meaning": "Abundant",
-            "hindi": ""
+            "hindi": "प्रचुर"
           }
         }
       }
@@ -594,10 +698,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Dubious",
+          "hindi_meaning": "संदिग्ध",
+          "synonyms": [
+            "Dubious",
+            "Uncertain",
+            "Spurious"
+          ],
+          "antonyms": [
+            "Authentic",
+            "Genuine",
+            "Verified"
+          ]
         },
         "options": {
           "A": {
@@ -608,12 +720,12 @@
           "B": {
             "word": "Charitable",
             "meaning": "Charitable",
-            "hindi": ""
+            "hindi": "परोपकारी"
           },
           "C": {
             "word": "Dubious",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Dubious",
+            "hindi": "संदिग्ध"
           },
           "D": {
             "word": "Courageous",
@@ -638,21 +750,29 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Confidence",
+          "hindi_meaning": "आत्मविश्वास",
+          "synonyms": [
+            "Confidence",
+            "Poise",
+            "Self-assurance"
+          ],
+          "antonyms": [
+            "Diffidence",
+            "Insecurity",
+            "Timidity"
+          ]
         },
         "options": {
           "A": {
             "word": "Aggressive",
             "meaning": "Aggressive",
-            "hindi": ""
+            "hindi": "युद्धप्रिय"
           },
           "B": {
             "word": "Scarcity",
             "meaning": "Scarcity",
-            "hindi": ""
+            "hindi": "कमी"
           },
           "C": {
             "word": "Mournful",
@@ -661,8 +781,8 @@
           },
           "D": {
             "word": "Confidence",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Confidence",
+            "hindi": "आत्मविश्वास"
           }
         }
       }
@@ -682,10 +802,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Laborious",
+          "hindi_meaning": "कठिन",
+          "synonyms": [
+            "Laborious",
+            "Strenuous",
+            "Gruelling"
+          ],
+          "antonyms": [
+            "Easy",
+            "Effortless",
+            "Simple"
+          ]
         },
         "options": {
           "A": {
@@ -695,8 +823,8 @@
           },
           "B": {
             "word": "Laborious",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Laborious",
+            "hindi": "कठिन"
           },
           "C": {
             "word": "Clear",
@@ -726,10 +854,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Harshness",
+          "hindi_meaning": "कठोरता",
+          "synonyms": [
+            "Harshness",
+            "Severity",
+            "Roughness"
+          ],
+          "antonyms": [
+            "Gentleness",
+            "Mildness",
+            "Kindness"
+          ]
         },
         "options": {
           "A": {
@@ -744,8 +880,8 @@
           },
           "C": {
             "word": "Harshness",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Harshness",
+            "hindi": "कठोरता"
           },
           "D": {
             "word": "Optimistic",
@@ -770,31 +906,39 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Diligent",
+          "hindi_meaning": "परिश्रमी",
+          "synonyms": [
+            "Diligent",
+            "Industrious",
+            "Sedulous"
+          ],
+          "antonyms": [
+            "Lazy",
+            "Negligent",
+            "Idle"
+          ]
         },
         "options": {
           "A": {
             "word": "Diligent",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Diligent",
+            "hindi": "परिश्रमी"
           },
           "B": {
             "word": "Hostile",
             "meaning": "Hostile",
-            "hindi": ""
+            "hindi": "लड़ाकू"
           },
           "C": {
             "word": "Abundant",
             "meaning": "Abundant",
-            "hindi": ""
+            "hindi": "प्रचुर"
           },
           "D": {
             "word": "Mysterious",
             "meaning": "Mysterious",
-            "hindi": ""
+            "hindi": "रहस्यमय"
           }
         }
       }
@@ -814,21 +958,29 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Alleviate",
+          "hindi_meaning": "शांत करना",
+          "synonyms": [
+            "Alleviate",
+            "Soothe",
+            "Mitigate"
+          ],
+          "antonyms": [
+            "Aggravate",
+            "Intensify",
+            "Worsen"
+          ]
         },
         "options": {
           "A": {
             "word": "Alleviate",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Alleviate",
+            "hindi": "शांत करना"
           },
           "B": {
             "word": "Condemn",
             "meaning": "Condemn",
-            "hindi": ""
+            "hindi": "निंदा करना"
           },
           "C": {
             "word": "Deceive",
@@ -858,10 +1010,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Stern",
+          "hindi_meaning": "कठोर",
+          "synonyms": [
+            "Stern",
+            "Severe",
+            "Ascetic"
+          ],
+          "antonyms": [
+            "Luxurious",
+            "Indulgent",
+            "Lenient"
+          ]
         },
         "options": {
           "A": {
@@ -876,8 +1036,8 @@
           },
           "C": {
             "word": "Stern",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Stern",
+            "hindi": "कठोर"
           },
           "D": {
             "word": "Radiant",
@@ -902,10 +1062,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Greedy",
+          "hindi_meaning": "लालची",
+          "synonyms": [
+            "Greedy",
+            "Covetous",
+            "Rapacious"
+          ],
+          "antonyms": [
+            "Generous",
+            "Charitable",
+            "Selfless"
+          ]
         },
         "options": {
           "A": {
@@ -915,8 +1083,8 @@
           },
           "B": {
             "word": "Greedy",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Greedy",
+            "hindi": "लालची"
           },
           "C": {
             "word": "Friendly",
@@ -946,10 +1114,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Dislike",
+          "hindi_meaning": "अरुचि",
+          "synonyms": [
+            "Dislike",
+            "Reluctance",
+            "Repugnance"
+          ],
+          "antonyms": [
+            "Liking",
+            "Inclination",
+            "Fondness"
+          ]
         },
         "options": {
           "A": {
@@ -965,12 +1141,12 @@
           "C": {
             "word": "Charitable",
             "meaning": "Charitable",
-            "hindi": ""
+            "hindi": "परोपकारी"
           },
           "D": {
             "word": "Dislike",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Dislike",
+            "hindi": "अरुचि"
           }
         }
       }
@@ -990,10 +1166,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Askew",
+          "hindi_meaning": "तिरछा",
+          "synonyms": [
+            "Askew",
+            "Crooked",
+            "Distorted"
+          ],
+          "antonyms": [
+            "Straight",
+            "Aligned",
+            "Correct"
+          ]
         },
         "options": {
           "A": {
@@ -1004,12 +1188,12 @@
           "B": {
             "word": "Benevolent",
             "meaning": "Benevolent",
-            "hindi": ""
+            "hindi": "परोपकारी"
           },
           "C": {
             "word": "Askew",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Askew",
+            "hindi": "तिरछा"
           },
           "D": {
             "word": "Scholarly",
@@ -1034,10 +1218,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Warlike",
+          "hindi_meaning": "युद्धप्रिय",
+          "synonyms": [
+            "Warlike",
+            "Aggressive",
+            "Pugnacious"
+          ],
+          "antonyms": [
+            "Peaceful",
+            "Pacifist",
+            "Conciliatory"
+          ]
         },
         "options": {
           "A": {
@@ -1052,8 +1244,8 @@
           },
           "C": {
             "word": "Warlike",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Warlike",
+            "hindi": "युद्धप्रिय"
           },
           "D": {
             "word": "Fragrant",
@@ -1078,10 +1270,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Hostile",
+          "hindi_meaning": "लड़ाकू",
+          "synonyms": [
+            "Hostile",
+            "Aggressive",
+            "Pugnacious"
+          ],
+          "antonyms": [
+            "Peaceful",
+            "Friendly",
+            "Cooperative"
+          ]
         },
         "options": {
           "A": {
@@ -1091,8 +1291,8 @@
           },
           "B": {
             "word": "Hostile",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Hostile",
+            "hindi": "लड़ाकू"
           },
           "C": {
             "word": "Calm",
@@ -1102,7 +1302,7 @@
           "D": {
             "word": "Abundant",
             "meaning": "Abundant",
-            "hindi": ""
+            "hindi": "प्रचुर"
           }
         }
       }
@@ -1122,31 +1322,39 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Charitable",
+          "hindi_meaning": "परोपकारी",
+          "synonyms": [
+            "Charitable",
+            "Kind",
+            "Philanthropic"
+          ],
+          "antonyms": [
+            "Malevolent",
+            "Cruel",
+            "Unkind"
+          ]
         },
         "options": {
           "A": {
             "word": "Charitable",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Charitable",
+            "hindi": "परोपकारी"
           },
           "B": {
             "word": "Warlike",
             "meaning": "Warlike",
-            "hindi": ""
+            "hindi": "युद्धप्रिय"
           },
           "C": {
             "word": "Scarcity",
             "meaning": "Scarcity",
-            "hindi": ""
+            "hindi": "कमी"
           },
           "D": {
             "word": "Mysterious",
             "meaning": "Mysterious",
-            "hindi": ""
+            "hindi": "रहस्यमय"
           }
         }
       }
@@ -1166,10 +1374,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Book-lover",
+          "hindi_meaning": "पुस्तक-प्रेमी",
+          "synonyms": [
+            "Book-lover",
+            "Bookworm",
+            "Bibliomaniac"
+          ],
+          "antonyms": [
+            "Bibliophobe",
+            "Book-hater",
+            "Nonreader"
+          ]
         },
         "options": {
           "A": {
@@ -1179,8 +1395,8 @@
           },
           "B": {
             "word": "Book-lover",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Book-lover",
+            "hindi": "पुस्तक-प्रेमी"
           },
           "C": {
             "word": "Tyrant",
@@ -1210,10 +1426,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Pastoral",
+          "hindi_meaning": "ग्रामीण",
+          "synonyms": [
+            "Pastoral",
+            "Rustic",
+            "Rural"
+          ],
+          "antonyms": [
+            "Urban",
+            "Metropolitan",
+            "Civic"
+          ]
         },
         "options": {
           "A": {
@@ -1223,8 +1447,8 @@
           },
           "B": {
             "word": "Pastoral",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Pastoral",
+            "hindi": "ग्रामीण"
           },
           "C": {
             "word": "Harsh",
@@ -1254,10 +1478,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Coax",
+          "hindi_meaning": "फुसलाना",
+          "synonyms": [
+            "Coax",
+            "Persuade",
+            "Wheedle"
+          ],
+          "antonyms": [
+            "Dissuade",
+            "Discourage",
+            "Deter"
+          ]
         },
         "options": {
           "A": {
@@ -1268,17 +1500,17 @@
           "B": {
             "word": "Abundant",
             "meaning": "Abundant",
-            "hindi": ""
+            "hindi": "प्रचुर"
           },
           "C": {
             "word": "Coax",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Coax",
+            "hindi": "फुसलाना"
           },
           "D": {
             "word": "Hostile",
             "meaning": "Hostile",
-            "hindi": ""
+            "hindi": "लड़ाकू"
           }
         }
       }
@@ -1298,10 +1530,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Inexperienced",
+          "hindi_meaning": "अनुभवहीन",
+          "synonyms": [
+            "Inexperienced",
+            "Immature",
+            "Naive"
+          ],
+          "antonyms": [
+            "Experienced",
+            "Mature",
+            "Seasoned"
+          ]
         },
         "options": {
           "A": {
@@ -1311,13 +1551,13 @@
           },
           "B": {
             "word": "Inexperienced",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Inexperienced",
+            "hindi": "अनुभवहीन"
           },
           "C": {
             "word": "Convincing",
             "meaning": "Convincing",
-            "hindi": ""
+            "hindi": "प्रभावशाली"
           },
           "D": {
             "word": "Generous",
@@ -1342,10 +1582,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Fickle",
+          "hindi_meaning": "मनमौजी",
+          "synonyms": [
+            "Fickle",
+            "Inconstant",
+            "Whimsical"
+          ],
+          "antonyms": [
+            "Constant",
+            "Steadfast",
+            "Predictable"
+          ]
         },
         "options": {
           "A": {
@@ -1356,17 +1604,17 @@
           "B": {
             "word": "Warlike",
             "meaning": "Warlike",
-            "hindi": ""
+            "hindi": "युद्धप्रिय"
           },
           "C": {
             "word": "Plentiful",
             "meaning": "Plentiful",
-            "hindi": ""
+            "hindi": "प्रचुर"
           },
           "D": {
             "word": "Fickle",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Fickle",
+            "hindi": "मनमौजी"
           }
         }
       }
@@ -1386,16 +1634,24 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Quibble",
+          "hindi_meaning": "छोटी बात पर आपत्ति करना",
+          "synonyms": [
+            "Quibble",
+            "Carp",
+            "Nitpick"
+          ],
+          "antonyms": [
+            "Accept",
+            "Approve",
+            "Agree"
+          ]
         },
         "options": {
           "A": {
             "word": "Quibble",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Quibble",
+            "hindi": "छोटी बात पर आपत्ति करना"
           },
           "B": {
             "word": "Praise",
@@ -1430,16 +1686,24 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Sarcastic",
+          "hindi_meaning": "कटु",
+          "synonyms": [
+            "Sarcastic",
+            "Bitter",
+            "Acerbic"
+          ],
+          "antonyms": [
+            "Kind",
+            "Gentle",
+            "Mild"
+          ]
         },
         "options": {
           "A": {
             "word": "Sarcastic",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Sarcastic",
+            "hindi": "कटु"
           },
           "B": {
             "word": "Generous",
@@ -1449,7 +1713,7 @@
           "C": {
             "word": "Rural",
             "meaning": "Rural",
-            "hindi": ""
+            "hindi": "ग्रामीण"
           },
           "D": {
             "word": "Timid",
@@ -1474,10 +1738,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Condemn",
+          "hindi_meaning": "निंदा करना",
+          "synonyms": [
+            "Condemn",
+            "Criticize",
+            "Rebuke"
+          ],
+          "antonyms": [
+            "Praise",
+            "Approve",
+            "Commend"
+          ]
         },
         "options": {
           "A": {
@@ -1487,8 +1759,8 @@
           },
           "B": {
             "word": "Condemn",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Condemn",
+            "hindi": "निंदा करना"
           },
           "C": {
             "word": "Talkative",
@@ -1498,7 +1770,7 @@
           "D": {
             "word": "Improve",
             "meaning": "Improve",
-            "hindi": ""
+            "hindi": "सुधारना"
           }
         }
       }
@@ -1518,10 +1790,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Deception",
+          "hindi_meaning": "छल-कपट",
+          "synonyms": [
+            "Deception",
+            "Trickery",
+            "Fraud"
+          ],
+          "antonyms": [
+            "Honesty",
+            "Integrity",
+            "Sincerity"
+          ]
         },
         "options": {
           "A": {
@@ -1541,8 +1821,8 @@
           },
           "D": {
             "word": "Deception",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Deception",
+            "hindi": "छल-कपट"
           }
         }
       }
@@ -1562,21 +1842,29 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Convincing",
+          "hindi_meaning": "प्रभावशाली",
+          "synonyms": [
+            "Convincing",
+            "Compelling",
+            "Persuasive"
+          ],
+          "antonyms": [
+            "Unconvincing",
+            "Weak",
+            "Ineffective"
+          ]
         },
         "options": {
           "A": {
             "word": "Convincing",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Convincing",
+            "hindi": "प्रभावशाली"
           },
           "B": {
             "word": "Barren",
             "meaning": "Barren",
-            "hindi": ""
+            "hindi": "उजाड़"
           },
           "C": {
             "word": "Doubtful",
@@ -1586,7 +1874,7 @@
           "D": {
             "word": "Hostile",
             "meaning": "Hostile",
-            "hindi": ""
+            "hindi": "लड़ाकू"
           }
         }
       }
@@ -1606,10 +1894,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Accompanying",
+          "hindi_meaning": "सहवर्ती",
+          "synonyms": [
+            "Accompanying",
+            "Concurrent",
+            "Attendant"
+          ],
+          "antonyms": [
+            "Separate",
+            "Independent",
+            "Unrelated"
+          ]
         },
         "options": {
           "A": {
@@ -1629,8 +1925,8 @@
           },
           "D": {
             "word": "Accompanying",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Accompanying",
+            "hindi": "सहवर्ती"
           }
         }
       }
@@ -1650,10 +1946,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Fire",
+          "hindi_meaning": "भीषण अग्निकांड",
+          "synonyms": [
+            "Fire",
+            "Blaze",
+            "Inferno"
+          ],
+          "antonyms": [
+            "Calm",
+            "Peace",
+            "Extinction"
+          ]
         },
         "options": {
           "A": {
@@ -1673,8 +1977,8 @@
           },
           "D": {
             "word": "Fire",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Fire",
+            "hindi": "भीषण अग्निकांड"
           }
         }
       }
@@ -1694,10 +1998,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Puzzle",
+          "hindi_meaning": "पहेली",
+          "synonyms": [
+            "Puzzle",
+            "Riddle",
+            "Enigma"
+          ],
+          "antonyms": [
+            "Solution",
+            "Answer",
+            "Certainty"
+          ]
         },
         "options": {
           "A": {
@@ -1708,17 +2020,17 @@
           "B": {
             "word": "Hostile",
             "meaning": "Hostile",
-            "hindi": ""
+            "hindi": "लड़ाकू"
           },
           "C": {
             "word": "Charitable",
             "meaning": "Charitable",
-            "hindi": ""
+            "hindi": "परोपकारी"
           },
           "D": {
             "word": "Puzzle",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Puzzle",
+            "hindi": "पहेली"
           }
         }
       }
@@ -1738,16 +2050,24 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Abundant",
+          "hindi_meaning": "प्रचुर",
+          "synonyms": [
+            "Abundant",
+            "Plentiful",
+            "Ample"
+          ],
+          "antonyms": [
+            "Scarce",
+            "Sparse",
+            "Meagre"
+          ]
         },
         "options": {
           "A": {
             "word": "Abundant",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Abundant",
+            "hindi": "प्रचुर"
           },
           "B": {
             "word": "Hasty",
@@ -1762,7 +2082,7 @@
           "D": {
             "word": "Lonely",
             "meaning": "Lonely",
-            "hindi": ""
+            "hindi": "उजाड़"
           }
         }
       }
@@ -1782,10 +2102,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Obese",
+          "hindi_meaning": "मोटा",
+          "synonyms": [
+            "Obese",
+            "Stout",
+            "Plump"
+          ],
+          "antonyms": [
+            "Thin",
+            "Slim",
+            "Lean"
+          ]
         },
         "options": {
           "A": {
@@ -1800,13 +2128,13 @@
           },
           "C": {
             "word": "Obese",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Obese",
+            "hindi": "मोटा"
           },
           "D": {
             "word": "Mysterious",
             "meaning": "Mysterious",
-            "hindi": ""
+            "hindi": "रहस्यमय"
           }
         }
       }
@@ -1826,10 +2154,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Mysterious",
+          "hindi_meaning": "रहस्यमय",
+          "synonyms": [
+            "Mysterious",
+            "Obscure",
+            "Enigmatic"
+          ],
+          "antonyms": [
+            "Clear",
+            "Explicit",
+            "Obvious"
+          ]
         },
         "options": {
           "A": {
@@ -1840,12 +2176,12 @@
           "B": {
             "word": "Warlike",
             "meaning": "Warlike",
-            "hindi": ""
+            "hindi": "युद्धप्रिय"
           },
           "C": {
             "word": "Mysterious",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Mysterious",
+            "hindi": "रहस्यमय"
           },
           "D": {
             "word": "Productive",
@@ -1870,16 +2206,24 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Scarcity",
+          "hindi_meaning": "कमी",
+          "synonyms": [
+            "Scarcity",
+            "Shortage",
+            "Paucity"
+          ],
+          "antonyms": [
+            "Abundance",
+            "Plenty",
+            "Surplus"
+          ]
         },
         "options": {
           "A": {
             "word": "Confidence",
             "meaning": "Confidence",
-            "hindi": ""
+            "hindi": "आत्मविश्वास"
           },
           "B": {
             "word": "Brilliance",
@@ -1888,8 +2232,8 @@
           },
           "C": {
             "word": "Scarcity",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Scarcity",
+            "hindi": "कमी"
           },
           "D": {
             "word": "Talkativeness",
@@ -1914,16 +2258,24 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Dead",
+          "hindi_meaning": "मृत/निष्क्रिय",
+          "synonyms": [
+            "Dead",
+            "Extinct",
+            "Inactive"
+          ],
+          "antonyms": [
+            "Active",
+            "Operating",
+            "Alive"
+          ]
         },
         "options": {
           "A": {
             "word": "Artistic",
             "meaning": "Artistic",
-            "hindi": ""
+            "hindi": "सौंदर्य संबंधी"
           },
           "B": {
             "word": "Fertile",
@@ -1937,8 +2289,8 @@
           },
           "D": {
             "word": "Dead",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Dead",
+            "hindi": "मृत/निष्क्रिय"
           }
         }
       }
@@ -1958,10 +2310,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Harmful",
+          "hindi_meaning": "हानिकारक",
+          "synonyms": [
+            "Harmful",
+            "Detrimental",
+            "Pernicious"
+          ],
+          "antonyms": [
+            "Beneficial",
+            "Helpful",
+            "Advantageous"
+          ]
         },
         "options": {
           "A": {
@@ -1981,8 +2341,8 @@
           },
           "D": {
             "word": "Harmful",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Harmful",
+            "hindi": "हानिकारक"
           }
         }
       }
@@ -2002,10 +2362,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Agitator",
+          "hindi_meaning": "जनता को भड़काने वाला नेता",
+          "synonyms": [
+            "Agitator",
+            "Inciter",
+            "Rabble-rouser"
+          ],
+          "antonyms": [
+            "Peacemaker",
+            "Mediator",
+            "Conciliator"
+          ]
         },
         "options": {
           "A": {
@@ -2020,8 +2388,8 @@
           },
           "C": {
             "word": "Agitator",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Agitator",
+            "hindi": "जनता को भड़काने वाला नेता"
           },
           "D": {
             "word": "Philanthropist",
@@ -2046,10 +2414,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Object",
+          "hindi_meaning": "आपत्ति करना",
+          "synonyms": [
+            "Object",
+            "Protest",
+            "Hesitate"
+          ],
+          "antonyms": [
+            "Agree",
+            "Accept",
+            "Consent"
+          ]
         },
         "options": {
           "A": {
@@ -2059,8 +2435,8 @@
           },
           "B": {
             "word": "Object",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Object",
+            "hindi": "आपत्ति करना"
           },
           "C": {
             "word": "Illuminate",
@@ -2070,7 +2446,7 @@
           "D": {
             "word": "Improve",
             "meaning": "Improve",
-            "hindi": ""
+            "hindi": "सुधारना"
           }
         }
       }
@@ -2090,10 +2466,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Mocking",
+          "hindi_meaning": "उपहासपूर्ण",
+          "synonyms": [
+            "Mocking",
+            "Ridiculing",
+            "Scornful"
+          ],
+          "antonyms": [
+            "Respectful",
+            "Admiring",
+            "Complimentary"
+          ]
         },
         "options": {
           "A": {
@@ -2103,8 +2487,8 @@
           },
           "B": {
             "word": "Mocking",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Mocking",
+            "hindi": "उपहासपूर्ण"
           },
           "C": {
             "word": "Generous",
@@ -2134,10 +2518,18 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Barren",
+          "hindi_meaning": "उजाड़",
+          "synonyms": [
+            "Barren",
+            "Deserted",
+            "Lonely"
+          ],
+          "antonyms": [
+            "Lush",
+            "Populated",
+            "Inhabited"
+          ]
         },
         "options": {
           "A": {
@@ -2148,17 +2540,17 @@
           "B": {
             "word": "Hostile",
             "meaning": "Hostile",
-            "hindi": ""
+            "hindi": "लड़ाकू"
           },
           "C": {
             "word": "Barren",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Barren",
+            "hindi": "उजाड़"
           },
           "D": {
             "word": "Convincing",
             "meaning": "Convincing",
-            "hindi": ""
+            "hindi": "प्रभावशाली"
           }
         }
       }
@@ -2178,16 +2570,24 @@
       "instruction": "Choose the word that is closest in meaning to the given word.",
       "explanation": {
         "vocabulary": {
-          "meaning": "",
-          "hindi_meaning": "",
-          "synonyms": [],
-          "antonyms": []
+          "meaning": "Aimless",
+          "hindi_meaning": "अनियमित",
+          "synonyms": [
+            "Aimless",
+            "Haphazard",
+            "Casual"
+          ],
+          "antonyms": [
+            "Systematic",
+            "Purposeful",
+            "Methodical"
+          ]
         },
         "options": {
           "A": {
             "word": "Diligent",
             "meaning": "Diligent",
-            "hindi": ""
+            "hindi": "परिश्रमी"
           },
           "B": {
             "word": "Radiant",
@@ -2196,13 +2596,13 @@
           },
           "C": {
             "word": "Aimless",
-            "meaning": "",
-            "hindi": ""
+            "meaning": "Aimless",
+            "hindi": "अनियमित"
           },
           "D": {
             "word": "Abundant",
             "meaning": "Abundant",
-            "hindi": ""
+            "hindi": "प्रचुर"
           }
         }
       }
