@@ -38,24 +38,28 @@
         "options": {
           "A": {
             "word": "Clarify",
-            "meaning": "Clarify",
-            "hindi": ""
+            "meaning": "make clear",
+            "hindi": "स्पष्ट करना"
           },
           "B": {
             "word": "Abundant",
-            "meaning": "Abundant",
+            "meaning": "plentiful; more than enough",
             "hindi": "प्रचुर"
           },
           "C": {
             "word": "Hostility",
-            "meaning": "Hostility",
+            "meaning": "unfriendliness or opposition",
             "hindi": "शत्रुता"
           },
           "D": {
             "word": "Renounce",
-            "meaning": "Renounce",
+            "meaning": "give up formally",
             "hindi": "त्याग करना"
           }
+        },
+        "answer": {
+          "meaning": "give up formally",
+          "hindi_meaning": "त्याग करना"
         }
       }
     },
@@ -90,24 +94,28 @@
         "options": {
           "A": {
             "word": "Radiant",
-            "meaning": "Radiant",
-            "hindi": ""
+            "meaning": "shining brightly",
+            "hindi": "चमकीला"
           },
           "B": {
             "word": "Diligent",
-            "meaning": "Diligent",
+            "meaning": "hard-working and careful",
             "hindi": "परिश्रमी"
           },
           "C": {
             "word": "Persuade",
-            "meaning": "Persuade",
-            "hindi": "फुसलाना"
+            "meaning": "convince someone",
+            "hindi": "मनाना"
           },
           "D": {
             "word": "Repeal",
-            "meaning": "Repeal",
-            "hindi": "निरस्त करना"
+            "meaning": "officially cancel a law",
+            "hindi": "कानून निरस्त करना"
           }
+        },
+        "answer": {
+          "meaning": "officially cancel a law",
+          "hindi_meaning": "कानून निरस्त करना"
         }
       }
     },
@@ -142,24 +150,28 @@
         "options": {
           "A": {
             "word": "Talkative",
-            "meaning": "Talkative",
-            "hindi": ""
+            "meaning": "fond of talking",
+            "hindi": "बातूनी"
           },
           "B": {
             "word": "Esoteric",
-            "meaning": "Esoteric",
-            "hindi": "जटिल"
+            "meaning": "understood by only a few; obscure",
+            "hindi": "गूढ़"
           },
           "C": {
             "word": "Charitable",
-            "meaning": "Charitable",
+            "meaning": "generous in helping others",
             "hindi": "परोपकारी"
           },
           "D": {
             "word": "Fertile",
-            "meaning": "Fertile",
-            "hindi": ""
+            "meaning": "capable of producing abundantly",
+            "hindi": "उर्वर"
           }
+        },
+        "answer": {
+          "meaning": "understood by only a few; obscure",
+          "hindi_meaning": "गूढ़"
         }
       }
     },
@@ -194,24 +206,28 @@
         "options": {
           "A": {
             "word": "Aggressive",
-            "meaning": "Aggressive",
-            "hindi": "युद्धप्रिय"
+            "meaning": "forceful or hostile",
+            "hindi": "आक्रामक"
           },
           "B": {
             "word": "Temperate",
-            "meaning": "Temperate",
+            "meaning": "moderate; self-controlled",
             "hindi": "संयमी"
           },
           "C": {
             "word": "Mysterious",
-            "meaning": "Mysterious",
+            "meaning": "difficult to explain or understand",
             "hindi": "रहस्यमय"
           },
           "D": {
             "word": "Productive",
-            "meaning": "Productive",
-            "hindi": ""
+            "meaning": "producing useful results",
+            "hindi": "उत्पादक"
           }
+        },
+        "answer": {
+          "meaning": "moderate; self-controlled",
+          "hindi_meaning": "संयमी"
         }
       }
     },
@@ -246,24 +262,28 @@
         "options": {
           "A": {
             "word": "Barren",
-            "meaning": "Barren",
-            "hindi": "उजाड़"
+            "meaning": "unable to produce; unproductive",
+            "hindi": "बंजर"
           },
           "B": {
             "word": "Mocking",
-            "meaning": "Mocking",
+            "meaning": "making fun of someone",
             "hindi": "उपहासपूर्ण"
           },
           "C": {
             "word": "Uncertain",
-            "meaning": "Uncertain",
-            "hindi": "संदिग्ध"
+            "meaning": "not known or definite",
+            "hindi": "अनिश्चित"
           },
           "D": {
             "word": "Skillful",
-            "meaning": "Skillful",
+            "meaning": "having ability or expertise",
             "hindi": "निपुण"
           }
+        },
+        "answer": {
+          "meaning": "having ability or expertise",
+          "hindi_meaning": "निपुण"
         }
       }
     },
@@ -298,24 +318,28 @@
         "options": {
           "A": {
             "word": "Warlike",
-            "meaning": "Warlike",
+            "meaning": "inclined to fight or wage war",
             "hindi": "युद्धप्रिय"
           },
           "B": {
             "word": "Inactive",
-            "meaning": "Inactive",
-            "hindi": "मृत/निष्क्रिय"
+            "meaning": "not active or functioning",
+            "hindi": "निष्क्रिय"
           },
           "C": {
             "word": "Outline",
-            "meaning": "Outline",
-            "hindi": "संकेत करना"
+            "meaning": "give the main points",
+            "hindi": "रूपरेखा देना"
           },
           "D": {
             "word": "Greedy",
-            "meaning": "Greedy",
+            "meaning": "wanting more wealth or possessions",
             "hindi": "लालची"
           }
+        },
+        "answer": {
+          "meaning": "give the main points",
+          "hindi_meaning": "रूपरेखा देना"
         }
       }
     },
@@ -350,24 +374,28 @@
         "options": {
           "A": {
             "word": "Scarcity",
-            "meaning": "Scarcity",
+            "meaning": "shortage; lack",
             "hindi": "कमी"
           },
           "B": {
             "word": "Hostile",
-            "meaning": "Hostile",
-            "hindi": "लड़ाकू"
+            "meaning": "unfriendly or antagonistic",
+            "hindi": "शत्रुतापूर्ण"
           },
           "C": {
             "word": "Hasty",
-            "meaning": "Hasty",
-            "hindi": ""
+            "meaning": "done too quickly",
+            "hindi": "जल्दबाज़ी वाला"
           },
           "D": {
             "word": "Artistic",
-            "meaning": "Artistic",
-            "hindi": "सौंदर्य संबंधी"
+            "meaning": "relating to art or beauty",
+            "hindi": "कलात्मक"
           }
+        },
+        "answer": {
+          "meaning": "relating to art or beauty",
+          "hindi_meaning": "कलात्मक"
         }
       }
     },
@@ -402,24 +430,28 @@
         "options": {
           "A": {
             "word": "Lonely",
-            "meaning": "Lonely",
-            "hindi": "उजाड़"
+            "meaning": "sad because of being alone",
+            "hindi": "अकेला"
           },
           "B": {
             "word": "Eagerness",
-            "meaning": "Eagerness",
-            "hindi": "तत्परता"
+            "meaning": "keen desire or enthusiasm",
+            "hindi": "उत्सुकता"
           },
           "C": {
             "word": "Deceitful",
-            "meaning": "Deceitful",
-            "hindi": ""
+            "meaning": "dishonest; intended to deceive",
+            "hindi": "छलपूर्ण"
           },
           "D": {
             "word": "Harshness",
-            "meaning": "Harshness",
+            "meaning": "severity or roughness",
             "hindi": "कठोरता"
           }
+        },
+        "answer": {
+          "meaning": "keen desire or enthusiasm",
+          "hindi_meaning": "उत्सुकता"
         }
       }
     },
@@ -454,24 +486,28 @@
         "options": {
           "A": {
             "word": "Aggressive",
-            "meaning": "Aggressive",
-            "hindi": "युद्धप्रिय"
+            "meaning": "forceful or hostile",
+            "hindi": "आक्रामक"
           },
           "B": {
             "word": "Obscure",
-            "meaning": "Obscure",
-            "hindi": "रहस्यमय"
+            "meaning": "not clear or well known",
+            "hindi": "अस्पष्ट"
           },
           "C": {
             "word": "Improve",
-            "meaning": "Improve",
+            "meaning": "make better",
             "hindi": "सुधारना"
           },
           "D": {
             "word": "Penniless",
-            "meaning": "Penniless",
-            "hindi": ""
+            "meaning": "having no money",
+            "hindi": "निर्धन"
           }
+        },
+        "answer": {
+          "meaning": "make better",
+          "hindi_meaning": "सुधारना"
         }
       }
     },
@@ -506,24 +542,28 @@
         "options": {
           "A": {
             "word": "Fragrant",
-            "meaning": "Fragrant",
-            "hindi": ""
+            "meaning": "having a pleasant smell",
+            "hindi": "सुगंधित"
           },
           "B": {
             "word": "Charitable",
-            "meaning": "Charitable",
+            "meaning": "generous in helping others",
             "hindi": "परोपकारी"
           },
           "C": {
             "word": "Outdated",
-            "meaning": "Outdated",
-            "hindi": "कालविसंगत"
+            "meaning": "no longer current or useful",
+            "hindi": "पुराना/कालबाह्य"
           },
           "D": {
             "word": "Concise",
-            "meaning": "Concise",
-            "hindi": ""
+            "meaning": "brief and to the point",
+            "hindi": "संक्षिप्त"
           }
+        },
+        "answer": {
+          "meaning": "no longer current or useful",
+          "hindi_meaning": "पुराना/कालबाह्य"
         }
       }
     },
@@ -558,24 +598,28 @@
         "options": {
           "A": {
             "word": "Talkative",
-            "meaning": "Talkative",
-            "hindi": ""
+            "meaning": "fond of talking",
+            "hindi": "बातूनी"
           },
           "B": {
             "word": "Confidence",
-            "meaning": "Confidence",
+            "meaning": "self-assurance",
             "hindi": "आत्मविश्वास"
           },
           "C": {
             "word": "Abomination",
-            "meaning": "Abomination",
+            "meaning": "something detestable",
             "hindi": "घोर घृणित वस्तु"
           },
           "D": {
             "word": "Productive",
-            "meaning": "Productive",
-            "hindi": ""
+            "meaning": "producing useful results",
+            "hindi": "उत्पादक"
           }
+        },
+        "answer": {
+          "meaning": "something detestable",
+          "hindi_meaning": "घोर घृणित वस्तु"
         }
       }
     },
@@ -610,24 +654,28 @@
         "options": {
           "A": {
             "word": "Beautiful",
-            "meaning": "Beautiful",
-            "hindi": "सौंदर्य संबंधी"
+            "meaning": "pleasing to the senses",
+            "hindi": "सुंदर"
           },
           "B": {
             "word": "Mysterious",
-            "meaning": "Mysterious",
+            "meaning": "difficult to explain or understand",
             "hindi": "रहस्यमय"
           },
           "C": {
             "word": "Fertile",
-            "meaning": "Fertile",
-            "hindi": ""
+            "meaning": "capable of producing abundantly",
+            "hindi": "उर्वर"
           },
           "D": {
             "word": "Hostility",
-            "meaning": "Hostility",
+            "meaning": "unfriendliness or opposition",
             "hindi": "शत्रुता"
           }
+        },
+        "answer": {
+          "meaning": "unfriendliness or opposition",
+          "hindi_meaning": "शत्रुता"
         }
       }
     },
@@ -662,24 +710,28 @@
         "options": {
           "A": {
             "word": "Diligent",
-            "meaning": "Diligent",
+            "meaning": "hard-working and careful",
             "hindi": "परिश्रमी"
           },
           "B": {
             "word": "Opposed",
-            "meaning": "Opposed",
+            "meaning": "against or contrary to",
             "hindi": "विरोधी"
           },
           "C": {
             "word": "Fragrant",
-            "meaning": "Fragrant",
-            "hindi": ""
+            "meaning": "having a pleasant smell",
+            "hindi": "सुगंधित"
           },
           "D": {
             "word": "Abundant",
-            "meaning": "Abundant",
+            "meaning": "plentiful; more than enough",
             "hindi": "प्रचुर"
           }
+        },
+        "answer": {
+          "meaning": "against or contrary to",
+          "hindi_meaning": "विरोधी"
         }
       }
     },
@@ -714,24 +766,28 @@
         "options": {
           "A": {
             "word": "Talkative",
-            "meaning": "Talkative",
-            "hindi": ""
+            "meaning": "fond of talking",
+            "hindi": "बातूनी"
           },
           "B": {
             "word": "Charitable",
-            "meaning": "Charitable",
+            "meaning": "generous in helping others",
             "hindi": "परोपकारी"
           },
           "C": {
             "word": "Dubious",
-            "meaning": "Dubious",
+            "meaning": "doubtful or uncertain",
             "hindi": "संदिग्ध"
           },
           "D": {
             "word": "Courageous",
-            "meaning": "Courageous",
-            "hindi": ""
+            "meaning": "brave",
+            "hindi": "साहसी"
           }
+        },
+        "answer": {
+          "meaning": "doubtful or uncertain",
+          "hindi_meaning": "संदिग्ध"
         }
       }
     },
@@ -766,24 +822,28 @@
         "options": {
           "A": {
             "word": "Aggressive",
-            "meaning": "Aggressive",
-            "hindi": "युद्धप्रिय"
+            "meaning": "forceful or hostile",
+            "hindi": "आक्रामक"
           },
           "B": {
             "word": "Scarcity",
-            "meaning": "Scarcity",
+            "meaning": "shortage; lack",
             "hindi": "कमी"
           },
           "C": {
             "word": "Mournful",
-            "meaning": "Mournful",
-            "hindi": ""
+            "meaning": "expressing sorrow",
+            "hindi": "शोकपूर्ण"
           },
           "D": {
             "word": "Confidence",
-            "meaning": "Confidence",
+            "meaning": "self-assurance",
             "hindi": "आत्मविश्वास"
           }
+        },
+        "answer": {
+          "meaning": "self-assurance",
+          "hindi_meaning": "आत्मविश्वास"
         }
       }
     },
@@ -818,24 +878,28 @@
         "options": {
           "A": {
             "word": "Lavish",
-            "meaning": "Lavish",
-            "hindi": ""
+            "meaning": "very generous or abundant",
+            "hindi": "भव्य/प्रचुर"
           },
           "B": {
             "word": "Laborious",
-            "meaning": "Laborious",
-            "hindi": "कठिन"
+            "meaning": "requiring much effort",
+            "hindi": "श्रमसाध्य"
           },
           "C": {
             "word": "Clear",
-            "meaning": "Clear",
-            "hindi": ""
+            "meaning": "easy to understand",
+            "hindi": "स्पष्ट"
           },
           "D": {
             "word": "Friendly",
-            "meaning": "Friendly",
-            "hindi": ""
+            "meaning": "kind and pleasant",
+            "hindi": "मित्रवत"
           }
+        },
+        "answer": {
+          "meaning": "requiring much effort",
+          "hindi_meaning": "श्रमसाध्य"
         }
       }
     },
@@ -870,24 +934,28 @@
         "options": {
           "A": {
             "word": "Secretive",
-            "meaning": "Secretive",
-            "hindi": ""
+            "meaning": "inclined to hide things",
+            "hindi": "गुप्त"
           },
           "B": {
             "word": "Fertile",
-            "meaning": "Fertile",
-            "hindi": ""
+            "meaning": "capable of producing abundantly",
+            "hindi": "उर्वर"
           },
           "C": {
             "word": "Harshness",
-            "meaning": "Harshness",
+            "meaning": "severity or roughness",
             "hindi": "कठोरता"
           },
           "D": {
             "word": "Optimistic",
-            "meaning": "Optimistic",
-            "hindi": ""
+            "meaning": "hopeful about the future",
+            "hindi": "आशावादी"
           }
+        },
+        "answer": {
+          "meaning": "severity or roughness",
+          "hindi_meaning": "कठोरता"
         }
       }
     },
@@ -922,24 +990,28 @@
         "options": {
           "A": {
             "word": "Diligent",
-            "meaning": "Diligent",
+            "meaning": "hard-working and careful",
             "hindi": "परिश्रमी"
           },
           "B": {
             "word": "Hostile",
-            "meaning": "Hostile",
-            "hindi": "लड़ाकू"
+            "meaning": "unfriendly or antagonistic",
+            "hindi": "शत्रुतापूर्ण"
           },
           "C": {
             "word": "Abundant",
-            "meaning": "Abundant",
+            "meaning": "plentiful; more than enough",
             "hindi": "प्रचुर"
           },
           "D": {
             "word": "Mysterious",
-            "meaning": "Mysterious",
+            "meaning": "difficult to explain or understand",
             "hindi": "रहस्यमय"
           }
+        },
+        "answer": {
+          "meaning": "hard-working and careful",
+          "hindi_meaning": "परिश्रमी"
         }
       }
     },
@@ -974,24 +1046,28 @@
         "options": {
           "A": {
             "word": "Alleviate",
-            "meaning": "Alleviate",
-            "hindi": "शांत करना"
+            "meaning": "make less severe",
+            "hindi": "कम करना"
           },
           "B": {
             "word": "Condemn",
-            "meaning": "Condemn",
+            "meaning": "express strong disapproval",
             "hindi": "निंदा करना"
           },
           "C": {
             "word": "Deceive",
-            "meaning": "Deceive",
-            "hindi": ""
+            "meaning": "mislead or trick",
+            "hindi": "धोखा देना"
           },
           "D": {
             "word": "Wander",
-            "meaning": "Wander",
-            "hindi": ""
+            "meaning": "move without a fixed destination",
+            "hindi": "भटकना"
           }
+        },
+        "answer": {
+          "meaning": "make less severe",
+          "hindi_meaning": "कम करना"
         }
       }
     },
@@ -1026,24 +1102,28 @@
         "options": {
           "A": {
             "word": "Fertile",
-            "meaning": "Fertile",
-            "hindi": ""
+            "meaning": "capable of producing abundantly",
+            "hindi": "उर्वर"
           },
           "B": {
             "word": "Talkative",
-            "meaning": "Talkative",
-            "hindi": ""
+            "meaning": "fond of talking",
+            "hindi": "बातूनी"
           },
           "C": {
             "word": "Stern",
-            "meaning": "Stern",
+            "meaning": "strict or severe",
             "hindi": "कठोर"
           },
           "D": {
             "word": "Radiant",
-            "meaning": "Radiant",
-            "hindi": ""
+            "meaning": "shining brightly",
+            "hindi": "चमकीला"
           }
+        },
+        "answer": {
+          "meaning": "strict or severe",
+          "hindi_meaning": "कठोर"
         }
       }
     },
@@ -1078,24 +1158,28 @@
         "options": {
           "A": {
             "word": "Clear",
-            "meaning": "Clear",
-            "hindi": ""
+            "meaning": "easy to understand",
+            "hindi": "स्पष्ट"
           },
           "B": {
             "word": "Greedy",
-            "meaning": "Greedy",
+            "meaning": "wanting more wealth or possessions",
             "hindi": "लालची"
           },
           "C": {
             "word": "Friendly",
-            "meaning": "Friendly",
-            "hindi": ""
+            "meaning": "kind and pleasant",
+            "hindi": "मित्रवत"
           },
           "D": {
             "word": "Unformed",
-            "meaning": "Unformed",
-            "hindi": ""
+            "meaning": "not fully developed",
+            "hindi": "अपरिपक्व"
           }
+        },
+        "answer": {
+          "meaning": "wanting more wealth or possessions",
+          "hindi_meaning": "लालची"
         }
       }
     },
@@ -1130,24 +1214,28 @@
         "options": {
           "A": {
             "word": "Eager",
-            "meaning": "Eager",
-            "hindi": ""
+            "meaning": "keen or enthusiastic",
+            "hindi": "उत्सुक"
           },
           "B": {
             "word": "Productive",
-            "meaning": "Productive",
-            "hindi": ""
+            "meaning": "producing useful results",
+            "hindi": "उत्पादक"
           },
           "C": {
             "word": "Charitable",
-            "meaning": "Charitable",
+            "meaning": "generous in helping others",
             "hindi": "परोपकारी"
           },
           "D": {
             "word": "Dislike",
-            "meaning": "Dislike",
+            "meaning": "a feeling of not liking",
             "hindi": "अरुचि"
           }
+        },
+        "answer": {
+          "meaning": "a feeling of not liking",
+          "hindi_meaning": "अरुचि"
         }
       }
     },
@@ -1182,24 +1270,28 @@
         "options": {
           "A": {
             "word": "Urgent",
-            "meaning": "Urgent",
-            "hindi": ""
+            "meaning": "requiring immediate action",
+            "hindi": "अत्यावश्यक"
           },
           "B": {
             "word": "Benevolent",
-            "meaning": "Benevolent",
+            "meaning": "well-meaning and kind",
             "hindi": "परोपकारी"
           },
           "C": {
             "word": "Askew",
-            "meaning": "Askew",
+            "meaning": "not straight or level",
             "hindi": "तिरछा"
           },
           "D": {
             "word": "Scholarly",
-            "meaning": "Scholarly",
-            "hindi": ""
+            "meaning": "learned and academic",
+            "hindi": "विद्वत्तापूर्ण"
           }
+        },
+        "answer": {
+          "meaning": "not straight or level",
+          "hindi_meaning": "तिरछा"
         }
       }
     },
@@ -1234,24 +1326,28 @@
         "options": {
           "A": {
             "word": "Concise",
-            "meaning": "Concise",
-            "hindi": ""
+            "meaning": "brief and to the point",
+            "hindi": "संक्षिप्त"
           },
           "B": {
             "word": "Learned",
-            "meaning": "Learned",
-            "hindi": ""
+            "meaning": "highly educated",
+            "hindi": "विद्वान"
           },
           "C": {
             "word": "Warlike",
-            "meaning": "Warlike",
+            "meaning": "inclined to fight or wage war",
             "hindi": "युद्धप्रिय"
           },
           "D": {
             "word": "Fragrant",
-            "meaning": "Fragrant",
-            "hindi": ""
+            "meaning": "having a pleasant smell",
+            "hindi": "सुगंधित"
           }
+        },
+        "answer": {
+          "meaning": "inclined to fight or wage war",
+          "hindi_meaning": "युद्धप्रिय"
         }
       }
     },
@@ -1286,24 +1382,28 @@
         "options": {
           "A": {
             "word": "Fertile",
-            "meaning": "Fertile",
-            "hindi": ""
+            "meaning": "capable of producing abundantly",
+            "hindi": "उर्वर"
           },
           "B": {
             "word": "Hostile",
-            "meaning": "Hostile",
-            "hindi": "लड़ाकू"
+            "meaning": "unfriendly or antagonistic",
+            "hindi": "शत्रुतापूर्ण"
           },
           "C": {
             "word": "Calm",
-            "meaning": "Calm",
-            "hindi": ""
+            "meaning": "peaceful and not agitated",
+            "hindi": "शांत"
           },
           "D": {
             "word": "Abundant",
-            "meaning": "Abundant",
+            "meaning": "plentiful; more than enough",
             "hindi": "प्रचुर"
           }
+        },
+        "answer": {
+          "meaning": "unfriendly or antagonistic",
+          "hindi_meaning": "शत्रुतापूर्ण"
         }
       }
     },
@@ -1338,24 +1438,28 @@
         "options": {
           "A": {
             "word": "Charitable",
-            "meaning": "Charitable",
+            "meaning": "generous in helping others",
             "hindi": "परोपकारी"
           },
           "B": {
             "word": "Warlike",
-            "meaning": "Warlike",
+            "meaning": "inclined to fight or wage war",
             "hindi": "युद्धप्रिय"
           },
           "C": {
             "word": "Scarcity",
-            "meaning": "Scarcity",
+            "meaning": "shortage; lack",
             "hindi": "कमी"
           },
           "D": {
             "word": "Mysterious",
-            "meaning": "Mysterious",
+            "meaning": "difficult to explain or understand",
             "hindi": "रहस्यमय"
           }
+        },
+        "answer": {
+          "meaning": "generous in helping others",
+          "hindi_meaning": "परोपकारी"
         }
       }
     },
@@ -1390,24 +1494,28 @@
         "options": {
           "A": {
             "word": "Shy",
-            "meaning": "Shy",
-            "hindi": ""
+            "meaning": "reserved or nervous with others",
+            "hindi": "संकोची"
           },
           "B": {
             "word": "Book-lover",
-            "meaning": "Book-lover",
+            "meaning": "a person who loves books",
             "hindi": "पुस्तक-प्रेमी"
           },
           "C": {
             "word": "Tyrant",
-            "meaning": "Tyrant",
-            "hindi": ""
+            "meaning": "a cruel and oppressive ruler",
+            "hindi": "निरंकुश शासक"
           },
           "D": {
             "word": "Urgent",
-            "meaning": "Urgent",
-            "hindi": ""
+            "meaning": "requiring immediate action",
+            "hindi": "अत्यावश्यक"
           }
+        },
+        "answer": {
+          "meaning": "a person who loves books",
+          "hindi_meaning": "पुस्तक-प्रेमी"
         }
       }
     },
@@ -1442,24 +1550,28 @@
         "options": {
           "A": {
             "word": "Radiant",
-            "meaning": "Radiant",
-            "hindi": ""
+            "meaning": "shining brightly",
+            "hindi": "चमकीला"
           },
           "B": {
             "word": "Pastoral",
-            "meaning": "Pastoral",
+            "meaning": "relating to the countryside",
             "hindi": "ग्रामीण"
           },
           "C": {
             "word": "Harsh",
-            "meaning": "Harsh",
-            "hindi": ""
+            "meaning": "severe or unpleasant",
+            "hindi": "कठोर"
           },
           "D": {
             "word": "Deceitful",
-            "meaning": "Deceitful",
-            "hindi": ""
+            "meaning": "dishonest; intended to deceive",
+            "hindi": "छलपूर्ण"
           }
+        },
+        "answer": {
+          "meaning": "relating to the countryside",
+          "hindi_meaning": "ग्रामीण"
         }
       }
     },
@@ -1494,24 +1606,28 @@
         "options": {
           "A": {
             "word": "Eradicate",
-            "meaning": "Eradicate",
-            "hindi": ""
+            "meaning": "destroy completely",
+            "hindi": "पूरी तरह नष्ट करना"
           },
           "B": {
             "word": "Abundant",
-            "meaning": "Abundant",
+            "meaning": "plentiful; more than enough",
             "hindi": "प्रचुर"
           },
           "C": {
             "word": "Coax",
-            "meaning": "Coax",
+            "meaning": "persuade gently",
             "hindi": "फुसलाना"
           },
           "D": {
             "word": "Hostile",
-            "meaning": "Hostile",
-            "hindi": "लड़ाकू"
+            "meaning": "unfriendly or antagonistic",
+            "hindi": "शत्रुतापूर्ण"
           }
+        },
+        "answer": {
+          "meaning": "persuade gently",
+          "hindi_meaning": "फुसलाना"
         }
       }
     },
@@ -1546,24 +1662,28 @@
         "options": {
           "A": {
             "word": "Secretive",
-            "meaning": "Secretive",
-            "hindi": ""
+            "meaning": "inclined to hide things",
+            "hindi": "गुप्त"
           },
           "B": {
             "word": "Inexperienced",
-            "meaning": "Inexperienced",
+            "meaning": "lacking experience",
             "hindi": "अनुभवहीन"
           },
           "C": {
             "word": "Convincing",
-            "meaning": "Convincing",
-            "hindi": "प्रभावशाली"
+            "meaning": "persuasive; believable",
+            "hindi": "विश्वसनीय/प्रभावशाली"
           },
           "D": {
             "word": "Generous",
-            "meaning": "Generous",
-            "hindi": ""
+            "meaning": "willing to give freely",
+            "hindi": "उदार"
           }
+        },
+        "answer": {
+          "meaning": "lacking experience",
+          "hindi_meaning": "अनुभवहीन"
         }
       }
     },
@@ -1598,24 +1718,28 @@
         "options": {
           "A": {
             "word": "Scholarly",
-            "meaning": "Scholarly",
-            "hindi": ""
+            "meaning": "learned and academic",
+            "hindi": "विद्वत्तापूर्ण"
           },
           "B": {
             "word": "Warlike",
-            "meaning": "Warlike",
+            "meaning": "inclined to fight or wage war",
             "hindi": "युद्धप्रिय"
           },
           "C": {
             "word": "Plentiful",
-            "meaning": "Plentiful",
+            "meaning": "available in large amounts",
             "hindi": "प्रचुर"
           },
           "D": {
             "word": "Fickle",
-            "meaning": "Fickle",
-            "hindi": "मनमौजी"
+            "meaning": "changing mood or loyalty often",
+            "hindi": "अस्थिर/मनमौजी"
           }
+        },
+        "answer": {
+          "meaning": "changing mood or loyalty often",
+          "hindi_meaning": "अस्थिर/मनमौजी"
         }
       }
     },
@@ -1650,24 +1774,28 @@
         "options": {
           "A": {
             "word": "Quibble",
-            "meaning": "Quibble",
+            "meaning": "raise a petty objection",
             "hindi": "छोटी बात पर आपत्ति करना"
           },
           "B": {
             "word": "Praise",
-            "meaning": "Praise",
-            "hindi": ""
+            "meaning": "express approval or admiration",
+            "hindi": "प्रशंसा करना"
           },
           "C": {
             "word": "Fertile",
-            "meaning": "Fertile",
-            "hindi": ""
+            "meaning": "capable of producing abundantly",
+            "hindi": "उर्वर"
           },
           "D": {
             "word": "Clarify",
-            "meaning": "Clarify",
-            "hindi": ""
+            "meaning": "make clear",
+            "hindi": "स्पष्ट करना"
           }
+        },
+        "answer": {
+          "meaning": "raise a petty objection",
+          "hindi_meaning": "छोटी बात पर आपत्ति करना"
         }
       }
     },
@@ -1702,24 +1830,28 @@
         "options": {
           "A": {
             "word": "Sarcastic",
-            "meaning": "Sarcastic",
-            "hindi": "कटु"
+            "meaning": "using irony to mock",
+            "hindi": "व्यंग्यात्मक"
           },
           "B": {
             "word": "Generous",
-            "meaning": "Generous",
-            "hindi": ""
+            "meaning": "willing to give freely",
+            "hindi": "उदार"
           },
           "C": {
             "word": "Rural",
-            "meaning": "Rural",
+            "meaning": "relating to the countryside",
             "hindi": "ग्रामीण"
           },
           "D": {
             "word": "Timid",
-            "meaning": "Timid",
-            "hindi": ""
+            "meaning": "shy and lacking confidence",
+            "hindi": "संकोची"
           }
+        },
+        "answer": {
+          "meaning": "using irony to mock",
+          "hindi_meaning": "व्यंग्यात्मक"
         }
       }
     },
@@ -1754,24 +1886,28 @@
         "options": {
           "A": {
             "word": "Radiant",
-            "meaning": "Radiant",
-            "hindi": ""
+            "meaning": "shining brightly",
+            "hindi": "चमकीला"
           },
           "B": {
             "word": "Condemn",
-            "meaning": "Condemn",
+            "meaning": "express strong disapproval",
             "hindi": "निंदा करना"
           },
           "C": {
             "word": "Talkative",
-            "meaning": "Talkative",
-            "hindi": ""
+            "meaning": "fond of talking",
+            "hindi": "बातूनी"
           },
           "D": {
             "word": "Improve",
-            "meaning": "Improve",
+            "meaning": "make better",
             "hindi": "सुधारना"
           }
+        },
+        "answer": {
+          "meaning": "express strong disapproval",
+          "hindi_meaning": "निंदा करना"
         }
       }
     },
@@ -1806,24 +1942,28 @@
         "options": {
           "A": {
             "word": "Calm",
-            "meaning": "Calm",
-            "hindi": ""
+            "meaning": "peaceful and not agitated",
+            "hindi": "शांत"
           },
           "B": {
             "word": "Eager",
-            "meaning": "Eager",
-            "hindi": ""
+            "meaning": "keen or enthusiastic",
+            "hindi": "उत्सुक"
           },
           "C": {
             "word": "Fertile",
-            "meaning": "Fertile",
-            "hindi": ""
+            "meaning": "capable of producing abundantly",
+            "hindi": "उर्वर"
           },
           "D": {
             "word": "Deception",
-            "meaning": "Deception",
+            "meaning": "act of misleading or tricking",
             "hindi": "छल-कपट"
           }
+        },
+        "answer": {
+          "meaning": "act of misleading or tricking",
+          "hindi_meaning": "छल-कपट"
         }
       }
     },
@@ -1858,24 +1998,28 @@
         "options": {
           "A": {
             "word": "Convincing",
-            "meaning": "Convincing",
-            "hindi": "प्रभावशाली"
+            "meaning": "persuasive; believable",
+            "hindi": "विश्वसनीय/प्रभावशाली"
           },
           "B": {
             "word": "Barren",
-            "meaning": "Barren",
-            "hindi": "उजाड़"
+            "meaning": "unable to produce; unproductive",
+            "hindi": "बंजर"
           },
           "C": {
             "word": "Doubtful",
-            "meaning": "Doubtful",
-            "hindi": ""
+            "meaning": "uncertain; not convinced",
+            "hindi": "संदेहपूर्ण"
           },
           "D": {
             "word": "Hostile",
-            "meaning": "Hostile",
-            "hindi": "लड़ाकू"
+            "meaning": "unfriendly or antagonistic",
+            "hindi": "शत्रुतापूर्ण"
           }
+        },
+        "answer": {
+          "meaning": "persuasive; believable",
+          "hindi_meaning": "विश्वसनीय/प्रभावशाली"
         }
       }
     },
@@ -1910,24 +2054,28 @@
         "options": {
           "A": {
             "word": "Secretive",
-            "meaning": "Secretive",
-            "hindi": ""
+            "meaning": "inclined to hide things",
+            "hindi": "गुप्त"
           },
           "B": {
             "word": "Mournful",
-            "meaning": "Mournful",
-            "hindi": ""
+            "meaning": "expressing sorrow",
+            "hindi": "शोकपूर्ण"
           },
           "C": {
             "word": "Miserly",
-            "meaning": "Miserly",
-            "hindi": ""
+            "meaning": "excessively unwilling to spend",
+            "hindi": "कंजूस"
           },
           "D": {
             "word": "Accompanying",
-            "meaning": "Accompanying",
-            "hindi": "सहवर्ती"
+            "meaning": "going along with something",
+            "hindi": "साथ चलने वाला/सहवर्ती"
           }
+        },
+        "answer": {
+          "meaning": "going along with something",
+          "hindi_meaning": "साथ चलने वाला/सहवर्ती"
         }
       }
     },
@@ -1962,24 +2110,28 @@
         "options": {
           "A": {
             "word": "Scholarly",
-            "meaning": "Scholarly",
-            "hindi": ""
+            "meaning": "learned and academic",
+            "hindi": "विद्वत्तापूर्ण"
           },
           "B": {
             "word": "Clarity",
-            "meaning": "Clarity",
-            "hindi": ""
+            "meaning": "clearness; ease of understanding",
+            "hindi": "स्पष्टता"
           },
           "C": {
             "word": "Greed",
-            "meaning": "Greed",
-            "hindi": ""
+            "meaning": "excessive desire for wealth",
+            "hindi": "लालच"
           },
           "D": {
             "word": "Fire",
-            "meaning": "Fire",
-            "hindi": "भीषण अग्निकांड"
+            "meaning": "combustion producing heat and flames",
+            "hindi": "आग"
           }
+        },
+        "answer": {
+          "meaning": "combustion producing heat and flames",
+          "hindi_meaning": "आग"
         }
       }
     },
@@ -2014,24 +2166,28 @@
         "options": {
           "A": {
             "word": "Fertile",
-            "meaning": "Fertile",
-            "hindi": ""
+            "meaning": "capable of producing abundantly",
+            "hindi": "उर्वर"
           },
           "B": {
             "word": "Hostile",
-            "meaning": "Hostile",
-            "hindi": "लड़ाकू"
+            "meaning": "unfriendly or antagonistic",
+            "hindi": "शत्रुतापूर्ण"
           },
           "C": {
             "word": "Charitable",
-            "meaning": "Charitable",
+            "meaning": "generous in helping others",
             "hindi": "परोपकारी"
           },
           "D": {
             "word": "Puzzle",
-            "meaning": "Puzzle",
+            "meaning": "difficult problem or question",
             "hindi": "पहेली"
           }
+        },
+        "answer": {
+          "meaning": "difficult problem or question",
+          "hindi_meaning": "पहेली"
         }
       }
     },
@@ -2066,24 +2222,28 @@
         "options": {
           "A": {
             "word": "Abundant",
-            "meaning": "Abundant",
+            "meaning": "plentiful; more than enough",
             "hindi": "प्रचुर"
           },
           "B": {
             "word": "Hasty",
-            "meaning": "Hasty",
-            "hindi": ""
+            "meaning": "done too quickly",
+            "hindi": "जल्दबाज़ी वाला"
           },
           "C": {
             "word": "Doubtful",
-            "meaning": "Doubtful",
-            "hindi": ""
+            "meaning": "uncertain; not convinced",
+            "hindi": "संदेहपूर्ण"
           },
           "D": {
             "word": "Lonely",
-            "meaning": "Lonely",
-            "hindi": "उजाड़"
+            "meaning": "sad because of being alone",
+            "hindi": "अकेला"
           }
+        },
+        "answer": {
+          "meaning": "plentiful; more than enough",
+          "hindi_meaning": "प्रचुर"
         }
       }
     },
@@ -2118,24 +2278,28 @@
         "options": {
           "A": {
             "word": "Urgent",
-            "meaning": "Urgent",
-            "hindi": ""
+            "meaning": "requiring immediate action",
+            "hindi": "अत्यावश्यक"
           },
           "B": {
             "word": "Cautious",
-            "meaning": "Cautious",
-            "hindi": ""
+            "meaning": "careful to avoid danger or mistakes",
+            "hindi": "सावधान"
           },
           "C": {
             "word": "Obese",
-            "meaning": "Obese",
-            "hindi": "मोटा"
+            "meaning": "excessively overweight",
+            "hindi": "मोटापे से ग्रस्त"
           },
           "D": {
             "word": "Mysterious",
-            "meaning": "Mysterious",
+            "meaning": "difficult to explain or understand",
             "hindi": "रहस्यमय"
           }
+        },
+        "answer": {
+          "meaning": "excessively overweight",
+          "hindi_meaning": "मोटापे से ग्रस्त"
         }
       }
     },
@@ -2170,24 +2334,28 @@
         "options": {
           "A": {
             "word": "Generous",
-            "meaning": "Generous",
-            "hindi": ""
+            "meaning": "willing to give freely",
+            "hindi": "उदार"
           },
           "B": {
             "word": "Warlike",
-            "meaning": "Warlike",
+            "meaning": "inclined to fight or wage war",
             "hindi": "युद्धप्रिय"
           },
           "C": {
             "word": "Mysterious",
-            "meaning": "Mysterious",
+            "meaning": "difficult to explain or understand",
             "hindi": "रहस्यमय"
           },
           "D": {
             "word": "Productive",
-            "meaning": "Productive",
-            "hindi": ""
+            "meaning": "producing useful results",
+            "hindi": "उत्पादक"
           }
+        },
+        "answer": {
+          "meaning": "difficult to explain or understand",
+          "hindi_meaning": "रहस्यमय"
         }
       }
     },
@@ -2222,24 +2390,28 @@
         "options": {
           "A": {
             "word": "Confidence",
-            "meaning": "Confidence",
+            "meaning": "self-assurance",
             "hindi": "आत्मविश्वास"
           },
           "B": {
             "word": "Brilliance",
-            "meaning": "Brilliance",
-            "hindi": ""
+            "meaning": "exceptional brightness or intelligence",
+            "hindi": "चमक/प्रतिभा"
           },
           "C": {
             "word": "Scarcity",
-            "meaning": "Scarcity",
+            "meaning": "shortage; lack",
             "hindi": "कमी"
           },
           "D": {
             "word": "Talkativeness",
-            "meaning": "Talkativeness",
-            "hindi": ""
+            "meaning": "tendency to talk a lot",
+            "hindi": "बातूनीपन"
           }
+        },
+        "answer": {
+          "meaning": "shortage; lack",
+          "hindi_meaning": "कमी"
         }
       }
     },
@@ -2274,24 +2446,28 @@
         "options": {
           "A": {
             "word": "Artistic",
-            "meaning": "Artistic",
-            "hindi": "सौंदर्य संबंधी"
+            "meaning": "relating to art or beauty",
+            "hindi": "कलात्मक"
           },
           "B": {
             "word": "Fertile",
-            "meaning": "Fertile",
-            "hindi": ""
+            "meaning": "capable of producing abundantly",
+            "hindi": "उर्वर"
           },
           "C": {
             "word": "Eager",
-            "meaning": "Eager",
-            "hindi": ""
+            "meaning": "keen or enthusiastic",
+            "hindi": "उत्सुक"
           },
           "D": {
             "word": "Dead",
-            "meaning": "Dead",
-            "hindi": "मृत/निष्क्रिय"
+            "meaning": "no longer alive",
+            "hindi": "मृत"
           }
+        },
+        "answer": {
+          "meaning": "no longer alive",
+          "hindi_meaning": "मृत"
         }
       }
     },
@@ -2326,24 +2502,28 @@
         "options": {
           "A": {
             "word": "Generous",
-            "meaning": "Generous",
-            "hindi": ""
+            "meaning": "willing to give freely",
+            "hindi": "उदार"
           },
           "B": {
             "word": "Sociable",
-            "meaning": "Sociable",
-            "hindi": ""
+            "meaning": "friendly and enjoying company",
+            "hindi": "मिलनसार"
           },
           "C": {
             "word": "Clear",
-            "meaning": "Clear",
-            "hindi": ""
+            "meaning": "easy to understand",
+            "hindi": "स्पष्ट"
           },
           "D": {
             "word": "Harmful",
-            "meaning": "Harmful",
+            "meaning": "causing damage or injury",
             "hindi": "हानिकारक"
           }
+        },
+        "answer": {
+          "meaning": "causing damage or injury",
+          "hindi_meaning": "हानिकारक"
         }
       }
     },
@@ -2378,24 +2558,28 @@
         "options": {
           "A": {
             "word": "Scholar",
-            "meaning": "Scholar",
-            "hindi": ""
+            "meaning": "learned person",
+            "hindi": "विद्वान"
           },
           "B": {
             "word": "Pacifier",
-            "meaning": "Pacifier",
-            "hindi": ""
+            "meaning": "person or thing that calms conflict",
+            "hindi": "शांतिदूत"
           },
           "C": {
             "word": "Agitator",
-            "meaning": "Agitator",
-            "hindi": "जनता को भड़काने वाला नेता"
+            "meaning": "person who stirs up unrest",
+            "hindi": "भड़काने वाला"
           },
           "D": {
             "word": "Philanthropist",
-            "meaning": "Philanthropist",
-            "hindi": ""
+            "meaning": "person who gives money/help for good causes",
+            "hindi": "परोपकारी"
           }
+        },
+        "answer": {
+          "meaning": "person who stirs up unrest",
+          "hindi_meaning": "भड़काने वाला"
         }
       }
     },
@@ -2430,24 +2614,28 @@
         "options": {
           "A": {
             "word": "Praise",
-            "meaning": "Praise",
-            "hindi": ""
+            "meaning": "express approval or admiration",
+            "hindi": "प्रशंसा करना"
           },
           "B": {
             "word": "Object",
-            "meaning": "Object",
+            "meaning": "express opposition; protest",
             "hindi": "आपत्ति करना"
           },
           "C": {
             "word": "Illuminate",
-            "meaning": "Illuminate",
-            "hindi": ""
+            "meaning": "light up or make clear",
+            "hindi": "प्रकाशित/स्पष्ट करना"
           },
           "D": {
             "word": "Improve",
-            "meaning": "Improve",
+            "meaning": "make better",
             "hindi": "सुधारना"
           }
+        },
+        "answer": {
+          "meaning": "express opposition; protest",
+          "hindi_meaning": "आपत्ति करना"
         }
       }
     },
@@ -2482,24 +2670,28 @@
         "options": {
           "A": {
             "word": "Urgent",
-            "meaning": "Urgent",
-            "hindi": ""
+            "meaning": "requiring immediate action",
+            "hindi": "अत्यावश्यक"
           },
           "B": {
             "word": "Mocking",
-            "meaning": "Mocking",
+            "meaning": "making fun of someone",
             "hindi": "उपहासपूर्ण"
           },
           "C": {
             "word": "Generous",
-            "meaning": "Generous",
-            "hindi": ""
+            "meaning": "willing to give freely",
+            "hindi": "उदार"
           },
           "D": {
             "word": "Fertile",
-            "meaning": "Fertile",
-            "hindi": ""
+            "meaning": "capable of producing abundantly",
+            "hindi": "उर्वर"
           }
+        },
+        "answer": {
+          "meaning": "making fun of someone",
+          "hindi_meaning": "उपहासपूर्ण"
         }
       }
     },
@@ -2534,24 +2726,28 @@
         "options": {
           "A": {
             "word": "Eager",
-            "meaning": "Eager",
-            "hindi": ""
+            "meaning": "keen or enthusiastic",
+            "hindi": "उत्सुक"
           },
           "B": {
             "word": "Hostile",
-            "meaning": "Hostile",
-            "hindi": "लड़ाकू"
+            "meaning": "unfriendly or antagonistic",
+            "hindi": "शत्रुतापूर्ण"
           },
           "C": {
             "word": "Barren",
-            "meaning": "Barren",
-            "hindi": "उजाड़"
+            "meaning": "unable to produce; unproductive",
+            "hindi": "बंजर"
           },
           "D": {
             "word": "Convincing",
-            "meaning": "Convincing",
-            "hindi": "प्रभावशाली"
+            "meaning": "persuasive; believable",
+            "hindi": "विश्वसनीय/प्रभावशाली"
           }
+        },
+        "answer": {
+          "meaning": "unable to produce; unproductive",
+          "hindi_meaning": "बंजर"
         }
       }
     },
@@ -2586,24 +2782,28 @@
         "options": {
           "A": {
             "word": "Diligent",
-            "meaning": "Diligent",
+            "meaning": "hard-working and careful",
             "hindi": "परिश्रमी"
           },
           "B": {
             "word": "Radiant",
-            "meaning": "Radiant",
-            "hindi": ""
+            "meaning": "shining brightly",
+            "hindi": "चमकीला"
           },
           "C": {
             "word": "Aimless",
-            "meaning": "Aimless",
-            "hindi": "अनियमित"
+            "meaning": "without purpose or direction",
+            "hindi": "उद्देश्यहीन"
           },
           "D": {
             "word": "Abundant",
-            "meaning": "Abundant",
+            "meaning": "plentiful; more than enough",
             "hindi": "प्रचुर"
           }
+        },
+        "answer": {
+          "meaning": "without purpose or direction",
+          "hindi_meaning": "उद्देश्यहीन"
         }
       }
     }
